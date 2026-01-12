@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>SuperTips - Oportunidades Diárias</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header Fixo -->
+    <header class="top-nav">
+        <div class="logo">
+            <span class="logo-icon">⚡</span>
+            <h1>SUPER<span class="accent">TIPS</span></h1>
+        </div>
+        <div class="user-status">
+            <span class="status-dot"></span>
+            <span class="status-text">ONLINE</span>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- Banner de Boas Vindas -->
+        <section class="hero-banner">
+            <h2>Melhores Oportunidades do Dia</h2>
+            <p>Análise estatística focada na Superbet.</p>
+        </section>
+
+        <!-- Filtros de Esporte -->
+        <div class="filter-tabs">
+            <button class="tab-btn active" data-sport="all">TODOS</button>
+            <button class="tab-btn" data-sport="football">⚽ FUTEBOL</button>
+            <button class="tab-btn" data-sport="basketball">🏀 BASQUETE</button>
+            <button class="tab-btn" data-sport="tennis">🎾 TÊNIS</button>
+            <button class="tab-btn" data-sport="mma">🥊 MMA</button>
+            <button class="tab-btn" data-sport="american_football">🏈 F. AMERICANO</button>
+            <button class="tab-btn" data-sport="hockey">🏒 HÓQUEI</button>
+        </div>
+
+        <!-- Feed de Jogos -->
+        <div id="games-feed" class="games-feed">
+            <!-- Os jogos serão inseridos aqui via JS -->
+            <!-- Exemplo de estrutura (Skeleton Load) -->
+            <div class="date-header skeleton-text"></div>
+            <div class="game-card skeleton-card"></div>
+            <div class="game-card skeleton-card"></div>
+        </div>
+
+        <!-- Aviso Legal -->
+        <footer class="legal-footer">
+            <p>Jogue com responsabilidade. As SuperOdds são exclusivas para contas elegíveis. +18</p>
+        </footer>
+
+    </main>
+
+    <!-- MODAL DE CPA LOCK -->
+    <div id="cpa-modal" class="modal-overlay hidden">
+        <div class="modal-card">
+            <span class="icon-lock">🔒</span>
+            <h3>Conteúdo Bloqueado</h3>
+            <p>Esta Tip utiliza o algoritmo <b>SuperOdds</b> e só está visível para Contas Novas com bônus ativo.</p>
+
+            <input type="text" id="superbet-id-input" class="input-id" placeholder="Cole seu ID Superbet aqui">
+            <button id="btn-validate-id" class="btn-validate">LIBERAR ACESSO</button>
+
+            <a href="#" id="btn-create-account" target="_blank" class="btn-create-account">
+                Não tenho ID (Criar Conta Grátis &rarr;)
+            </a>
+        </div>
+    </div>
+
+    <script src="games_data.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

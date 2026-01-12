@@ -1,0 +1,445 @@
+/* CSS - Superbet Clone Style */
+
+:root {
+    --bg-page: #f2f4f6;
+    /* Fundo Cinza Claro do Site */
+    --surface: #ffffff;
+    /* Branco Puro */
+    --super-red: #d50032;
+    /* Vermelho Oficial Superbet */
+    --super-red-hover: #b0002a;
+    --text-primary: #191919;
+    /* Preto Quase Puro */
+    --text-secondary: #656565;
+    --yellow-odds: #ffce00;
+    /* Amarelo Super Odds */
+    --success: #2d9d4d;
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    padding-bottom: 60px;
+}
+
+/* Header Estilo App Nativo */
+.top-nav {
+    background: var(--surface);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    /* Extra Bold */
+    font-style: italic;
+    color: var(--super-red);
+    letter-spacing: -1px;
+}
+
+.logo h1 span {
+    color: var(--text-primary);
+}
+
+.user-status {
+    background: #eefdf3;
+    color: var(--success);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+/* Hero Section "Super Odds" */
+.container {
+    padding: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.hero-banner {
+    background: linear-gradient(135deg, #ffce00 0%, #ffeb3b 100%);
+    padding: 20px;
+    border-radius: var(--radius-md);
+    margin-bottom: 24px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+}
+
+.hero-banner::after {
+    content: '⚡';
+    position: absolute;
+    right: -10px;
+    bottom: -20px;
+    font-size: 5rem;
+    opacity: 0.2;
+    transform: rotate(-20deg);
+}
+
+.hero-banner h2 {
+    color: #000;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.hero-banner p {
+    color: #333;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* Filtros Estilo "Pílula" */
+.filter-tabs {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding: 0 4px 8px 4px;
+    margin-bottom: 16px;
+    scrollbar-width: none;
+}
+
+.tab-btn {
+    background: var(--surface);
+    border: 1px solid #e0e0e0;
+    color: var(--text-secondary);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.tab-btn.active {
+    background: var(--text-primary);
+    color: #fff;
+    border-color: var(--text-primary);
+}
+
+/* Cards de Jogo Clean */
+.date-header {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--text-secondary);
+    margin: 16px 0 8px 4px;
+    text-transform: uppercase;
+}
+
+.game-card {
+    background: var(--surface);
+    border-radius: var(--radius-md);
+    padding: 16px;
+    margin-bottom: 12px;
+    box-shadow: var(--shadow-card);
+    border: 1px solid transparent;
+    transition: transform 0.2s;
+}
+
+.game-card:active {
+    transform: scale(0.98);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 8px;
+}
+
+.teams-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.team {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.team-avatar {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 2px solid #e0e0e0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    padding: 4px;
+    /* Espaço entre borda e imagem */
+}
+
+.team-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.team-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.1;
+    color: var(--text-primary);
+    max-width: 100px;
+}
+
+.vs-badge {
+    color: var(--text-secondary);
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+/* Área de Tip (Bloqueada/Desbloqueada) */
+.tip-box {
+    background: #f9f9f9;
+    padding: 16px;
+    border-radius: var(--radius-sm);
+    border: 1px dashed #ddd;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Estado Bloqueado */
+.tip-box.locked .tip-content {
+    filter: blur(6px);
+    user-select: none;
+    opacity: 0.5;
+}
+
+.lock-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 10;
+}
+
+.btn-unlock {
+    background: var(--super-red);
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 24px;
+    font-weight: 700;
+    font-size: 0.8rem;
+    box-shadow: 0 4px 12px rgba(213, 0, 50, 0.3);
+    cursor: pointer;
+    animation: pulseBtn 2s infinite;
+}
+
+/* Estado Desbloqueado */
+.tip-market {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.tip-odd {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--text-primary);
+    letter-spacing: -1px;
+}
+
+.superbet-badge-tiny {
+    display: inline-block;
+    background: var(--super-red);
+    color: white;
+    font-size: 0.6rem;
+    font-weight: 800;
+    padding: 2px 6px;
+    border-radius: 4px;
+    vertical-align: middle;
+    margin-left: 6px;
+    transform: translateY(-2px);
+}
+
+@keyframes pulseBtn {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Modal de "Validação" de CPA */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modal-card {
+    background: white;
+    width: 100%;
+    max-width: 360px;
+    border-radius: 20px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.icon-lock {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.modal-card h3 {
+    color: var(--super-red);
+    font-weight: 900;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
+
+.modal-card p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+    line-height: 1.4;
+}
+
+.input-id {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #eee;
+    border-radius: 12px;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 16px;
+    outline: none;
+    transition: border 0.2s;
+}
+
+.input-id:focus {
+    border-color: var(--super-red);
+}
+
+.btn-validate {
+    width: 100%;
+    background: #000;
+    color: white;
+    padding: 14px;
+    border-radius: 12px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.btn-create-account {
+    display: block;
+    margin-top: 16px;
+    color: var(--super-red);
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* --- BARRA DE ASSERTIVIDADE (MARKETING) --- */
+.progress-container {
+    background: #e0e0e0;
+    height: 8px;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 4px;
+    margin: 8px auto 12px auto;
+    /* AUTO nas laterais centraliza */
+    overflow: hidden;
+    position: relative;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #ffeb3b 0%, #2d9d4d 100%);
+    border-radius: 4px;
+    transition: width 1s ease-in-out;
+}
+
+.win-rate-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.win-rate-text {
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: var(--success);
+    line-height: 1;
+}
+
+.win-rate-label {
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+    text-transform: uppercase;
+}

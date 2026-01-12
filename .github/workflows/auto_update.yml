@@ -1,0 +1,34 @@
+name: SuperTips Auto Update
+
+on:
+  schedule:
+    - cron: '*/30 * * * *' # Roda a cada 30 minutos
+  workflow_dispatch: # Permite rodar manualmente clicando num botão
+
+jobs:
+  update-odds:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checar código
+        uses: actions/checkout@v3
+        
+      - name: Instalar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+          
+      - name: Instalar Dependências
+        run: |
+          pip install -r requirements.txt
+          
+      - name: Rodar Updater (Inteligência Artificial)
+        run: python updater.py
+        
+      - name: Salvar e Atualizar Site
+        run: |
+          git config --global user.name 'SuperTips Bot'
+          git config --global user.email 'supertips-bot@users.noreply.github.com'
+          git add games_data.js logos_cache.json
+          git commit -m "🤖 Auto Update: Novas Odds e Tips" || exit 0
+          git push
