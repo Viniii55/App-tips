@@ -28,6 +28,43 @@
 
     <main class="container">
 
+        <!-- PLACAR DE CONFIANÇA (SOCIAL PROOF) -->
+        <div class="trust-scoreboard">
+            <div class="score-item">
+                <span class="score-label">ASSERTIVIDADE HOJE</span>
+                <span class="score-value high">87%</span>
+            </div>
+            <div class="score-item border-left">
+                <span class="score-label">GREENS MAPEADOS</span>
+                <span class="score-value">14 ✅</span>
+            </div>
+        </div>
+
+        <!-- BILHETE PRONTO DA IA (FEAT URED) -->
+        <div id="parlay-card" class="parlay-card hidden">
+            <div class="parlay-header">
+                <div class="parlay-title">
+                    <span class="rocket">🚀</span>
+                    <h3>BILHETE PRONTO DA IA</h3>
+                </div>
+                <div class="parlay-badge">ODD TURBINADA</div>
+            </div>
+
+            <div id="parlay-items-container" class="parlay-items-container">
+                <!-- Inserido via JS -->
+            </div>
+
+            <div class="parlay-footer">
+                <div class="total-odd-info">
+                    <span class="label">ODD TOTAL</span>
+                    <span class="value" id="parlay-total-odd">--</span>
+                </div>
+                <button class="btn-copy-parlay" onclick="copyParlay()">
+                    COPIAR CÓDIGO DO BILHETE 📋
+                </button>
+            </div>
+        </div>
+
         <!-- Banner de Boas Vindas -->
         <section class="hero-banner">
             <h2>Melhores Oportunidades do Dia</h2>

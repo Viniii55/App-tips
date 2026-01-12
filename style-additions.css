@@ -1,0 +1,203 @@
+/* --- NOVAS FUNCIONALIDADES (MÚLTIPLA & PLACAR) --- */
+
+/* Placar de Confiança */
+.trust-scoreboard {
+    display: flex;
+    justify-content: space-between;
+    background: #1a1a1a;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.score-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.score-item.border-left {
+    border-left: 1px solid #333;
+}
+
+.score-label {
+    font-size: 0.7rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.score-value {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+.score-value.high {
+    color: #00ff88;
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+}
+
+/* Card da Múltipla (Gold Premium) */
+.parlay-card {
+    background: linear-gradient(145deg, #1e1e1e, #141414);
+    border: 1px solid #ffd700;
+    /* Dourado */
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 25px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.15);
+}
+
+.parlay-card.hidden {
+    display: none;
+}
+
+.parlay-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.parlay-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.parlay-title h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #ffd700;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.parlay-badge {
+    background: rgba(255, 215, 0, 0.2);
+    color: #ffd700;
+    font-size: 0.7rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 1px solid rgba(255, 215, 0, 0.4);
+}
+
+/* Lista de Jogos da Múltipla */
+.parlay-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+}
+
+.parlay-match-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ccc;
+}
+
+.parlay-tip-market {
+    color: #00ff88;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+/* Footer do Card */
+.parlay-footer {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px dashed rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.total-odd-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total-odd-info .label {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.total-odd-info .value {
+    color: #ffd700;
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.btn-copy-parlay {
+    background: #ffd700;
+    color: #000;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 800;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.btn-copy-parlay:active {
+    transform: scale(0.96);
+}
+
+.btn-copy-parlay.copied {
+    background: #00ff88;
+    color: #000;
+}
+
+/* Simples animação de Shine no botão */
+@keyframes shine {
+    0% {
+        background-position: -100px;
+    }
+
+    100% {
+        background-position: 300px;
+    }
+}
+
+/* Area de Jogos - Ajuste */
+.game-card .actions-area {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    gap: 10px;
+}
+
+.btn-copy-code {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: all 0.2s;
+}
+
+.btn-copy-code:hover {
+    background: rgba(255, 255, 255, 0.2);
+}

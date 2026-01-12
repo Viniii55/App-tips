@@ -398,7 +398,32 @@ def fetch_games():
             print(f"XX Erro Tecnico: {e}")
 
     save_cache()
-    save_to_js(all_matches)
+    # --- INTELIGÊNCIA DE MÚLTIPLA (PARLAY) ---
+    print(f">> Analisando {len(all_matches)} jogos para gerar a Múltipla do Dia...")
+    
+    # Ordena por maior probabilidade de Green (Win Rate)
+    unique_matches = {m['id']: m for m in all_matches}.values()
+    sorted_matches = sorted(unique_matches, key=lambda x: x['tip']['win_rate'], reverse=True)
+    
+    # Pega os Top 3
+    parlay_tips = sorted_matches[:3]
+    
+    parlay_total_odd = 1.0
+    for m in parlay_tips:
+        parlay_total_odd *= m['tip']['odd']
+    
+    if parlay_total_odd < 1.01: parlay_total_odd = 1.0
+
+    # Salva no JS
+    try:
+        with open("games_data.js", "w", encoding='utf-8') as f:
+            js_content = f"window.gamesData = {json.dumps(all_matches, indent=4, ensure_ascii=False)};\n\n"
+            js_content += f"window.dailyParlay = {json.dumps(parlay_tips, indent=4, ensure_ascii=False)};\n"
+            js_content += f"window.parlayTotalOdd = {parlay_total_odd:.2f};\n"
+            f.write(js_content)
+        print(">> games_data.js gerado com SUCESSO! (Incluindo Múltipla)")
+    except Exception as e:
+        print(f"XX Erro ao salvar arquivo JS: {e}")
 
 def format_league_name(key):
     """Deixa o nome da liga bonito para o usuário"""
