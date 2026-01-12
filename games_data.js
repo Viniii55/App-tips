@@ -1,8 +1,8 @@
-window.LIVE_GAMES = [
+window.gamesData = [
     {
         "id": "c06758fba863d1a0145ed16cb817aff1",
         "sport": "football",
-        "league": "Brasileir\u00e3o S\u00e9rie A",
+        "league": "Brasileirão Série A",
         "date": "2026-01-28T00:00:00Z",
         "teamA": {
             "name": "Atletico Mineiro",
@@ -16,12 +16,13 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "ffa2c859984f137b3209d7b2c0bef949",
         "sport": "football",
-        "league": "Brasileir\u00e3o S\u00e9rie A",
+        "league": "Brasileirão Série A",
         "date": "2026-01-28T00:00:00Z",
         "teamA": {
             "name": "Internacional",
@@ -35,12 +36,13 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Internacional ou Empate",
             "odd": 1.23,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "0b09c05a4c38692a37e1ba5491c08b25",
         "sport": "football",
-        "league": "Brasileir\u00e3o S\u00e9rie A",
+        "league": "Brasileirão Série A",
         "date": "2026-01-28T00:00:00Z",
         "teamA": {
             "name": "Corinthians",
@@ -54,12 +56,13 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "74714d2d8743bc288006feb3d2a437ec",
         "sport": "football",
-        "league": "Brasileir\u00e3o S\u00e9rie A",
+        "league": "Brasileirão Série A",
         "date": "2026-01-28T00:00:00Z",
         "teamA": {
             "name": "Botafogo",
@@ -73,12 +76,13 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Botafogo ou Empate",
             "odd": 1.31,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "a6399a0c579df8fe1326e2814a0f45d7",
         "sport": "football",
-        "league": "Brasileir\u00e3o S\u00e9rie A",
+        "league": "Brasileirão Série A",
         "date": "2026-01-28T00:00:00Z",
         "teamA": {
             "name": "Coritiba",
@@ -92,12 +96,13 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "3a1f5f80eb4da4b4020da16c8b40ce6d",
         "sport": "football",
-        "league": "Brasileir\u00e3o S\u00e9rie A",
+        "league": "Brasileirão Série A",
         "date": "2026-01-28T00:00:00Z",
         "teamA": {
             "name": "Chapecoense",
@@ -111,12 +116,13 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "ad629ddb1c670c07f7f369adb97a99aa",
         "sport": "football",
-        "league": "Brasileir\u00e3o S\u00e9rie A",
+        "league": "Brasileirão Série A",
         "date": "2026-01-28T00:00:00Z",
         "teamA": {
             "name": "Sao Paulo",
@@ -130,31 +136,33 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Flamengo ou Empate",
             "odd": 1.29,
             "win_rate": 92
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "34650234a38b36d81849b304349b73d4",
         "sport": "football",
-        "league": "Brasileir\u00e3o S\u00e9rie A",
+        "league": "Brasileirão Série A",
         "date": "2026-01-28T00:00:00Z",
         "teamA": {
             "name": "Fluminense",
             "logo": "https://upload.wikimedia.org/wikipedia/commons/6/62/A_Vida_Fluminense_%28N024%29.pdf"
         },
         "teamB": {
-            "name": "Gr\u00eamio",
+            "name": "Grêmio",
             "logo": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Gremio_logo.gif"
         },
         "tip": {
             "market": "Dupla Chance: Fluminense ou Empate",
             "odd": 1.16,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "4b39b4f5b624f50a642025b5488c0d62",
         "sport": "football",
-        "league": "Brasileir\u00e3o S\u00e9rie A",
+        "league": "Brasileirão Série A",
         "date": "2026-01-28T00:00:00Z",
         "teamA": {
             "name": "Mirassol",
@@ -168,12 +176,13 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Mirassol ou Empate",
             "odd": 1.19,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "6c84125e40d21a2544c729001653350b",
         "sport": "football",
-        "league": "Brasileir\u00e3o S\u00e9rie A",
+        "league": "Brasileirão Série A",
         "date": "2026-01-28T00:00:00Z",
         "teamA": {
             "name": "Vitoria",
@@ -187,7 +196,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Vitoria ou Empate",
             "odd": 1.16,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "3fd1e970c718bfc0f99a7e4575e46f49",
@@ -206,7 +216,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Manchester City ou Empate",
             "odd": 1.28,
             "win_rate": 92
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "876bd00ab1c4cff1c6635a8ac7f93d75",
@@ -225,7 +236,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Chelsea ou Empate",
             "odd": 1.19,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "80cf233ec08173f3d8cf4645b687589d",
@@ -241,10 +253,11 @@ window.LIVE_GAMES = [
             "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Transdev_Burnley_Pendle_logo.png"
         },
         "tip": {
-            "market": "Vencer: Liverpool",
-            "odd": 1.22,
-            "win_rate": 90
-        }
+            "market": "Gol a Qualquer Momento: Salah",
+            "odd": 1.85,
+            "win_rate": 95
+        },
+        "status": "PENDING"
     },
     {
         "id": "aa16a48d5e016963e076f7f5ecfc2f68",
@@ -263,7 +276,8 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "86609aa022312a15ec01d5bc0c172dbc",
@@ -282,7 +296,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Leeds United ou Empate",
             "odd": 1.22,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "47e36aed7df3160f584a73fbd1fd0830",
@@ -301,7 +316,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Tottenham Hotspur ou Empate",
             "odd": 1.2,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "b145d15344a4fca80d42b39faa58a050",
@@ -320,7 +336,8 @@ window.LIVE_GAMES = [
             "market": "Vencer: Arsenal",
             "odd": 1.44,
             "win_rate": 76
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "e15eb2362921b16a6b6a0397ce607a11",
@@ -339,7 +356,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Newcastle United ou Empate",
             "odd": 1.12,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "80b312e80c4c6e8f267a99606665ac8c",
@@ -358,7 +376,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Aston Villa ou Empate",
             "odd": 1.21,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "342788786c22e570ed2da53a9608113f",
@@ -377,7 +396,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Brighton and Hove Albion ou Empate",
             "odd": 1.31,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "a396966205b21287109ea8cae42e44c1",
@@ -396,7 +416,8 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "db78ecd9c2d10ab045a91fa64d90a172",
@@ -415,7 +436,8 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "1e811fa7ead0a3e6ef920b15b2bbb95d",
@@ -434,7 +456,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Tottenham Hotspur ou Empate",
             "odd": 1.26,
             "win_rate": 94
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "b32426b16a13c60170645be87a6b5cf5",
@@ -453,7 +476,8 @@ window.LIVE_GAMES = [
             "market": "Vencer: Manchester City",
             "odd": 1.19,
             "win_rate": 92
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "7f9f2414fa5b890e516960bfcb8f153d",
@@ -472,7 +496,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Liverpool ou Empate",
             "odd": 1.16,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "1ca6d3d9cde3e58a39211feb9188530c",
@@ -491,7 +516,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Newcastle United ou Empate",
             "odd": 1.23,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "84aeb5074adb6205fcb1206830a62861",
@@ -510,7 +536,8 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "4d6c0ac53b2b38aeb5bc8c8163f3f8b9",
@@ -529,7 +556,8 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "5d6e09834e58cd6190113f232aece005",
@@ -548,7 +576,8 @@ window.LIVE_GAMES = [
             "market": "Vencer: Arsenal",
             "odd": 1.5,
             "win_rate": 73
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "e90e22b348a38af568f940b4b5d92ca6",
@@ -567,7 +596,8 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "30f6f08d42940047b836af2153d681bd",
@@ -586,7 +616,8 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "92d36e6b5b03266bf386354eb489ad97",
@@ -605,7 +636,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Espanyol ou Empate",
             "odd": 1.14,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "794960888cc173eb96cc55dad0dd8d2a",
@@ -621,10 +653,11 @@ window.LIVE_GAMES = [
             "logo": "https://upload.wikimedia.org/wikipedia/en/5/58/CF_Torre_Levante_logo.png"
         },
         "tip": {
-            "market": "Vencer: Real Madrid",
-            "odd": 1.13,
-            "win_rate": 97
-        }
+            "market": "Gol a Qualquer Momento: Vini Jr",
+            "odd": 1.85,
+            "win_rate": 85
+        },
+        "status": "PENDING"
     },
     {
         "id": "81eeaa276b0f874eee70a3cc0e2c039a",
@@ -643,7 +676,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Athletic Bilbao ou Empate",
             "odd": 1.24,
             "win_rate": 95
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "a87f04984f0a2d9b361da24ff21178b8",
@@ -662,7 +696,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: CA Osasuna ou Empate",
             "odd": 1.12,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "42414e1da7f830259646d76907dd1269",
@@ -681,7 +716,8 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "137fef737a82bc36ead5fb9442f68eaf",
@@ -700,7 +736,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Getafe ou Empate",
             "odd": 1.3,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "5a54196ed79c9ce5e335d59a40e41a32",
@@ -708,18 +745,19 @@ window.LIVE_GAMES = [
         "league": "La Liga",
         "date": "2026-01-18T15:15:00Z",
         "teamA": {
-            "name": "Atl\u00e9tico Madrid",
+            "name": "Atlético Madrid",
             "logo": "https://upload.wikimedia.org/wikipedia/en/c/c1/Atletico_Madrid_logo.svg"
         },
         "teamB": {
-            "name": "Alav\u00e9s",
+            "name": "Alavés",
             "logo": "https://upload.wikimedia.org/wikipedia/en/2/2e/Deportivo_Alaves_logo.svg"
         },
         "tip": {
-            "market": "Vencer: Atl\u00e9tico Madrid",
+            "market": "Vencer: Atlético Madrid",
             "odd": 1.28,
             "win_rate": 85
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "691835b0e7a9385fccf0b29bd3492a08",
@@ -738,7 +776,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Celta Vigo ou Empate",
             "odd": 1.29,
             "win_rate": 92
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "3d4889892d426e9a6f98f7ff0dd775b2",
@@ -757,7 +796,8 @@ window.LIVE_GAMES = [
             "market": "Vencer: Barcelona",
             "odd": 1.48,
             "win_rate": 74
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "6076a8b61a97dd15f216e348fdba88b8",
@@ -776,7 +816,8 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "23faa2755b2a07c3a0ca03bd4fc6a8e3",
@@ -795,7 +836,8 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "56556cba4837be525240fd3e4009e972",
@@ -814,7 +856,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Rayo Vallecano ou Empate",
             "odd": 1.27,
             "win_rate": 93
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "faa776cd5170281870e980baa230156d",
@@ -833,7 +876,8 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "76ba4426a6a4d04532c74a44eea4c848",
@@ -841,7 +885,7 @@ window.LIVE_GAMES = [
         "league": "La Liga",
         "date": "2026-01-25T17:00:00Z",
         "teamA": {
-            "name": "Alav\u00e9s",
+            "name": "Alavés",
             "logo": "https://upload.wikimedia.org/wikipedia/en/2/2e/Deportivo_Alaves_logo.svg"
         },
         "teamB": {
@@ -852,7 +896,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Real Betis ou Empate",
             "odd": 1.24,
             "win_rate": 95
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "12fa958a04a07de7b95dbfce718db8cc",
@@ -871,7 +916,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Athletic Bilbao ou Empate",
             "odd": 1.3,
             "win_rate": 92
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "6664cc513e04469013e67de10178d926",
@@ -879,7 +925,7 @@ window.LIVE_GAMES = [
         "league": "La Liga",
         "date": "2026-01-25T17:00:00Z",
         "teamA": {
-            "name": "Atl\u00e9tico Madrid",
+            "name": "Atlético Madrid",
             "logo": "https://upload.wikimedia.org/wikipedia/en/c/c1/Atletico_Madrid_logo.svg"
         },
         "teamB": {
@@ -887,10 +933,11 @@ window.LIVE_GAMES = [
             "logo": "https://upload.wikimedia.org/wikipedia/en/6/64/Vuelta_a_Mallorca-logo_2023.png"
         },
         "tip": {
-            "market": "Vencer: Atl\u00e9tico Madrid",
+            "market": "Vencer: Atlético Madrid",
             "odd": 1.17,
             "win_rate": 94
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "46f70d26f23b04d8f0547cb124a9d18d",
@@ -906,10 +953,11 @@ window.LIVE_GAMES = [
             "logo": "https://upload.wikimedia.org/wikipedia/en/6/6e/Real_Oviedo_logo.svg"
         },
         "tip": {
-            "market": "Vencer: Barcelona",
-            "odd": 1.06,
-            "win_rate": 98
-        }
+            "market": "Gol a Qualquer Momento: Lewandowski",
+            "odd": 1.85,
+            "win_rate": 84
+        },
+        "status": "PENDING"
     },
     {
         "id": "b52a9fa056615e297b0522dfa9d105c5",
@@ -928,7 +976,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Rayo Vallecano ou Empate",
             "odd": 1.17,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "016e617802dc1812996ca074d7306086",
@@ -947,7 +996,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Real Sociedad ou Empate",
             "odd": 1.2,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "6e5cef4d9e21141d6e3b11be26ae96b2",
@@ -966,7 +1016,8 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "cb6afb84c0519f4c775b8a9737681b5e",
@@ -985,7 +1036,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Valencia ou Empate",
             "odd": 1.23,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "48366bf87ce5db145d9fddf811cfe0bf",
@@ -1004,7 +1056,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Girona ou Empate",
             "odd": 1.18,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "a24e5370b8826d1b1e448493af7164c3",
@@ -1023,7 +1076,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Real Madrid ou Empate",
             "odd": 1.19,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "4ac6cf5bfb4cef2e3a48939a6a112550",
@@ -1042,7 +1096,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Girona ou Empate",
             "odd": 1.29,
             "win_rate": 92
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "3937edff29d08a26dccdd8abb5030d89",
@@ -1061,7 +1116,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: VfB Stuttgart ou Empate",
             "odd": 1.2,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "c5bb74a25b74b505afda307b2c243469",
@@ -1080,7 +1136,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: FSV Mainz 05 ou Empate",
             "odd": 1.13,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "3a298098241a4bfbf4eda0929537f063",
@@ -1097,9 +1154,10 @@ window.LIVE_GAMES = [
         },
         "tip": {
             "market": "Dupla Chance: Bayer Leverkusen ou Empate",
-            "odd": 1.31,
-            "win_rate": 91
-        }
+            "odd": 1.28,
+            "win_rate": 92
+        },
+        "status": "PENDING"
     },
     {
         "id": "a97c467e9ff379af06f972ec25ddc407",
@@ -1118,7 +1176,8 @@ window.LIVE_GAMES = [
             "market": "Vencer: Borussia Dortmund",
             "odd": 1.38,
             "win_rate": 79
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "147176b65eecb7ca66d162dd93c39e12",
@@ -1137,7 +1196,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: VfL Wolfsburg ou Empate",
             "odd": 1.21,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "4881e0d69bec69bababecaa1e98b5dad",
@@ -1145,7 +1205,7 @@ window.LIVE_GAMES = [
         "league": "Soccer Germany Bundesliga",
         "date": "2026-01-14T19:30:00Z",
         "teamA": {
-            "name": "1. FC K\u00f6ln",
+            "name": "1. FC Köln",
             "logo": "https://upload.wikimedia.org/wikipedia/commons/d/dc/FC_Viktoria_K%C3%B6ln_1904_Logo.svg"
         },
         "teamB": {
@@ -1153,10 +1213,11 @@ window.LIVE_GAMES = [
             "logo": "https://upload.wikimedia.org/wikipedia/commons/1/1b/FC_Bayern_M%C3%BCnchen_logo_%282017%29.svg"
         },
         "tip": {
-            "market": "Vencer: Bayern Munich",
-            "odd": 1.26,
-            "win_rate": 87
-        }
+            "market": "Gol a Qualquer Momento: Kane",
+            "odd": 1.85,
+            "win_rate": 84
+        },
+        "status": "PENDING"
     },
     {
         "id": "61e314c2c7412ea1f19409f119f1e29d",
@@ -1175,7 +1236,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: TSG Hoffenheim ou Empate",
             "odd": 1.3,
             "win_rate": 92
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "51b47d6f758ef44421a635cfe2bd27da",
@@ -1194,7 +1256,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: RB Leipzig ou Empate",
             "odd": 1.21,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "dd9ffe0d93fe6332658ea6eba405e5e8",
@@ -1213,7 +1276,8 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "d5dc97aab1d29cfc809130fe57a2db14",
@@ -1232,7 +1296,8 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "271496e78982c89d82c981ae2e2008c7",
@@ -1251,7 +1316,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: VfL Wolfsburg ou Empate",
             "odd": 1.2,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "16cfa9455a9796f667118f6450024757",
@@ -1259,7 +1325,7 @@ window.LIVE_GAMES = [
         "league": "Soccer Germany Bundesliga",
         "date": "2026-01-17T14:30:00Z",
         "teamA": {
-            "name": "1. FC K\u00f6ln",
+            "name": "1. FC Köln",
             "logo": "https://upload.wikimedia.org/wikipedia/commons/d/dc/FC_Viktoria_K%C3%B6ln_1904_Logo.svg"
         },
         "teamB": {
@@ -1267,10 +1333,11 @@ window.LIVE_GAMES = [
             "logo": "https://upload.wikimedia.org/wikipedia/commons/1/1b/1._FSV_Mainz_05_logo.svg"
         },
         "tip": {
-            "market": "Dupla Chance: 1. FC K\u00f6ln ou Empate",
+            "market": "Dupla Chance: 1. FC Köln ou Empate",
             "odd": 1.28,
             "win_rate": 93
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "3334b9a452b572ca5f136d524bba816e",
@@ -1289,7 +1356,8 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "d0a6a8a3647b5bb5198ccd43cc6114ea",
@@ -1308,7 +1376,8 @@ window.LIVE_GAMES = [
             "market": "Vencer: Borussia Dortmund",
             "odd": 1.24,
             "win_rate": 88
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "497ef12ef1554f6ca4015fbded78b264",
@@ -1327,7 +1396,8 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "e0532a11798c2e3bbe0e20c889cde2d7",
@@ -1346,7 +1416,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Bayern Munich ou Empate",
             "odd": 1.2,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "baa7dbc232573c12de3b94c5126518ec",
@@ -1365,7 +1436,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: VfB Stuttgart ou Empate",
             "odd": 1.21,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "6127455e36c2c5474eeb98ba9a14834e",
@@ -1384,7 +1456,8 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "d66ea58ddb00d545b4d31988f2632b84",
@@ -1403,7 +1476,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Genoa ou Empate",
             "odd": 1.28,
             "win_rate": 93
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "daa2bb9fe4c0697c33a13df8bdf388d2",
@@ -1420,9 +1494,10 @@ window.LIVE_GAMES = [
         },
         "tip": {
             "market": "Vencer: Juventus",
-            "odd": 1.24,
-            "win_rate": 88
-        }
+            "odd": 1.23,
+            "win_rate": 89
+        },
+        "status": "PENDING"
     },
     {
         "id": "64aa45d8f1fafe5542e892cf20fc98ec",
@@ -1441,7 +1516,8 @@ window.LIVE_GAMES = [
             "market": "Vencer: Napoli",
             "odd": 1.3,
             "win_rate": 84
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "e7daba0dd26708794465d3c177510f1c",
@@ -1460,7 +1536,8 @@ window.LIVE_GAMES = [
             "market": "Vencer: Inter Milan",
             "odd": 1.17,
             "win_rate": 94
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "794a31fcf8a1cfd751fdd44106dbc566",
@@ -1479,7 +1556,8 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "66d10c2bf3c84eb7b4a95106e3866fb3",
@@ -1498,7 +1576,8 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "09a25c81cc9c0d2ee95a39858526b187",
@@ -1517,7 +1596,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Atalanta BC ou Empate",
             "odd": 1.17,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "98e958a4d4d6c144732a0a32d2ab77de",
@@ -1536,7 +1616,8 @@ window.LIVE_GAMES = [
             "market": "Vencer: Inter Milan",
             "odd": 1.48,
             "win_rate": 74
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "2e402618e8f128fd17ac85c1075dc642",
@@ -1555,7 +1636,8 @@ window.LIVE_GAMES = [
             "market": "Vencer: Napoli",
             "odd": 1.5,
             "win_rate": 73
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "7cccb3c5504678aa2bbd5490aab3881f",
@@ -1574,7 +1656,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Juventus ou Empate",
             "odd": 1.12,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "f77163792d985cb07d9553e389cfeaa0",
@@ -1593,7 +1676,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Parma ou Empate",
             "odd": 1.27,
             "win_rate": 93
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "18de9ca5efc2136cd1204211f2d36011",
@@ -1612,7 +1696,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Bologna ou Empate",
             "odd": 1.29,
             "win_rate": 92
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "833f3a993ae8d16996603ba818af71aa",
@@ -1631,7 +1716,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: AS Roma ou Empate",
             "odd": 1.26,
             "win_rate": 94
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "39873448090264429546500aff311230",
@@ -1650,7 +1736,8 @@ window.LIVE_GAMES = [
             "market": "Vencer: AC Milan",
             "odd": 1.24,
             "win_rate": 88
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "fb8869e33f590378c2782c8908d89ac4",
@@ -1669,7 +1756,8 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "e578bafd1b7879b4e3c0831f1eca8b8f",
@@ -1688,7 +1776,8 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "8db02bc3086459d6f01e3fae5eebde04",
@@ -1707,7 +1796,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: AS Monaco ou Empate",
             "odd": 1.17,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "81c8d8f5a9c64d4f79302689372beb61",
@@ -1726,7 +1816,8 @@ window.LIVE_GAMES = [
             "market": "Vencer: Paris Saint Germain",
             "odd": 1.48,
             "win_rate": 74
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "7c31284c2c36f12fd3cdce8b23ac9ee2",
@@ -1745,7 +1836,8 @@ window.LIVE_GAMES = [
             "market": "Vencer: RC Lens",
             "odd": 1.49,
             "win_rate": 73
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "540a9a67c337cf21bee313e260efaf69",
@@ -1764,7 +1856,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Toulouse ou Empate",
             "odd": 1.26,
             "win_rate": 94
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "ffe24fdea2d5ad6483292eb749b97506",
@@ -1783,7 +1876,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Marseille ou Empate",
             "odd": 1.12,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "890935e813405256ab29af3d12eab246",
@@ -1800,9 +1894,10 @@ window.LIVE_GAMES = [
         },
         "tip": {
             "market": "Vencer: Strasbourg",
-            "odd": 1.48,
-            "win_rate": 74
-        }
+            "odd": 1.5,
+            "win_rate": 73
+        },
+        "status": "PENDING"
     },
     {
         "id": "70790674ffb1f584124b617bbb1f3dfa",
@@ -1821,7 +1916,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Rennes ou Empate",
             "odd": 1.2,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "0d51cc2b1f298a9974fc19f6c5692ad2",
@@ -1840,7 +1936,8 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "b8268290e25d0cf4b9aa64b521c3ad5a",
@@ -1859,7 +1956,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Lyon ou Empate",
             "odd": 1.2,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "5151344c7feddd635e13fe24d63bbddc",
@@ -1878,7 +1976,8 @@ window.LIVE_GAMES = [
             "market": "Vencer: Paris Saint Germain",
             "odd": 1.24,
             "win_rate": 88
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "f6c5f7f92c41d6c12e55870819dd419d",
@@ -1897,7 +1996,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Rennes ou Empate",
             "odd": 1.12,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "70515793c70633c192edc4f52444db3b",
@@ -1916,7 +2016,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: AS Monaco ou Empate",
             "odd": 1.2,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "98e55b8d48476f5c58e3e3e525907a7a",
@@ -1935,7 +2036,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Marseille ou Empate",
             "odd": 1.25,
             "win_rate": 94
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "798588eee18cc212f748c619f024a1d8",
@@ -1954,7 +2056,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Nice ou Empate",
             "odd": 1.31,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "259ba4ae53e75f1718871fe49017d240",
@@ -1973,7 +2076,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Paris FC ou Empate",
             "odd": 1.22,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "4e68520a4a47d11007f23dc29f08eea4",
@@ -1992,7 +2096,8 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "b12927a56bc19fb041ef8131b7610f23",
@@ -2011,7 +2116,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Lyon ou Empate",
             "odd": 1.2,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "87e6aa9bade1d15a02900e9dbd73d6d5",
@@ -2030,7 +2136,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Lille ou Empate",
             "odd": 1.19,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "fcdf642c9671b59f061dce65b3903160",
@@ -2049,7 +2156,8 @@ window.LIVE_GAMES = [
             "market": "Vencer: Sporting Lisbon",
             "odd": 1.13,
             "win_rate": 97
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "7826e253247fa3b072e2c0102e086e49",
@@ -2068,7 +2176,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Gil Vicente ou Empate",
             "odd": 1.14,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "77034e00ed2de8b202d25d187dc41c77",
@@ -2087,7 +2196,8 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "273b0ba524d50abd8e28b149d7ab2d5c",
@@ -2106,7 +2216,8 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "aa13ed4fdb4d75c5312731d23912eb9b",
@@ -2125,7 +2236,8 @@ window.LIVE_GAMES = [
             "market": "Vencer: Benfica",
             "odd": 1.34,
             "win_rate": 82
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "ac73a4b90a3d7ead16e81e0fdc83ff44",
@@ -2137,14 +2249,15 @@ window.LIVE_GAMES = [
             "logo": "https://upload.wikimedia.org/wikipedia/commons/6/63/Der_Stern_von_Santa_Clara_Logo_001.svg"
         },
         "teamB": {
-            "name": "Famalic\u00e3o",
+            "name": "Famalicão",
             "logo": "https://upload.wikimedia.org/wikipedia/commons/d/d8/F.C._Famalic%C3%A3o_logo.png"
         },
         "tip": {
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "9c55fa5d192bd4b2ab29346f4ce0e21c",
@@ -2163,7 +2276,8 @@ window.LIVE_GAMES = [
             "market": "Vencer: Braga",
             "odd": 1.4,
             "win_rate": 78
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "0471544076962c346f2b979a25a9beac",
@@ -2171,7 +2285,7 @@ window.LIVE_GAMES = [
         "league": "Soccer Portugal Primeira Liga",
         "date": "2026-01-18T20:30:00Z",
         "teamA": {
-            "name": "Vit\u00f3ria SC",
+            "name": "Vitória SC",
             "logo": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Vit%C3%B3ria_Sport_Clube_logo_%28original%29.png"
         },
         "teamB": {
@@ -2182,7 +2296,8 @@ window.LIVE_GAMES = [
             "market": "Vencer: FC Porto",
             "odd": 1.49,
             "win_rate": 73
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "a4e8ccce36990cf2c182d761d4ba6a55",
@@ -2201,7 +2316,8 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "4e2bcec83f6a9148b4e3c638f82dd339",
@@ -2218,9 +2334,10 @@ window.LIVE_GAMES = [
         },
         "tip": {
             "market": "Vencer: Ajax",
-            "odd": 1.45,
-            "win_rate": 75
-        }
+            "odd": 1.44,
+            "win_rate": 76
+        },
+        "status": "PENDING"
     },
     {
         "id": "33adae23096025d6c3a2943a2b932b0d",
@@ -2239,7 +2356,8 @@ window.LIVE_GAMES = [
             "market": "Vencer: AZ Alkmaar",
             "odd": 1.48,
             "win_rate": 74
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "4a10ecc3d9d3640e3bb4351cda581eae",
@@ -2258,7 +2376,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Excelsior ou Empate",
             "odd": 1.24,
             "win_rate": 95
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "d2c98fd1913d8f778720acc433f16680",
@@ -2277,7 +2396,8 @@ window.LIVE_GAMES = [
             "market": "Vencer: PSV Eindhoven",
             "odd": 1.35,
             "win_rate": 81
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "a67e0d81e2f1c33b2343568a325a526c",
@@ -2296,7 +2416,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: NEC Nijmegen ou Empate",
             "odd": 1.25,
             "win_rate": 95
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "1e6718ecabdbb1c702043bbb9b0ea671",
@@ -2315,7 +2436,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Heerenveen ou Empate",
             "odd": 1.21,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "97937ec030e4b6f5f5c5068b0f58b938",
@@ -2334,7 +2456,8 @@ window.LIVE_GAMES = [
             "market": "Vencer: FC Twente Enschede",
             "odd": 1.54,
             "win_rate": 71
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "d13d505a35ef7829f9d2da48195be769",
@@ -2353,7 +2476,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: FC Utrecht ou Empate",
             "odd": 1.11,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "e182dfdeee697e950633e24242451d07",
@@ -2370,9 +2494,10 @@ window.LIVE_GAMES = [
         },
         "tip": {
             "market": "Vencer: Feyenoord",
-            "odd": 1.4,
-            "win_rate": 78
-        }
+            "odd": 1.39,
+            "win_rate": 79
+        },
+        "status": "PENDING"
     },
     {
         "id": "439ecd9d918a85824ff8b3ffb71e0aca",
@@ -2391,7 +2516,8 @@ window.LIVE_GAMES = [
             "market": "Vencer: AZ Alkmaar",
             "odd": 1.28,
             "win_rate": 85
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "45f2d80fc05d2c7ecc02a8967ce4742d",
@@ -2410,7 +2536,8 @@ window.LIVE_GAMES = [
             "market": "Vencer: Club Brugge",
             "odd": 1.52,
             "win_rate": 72
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "0062626005577a4671024034604718e1",
@@ -2418,7 +2545,7 @@ window.LIVE_GAMES = [
         "league": "Soccer Uefa Champs League",
         "date": "2026-01-20T17:45:00Z",
         "teamA": {
-            "name": "Bod\u00f8/Glimt",
+            "name": "Bodø/Glimt",
             "logo": "https://upload.wikimedia.org/wikipedia/en/8/8d/FK_Bodo_Glimt_logo.svg"
         },
         "teamB": {
@@ -2429,7 +2556,8 @@ window.LIVE_GAMES = [
             "market": "Vencer: Manchester City",
             "odd": 1.36,
             "win_rate": 80
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "70cc2bd5c6535c92f15f6d27b8155872",
@@ -2448,7 +2576,8 @@ window.LIVE_GAMES = [
             "market": "Vencer: Real Madrid",
             "odd": 1.22,
             "win_rate": 90
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "e4b899f400ea7e37d631b5c3e68ea27c",
@@ -2467,7 +2596,8 @@ window.LIVE_GAMES = [
             "market": "Vencer: Villarreal",
             "odd": 1.5,
             "win_rate": 73
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "0e4c3bea84ca60fda95b633b84d7d075",
@@ -2486,7 +2616,8 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "7d2fe02a7565e8c4fa25afc5064019f0",
@@ -2505,7 +2636,8 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "2d723d0b3c0ee1ae1318ed6d88a09443",
@@ -2524,7 +2656,8 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "c10eb37e79a5e2baa9ea2892a8e9d3ba",
@@ -2543,7 +2676,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Napoli ou Empate",
             "odd": 1.18,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "1c5e4f1645e25be88c38e3379a72bd7e",
@@ -2562,7 +2696,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Paris Saint Germain ou Empate",
             "odd": 1.25,
             "win_rate": 94
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "63fc0f1052c8c467e9905219f4a32c18",
@@ -2574,14 +2709,15 @@ window.LIVE_GAMES = [
             "logo": "https://upload.wikimedia.org/wikipedia/commons/2/20/Galatasaray_Sports_Club_Logo.svg"
         },
         "teamB": {
-            "name": "Atl\u00e9tico Madrid",
+            "name": "Atlético Madrid",
             "logo": "https://upload.wikimedia.org/wikipedia/en/c/c1/Atletico_Madrid_logo.svg"
         },
         "tip": {
-            "market": "Dupla Chance: Atl\u00e9tico Madrid ou Empate",
+            "market": "Dupla Chance: Atlético Madrid ou Empate",
             "odd": 1.29,
             "win_rate": 92
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "9a8721b75969f63890beaaf1b94691df",
@@ -2589,7 +2725,7 @@ window.LIVE_GAMES = [
         "league": "Soccer Uefa Champs League",
         "date": "2026-01-21T17:45:00Z",
         "teamA": {
-            "name": "Qaraba\u011f FK",
+            "name": "Qarabağ FK",
             "logo": "https://upload.wikimedia.org/wikipedia/en/f/fe/Qaraba%C4%9F_FK_logo.svg"
         },
         "teamB": {
@@ -2600,7 +2736,8 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "5f91b2fbdc81daee92bb07ee2cef9c72",
@@ -2619,7 +2756,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Atalanta BC ou Empate",
             "odd": 1.17,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "05ec25b3b352774ec071034c034d232d",
@@ -2635,10 +2773,11 @@ window.LIVE_GAMES = [
             "logo": "https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg"
         },
         "tip": {
-            "market": "Gol a Qualquer Momento: Lewandowski",
-            "odd": 1.85,
-            "win_rate": 93
-        }
+            "market": "Vencer: Barcelona",
+            "odd": 1.34,
+            "win_rate": 82
+        },
+        "status": "PENDING"
     },
     {
         "id": "5879a7f84497eec3094ae44a8d31cd3c",
@@ -2657,7 +2796,8 @@ window.LIVE_GAMES = [
             "market": "Vencer: Bayern Munich",
             "odd": 1.08,
             "win_rate": 98
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "8ecaa3eaae3d83a4f086079b187a8c59",
@@ -2676,7 +2816,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Juventus ou Empate",
             "odd": 1.17,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "1735169893ed02807bfe82b909f2d888",
@@ -2692,10 +2833,11 @@ window.LIVE_GAMES = [
             "logo": "https://upload.wikimedia.org/wikipedia/en/9/9b/Pafos_FC_crest.svg"
         },
         "tip": {
-            "market": "Gol a Qualquer Momento: Palmer",
-            "odd": 1.85,
-            "win_rate": 87
-        }
+            "market": "Vencer: Chelsea",
+            "odd": 1.11,
+            "win_rate": 98
+        },
+        "status": "PENDING"
     },
     {
         "id": "89ff0177cc469b9f854ee8e57d1544ae",
@@ -2714,7 +2856,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Liverpool ou Empate",
             "odd": 1.21,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "b0ba4f8288a19962cc5de754d9f14660",
@@ -2733,83 +2876,8 @@ window.LIVE_GAMES = [
             "market": "Vencer: Newcastle United",
             "odd": 1.38,
             "win_rate": 79
-        }
-    },
-    {
-        "id": "230cc244629492f81d1e9b5b482ea05a",
-        "sport": "basketball",
-        "league": "NBA",
-        "date": "2026-01-12T01:11:00Z",
-        "teamA": {
-            "name": "Denver Nuggets",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/c/cf/George_karl.jpg"
         },
-        "teamB": {
-            "name": "Milwaukee Bucks",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/4/48/Milwaukee_Bucks_2006_Jersey_logo.svg"
-        },
-        "tip": {
-            "market": "Vencer: Denver Nuggets",
-            "odd": 1.03,
-            "win_rate": 98
-        }
-    },
-    {
-        "id": "da88ede61ab04b8f3bb31d18bb33b03e",
-        "sport": "basketball",
-        "league": "NBA",
-        "date": "2026-01-12T01:11:00Z",
-        "teamA": {
-            "name": "Phoenix Suns",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/4/41/Phoenix_Suns_Arena.png"
-        },
-        "teamB": {
-            "name": "Washington Wizards",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/1/16/Washington_Wizards_logo_%282011-2015%29.svg"
-        },
-        "tip": {
-            "market": "Vencer: Phoenix Suns",
-            "odd": 1.03,
-            "win_rate": 98
-        }
-    },
-    {
-        "id": "337fdea46a5e7e784adb5058e364491e",
-        "sport": "basketball",
-        "league": "NBA",
-        "date": "2026-01-12T01:42:00Z",
-        "teamA": {
-            "name": "Golden State Warriors",
-            "logo": "https://upload.wikimedia.org/wikipedia/en/0/01/Golden_State_Warriors_logo.svg"
-        },
-        "teamB": {
-            "name": "Atlanta Hawks",
-            "logo": "https://upload.wikimedia.org/wikipedia/en/2/24/Atlanta_Hawks_logo.svg"
-        },
-        "tip": {
-            "market": "Vencer: Atlanta Hawks",
-            "odd": 1.04,
-            "win_rate": 98
-        }
-    },
-    {
-        "id": "36fcfef1bd63f4ffa34b87ba9251e130",
-        "sport": "basketball",
-        "league": "NBA",
-        "date": "2026-01-12T02:10:00Z",
-        "teamA": {
-            "name": "Sacramento Kings",
-            "logo": "https://upload.wikimedia.org/wikipedia/en/c/c7/SacramentoKings.svg"
-        },
-        "teamB": {
-            "name": "Houston Rockets",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Houston_Rockets_Wordmark_Logo_2003-current.png"
-        },
-        "tip": {
-            "market": "Vencer: Houston Rockets",
-            "odd": 1.42,
-            "win_rate": 77
-        }
+        "status": "PENDING"
     },
     {
         "id": "37ad3adb35ed4728a96f52ce3ef3be12",
@@ -2828,7 +2896,8 @@ window.LIVE_GAMES = [
             "market": "Vencer: Cleveland Cavaliers",
             "odd": 1.13,
             "win_rate": 97
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "dbad91dbabd7e090fe6d6ad58912cd58",
@@ -2845,9 +2914,10 @@ window.LIVE_GAMES = [
         },
         "tip": {
             "market": "Vencer: Boston Celtics",
-            "odd": 1.4,
-            "win_rate": 78
-        }
+            "odd": 1.37,
+            "win_rate": 80
+        },
+        "status": "PENDING"
     },
     {
         "id": "da3e1c4e31d6ac7036e05f00a60ad5f2",
@@ -2864,9 +2934,10 @@ window.LIVE_GAMES = [
         },
         "tip": {
             "market": "Dupla Chance: Philadelphia 76ers ou Empate",
-            "odd": 1.08,
+            "odd": 1.11,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "f0e102ee7c0722665cde7d3a4a4dfe1c",
@@ -2882,10 +2953,11 @@ window.LIVE_GAMES = [
             "logo": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Brooklyn_nets_logo_alternate_2025.png"
         },
         "tip": {
-            "market": "Dupla Chance: Dallas Mavericks ou Empate",
-            "odd": 1.03,
-            "win_rate": 96
-        }
+            "market": "Vencer: Dallas Mavericks",
+            "odd": 1.5,
+            "win_rate": 73
+        },
+        "status": "PENDING"
     },
     {
         "id": "09fb007ac62ac7d2e08db4357be2417c",
@@ -2901,10 +2973,11 @@ window.LIVE_GAMES = [
             "logo": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Los_Angeles_Lakers_logo.svg"
         },
         "tip": {
-            "market": "Escanteios: Mais de 8.5",
-            "odd": 1.65,
-            "win_rate": 91
-        }
+            "market": "Vencer: Los Angeles Lakers",
+            "odd": 1.24,
+            "win_rate": 88
+        },
+        "status": "PENDING"
     },
     {
         "id": "2532e809417a1fed704519de12ef68c0",
@@ -2923,26 +2996,8 @@ window.LIVE_GAMES = [
             "market": "Vencer: Los Angeles Clippers",
             "odd": 1.47,
             "win_rate": 74
-        }
-    },
-    {
-        "id": "d48193fef08ca62ade864612a40e2a4e",
-        "sport": "american_football",
-        "league": "Americanfootball Nfl",
-        "date": "2026-01-12T01:16:32Z",
-        "teamA": {
-            "name": "New England Patriots",
-            "logo": "https://upload.wikimedia.org/wikipedia/en/b/b9/New_England_Patriots_logo.svg"
         },
-        "teamB": {
-            "name": "Los Angeles Chargers",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Los_Angeles_Chargers_2020_wordmark.svg"
-        },
-        "tip": {
-            "market": "Vencer: New England Patriots",
-            "odd": 1.06,
-            "win_rate": 98
-        }
+        "status": "PENDING"
     },
     {
         "id": "932813a3782921beb4f7fecdf247865e",
@@ -2961,7 +3016,28 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Houston Texans ou Empate",
             "odd": 1.07,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
+    },
+    {
+        "id": "ea794ebbcb7cbcaf7753c65d0f1a15c8",
+        "sport": "american_football",
+        "league": "Americanfootball Nfl",
+        "date": "2026-01-18T18:00:00Z",
+        "teamA": {
+            "name": "Denver Broncos",
+            "logo": "https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg"
+        },
+        "teamB": {
+            "name": "Buffalo Bills",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/7/77/Buffalo_Bills_classic_logo.svg"
+        },
+        "tip": {
+            "market": "Dupla Chance: Buffalo Bills ou Empate",
+            "odd": 1.13,
+            "win_rate": 96
+        },
+        "status": "PENDING"
     },
     {
         "id": "3cb03f5ff8d371b94e8b55c7e58b7a34",
@@ -2980,7 +3056,8 @@ window.LIVE_GAMES = [
             "market": "Vencer: Los Angeles Rams",
             "odd": 1.53,
             "win_rate": 71
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "9161553abe07f4eadf12b071f4f6e3ac",
@@ -2999,26 +3076,8 @@ window.LIVE_GAMES = [
             "market": "Vencer: Seattle Seahawks",
             "odd": 1.31,
             "win_rate": 83
-        }
-    },
-    {
-        "id": "ad845e4428af5e3af90345614494e2df",
-        "sport": "hockey",
-        "league": "Icehockey Nhl",
-        "date": "2026-01-12T01:08:48Z",
-        "teamA": {
-            "name": "San Jose Sharks",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/2/21/San_Jose_Sharks_2021_Wordmark_Logo.png"
         },
-        "teamB": {
-            "name": "Vegas Golden Knights",
-            "logo": "https://upload.wikimedia.org/wikipedia/en/a/ac/Vegas_Golden_Knights_logo.svg"
-        },
-        "tip": {
-            "market": "Escanteios: Mais de 8.5",
-            "odd": 1.65,
-            "win_rate": 91
-        }
+        "status": "PENDING"
     },
     {
         "id": "02e80873e761914fd9c532312dac1e97",
@@ -3037,7 +3096,8 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "29c74c2fcceee1130a8f58369d85d090",
@@ -3056,7 +3116,8 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "be73a9a7acc4f4c1bb69b7640c3127cf",
@@ -3075,7 +3136,8 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "8045afd7d79ea33dd4b10755eb8c5c11",
@@ -3094,7 +3156,8 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "e0956ec0d61f856f53198d5ca899ee5e",
@@ -3102,7 +3165,7 @@ window.LIVE_GAMES = [
         "league": "Icehockey Nhl",
         "date": "2026-01-13T00:40:00Z",
         "teamA": {
-            "name": "Montr\u00e9al Canadiens",
+            "name": "Montréal Canadiens",
             "logo": "https://upload.wikimedia.org/wikipedia/commons/6/64/Logo_Canadiens_de_Montr%C3%A9al_1909-1910.png"
         },
         "teamB": {
@@ -3110,10 +3173,11 @@ window.LIVE_GAMES = [
             "logo": "https://upload.wikimedia.org/wikipedia/commons/c/cf/21-210794_vancouver-canucks-1978-97-old-canucks-logo.png"
         },
         "tip": {
-            "market": "Dupla Chance: Montr\u00e9al Canadiens ou Empate",
+            "market": "Dupla Chance: Montréal Canadiens ou Empate",
             "odd": 1.29,
             "win_rate": 92
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "349016860e9dfe1dcc10e3cc576cf079",
@@ -3132,7 +3196,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Minnesota Wild ou Empate",
             "odd": 1.31,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "0fdb8568763c5c0efe790cd5c63aa7a3",
@@ -3151,7 +3216,8 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "80061df12711097dadc44adcbb257f24",
@@ -3170,7 +3236,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Colorado Avalanche ou Empate",
             "odd": 1.23,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "9125a94bdb2aca62d70e9626c9e84796",
@@ -3189,7 +3256,8 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "5c4d351bec29968882252587b5b5be5a",
@@ -3198,17 +3266,18 @@ window.LIVE_GAMES = [
         "date": "2026-01-17T16:00:00Z",
         "teamA": {
             "name": "Karol Rosa",
-            "logo": "https://ui-avatars.com/api/?name=Karol%20Rosa&background=3369f4&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Karol%20Rosa&background=58878f&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Deniz Ilbay",
-            "logo": "https://ui-avatars.com/api/?name=Deniz%20Ilbay&background=94e79f&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Deniz%20Ilbay&background=2141f0&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Deniz Ilbay",
             "odd": 1.31,
             "win_rate": 83
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "7f0ddc5a30d6971afb8c5da8185aa527",
@@ -3217,17 +3286,18 @@ window.LIVE_GAMES = [
         "date": "2026-01-17T16:00:00Z",
         "teamA": {
             "name": "James Hendin",
-            "logo": "https://ui-avatars.com/api/?name=James%20Hendin&background=b863ed&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=James%20Hendin&background=3af71d&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Gjoni Palokaj",
-            "logo": "https://ui-avatars.com/api/?name=Gjoni%20Palokaj&background=53c224&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Gjoni%20Palokaj&background=b989ad&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Dupla Chance: Gjoni Palokaj ou Empate",
             "odd": 1.1,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "72132e8dfdebc7dc8d48d87803204c47",
@@ -3236,17 +3306,18 @@ window.LIVE_GAMES = [
         "date": "2026-01-17T16:00:00Z",
         "teamA": {
             "name": "Kamil Oniszczuk",
-            "logo": "https://ui-avatars.com/api/?name=Kamil%20Oniszczuk&background=6c2b0b&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Kamil%20Oniszczuk&background=418286&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Marek Bartl",
-            "logo": "https://ui-avatars.com/api/?name=Marek%20Bartl&background=89b250&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Marek%20Bartl&background=763f00&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Dupla Chance: Kamil Oniszczuk ou Empate",
             "odd": 1.06,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "3508af80ad41c3525ce322bea5772abc",
@@ -3255,17 +3326,18 @@ window.LIVE_GAMES = [
         "date": "2026-01-17T16:00:00Z",
         "teamA": {
             "name": "Krzysztof Jotko",
-            "logo": "https://ui-avatars.com/api/?name=Krzysztof%20Jotko&background=18f3e0&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Krzysztof%20Jotko&background=fa09cf&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Kerim Engizek",
-            "logo": "https://ui-avatars.com/api/?name=Kerim%20Engizek&background=7ef7fb&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Kerim%20Engizek&background=427352&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Dupla Chance: Kerim Engizek ou Empate",
             "odd": 1.14,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "f10e3eb9e0073b2c007b4b1ca20690a6",
@@ -3274,7 +3346,7 @@ window.LIVE_GAMES = [
         "date": "2026-01-24T20:00:00Z",
         "teamA": {
             "name": "Alex Hernandez",
-            "logo": "https://ui-avatars.com/api/?name=Alex%20Hernandez&background=e973a3&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Alex%20Hernandez&background=44ea05&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Michael Johnson",
@@ -3284,7 +3356,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Alex Hernandez ou Empate",
             "odd": 1.04,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "b57875a99edbd0cfefb4d0381e3eb8d5",
@@ -3297,13 +3370,14 @@ window.LIVE_GAMES = [
         },
         "teamB": {
             "name": "Alex Perez",
-            "logo": "https://ui-avatars.com/api/?name=Alex%20Perez&background=278b0e&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Alex%20Perez&background=627226&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Charles Johnson",
             "odd": 1.49,
             "win_rate": 73
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "8a864d26e8c83f8c0cc3e61709623627",
@@ -3312,17 +3386,18 @@ window.LIVE_GAMES = [
         "date": "2026-01-24T20:00:00Z",
         "teamA": {
             "name": "Andrey Pulyaev",
-            "logo": "https://ui-avatars.com/api/?name=Andrey%20Pulyaev&background=3503bb&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Andrey%20Pulyaev&background=20a795&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Ateba Gautier",
-            "logo": "https://ui-avatars.com/api/?name=Ateba%20Gautier&background=b7fce8&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Ateba%20Gautier&background=2b933a&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Ateba Gautier",
             "odd": 1.11,
             "win_rate": 98
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "a5bb09372b17f28a8d6d9d4cdf30c0ea",
@@ -3331,17 +3406,18 @@ window.LIVE_GAMES = [
         "date": "2026-01-24T20:00:00Z",
         "teamA": {
             "name": "Cameron Smotherman",
-            "logo": "https://ui-avatars.com/api/?name=Cameron%20Smotherman&background=42edb2&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Cameron%20Smotherman&background=fbd3f1&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Ricky Turcios",
-            "logo": "https://ui-avatars.com/api/?name=Ricky%20Turcios&background=b461e1&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Ricky%20Turcios&background=ed4f18&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Cameron Smotherman",
             "odd": 1.54,
             "win_rate": 71
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "73fc81b5494a3a93b4a305f2a932c9e0",
@@ -3350,17 +3426,18 @@ window.LIVE_GAMES = [
         "date": "2026-01-24T20:00:00Z",
         "teamA": {
             "name": "Deiveson Figueiredo",
-            "logo": "https://ui-avatars.com/api/?name=Deiveson%20Figueiredo&background=7aaa01&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Deiveson%20Figueiredo&background=e36cda&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Umar Nurmagomedov",
-            "logo": "https://ui-avatars.com/api/?name=Umar%20Nurmagomedov&background=e98efd&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Umar%20Nurmagomedov&background=974c25&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Umar Nurmagomedov",
             "odd": 1.06,
             "win_rate": 98
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "4a8e78b966cb19d9e98891b227c16c40",
@@ -3369,17 +3446,18 @@ window.LIVE_GAMES = [
         "date": "2026-01-24T20:00:00Z",
         "teamA": {
             "name": "Denzel Freeman",
-            "logo": "https://ui-avatars.com/api/?name=Denzel%20Freeman&background=4f1996&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Denzel%20Freeman&background=353115&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Josh Hokit",
-            "logo": "https://ui-avatars.com/api/?name=Josh%20Hokit&background=651f0b&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Josh%20Hokit&background=8cd4d5&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Josh Hokit",
             "odd": 1.43,
             "win_rate": 76
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "efed06d0c324558ba208367207fe28e4",
@@ -3388,17 +3466,18 @@ window.LIVE_GAMES = [
         "date": "2026-01-24T20:00:00Z",
         "teamA": {
             "name": "Modestas Bukauskas",
-            "logo": "https://ui-avatars.com/api/?name=Modestas%20Bukauskas&background=df476b&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Modestas%20Bukauskas&background=47a6d9&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Nikita Krylov",
-            "logo": "https://ui-avatars.com/api/?name=Nikita%20Krylov&background=54dc9f&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Nikita%20Krylov&background=165bac&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Dupla Chance: Modestas Bukauskas ou Empate",
             "odd": 1.07,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "3ff32d63cfbe9a63a95759f992066b8f",
@@ -3407,7 +3486,7 @@ window.LIVE_GAMES = [
         "date": "2026-01-24T20:00:00Z",
         "teamA": {
             "name": "Rose Namajunas",
-            "logo": "https://ui-avatars.com/api/?name=Rose%20Namajunas&background=056026&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Rose%20Namajunas&background=85372e&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Natalia Silva",
@@ -3417,7 +3496,8 @@ window.LIVE_GAMES = [
             "market": "Vencer: Natalia Silva",
             "odd": 1.22,
             "win_rate": 90
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "f8ac6abe78a8cff6f46c82b00197abc7",
@@ -3430,13 +3510,14 @@ window.LIVE_GAMES = [
         },
         "teamB": {
             "name": "Adam Fugitt",
-            "logo": "https://ui-avatars.com/api/?name=Adam%20Fugitt&background=fff7c2&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Adam%20Fugitt&background=6f9696&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Ty Miller",
             "odd": 1.28,
             "win_rate": 85
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "3beecafd9be37421bb0cc9eb5667f698",
@@ -3455,7 +3536,8 @@ window.LIVE_GAMES = [
             "market": "Vencer: Jean Silva",
             "odd": 1.36,
             "win_rate": 80
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "438ce552ac319d2641eb1bf846c09ece",
@@ -3464,17 +3546,18 @@ window.LIVE_GAMES = [
         "date": "2026-01-25T02:00:00Z",
         "teamA": {
             "name": "Waldo Cortes-Acosta",
-            "logo": "https://ui-avatars.com/api/?name=Waldo%20Cortes-Acosta&background=50424a&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Waldo%20Cortes-Acosta&background=aa0b49&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Derrick Lewis",
-            "logo": "https://ui-avatars.com/api/?name=Derrick%20Lewis&background=97b1ed&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Derrick%20Lewis&background=f44b09&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Waldo Cortes-Acosta",
             "odd": 1.31,
             "win_rate": 83
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "7009a09a9ef0e74789c7ccc72997e95f",
@@ -3483,17 +3566,18 @@ window.LIVE_GAMES = [
         "date": "2026-01-25T02:00:00Z",
         "teamA": {
             "name": "Sean O'Malley",
-            "logo": "https://ui-avatars.com/api/?name=Sean%20O%27Malley&background=b6b203&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Sean%20O%27Malley&background=015e8d&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Song Yadong",
-            "logo": "https://ui-avatars.com/api/?name=Song%20Yadong&background=431818&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Song%20Yadong&background=929b34&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Sean O'Malley",
             "odd": 1.5,
             "win_rate": 73
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "1b337ecb89983719ba8ce019c4ebd03b",
@@ -3502,17 +3586,18 @@ window.LIVE_GAMES = [
         "date": "2026-01-25T02:30:00Z",
         "teamA": {
             "name": "Kayla Harrison",
-            "logo": "https://ui-avatars.com/api/?name=Kayla%20Harrison&background=c744e0&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Kayla%20Harrison&background=43e5f0&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Amanda Nunes",
-            "logo": "https://ui-avatars.com/api/?name=Amanda%20Nunes&background=e9ee21&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Amanda%20Nunes&background=f05279&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Kayla Harrison",
             "odd": 1.48,
             "win_rate": 74
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "6a469f274a610f9e871d6ad1f61dee39",
@@ -3521,17 +3606,18 @@ window.LIVE_GAMES = [
         "date": "2026-01-25T04:30:00Z",
         "teamA": {
             "name": "Justin Gaethje",
-            "logo": "https://ui-avatars.com/api/?name=Justin%20Gaethje&background=6f750c&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Justin%20Gaethje&background=650787&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Paddy Pimblett",
-            "logo": "https://ui-avatars.com/api/?name=Paddy%20Pimblett&background=fa0968&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Paddy%20Pimblett&background=dc5c9b&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Paddy Pimblett",
             "odd": 1.45,
             "win_rate": 75
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "936b0e222a5ae8e8a0f62679bc0594fc",
@@ -3540,17 +3626,18 @@ window.LIVE_GAMES = [
         "date": "2026-01-31T22:00:00Z",
         "teamA": {
             "name": "Quillan Salkilld",
-            "logo": "https://ui-avatars.com/api/?name=Quillan%20Salkilld&background=131cd3&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Quillan%20Salkilld&background=74fdd5&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Zhu Rong",
-            "logo": "https://ui-avatars.com/api/?name=Zhu%20Rong&background=70fe84&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Zhu%20Rong&background=9b608b&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Quillan Salkilld",
             "odd": 1.43,
             "win_rate": 76
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "2de8b2b18154dca072c7e633642d99c0",
@@ -3559,17 +3646,18 @@ window.LIVE_GAMES = [
         "date": "2026-01-31T23:15:00Z",
         "teamA": {
             "name": "Jacob Malkoun",
-            "logo": "https://ui-avatars.com/api/?name=Jacob%20Malkoun&background=4ceb04&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Jacob%20Malkoun&background=c29ef5&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Torrez Finney",
-            "logo": "https://ui-avatars.com/api/?name=Torrez%20Finney&background=0ec5f0&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Torrez%20Finney&background=535ceb&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Dupla Chance: Jacob Malkoun ou Empate",
             "odd": 1.09,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "1ee9e96f6eee947a78970d581019a92b",
@@ -3578,17 +3666,18 @@ window.LIVE_GAMES = [
         "date": "2026-01-31T23:45:00Z",
         "teamA": {
             "name": "Cam Rowston",
-            "logo": "https://ui-avatars.com/api/?name=Cam%20Rowston&background=7f7dbc&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Cam%20Rowston&background=4d64e9&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Cody Brundage",
-            "logo": "https://ui-avatars.com/api/?name=Cody%20Brundage&background=1b4a32&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Cody%20Brundage&background=209caf&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Cam Rowston",
             "odd": 1.33,
             "win_rate": 82
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "bef6aa7ae59eaba487b44bc90b58257b",
@@ -3597,17 +3686,18 @@ window.LIVE_GAMES = [
         "date": "2026-02-01T01:15:00Z",
         "teamA": {
             "name": "Kaan Ofli",
-            "logo": "https://ui-avatars.com/api/?name=Kaan%20Ofli&background=799eb6&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Kaan%20Ofli&background=63bf1f&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Yi Zha",
-            "logo": "https://ui-avatars.com/api/?name=Yi%20Zha&background=0b549a&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Yi%20Zha&background=ef5f7a&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Yi Zha",
             "odd": 1.45,
             "win_rate": 75
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "2bd33666894f41edb233a66f4e90ac34",
@@ -3616,17 +3706,18 @@ window.LIVE_GAMES = [
         "date": "2026-02-01T01:45:00Z",
         "teamA": {
             "name": "Junior Tafa",
-            "logo": "https://ui-avatars.com/api/?name=Junior%20Tafa&background=965cd8&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Junior%20Tafa&background=aba781&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Billy Elekana",
-            "logo": "https://ui-avatars.com/api/?name=Billy%20Elekana&background=10fbec&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Billy%20Elekana&background=a98b9a&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Billy Elekana",
             "odd": 1.48,
             "win_rate": 74
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "b6e618c0e0538c90d3cf4e40bfba03ae",
@@ -3635,17 +3726,18 @@ window.LIVE_GAMES = [
         "date": "2026-02-01T02:15:00Z",
         "teamA": {
             "name": "Jonathan Micallef",
-            "logo": "https://ui-avatars.com/api/?name=Jonathan%20Micallef&background=837c4d&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Jonathan%20Micallef&background=7b3e5a&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Oban Elliott",
-            "logo": "https://ui-avatars.com/api/?name=Oban%20Elliott&background=fc8dd8&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Oban%20Elliott&background=5d8949&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Dupla Chance: Jonathan Micallef ou Empate",
             "odd": 1.12,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "4465cdab759d5b9819f68732a2e999a0",
@@ -3654,17 +3746,18 @@ window.LIVE_GAMES = [
         "date": "2026-02-01T02:30:00Z",
         "teamA": {
             "name": "Jim Crute",
-            "logo": "https://ui-avatars.com/api/?name=Jim%20Crute&background=228cbe&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Jim%20Crute&background=35d5f4&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Dustin Jacoby",
-            "logo": "https://ui-avatars.com/api/?name=Dustin%20Jacoby&background=e2afdf&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Dustin%20Jacoby&background=6f43c2&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Dupla Chance: Dustin Jacoby ou Empate",
             "odd": 1.1,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "fdb9ea14f1cb6fc8c84b0f02c36e41e6",
@@ -3673,17 +3766,18 @@ window.LIVE_GAMES = [
         "date": "2026-02-01T03:00:00Z",
         "teamA": {
             "name": "Tai Tuivasa",
-            "logo": "https://ui-avatars.com/api/?name=Tai%20Tuivasa&background=1c4c5e&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Tai%20Tuivasa&background=23d4f9&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Tallison Teixeira",
-            "logo": "https://ui-avatars.com/api/?name=Tallison%20Teixeira&background=8769ae&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Tallison%20Teixeira&background=036a9a&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Tallison Teixeira",
             "odd": 1.33,
             "win_rate": 82
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "a13daf81b483dbedf6ccb3d01488b50f",
@@ -3692,17 +3786,18 @@ window.LIVE_GAMES = [
         "date": "2026-02-01T03:20:00Z",
         "teamA": {
             "name": "Rafael Fiziev",
-            "logo": "https://ui-avatars.com/api/?name=Rafael%20Fiziev&background=a6eb6e&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Rafael%20Fiziev&background=a47d22&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Mauricio Ruffy",
-            "logo": "https://ui-avatars.com/api/?name=Mauricio%20Ruffy&background=d94de3&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Mauricio%20Ruffy&background=e2c8ce&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Dupla Chance: Rafael Fiziev ou Empate",
             "odd": 1.12,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "eae50f3433252b39cec172f74391d6a9",
@@ -3711,17 +3806,18 @@ window.LIVE_GAMES = [
         "date": "2026-02-01T03:45:00Z",
         "teamA": {
             "name": "Daniel Hooker",
-            "logo": "https://ui-avatars.com/api/?name=Daniel%20Hooker&background=11ea0d&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Daniel%20Hooker&background=cf6daa&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Benoit Saint-Denis",
-            "logo": "https://ui-avatars.com/api/?name=Benoit%20Saint-Denis&background=c519ec&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Benoit%20Saint-Denis&background=81bb2b&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Benoit Saint-Denis",
             "odd": 1.28,
             "win_rate": 85
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "d7299ef4006d13e258815ce590b1661c",
@@ -3730,7 +3826,7 @@ window.LIVE_GAMES = [
         "date": "2026-02-01T04:15:00Z",
         "teamA": {
             "name": "Alex Volkanovski",
-            "logo": "https://ui-avatars.com/api/?name=Alex%20Volkanovski&background=b6dba5&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Alex%20Volkanovski&background=4b8559&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Diego Lopes",
@@ -3740,7 +3836,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Alex Volkanovski ou Empate",
             "odd": 1.06,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "33d7e1d3f664482a2ecb4fbd6e6f60f1",
@@ -3749,17 +3846,18 @@ window.LIVE_GAMES = [
         "date": "2026-02-22T05:00:00Z",
         "teamA": {
             "name": "Sean Strickland",
-            "logo": "https://ui-avatars.com/api/?name=Sean%20Strickland&background=c3ee8e&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Sean%20Strickland&background=0fcc48&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Anthony Hernandez",
-            "logo": "https://ui-avatars.com/api/?name=Anthony%20Hernandez&background=b4c5cd&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Anthony%20Hernandez&background=f48e12&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Anthony Hernandez",
             "odd": 1.44,
             "win_rate": 76
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "e9653214c40ffd17a62b8f6e3a12a9c2",
@@ -3768,17 +3866,18 @@ window.LIVE_GAMES = [
         "date": "2026-03-08T04:30:00Z",
         "teamA": {
             "name": "Max Holloway",
-            "logo": "https://ui-avatars.com/api/?name=Max%20Holloway&background=5be4b2&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Max%20Holloway&background=c83f3a&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Charles Oliveira",
-            "logo": "https://ui-avatars.com/api/?name=Charles%20Oliveira&background=2a6a4a&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Charles%20Oliveira&background=50f46a&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Max Holloway",
             "odd": 1.44,
             "win_rate": 76
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "8b63d68f5dbaad92376aaa47cc1ae15f",
@@ -3787,17 +3886,18 @@ window.LIVE_GAMES = [
         "date": "2026-03-29T02:00:00Z",
         "teamA": {
             "name": "Charles Oliveira",
-            "logo": "https://ui-avatars.com/api/?name=Charles%20Oliveira&background=2a6a4a&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Charles%20Oliveira&background=50f46a&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Max Holloway",
-            "logo": "https://ui-avatars.com/api/?name=Max%20Holloway&background=5be4b2&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Max%20Holloway&background=c83f3a&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Max Holloway",
             "odd": 1.49,
             "win_rate": 73
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "f1fb488f82150df01e4c09f56f5efe09",
@@ -3806,17 +3906,18 @@ window.LIVE_GAMES = [
         "date": "2026-06-02T02:00:00Z",
         "teamA": {
             "name": "Islam Makhachev",
-            "logo": "https://ui-avatars.com/api/?name=Islam%20Makhachev&background=be22f4&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Islam%20Makhachev&background=381309&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Ilia Topuria",
-            "logo": "https://ui-avatars.com/api/?name=Ilia%20Topuria&background=62dd81&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Ilia%20Topuria&background=b403b6&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Islam Makhachev",
             "odd": 1.43,
             "win_rate": 76
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "c8dbccd9eda383d9c76dc15e4a3c96a7",
@@ -3825,17 +3926,18 @@ window.LIVE_GAMES = [
         "date": "2026-06-14T02:00:00Z",
         "teamA": {
             "name": "Alex Pereira",
-            "logo": "https://ui-avatars.com/api/?name=Alex%20Pereira&background=281cdd&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Alex%20Pereira&background=cdb327&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Carlos Ulberg",
-            "logo": "https://ui-avatars.com/api/?name=Carlos%20Ulberg&background=34adca&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Carlos%20Ulberg&background=8fce55&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Alex Pereira",
             "odd": 1.54,
             "win_rate": 71
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "b1a902b892f239a0404c75781af22e87",
@@ -3844,17 +3946,18 @@ window.LIVE_GAMES = [
         "date": "2026-06-14T02:00:00Z",
         "teamA": {
             "name": "Alex Pereira",
-            "logo": "https://ui-avatars.com/api/?name=Alex%20Pereira&background=281cdd&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Alex%20Pereira&background=cdb327&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Jiri Prochazka",
-            "logo": "https://ui-avatars.com/api/?name=Jiri%20Prochazka&background=2449f2&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Jiri%20Prochazka&background=1595e2&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Alex Pereira",
             "odd": 1.33,
             "win_rate": 82
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "e7a638f5736f2d0edc762b56fc404f74",
@@ -3863,17 +3966,18 @@ window.LIVE_GAMES = [
         "date": "2026-06-14T02:00:00Z",
         "teamA": {
             "name": "Alex Pereira",
-            "logo": "https://ui-avatars.com/api/?name=Alex%20Pereira&background=281cdd&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Alex%20Pereira&background=cdb327&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Jon Jones",
-            "logo": "https://ui-avatars.com/api/?name=Jon%20Jones&background=8eb03a&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Jon%20Jones&background=269721&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Jon Jones",
             "odd": 1.19,
             "win_rate": 92
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "a3c203ddf1665927314db9cc73ede377",
@@ -3882,17 +3986,18 @@ window.LIVE_GAMES = [
         "date": "2026-06-14T02:00:00Z",
         "teamA": {
             "name": "Magomed Ankalaev",
-            "logo": "https://ui-avatars.com/api/?name=Magomed%20Ankalaev&background=6ef1eb&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Magomed%20Ankalaev&background=5c659f&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Carlos Ulberg",
-            "logo": "https://ui-avatars.com/api/?name=Carlos%20Ulberg&background=34adca&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Carlos%20Ulberg&background=8fce55&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Magomed Ankalaev",
             "odd": 1.4,
             "win_rate": 78
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "891965c02d665af81f9308428b8f33e7",
@@ -3901,7 +4006,7 @@ window.LIVE_GAMES = [
         "date": "2026-06-27T14:00:00Z",
         "teamA": {
             "name": "Valentina Shevchenko",
-            "logo": "https://ui-avatars.com/api/?name=Valentina%20Shevchenko&background=c11158&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Valentina%20Shevchenko&background=8405dc&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Natalia Silva",
@@ -3911,7 +4016,8 @@ window.LIVE_GAMES = [
             "market": "Dupla Chance: Valentina Shevchenko ou Empate",
             "odd": 1.03,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "ee37a39c1d8a992a65c6ff399fa48c63",
@@ -3920,7 +4026,7 @@ window.LIVE_GAMES = [
         "date": "2026-06-28T02:00:00Z",
         "teamA": {
             "name": "Alexandre Pantoja",
-            "logo": "https://ui-avatars.com/api/?name=Alexandre%20Pantoja&background=160f04&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Alexandre%20Pantoja&background=bb5a96&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Joshua Van",
@@ -3930,7 +4036,8 @@ window.LIVE_GAMES = [
             "market": "Vencer: Alexandre Pantoja",
             "odd": 1.49,
             "win_rate": 73
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "1ca0b61248b7eb5feef12a04661003e0",
@@ -3939,17 +4046,18 @@ window.LIVE_GAMES = [
         "date": "2026-06-28T02:00:00Z",
         "teamA": {
             "name": "Tom Aspinall",
-            "logo": "https://ui-avatars.com/api/?name=Tom%20Aspinall&background=c5d4c9&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Tom%20Aspinall&background=1c1d8f&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Ciryl Gane",
-            "logo": "https://ui-avatars.com/api/?name=Ciryl%20Gane&background=7c210a&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Ciryl%20Gane&background=4c295a&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Tom Aspinall",
             "odd": 1.49,
             "win_rate": 73
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "702055a9e35d07bddba5fd446eef719c",
@@ -3958,7 +4066,7 @@ window.LIVE_GAMES = [
         "date": "2026-06-28T02:00:00Z",
         "teamA": {
             "name": "Islam Makhachev",
-            "logo": "https://ui-avatars.com/api/?name=Islam%20Makhachev&background=be22f4&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Islam%20Makhachev&background=381309&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Michael Morales",
@@ -3968,7 +4076,8 @@ window.LIVE_GAMES = [
             "market": "Vencer: Islam Makhachev",
             "odd": 1.32,
             "win_rate": 83
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "342c6c33b4c9bc07c5380005feda247f",
@@ -3981,13 +4090,14 @@ window.LIVE_GAMES = [
         },
         "teamB": {
             "name": "Tatsuro Taira",
-            "logo": "https://ui-avatars.com/api/?name=Tatsuro%20Taira&background=9052b5&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Tatsuro%20Taira&background=d055cb&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Tatsuro Taira",
             "odd": 1.5,
             "win_rate": 73
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "ee6203b3168fb34a63a60ad51dd01050",
@@ -3996,17 +4106,18 @@ window.LIVE_GAMES = [
         "date": "2026-06-28T02:00:00Z",
         "teamA": {
             "name": "Weili Zhang",
-            "logo": "https://ui-avatars.com/api/?name=Weili%20Zhang&background=e2a633&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Weili%20Zhang&background=321e4d&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Mackenzie Dern",
-            "logo": "https://ui-avatars.com/api/?name=Mackenzie%20Dern&background=5e47ac&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Mackenzie%20Dern&background=ebdcf5&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Weili Zhang",
             "odd": 1.22,
             "win_rate": 90
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "05b3dc3515568962c8e7351c06ff69c0",
@@ -4015,17 +4126,18 @@ window.LIVE_GAMES = [
         "date": "2026-06-28T02:00:00Z",
         "teamA": {
             "name": "Merab Dvalishvili",
-            "logo": "https://ui-avatars.com/api/?name=Merab%20Dvalishvili&background=b5c88e&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Merab%20Dvalishvili&background=69ae39&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Petr Yan",
-            "logo": "https://ui-avatars.com/api/?name=Petr%20Yan&background=50572f&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Petr%20Yan&background=7a86e5&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Petr Yan",
             "odd": 1.5,
             "win_rate": 73
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "f09d8755975042bcd105a5ab258253ff",
@@ -4034,17 +4146,18 @@ window.LIVE_GAMES = [
         "date": "2026-08-02T03:10:00Z",
         "teamA": {
             "name": "Ilia Topuria",
-            "logo": "https://ui-avatars.com/api/?name=Ilia%20Topuria&background=62dd81&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Ilia%20Topuria&background=b403b6&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Arman Tsarukyan",
-            "logo": "https://ui-avatars.com/api/?name=Arman%20Tsarukyan&background=6646a8&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Arman%20Tsarukyan&background=744bf3&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Ilia Topuria",
             "odd": 1.53,
             "win_rate": 71
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "96b5f4dba85f6b98816b6660cf21241d",
@@ -4063,7 +4176,8 @@ window.LIVE_GAMES = [
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "aed415ae82cf7135ebdbcf9e404b8cba",
@@ -4076,13 +4190,14 @@ window.LIVE_GAMES = [
         },
         "teamB": {
             "name": "Tatsuro Taira",
-            "logo": "https://ui-avatars.com/api/?name=Tatsuro%20Taira&background=9052b5&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Tatsuro%20Taira&background=d055cb&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "b40b838fc3b12e959a10d678ed58321f",
@@ -4091,17 +4206,18 @@ window.LIVE_GAMES = [
         "date": "2027-01-01T03:30:00Z",
         "teamA": {
             "name": "Islam Makhachev",
-            "logo": "https://ui-avatars.com/api/?name=Islam%20Makhachev&background=be22f4&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Islam%20Makhachev&background=381309&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Kamaru Usman",
-            "logo": "https://ui-avatars.com/api/?name=Kamaru%20Usman&background=199c4c&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Kamaru%20Usman&background=ad1a27&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Islam Makhachev",
             "odd": 1.13,
             "win_rate": 97
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "873173443fe282f3b72d1c47d7d515cc",
@@ -4110,17 +4226,18 @@ window.LIVE_GAMES = [
         "date": "2027-01-01T04:30:00Z",
         "teamA": {
             "name": "Alex Pereira",
-            "logo": "https://ui-avatars.com/api/?name=Alex%20Pereira&background=281cdd&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Alex%20Pereira&background=cdb327&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Carlos Ulberg",
-            "logo": "https://ui-avatars.com/api/?name=Carlos%20Ulberg&background=34adca&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Carlos%20Ulberg&background=8fce55&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Alex Pereira",
             "odd": 1.49,
             "win_rate": 73
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "fa2d7e022c2c47e0855f04084d08f163",
@@ -4129,17 +4246,18 @@ window.LIVE_GAMES = [
         "date": "2027-01-01T05:00:00Z",
         "teamA": {
             "name": "Tom Aspinall",
-            "logo": "https://ui-avatars.com/api/?name=Tom%20Aspinall&background=c5d4c9&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Tom%20Aspinall&background=1c1d8f&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Ciryl Gane",
-            "logo": "https://ui-avatars.com/api/?name=Ciryl%20Gane&background=7c210a&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Ciryl%20Gane&background=4c295a&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Escanteios: Mais de 8.5",
             "odd": 1.65,
             "win_rate": 91
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "fcee675894f8285afc8daf0808198b74",
@@ -4148,131 +4266,18 @@ window.LIVE_GAMES = [
         "date": "2027-07-02T02:00:00Z",
         "teamA": {
             "name": "Islam Makhachev",
-            "logo": "https://ui-avatars.com/api/?name=Islam%20Makhachev&background=be22f4&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Islam%20Makhachev&background=381309&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Kamaru Usman",
-            "logo": "https://ui-avatars.com/api/?name=Kamaru%20Usman&background=199c4c&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Kamaru%20Usman&background=ad1a27&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Islam Makhachev",
             "odd": 1.3,
             "win_rate": 84
-        }
-    },
-    {
-        "id": "4883f6f9e1763c7371b726d032c70fab",
-        "sport": "tennis",
-        "league": "Tennis Atp Aus Open Singles",
-        "date": "2026-01-12T03:00:00Z",
-        "teamA": {
-            "name": "Brandon Holt",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Vermont%2C_the_unspoiled_land_%28IA_vermontunspoiled00proc%29.pdf"
         },
-        "teamB": {
-            "name": "Lukas Neumayer",
-            "logo": "https://ui-avatars.com/api/?name=Lukas%20Neumayer&background=e1d4a8&color=fff&size=128&bold=true&font-size=0.4"
-        },
-        "tip": {
-            "market": "Vencer: Lukas Neumayer",
-            "odd": 1.4,
-            "win_rate": 78
-        }
-    },
-    {
-        "id": "cfed161f63b89d6003df878ec95805a0",
-        "sport": "tennis",
-        "league": "Tennis Atp Aus Open Singles",
-        "date": "2026-01-12T03:00:00Z",
-        "teamA": {
-            "name": "Luka Pavlovic",
-            "logo": "https://ui-avatars.com/api/?name=Luka%20Pavlovic&background=700ef2&color=fff&size=128&bold=true&font-size=0.4"
-        },
-        "teamB": {
-            "name": "Colton Smith",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a0/The_Glendale_News_1907-09-28_%28IA_cgl_000744%29.pdf"
-        },
-        "tip": {
-            "market": "Vencer: Colton Smith",
-            "odd": 1.39,
-            "win_rate": 79
-        }
-    },
-    {
-        "id": "2a52dd0f1aff401c0e56d5fa4eb8752d",
-        "sport": "tennis",
-        "league": "Tennis Atp Aus Open Singles",
-        "date": "2026-01-12T03:00:00Z",
-        "teamA": {
-            "name": "Jaime Faria",
-            "logo": "https://ui-avatars.com/api/?name=Jaime%20Faria&background=d8ad45&color=fff&size=128&bold=true&font-size=0.4"
-        },
-        "teamB": {
-            "name": "Luka Mikrut",
-            "logo": "https://ui-avatars.com/api/?name=Luka%20Mikrut&background=8b13eb&color=fff&size=128&bold=true&font-size=0.4"
-        },
-        "tip": {
-            "market": "Vencer: Jaime Faria",
-            "odd": 1.33,
-            "win_rate": 82
-        }
-    },
-    {
-        "id": "f640c99a749f385932b2d7e397ccfb85",
-        "sport": "tennis",
-        "league": "Tennis Atp Aus Open Singles",
-        "date": "2026-01-12T03:00:00Z",
-        "teamA": {
-            "name": "Philip Sekulic",
-            "logo": "https://ui-avatars.com/api/?name=Philip%20Sekulic&background=ebaf6f&color=fff&size=128&bold=true&font-size=0.4"
-        },
-        "teamB": {
-            "name": "Marco Trungelliti",
-            "logo": "https://ui-avatars.com/api/?name=Marco%20Trungelliti&background=7f8522&color=fff&size=128&bold=true&font-size=0.4"
-        },
-        "tip": {
-            "market": "Dupla Chance: Marco Trungelliti ou Empate",
-            "odd": 1.17,
-            "win_rate": 96
-        }
-    },
-    {
-        "id": "bd7795b36c3c88b5beb0b487f7620675",
-        "sport": "tennis",
-        "league": "Tennis Atp Aus Open Singles",
-        "date": "2026-01-12T04:00:00Z",
-        "teamA": {
-            "name": "Rei Sakamoto",
-            "logo": "https://ui-avatars.com/api/?name=Rei%20Sakamoto&background=19322e&color=fff&size=128&bold=true&font-size=0.4"
-        },
-        "teamB": {
-            "name": "Daniel Evans",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Northward-ho%21_Covering_Maine%27s_inland_resorts%2C_Moosehead_Lake%2C_the_Rangeleys%2C_Belgrade_lakes_and_Poland_Spring_%28IA_northwardhocover03jill%29.pdf"
-        },
-        "tip": {
-            "market": "Vencer: Rei Sakamoto",
-            "odd": 1.49,
-            "win_rate": 73
-        }
-    },
-    {
-        "id": "fcaedebc55a0a87f9a0e48015af06934",
-        "sport": "tennis",
-        "league": "Tennis Atp Aus Open Singles",
-        "date": "2026-01-12T04:00:00Z",
-        "teamA": {
-            "name": "Nikoloz Basilashvili",
-            "logo": "https://ui-avatars.com/api/?name=Nikoloz%20Basilashvili&background=fc24ed&color=fff&size=128&bold=true&font-size=0.4"
-        },
-        "teamB": {
-            "name": "Gonzalo Bueno",
-            "logo": "https://ui-avatars.com/api/?name=Gonzalo%20Bueno&background=bab850&color=fff&size=128&bold=true&font-size=0.4"
-        },
-        "tip": {
-            "market": "Vencer: Nikoloz Basilashvili",
-            "odd": 1.23,
-            "win_rate": 89
-        }
+        "status": "PENDING"
     },
     {
         "id": "f4d6539d18794ac4f08a94980d8542f5",
@@ -4285,13 +4290,14 @@ window.LIVE_GAMES = [
         },
         "teamB": {
             "name": "Hugo Dellien",
-            "logo": "https://ui-avatars.com/api/?name=Hugo%20Dellien&background=db444d&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Hugo%20Dellien&background=6460d9&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Bernard Tomic",
             "odd": 1.24,
             "win_rate": 88
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "b4bd2027f6ddb7866d1b5772169cece9",
@@ -4300,17 +4306,18 @@ window.LIVE_GAMES = [
         "date": "2026-01-12T05:00:00Z",
         "teamA": {
             "name": "Dusan Lajovic",
-            "logo": "https://ui-avatars.com/api/?name=Dusan%20Lajovic&background=9b37b4&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Dusan%20Lajovic&background=d7e98d&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Facundo Diaz Acosta",
-            "logo": "https://ui-avatars.com/api/?name=Facundo%20Diaz%20Acosta&background=dc1247&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Facundo%20Diaz%20Acosta&background=7419a9&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Dupla Chance: Facundo Diaz Acosta ou Empate",
             "odd": 1.13,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "3c145cc248093dd8d2767477412f9d1d",
@@ -4319,17 +4326,38 @@ window.LIVE_GAMES = [
         "date": "2026-01-12T05:00:00Z",
         "teamA": {
             "name": "Mark Lajal",
-            "logo": "https://ui-avatars.com/api/?name=Mark%20Lajal&background=0e8237&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Mark%20Lajal&background=305442&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Francesco Passaro",
-            "logo": "https://ui-avatars.com/api/?name=Francesco%20Passaro&background=6fb868&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Francesco%20Passaro&background=885ef0&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Dupla Chance: Mark Lajal ou Empate",
-            "odd": 1.12,
+            "odd": 1.11,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
+    },
+    {
+        "id": "fcaedebc55a0a87f9a0e48015af06934",
+        "sport": "tennis",
+        "league": "Tennis Atp Aus Open Singles",
+        "date": "2026-01-12T05:00:00Z",
+        "teamA": {
+            "name": "Nikoloz Basilashvili",
+            "logo": "https://ui-avatars.com/api/?name=Nikoloz%20Basilashvili&background=1a44b5&color=fff&size=128&bold=true&font-size=0.4"
+        },
+        "teamB": {
+            "name": "Gonzalo Bueno",
+            "logo": "https://ui-avatars.com/api/?name=Gonzalo%20Bueno&background=01a189&color=fff&size=128&bold=true&font-size=0.4"
+        },
+        "tip": {
+            "market": "Vencer: Nikoloz Basilashvili",
+            "odd": 1.23,
+            "win_rate": 89
+        },
+        "status": "PENDING"
     },
     {
         "id": "43aa118b1391e5e8ad5c5df6a3d5be87",
@@ -4338,17 +4366,18 @@ window.LIVE_GAMES = [
         "date": "2026-01-12T05:00:00Z",
         "teamA": {
             "name": "Pierre-Hugues Herbert",
-            "logo": "https://ui-avatars.com/api/?name=Pierre-Hugues%20Herbert&background=379aad&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Pierre-Hugues%20Herbert&background=1362cd&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Guy Den Ouden",
-            "logo": "https://ui-avatars.com/api/?name=Guy%20Den%20Ouden&background=6748c3&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Guy%20Den%20Ouden&background=5430d0&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Dupla Chance: Pierre-Hugues Herbert ou Empate",
             "odd": 1.1,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "7e8214b7e2b0ac66b8161ae6a3d24121",
@@ -4357,17 +4386,18 @@ window.LIVE_GAMES = [
         "date": "2026-01-12T05:00:00Z",
         "teamA": {
             "name": "Murphy Cassone",
-            "logo": "https://ui-avatars.com/api/?name=Murphy%20Cassone&background=21f679&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Murphy%20Cassone&background=fcee11&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Yu Hsiou Hsu",
-            "logo": "https://ui-avatars.com/api/?name=Yu%20Hsiou%20Hsu&background=cc7682&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Yu%20Hsiou%20Hsu&background=e90c8d&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Dupla Chance: Murphy Cassone ou Empate",
             "odd": 1.07,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "45c92048bd92a312bad98535678ede38",
@@ -4380,13 +4410,14 @@ window.LIVE_GAMES = [
         },
         "teamB": {
             "name": "Daniel Merida Aguilar",
-            "logo": "https://ui-avatars.com/api/?name=Daniel%20Merida%20Aguilar&background=da8be0&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Daniel%20Merida%20Aguilar&background=49f543&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Dupla Chance: Daniel Merida Aguilar ou Empate",
-            "odd": 1.04,
+            "odd": 1.05,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     },
     {
         "id": "de2bc618ffe9b7872ca19e930c555f7b",
@@ -4395,16 +4426,81 @@ window.LIVE_GAMES = [
         "date": "2026-01-12T07:00:00Z",
         "teamA": {
             "name": "Zsombor Piros",
-            "logo": "https://ui-avatars.com/api/?name=Zsombor%20Piros&background=150d87&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Zsombor%20Piros&background=ff739b&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Lukas Klein",
-            "logo": "https://ui-avatars.com/api/?name=Lukas%20Klein&background=4c1770&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Lukas%20Klein&background=2e9356&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Dupla Chance: Lukas Klein ou Empate",
             "odd": 1.14,
             "win_rate": 96
-        }
+        },
+        "status": "PENDING"
     }
 ];
+
+window.dailyParlay = [
+    {
+        "id": "5879a7f84497eec3094ae44a8d31cd3c",
+        "sport": "football",
+        "league": "Soccer Uefa Champs League",
+        "date": "2026-01-21T20:00:00Z",
+        "teamA": {
+            "name": "Bayern Munich",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/1/1b/FC_Bayern_M%C3%BCnchen_logo_%282017%29.svg"
+        },
+        "teamB": {
+            "name": "Union Saint-Gilloise",
+            "logo": "https://upload.wikimedia.org/wikipedia/en/0/02/Royale_Union_Saint-Gilloise_logo.png"
+        },
+        "tip": {
+            "market": "Vencer: Bayern Munich",
+            "odd": 1.08,
+            "win_rate": 98
+        },
+        "status": "PENDING"
+    },
+    {
+        "id": "1735169893ed02807bfe82b909f2d888",
+        "sport": "football",
+        "league": "Soccer Uefa Champs League",
+        "date": "2026-01-21T20:00:00Z",
+        "teamA": {
+            "name": "Chelsea",
+            "logo": "https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+        },
+        "teamB": {
+            "name": "Pafos FC",
+            "logo": "https://upload.wikimedia.org/wikipedia/en/9/9b/Pafos_FC_crest.svg"
+        },
+        "tip": {
+            "market": "Vencer: Chelsea",
+            "odd": 1.11,
+            "win_rate": 98
+        },
+        "status": "PENDING"
+    },
+    {
+        "id": "8a864d26e8c83f8c0cc3e61709623627",
+        "sport": "mma",
+        "league": "Mma Mixed Martial Arts",
+        "date": "2026-01-24T20:00:00Z",
+        "teamA": {
+            "name": "Andrey Pulyaev",
+            "logo": "https://ui-avatars.com/api/?name=Andrey%20Pulyaev&background=20a795&color=fff&size=128&bold=true&font-size=0.4"
+        },
+        "teamB": {
+            "name": "Ateba Gautier",
+            "logo": "https://ui-avatars.com/api/?name=Ateba%20Gautier&background=2b933a&color=fff&size=128&bold=true&font-size=0.4"
+        },
+        "tip": {
+            "market": "Vencer: Ateba Gautier",
+            "odd": 1.11,
+            "win_rate": 98
+        },
+        "status": "PENDING"
+    }
+];
+window.parlayTotalOdd = 1.33;
