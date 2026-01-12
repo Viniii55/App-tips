@@ -155,15 +155,114 @@ def analyze_match_depth(home, away, outcomes, bookies_data):
     return best_strat
 
 
+# --- NOVA LÓGICA DE DICAS (REALISMO TRILIONÁRIO) ---
 def generate_marketing_tip(home, away, outcomes, sport_key):
-    """Wrapper para chamar a análise profunda"""
-    tip = analyze_match_depth(home, away, outcomes, sport_key)
+    """
+    Gera uma Tip Realista e Válida baseada no Esporte e nas Odds.
+    Nada de escanteios no Hockey!
+    """
+    import random
     
-    # Garante que não venha % baixa
-    if tip['win_rate'] < 60:
-        tip['win_rate'] = 71 # Correção mínima de calibração
+    # 1. Extrai Odds principais (Moneyline)
+    home_odd = 2.0
+    away_odd = 2.0
+    draw_odd = 3.0
+    
+    # Tenta pegar odds reais
+    try:
+        for o in outcomes:
+            if o['name'] == home: home_odd = o['price']
+            elif o['name'] == away: away_odd = o['price']
+            elif o['name'].lower() == 'draw': draw_odd = o['price']
+    except: pass
+
+    strategies = []
+    
+    # --- ESTRATÉGIAS POR ESPORTE ---
+    
+    # >>> FUTEBOL (SOCCER) <<<
+    if 'soccer' in sport_key or 'football' in sport_key:
+        # A) Dupla Chance (Segurança)
+        if home_odd < 1.40:
+            strategies.append({"market": f"Vencer: {home}", "odd": home_odd})
+        elif away_odd < 1.40:
+            strategies.append({"market": f"Vencer: {away}", "odd": away_odd})
+        elif home_odd <= away_odd:
+            strategies.append({"market": f"Chance Dupla: {home} ou Empate", "odd": 1.35})
+        else:
+            strategies.append({"market": f"Chance Dupla: {away} ou Empate", "odd": 1.42})
+            
+        # B) Gols (Mercado Real)
+        strategies.append({"market": "Total de Gols: Over 1.5", "odd": 1.33})
+        strategies.append({"market": "Total de Gols: Over 2.5", "odd": 1.85})
         
-    return tip
+        # C) Escanteios (Só Futebol!)
+        strategies.append({"market": "Escanteios: Mais de 8.5", "odd": 1.62})
+
+    # >>> BASQUETE (BASKETBALL) <<<
+    elif 'basketball' in sport_key:
+        # Pontos e Handicap
+        strategies.append({"market": "Total de Pontos: Over 215.5", "odd": 1.90})
+        
+        if home_odd < 1.50:
+            strategies.append({"market": f"Vencer: {home}", "odd": home_odd})
+        elif away_odd < 1.50:
+            strategies.append({"market": f"Vencer: {away}", "odd": away_odd})
+        else:
+            strategies.append({"market": "Handicap: +5.5 (Favorito)", "odd": 1.75})
+
+    # >>> TÊNIS (TENNIS) <<<
+    elif 'tennis' in sport_key:
+        if home_odd < 1.40:
+            strategies.append({"market": f"Vencer: {home}", "odd": home_odd})
+        elif away_odd < 1.40:
+            strategies.append({"market": f"Vencer: {away}", "odd": away_odd})
+        else:
+            strategies.append({"market": "Total Sets: Over 2.5", "odd": 2.10})
+            strategies.append({"market": "Vencedor do 1º Set: Favorito", "odd": 1.65})
+
+    # >>> HOCKEY (ICE HOCKEY) <<<
+    elif 'hockey' in sport_key or 'icehockey' in sport_key:
+        # Gols (Puck Line) e Vencedor
+        strategies.append({"market": "Total de Gols: Over 4.5", "odd": 1.45})
+        strategies.append({"market": "Total de Gols: Over 5.5", "odd": 1.75})
+        
+        if home_odd < 1.60:
+            strategies.append({"market": f"Vencer (Incl. Prorrogação): {home}", "odd": home_odd})
+        elif away_odd < 1.60:
+            strategies.append({"market": f"Vencer (Incl. Prorrogação): {away}", "odd": away_odd})
+
+    # >>> MMA / LUTAS <<<
+    elif 'mma' in sport_key:
+         if home_odd < 1.50:
+            strategies.append({"market": f"Vencer Luta: {home}", "odd": home_odd})
+         else:
+            strategies.append({"market": "Total Rounds: Over 1.5", "odd": 1.55})
+
+    # >>> CASO GERAL (AMERICAN FOOTBALL, ETC) <<<
+    else:
+        strategies.append({"market": "Total Pontos: Over 40.5", "odd": 1.90})
+        if home_odd < away_odd:
+            strategies.append({"market": f"Vencer: {home}", "odd": home_odd})
+        else:
+            strategies.append({"market": f"Vencer: {away}", "odd": away_odd})
+
+
+    # --- SELEÇÃO DE INTELECTUALIDADE TRILIONÁRIA ---
+    # Escolhemos uma estratégia aleatória mas calculamos a probabilidade REAL
+    selected = random.choice(strategies)
+    
+    # Cálculo de Probabilidade Fake-Realista
+    # Prob = (1/Odd) * 100. Adicionamos um "Tempero da IA" (5% a 12%)
+    implied_prob = (1 / selected['odd']) * 100
+    ai_boost = random.uniform(5, 12)
+    final_win_rate = int(min(96, implied_prob + ai_boost))
+    
+    return {
+        "market": selected['market'],
+        "odd": selected['odd'],
+        "win_rate": final_win_rate
+    }
 
 # --- FIM LOGICA NOVA ---
 
@@ -249,10 +348,39 @@ def fetch_games():
         "Atlético Mineiro": "https://upload.wikimedia.org/wikipedia/en/5/5f/Clube_Atl%C3%A9tico_Mineiro_crest.svg",
         "Atletico Mineiro": "https://upload.wikimedia.org/wikipedia/en/5/5f/Clube_Atl%C3%A9tico_Mineiro_crest.svg",
 
-        # NBA
-        "Los Angeles Lakers": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Los_Angeles_Lakers_logo.svg",
-        "Golden State Warriors": "https://upload.wikimedia.org/wikipedia/en/0/01/Golden_State_Warriors_logo.svg",
+        # NBA (Conferência Leste)
         "Boston Celtics": "https://upload.wikimedia.org/wikipedia/en/8/8f/Boston_Celtics.svg",
+        "Brooklyn Nets": "https://upload.wikimedia.org/wikipedia/commons/4/44/Brooklyn_Nets_newlogo.svg",
+        "New York Knicks": "https://upload.wikimedia.org/wikipedia/en/2/25/New_York_Knicks_logo.svg",
+        "Philadelphia 76ers": "https://upload.wikimedia.org/wikipedia/en/0/0e/Philadelphia_76ers_logo.svg",
+        "Toronto Raptors": "https://upload.wikimedia.org/wikipedia/en/3/36/Toronto_Raptors_logo.svg",
+        "Chicago Bulls": "https://upload.wikimedia.org/wikipedia/en/6/67/Chicago_Bulls_logo.svg",
+        "Cleveland Cavaliers": "https://upload.wikimedia.org/wikipedia/end/4/4b/Cleveland_Cavaliers_logo.svg",
+        "Detroit Pistons": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Pistons_logo17.svg",
+        "Indiana Pacers": "https://upload.wikimedia.org/wikipedia/en/1/1b/Indiana_Pacers.svg",
+        "Milwaukee Bucks": "https://upload.wikimedia.org/wikipedia/en/4/4a/Milwaukee_Bucks_logo.svg",
+        "Atlanta Hawks": "https://upload.wikimedia.org/wikipedia/en/2/24/Atlanta_Hawks_logo.svg",
+        "Charlotte Hornets": "https://upload.wikimedia.org/wikipedia/en/c/c4/Charlotte_Hornets_%282014%29.svg",
+        "Miami Heat": "https://upload.wikimedia.org/wikipedia/en/f/fb/Miami_Heat_logo.svg",
+        "Orlando Magic": "https://upload.wikimedia.org/wikipedia/en/1/10/Orlando_Magic_logo.svg",
+        "Washington Wizards": "https://upload.wikimedia.org/wikipedia/en/0/02/Washington_Wizards_logo.svg",
+        
+        # NBA (Conferência Oeste)
+        "Denver Nuggets": "https://upload.wikimedia.org/wikipedia/en/7/76/Denver_Nuggets.svg",
+        "Minnesota Timberwolves": "https://upload.wikimedia.org/wikipedia/en/c/c2/Minnesota_Timberwolves_logo.svg",
+        "Oklahoma City Thunder": "https://upload.wikimedia.org/wikipedia/en/5/5d/Oklahoma_City_Thunder.svg",
+        "Portland Trail Blazers": "https://upload.wikimedia.org/wikipedia/en/2/21/Portland_Trail_Blazers_logo.svg",
+        "Utah Jazz": "https://upload.wikimedia.org/wikipedia/en/0/04/Utah_Jazz_logo_%282016%29.svg",
+        "Golden State Warriors": "https://upload.wikimedia.org/wikipedia/en/0/01/Golden_State_Warriors_logo.svg",
+        "Los Angeles Clippers": "https://upload.wikimedia.org/wikipedia/en/b/bb/Los_Angeles_Clippers_logo.svg",
+        "Los Angeles Lakers": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Los_Angeles_Lakers_logo.svg",
+        "Phoenix Suns": "https://upload.wikimedia.org/wikipedia/en/d/dc/Phoenix_Suns_logo.svg",
+        "Sacramento Kings": "https://upload.wikimedia.org/wikipedia/en/c/c7/SacramentoKings.svg",
+        "Dallas Mavericks": "https://upload.wikimedia.org/wikipedia/en/9/97/Dallas_Mavericks_logo.svg",
+        "Houston Rockets": "https://upload.wikimedia.org/wikipedia/en/2/28/Houston_Rockets.svg",
+        "Memphis Grizzlies": "https://upload.wikimedia.org/wikipedia/en/f/f1/Memphis_Grizzlies.svg",
+        "New Orleans Pelicans": "https://upload.wikimedia.org/wikipedia/en/0/0d/New_Orleans_Pelicans_logo.svg",
+        "San Antonio Spurs": "https://upload.wikimedia.org/wikipedia/en/a/a2/San_Antonio_Spurs.svg",
     }
 
     def get_real_logo(name, sport_type):
@@ -269,52 +397,51 @@ def fetch_games():
         if clean_name in logo_cache and 'ui-avatars' not in logo_cache[clean_name]:
              return logo_cache[clean_name]
         
-        # 2. Busca Inteligente na Wikimedia (Focado em ARQUIVOS de imagem)
+        # 2. Busca Inteligente na Wikimedia
         try:
-            # Remove sufixos comuns que atrapalham a busca exata
-            search_query = clean_name.replace(" FC", "").replace(" FK", "").strip()
-            
-            # Se for tenis/mma, busca mais generica, se for futebol busca "crest/logo"
+            # Estratégia Diferente para Pessoas (Tênis/MMA) vs Times
             if sport_type in ['tennis', 'mma']:
-                term = f"{search_query} {sport_type} profile"
-            else:
-                term = f"{search_query} logo"
-
-            search_url = "https://en.wikipedia.org/w/api.php"
-            params = {
-                "action": "query",
-                "format": "json",
-                "list": "search",
-                "srsearch": f"File:{term}", # PREFIDE FILE: para buscar arquivos de imagem
-                "srnamespace": "6", # Namespace 6 = Arquivos (Images/Media)
-                "srlimit": 1
-            }
-            headers = {'User-Agent': 'SportsTipBot/2.0 (vinicius_smart_search)'}
-            
-            r = requests.get(search_url, params=params, headers=headers, timeout=3)
-            data = r.json()
-            
-            if data['query']['search']:
-                # Achou um arquivo de imagem!
-                file_title = data['query']['search'][0]['title']
-                
-                # Pega a URL real dessa imagem
-                img_params = {
+                # Busca a PÁGINA do atleta e pega a foto principal
+                wiki_url = "https://en.wikipedia.org/w/api.php"
+                params = {
                     "action": "query",
                     "format": "json",
-                    "prop": "imageinfo",
-                    "iiprop": "url",
-                    "titles": file_title
+                    "prop": "pageimages",
+                    "piprop": "thumbnail",
+                    "pithumbsize": 300, # Tamanho bom
+                    "titles": clean_name,
+                    "redirects": 1
                 }
-                r_img = requests.get(search_url, params=img_params, headers=headers, timeout=3)
-                data_img = r_img.json()
-                
-                pages = data_img['query']['pages']
+                headers = {'User-Agent': 'SportsTipBot/2.0'}
+                r = requests.get(wiki_url, params=params, headers=headers, timeout=3)
+                data = r.json()
+                pages = data.get("query", {}).get("pages", {})
                 for k, v in pages.items():
-                    if 'imageinfo' in v:
-                        img_url = v['imageinfo'][0]['url']
-                        logo_cache[clean_name] = img_url
-                        return img_url
+                    if "thumbnail" in v:
+                        logo_cache[clean_name] = v["thumbnail"]["source"]
+                        return v["thumbnail"]["source"]
+
+            else:
+                # Busca ARQUIVO DE LOGO para times
+                search_query = clean_name.replace(" FC", "").replace(" FK", "").strip()
+                term = f"{search_query} logo"
+
+
+            if is_athlete:
+                params2['gsrsearch'] = clean_name # Busca o nome do atleta
+                params2['gsrnamespace'] = 0 # Busca em páginas normais
+            else:
+                params2['gsrsearch'] = f"File:{clean_name} logo.png" # Tenta forçar PNG de logo
+                params2['gsrnamespace'] = 6 # Namespace de Arquivo/Imagem
+            
+            r2 = requests.get("https://en.wikipedia.org/w/api.php", params=params2, headers=headers, timeout=3)
+            data2 = r2.json()
+            pages2 = data2.get("query", {}).get("pages", {})
+            for k, v in pages2.items():
+                 if "thumbnail" in v:
+                    img_url = v["thumbnail"]["source"]
+                    logo_cache[clean_name] = img_url
+                    return img_url
 
         except Exception:
             pass
@@ -370,13 +497,13 @@ def fetch_games():
                     elif 'americanfootball' in sport_key:
                         sport_type = 'american_football'
                     elif 'icehockey' in sport_key:
-                        sport_type = 'hockey'
+                        sport_type = 'ice_hockey'
                     elif 'mma' in sport_key:
                         sport_type = 'mma'
                     elif 'tennis' in sport_key:
                         sport_type = 'tennis'
                     else:
-                        sport_type = 'football'
+                        sport_type = 'soccer' # CORREÇÃO: Frontend espera 'soccer'
 
                     # Busca Logos Reais
                     logo_a = get_real_logo(game['home_team'], sport_type)
@@ -385,6 +512,7 @@ def fetch_games():
                     match_obj = {
                         "id": game['id'],
                         "sport": sport_type,
+                        "raw_league": sport_key, # Importante para filtros avançados
                         "league": format_league_name(sport_key),
                         "date": game['commence_time'],
                         "teamA": {"name": game['home_team'], "logo": logo_a},
@@ -399,21 +527,37 @@ def fetch_games():
             print(f"XX Erro Tecnico: {e}")
 
     save_cache()
-    # --- INTELIGÊNCIA DE MÚLTIPLA (PARLAY) ---
-    print(f">> Analisando {len(all_matches)} jogos para gerar a Múltipla do Dia...")
+    # --- DESTAQUE DO DIA (JOGAÇO - Times Famosos) ---
+    print(f">> Escolhendo o Destaque do Dia (Foco: Brasil/Elite)...")
     
     # Ordena por maior probabilidade de Green (Win Rate)
     unique_matches = {m['id']: m for m in all_matches}.values()
     sorted_matches = sorted(unique_matches, key=lambda x: x['tip']['win_rate'], reverse=True)
+
+    # Lista de prioridade (Ligas Famosas)
+    priority_leagues = [
+        'soccer_brazil_campeonato', 'soccer_brazil_serie_b', 
+        'soccer_libertadores', 'soccer_sulamericana',
+        'soccer_epl', 'soccer_spain_la_liga', 'soccer_uefa_champs_league',
+        'basketball_nba'
+    ]
     
-    # Pega os Top 3
-    parlay_tips = sorted_matches[:3]
+    highlight_match = None
     
-    parlay_total_odd = 1.0
-    for m in parlay_tips:
-        parlay_total_odd *= m['tip']['odd']
+    # 1. Tenta achar o melhor jogo das ligas prioritárias
+    vip_matches = [m for m in sorted_matches if m.get('raw_league') in priority_leagues]
     
-    if parlay_total_odd < 1.01: parlay_total_odd = 1.0
+    # Se não achar por chave exata, tenta por nome (Fallback)
+    if not vip_matches:
+         famous_keywords = ['Brasileirão', 'Premier League', 'La Liga', 'NBA', 'Champions', 'Libertadores']
+         vip_matches = [m for m in sorted_matches if any(k in m['league'] for k in famous_keywords)]
+    
+    if vip_matches:
+        highlight_match = vip_matches[0] # O com maior win_rate dos famosos
+    else:
+        # Se não tiver jogo famoso, pega o Top 1 com maior win_rate geral (Segurança)
+        if sorted_matches:
+            highlight_match = sorted_matches[0]
 
     # --- PERSISTÊNCIA DE HISTÓRICO (PREPARAÇÃO V3) ---
     try:
@@ -446,14 +590,33 @@ def fetch_games():
     except Exception as e:
         print(f"XX Erro ao gravar histórico: {e}")
 
-    # Salva no JS
+    # --- ORDENAÇÃO INTELIGENTE (TOP 100 MILHÕES) ---
+    def get_league_priority(match):
+        key = match.get('raw_league', '').lower()
+        # Nível 1: Brasil e Latam (Ouro)
+        if 'brazil' in key or 'libertadores' in key or 'sulamericana' in key:
+            return 1
+        # Nível 2: Elite Europa e NBA (Prata)
+        if 'champs_league' in key or 'epl' in key or 'la_liga' in key or 'nba' in key:
+            return 2
+        # Nível 3: Resto
+        return 3
+
+    # Ordena: 1o Prioridade de Liga, 2o Horário do Jogo
+    all_matches.sort(key=lambda x: (get_league_priority(x), x['date']))
+
+    # Salva no JS (ATUALIZADO PARA DESTAQUE)
     try:
         with open("games_data.js", "w", encoding='utf-8') as f:
             js_content = f"window.gamesData = {json.dumps(all_matches, indent=4, ensure_ascii=False)};\n\n"
-            js_content += f"window.dailyParlay = {json.dumps(parlay_tips, indent=4, ensure_ascii=False)};\n"
-            js_content += f"window.parlayTotalOdd = {parlay_total_odd:.2f};\n"
+            
+            if highlight_match:
+                js_content += f"window.highlightMatch = {json.dumps(highlight_match, indent=4, ensure_ascii=False)};\n"
+            else:
+                js_content += "window.highlightMatch = null;\n"
+            
             f.write(js_content)
-        print(">> games_data.js gerado com SUCESSO! (Incluindo Múltipla)")
+        print(">> games_data.js gerado com SUCESSO! (Com Destaque do Dia)")
     except Exception as e:
         print(f"XX Erro ao salvar arquivo JS: {e}")
 
@@ -467,33 +630,7 @@ def format_league_name(key):
     }
     return names.get(key, key.replace('_', ' ').title())
 
-def generate_mock_data(sport):
-    """Dados falsos apenas para demonstração do script"""
-    from datetime import timedelta
-    now = datetime.now()
-    
-    if 'soccer' in sport:
-        return [
-            {
-                "id": "match_1",
-                "commence_time": now.isoformat(),
-                "home_team": "Manchester City",
-                "away_team": "Burnley",
-                "bookmakers": [{
-                   "markets": [{"outcomes": [{"name": "Manchester City", "price": 1.15}, {"name": "Burnley", "price": 15.0}]}]
-                }]
-            },
-            {
-                "id": "match_2",
-                "commence_time": (now + timedelta(hours=2)).isoformat(),
-                "home_team": "Real Madrid",
-                "away_team": "Getafe",
-                "bookmakers": [{
-                   "markets": [{"outcomes": [{"name": "Real Madrid", "price": 1.30}, {"name": "Getafe", "price": 9.50}]}]
-                }]
-            }
-        ]
-    return []
+# Função Mock removida para garantir autenticidade.
 
 def save_to_js(matches):
     print(f">> Gerando {len(matches)} oportunidades de CPA...")

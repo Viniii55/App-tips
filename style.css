@@ -1,163 +1,234 @@
-/* CSS - Superbet Clone Style */
-
 :root {
-    --bg-page: #f2f4f6;
-    /* Fundo Cinza Claro do Site */
-    --surface: #ffffff;
-    /* Branco Puro */
-    --super-red: #d50032;
-    /* Vermelho Oficial Superbet */
-    --super-red-hover: #b0002a;
-    --text-primary: #191919;
-    /* Preto Quase Puro */
-    --text-secondary: #656565;
-    --yellow-odds: #ffce00;
-    /* Amarelo Super Odds */
-    --success: #2d9d4d;
-    --radius-sm: 8px;
-    --radius-md: 16px;
-    --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --primary: #e90029;
+    --dark: #111111;
+    --gray: #f5f6f9;
+    --white: #ffffff;
+    --text-main: #2c3e50;
+    --text-light: #95a5a6;
+    --success: #2ecc71;
+    --gold: #f1c40f;
+    --font-stack: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 
 body {
-    background-color: var(--bg-page);
-    color: var(--text-primary);
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    padding-bottom: 60px;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-stack);
+    background-color: #eef1f5;
+    /* Fundo Desktop mais escuro pra destacar o app */
+    color: var(--text-main);
+    width: 100vw;
+    overflow-x: hidden;
 }
 
-/* Header Estilo App Nativo */
-.top-nav {
-    background: var(--surface);
-    height: 60px;
+/* --- DESKTOP OPTIMIZATION CONTAINER --- */
+.app-container {
+    width: 100%;
+    max-width: 500px;
+    /* Largura M√°gica do App */
+    margin: 0 auto;
+    /* Centraliza no Desktop */
+    background-color: #fff;
+    /* Fundo do App Branco */
+    min-height: 100vh;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+.app-header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    align-items: center;
+    padding: 15px 20px;
+    background: #fff;
     position: sticky;
     top: 0;
     z-index: 100;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.logo h1 {
+.logo-area h1 {
     font-size: 1.5rem;
     font-weight: 900;
-    /* Extra Bold */
-    font-style: italic;
-    color: var(--super-red);
+    margin: 0;
+    color: var(--dark);
     letter-spacing: -1px;
 }
 
-.logo h1 span {
-    color: var(--text-primary);
+.highlight-text {
+    color: var(--primary);
 }
 
-.user-status {
-    background: #eefdf3;
-    color: var(--success);
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 0.75rem;
-    font-weight: 700;
-}
-
-/* Hero Section "Super Odds" */
-.container {
-    padding: 16px;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.hero-banner {
-    background: linear-gradient(135deg, #ffce00 0%, #ffeb3b 100%);
-    padding: 20px;
-    border-radius: var(--radius-md);
-    margin-bottom: 24px;
-    position: relative;
-    overflow: hidden;
-    box-shadow: var(--shadow-card);
-}
-
-.hero-banner::after {
-    content: '‚ö°';
-    position: absolute;
-    right: -10px;
-    bottom: -20px;
-    font-size: 5rem;
-    opacity: 0.2;
-    transform: rotate(-20deg);
-}
-
-.hero-banner h2 {
-    color: #000;
-    font-weight: 900;
-    font-style: italic;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    margin-bottom: 4px;
-}
-
-.hero-banner p {
-    color: #333;
-    font-size: 0.85rem;
-    font-weight: 600;
-}
-
-/* Filtros Estilo "P√≠lula" */
-.filter-tabs {
+.user-actions {
     display: flex;
-    gap: 8px;
-    overflow-x: auto;
-    padding: 0 4px 8px 4px;
-    margin-bottom: 16px;
-    scrollbar-width: none;
+    gap: 15px;
+    align-items: center;
 }
 
-.tab-btn {
-    background: var(--surface);
-    border: 1px solid #e0e0e0;
-    color: var(--text-secondary);
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-weight: 600;
-    font-size: 0.8rem;
-    white-space: nowrap;
-    transition: all 0.2s;
+.btn-icon {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
     cursor: pointer;
 }
 
-.tab-btn.active {
-    background: var(--text-primary);
-    color: #fff;
-    border-color: var(--text-primary);
+.btn-profile img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 2px solid var(--primary);
 }
 
-/* Cards de Jogo Clean */
-.date-header {
-    font-size: 0.75rem;
+.btn-profile {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* CAROUSEL */
+.banners-carousel {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 20px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    /* Hide scrollbar Firefox */
+}
+
+.banners-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.banner-item {
+    min-width: 280px;
+    height: 140px;
+    border-radius: 16px;
+    padding: 20px;
+    color: white;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.banner-1 {
+    background: linear-gradient(135deg, #e90029 0%, #ff4b1f 100%);
+}
+
+.banner-2 {
+    background: linear-gradient(135deg, #111 0%, #333 100%);
+}
+
+.banner-item h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.banner-item p {
+    margin: 5px 0 15px 0;
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+
+.btn-banner {
+    background: white;
+    color: var(--dark);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
     font-weight: 700;
-    color: var(--text-secondary);
-    margin: 16px 0 8px 4px;
-    text-transform: uppercase;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+
+/* SPORTS NAV (UPDATED) */
+.sports-nav-container {
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.sports-nav {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 5px;
+    scrollbar-width: none;
+}
+
+.sports-nav::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-icon-item {
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    min-width: 60px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: all 0.2s;
+}
+
+.nav-icon-item.active {
+    opacity: 1;
+}
+
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    background: #f5f6f9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    border: 2px solid transparent;
+    transition: all 0.2s;
+}
+
+.nav-icon-item.active .icon-circle {
+    border-color: var(--primary);
+    background: #fff0f3;
+}
+
+.nav-icon-item span {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+/* CARDS */
+.games-feed {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .game-card {
-    background: var(--surface);
-    border-radius: var(--radius-md);
-    padding: 16px;
-    margin-bottom: 12px;
-    box-shadow: var(--shadow-card);
-    border: 1px solid transparent;
-    transition: transform 0.2s;
+    background: white;
+    border-radius: 16px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eee;
+    margin-bottom: 15px;
+    transition: transform 0.1s;
 }
 
 .game-card:active {
@@ -167,482 +238,225 @@ body {
 .card-header {
     display: flex;
     justify-content: space-between;
-    font-size: 0.7rem;
-    color: var(--text-secondary);
-    font-weight: 600;
-    margin-bottom: 16px;
-    border-bottom: 1px solid #f0f0f0;
-    padding-bottom: 8px;
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+    color: #888;
 }
 
 .teams-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .team {
-    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 8px;
+    width: 35%;
 }
 
 .team-avatar {
     width: 52px;
     height: 52px;
+    border-radius: 50%;
+    background: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
-    background: #ffffff;
-    border: 2px solid #e0e0e0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e0e0e0;
+    padding: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
     overflow: hidden;
-    padding: 4px;
-    /* Espa√ßo entre borda e imagem */
 }
 
 .team-avatar img {
     width: 100%;
     height: 100%;
+    border-radius: 0;
     object-fit: contain;
-    border-radius: 50%;
 }
 
 .team-name {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 700;
     text-align: center;
-    line-height: 1.1;
-    color: var(--text-primary);
-    max-width: 100px;
+    line-height: 1.2;
 }
 
-.vs-badge {
-    color: var(--text-secondary);
-    font-size: 0.7rem;
-    font-weight: 700;
+.vs-text {
+    font-weight: 900;
+    color: #ddd;
+    font-size: 1.2rem;
 }
 
-/* √Årea de Tip (Bloqueada/Desbloqueada) */
-.tip-box {
-    background: #f9f9f9;
-    padding: 16px;
-    border-radius: var(--radius-sm);
+.tip-container {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 12px;
+    text-align: center;
     border: 1px dashed #ddd;
-    position: relative;
+    /* Destaque leve */
+}
+
+.market-name {
+    color: var(--primary);
+    font-weight: 900;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.prob-bar-area {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+.prob-bar-bg {
+    flex: 1;
+    height: 6px;
+    background: #e0e0e0;
+    border-radius: 10px;
     overflow: hidden;
+}
+
+.prob-bar-fill {
+    height: 100%;
+    background: var(--success);
+    border-radius: 10px;
+}
+
+.prob-val {
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: var(--success);
+}
+
+.btn-action {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: var(--primary);
+    color: white;
     text-align: center;
+    border-radius: 8px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
 }
 
-/* Estado Bloqueado */
-.tip-box.locked .tip-content {
-    filter: blur(6px);
-    user-select: none;
-    opacity: 0.5;
+.btn-action.outline {
+    background: transparent;
+    border: 1px solid #ccc;
+    color: #666;
 }
 
-.lock-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+.superbet-badge-tiny {
+    font-size: 0.65rem;
+    background: #000;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+/* Highlight Card Style */
+.parlay-card {
+    margin: 20px;
+    margin-top: 0;
+}
+
+/* TRUST SCOREBOARD */
+.trust-scoreboard {
+    display: flex;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    gap: 15px;
+    padding: 0 20px;
+    margin-bottom: 25px;
+}
+
+.score-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    /* Centraliza texto interno */
+    flex: 1;
+    /* Distribui tamanho igual */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+    min-width: 90px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.6);
-    z-index: 10;
 }
 
-.btn-unlock {
-    background: var(--super-red);
-    color: white;
-    border: none;
-    padding: 10px 24px;
-    border-radius: 24px;
+.score-card h4 {
+    font-size: 0.65rem;
+    color: #999;
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
     font-weight: 700;
-    font-size: 0.8rem;
-    box-shadow: 0 4px 12px rgba(213, 0, 50, 0.3);
-    cursor: pointer;
-    animation: pulseBtn 2s infinite;
 }
 
-/* Estado Desbloqueado */
-.tip-market {
-    display: block;
-    font-size: 0.8rem;
-    color: var(--text-secondary);
-    margin-bottom: 4px;
-    font-weight: 600;
-}
-
-.tip-odd {
-    font-size: 1.5rem;
+.score-card p {
+    font-size: 1.2rem;
     font-weight: 900;
-    color: var(--text-primary);
-    letter-spacing: -1px;
+    color: var(--dark);
+    margin: 0;
 }
 
-.superbet-badge-tiny {
-    display: inline-block;
-    background: var(--super-red);
-    color: white;
-    font-size: 0.6rem;
-    font-weight: 800;
-    padding: 2px 6px;
-    border-radius: 4px;
-    vertical-align: middle;
-    margin-left: 6px;
-    transform: translateY(-2px);
+.score-green {
+    color: #2ecc71 !important;
 }
 
-@keyframes pulseBtn {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.05);
-    }
-
-    100% {
-        transform: scale(1);
-    }
+.score-red {
+    color: #e90029 !important;
 }
 
-/* Modal de "Valida√ß√£o" de CPA */
-.modal-overlay {
+.score-gold {
+    color: #f1c40f !important;
+}
+
+/* MODAL / ONBOARDING */
+.modal {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
+    width: 100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.8);
-    z-index: 999;
+    /* Fundo Escuro */
+    z-index: 9999;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
 }
 
-.modal-card {
-    background: white;
-    width: 100%;
+.modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: #fff;
+    width: 90%;
     max-width: 360px;
-    border-radius: 20px;
-    padding: 24px;
-    text-align: center;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    max-height: 90vh;
+    /* Scroll se for pequeno */
 }
 
-.icon-lock {
-    font-size: 2.5rem;
-    margin-bottom: 16px;
-    display: block;
-}
-
-.modal-card h3 {
-    color: var(--super-red);
-    font-weight: 900;
-    margin-bottom: 12px;
-    font-size: 1.2rem;
-}
-
-.modal-card p {
-    font-size: 0.85rem;
-    color: var(--text-secondary);
-    margin-bottom: 24px;
-    line-height: 1.4;
-}
-
-.input-id {
-    width: 100%;
-    padding: 14px;
-    border: 2px solid #eee;
-    border-radius: 12px;
-    font-size: 1rem;
-    text-align: center;
-    font-weight: 700;
-    margin-bottom: 16px;
-    outline: none;
-    transition: border 0.2s;
-}
-
-.input-id:focus {
-    border-color: var(--super-red);
-}
-
-.btn-validate {
-    width: 100%;
-    background: #000;
-    color: white;
-    padding: 14px;
-    border-radius: 12px;
-    font-weight: 700;
-    border: none;
-    cursor: pointer;
-    font-size: 0.95rem;
-}
-
-.btn-create-account {
-    display: block;
-    margin-top: 16px;
-    color: var(--super-red);
-    font-weight: 700;
-    font-size: 0.85rem;
-    text-decoration: none;
-}
-
+/* UTILS */
 .hidden {
     display: none !important;
 }
 
-/* --- BARRA DE ASSERTIVIDADE (MARKETING) --- */
-.progress-container {
-    background: #e0e0e0;
-    height: 8px;
-    width: 100%;
-    max-width: 200px;
-    border-radius: 4px;
-    margin: 8px auto 12px auto;
-    /* AUTO nas laterais centraliza */
-    overflow: hidden;
-    position: relative;
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-.progress-bar {
-    height: 100%;
-    background: linear-gradient(90deg, #ffeb3b 0%, #2d9d4d 100%);
-    border-radius: 4px;
-    transition: width 1s ease-in-out;
-}
-
-.win-rate-display {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 8px;
-}
-
-.win-rate-text {
-    font-size: 1.4rem;
-    font-weight: 900;
-    color: var(--success);
-    line-height: 1;
-}
-
-.win-rate-label {
-    font-size: 0.7rem;
-    color: var(--text-secondary);
-    font-weight: 600;
-    text-transform: uppercase;
-}/ *   - - -   N O V A S   F U N C I O N A L I D A D E S   ( M √ aL T I P L A   &   P L A C A R )   - - -   * /  
-  
- / *   P l a c a r   d e   C o n f i a n √ ß a   * /  
- . t r u s t - s c o r e b o a r d   {  
-         d i s p l a y :   f l e x ;  
-         j u s t i f y - c o n t e n t :   s p a c e - b e t w e e n ;  
-         b a c k g r o u n d :   # 1 a 1 a 1 a ;  
-         b o r d e r - r a d i u s :   1 2 p x ;  
-         p a d d i n g :   1 5 p x ;  
-         m a r g i n - b o t t o m :   2 0 p x ;  
-         b o r d e r :   1 p x   s o l i d   # 3 3 3 ;  
-         b o x - s h a d o w :   0   4 p x   1 5 p x   r g b a ( 0 ,   0 ,   0 ,   0 . 3 ) ;  
- }  
-  
- . s c o r e - i t e m   {  
-         f l e x :   1 ;  
-         d i s p l a y :   f l e x ;  
-         f l e x - d i r e c t i o n :   c o l u m n ;  
-         a l i g n - i t e m s :   c e n t e r ;  
-         t e x t - a l i g n :   c e n t e r ;  
- }  
-  
- . s c o r e - i t e m . b o r d e r - l e f t   {  
-         b o r d e r - l e f t :   1 p x   s o l i d   # 3 3 3 ;  
- }  
-  
- . s c o r e - l a b e l   {  
-         f o n t - s i z e :   0 . 7 r e m ;  
-         c o l o r :   # 8 8 8 ;  
-         t e x t - t r a n s f o r m :   u p p e r c a s e ;  
-         l e t t e r - s p a c i n g :   1 p x ;  
-         m a r g i n - b o t t o m :   5 p x ;  
- }  
-  
- . s c o r e - v a l u e   {  
-         f o n t - s i z e :   1 . 4 r e m ;  
-         f o n t - w e i g h t :   8 0 0 ;  
-         c o l o r :   # f f f ;  
- }  
-  
- . s c o r e - v a l u e . h i g h   {  
-         c o l o r :   # 0 0 f f 8 8 ;  
-         t e x t - s h a d o w :   0   0   1 0 p x   r g b a ( 0 ,   2 5 5 ,   1 3 6 ,   0 . 3 ) ;  
- }  
-  
- / *   C a r d   d a   M √ ∫ l t i p l a   ( G o l d   P r e m i u m )   * /  
- . p a r l a y - c a r d   {  
-         b a c k g r o u n d :   l i n e a r - g r a d i e n t ( 1 4 5 d e g ,   # 1 e 1 e 1 e ,   # 1 4 1 4 1 4 ) ;  
-         b o r d e r :   1 p x   s o l i d   # f f d 7 0 0 ;  
-         / *   D o u r a d o   * /  
-         b o r d e r - r a d i u s :   1 6 p x ;  
-         p a d d i n g :   2 0 p x ;  
-         m a r g i n - b o t t o m :   2 5 p x ;  
-         p o s i t i o n :   r e l a t i v e ;  
-         o v e r f l o w :   h i d d e n ;  
-         b o x - s h a d o w :   0   0   2 0 p x   r g b a ( 2 5 5 ,   2 1 5 ,   0 ,   0 . 1 5 ) ;  
- }  
-  
- . p a r l a y - c a r d . h i d d e n   {  
-         d i s p l a y :   n o n e ;  
- }  
-  
- . p a r l a y - h e a d e r   {  
-         d i s p l a y :   f l e x ;  
-         j u s t i f y - c o n t e n t :   s p a c e - b e t w e e n ;  
-         a l i g n - i t e m s :   c e n t e r ;  
-         m a r g i n - b o t t o m :   1 5 p x ;  
-         p a d d i n g - b o t t o m :   1 5 p x ;  
-         b o r d e r - b o t t o m :   1 p x   s o l i d   r g b a ( 2 5 5 ,   2 1 5 ,   0 ,   0 . 2 ) ;  
- }  
-  
- . p a r l a y - t i t l e   {  
-         d i s p l a y :   f l e x ;  
-         a l i g n - i t e m s :   c e n t e r ;  
-         g a p :   1 0 p x ;  
- }  
-  
- . p a r l a y - t i t l e   h 3   {  
-         m a r g i n :   0 ;  
-         f o n t - s i z e :   1 . 1 r e m ;  
-         c o l o r :   # f f d 7 0 0 ;  
-         t e x t - t r a n s f o r m :   u p p e r c a s e ;  
-         f o n t - w e i g h t :   8 0 0 ;  
- }  
-  
- . p a r l a y - b a d g e   {  
-         b a c k g r o u n d :   r g b a ( 2 5 5 ,   2 1 5 ,   0 ,   0 . 2 ) ;  
-         c o l o r :   # f f d 7 0 0 ;  
-         f o n t - s i z e :   0 . 7 r e m ;  
-         p a d d i n g :   4 p x   8 p x ;  
-         b o r d e r - r a d i u s :   4 p x ;  
-         f o n t - w e i g h t :   7 0 0 ;  
-         t e x t - t r a n s f o r m :   u p p e r c a s e ;  
-         b o r d e r :   1 p x   s o l i d   r g b a ( 2 5 5 ,   2 1 5 ,   0 ,   0 . 4 ) ;  
- }  
-  
- / *   L i s t a   d e   J o g o s   d a   M √ ∫ l t i p l a   * /  
- . p a r l a y - i t e m   {  
-         d i s p l a y :   f l e x ;  
-         j u s t i f y - c o n t e n t :   s p a c e - b e t w e e n ;  
-         a l i g n - i t e m s :   c e n t e r ;  
-         m a r g i n - b o t t o m :   1 2 p x ;  
-         f o n t - s i z e :   0 . 9 r e m ;  
- }  
-  
- . p a r l a y - m a t c h - i n f o   {  
-         d i s p l a y :   f l e x ;  
-         a l i g n - i t e m s :   c e n t e r ;  
-         g a p :   8 p x ;  
-         c o l o r :   # c c c ;  
- }  
-  
- . p a r l a y - t i p - m a r k e t   {  
-         c o l o r :   # 0 0 f f 8 8 ;  
-         f o n t - w e i g h t :   6 0 0 ;  
-         f o n t - s i z e :   0 . 8 5 r e m ;  
- }  
-  
- / *   F o o t e r   d o   C a r d   * /  
- . p a r l a y - f o o t e r   {  
-         m a r g i n - t o p :   1 5 p x ;  
-         p a d d i n g - t o p :   1 5 p x ;  
-         b o r d e r - t o p :   1 p x   d a s h e d   r g b a ( 2 5 5 ,   2 5 5 ,   2 5 5 ,   0 . 1 ) ;  
-         d i s p l a y :   f l e x ;  
-         f l e x - d i r e c t i o n :   c o l u m n ;  
-         g a p :   1 0 p x ;  
- }  
-  
- . t o t a l - o d d - i n f o   {  
-         d i s p l a y :   f l e x ;  
-         j u s t i f y - c o n t e n t :   s p a c e - b e t w e e n ;  
-         a l i g n - i t e m s :   c e n t e r ;  
- }  
-  
- . t o t a l - o d d - i n f o   . l a b e l   {  
-         c o l o r :   # 8 8 8 ;  
-         f o n t - s i z e :   0 . 9 r e m ;  
- }  
-  
- . t o t a l - o d d - i n f o   . v a l u e   {  
-         c o l o r :   # f f d 7 0 0 ;  
-         f o n t - s i z e :   1 . 8 r e m ;  
-         f o n t - w e i g h t :   9 0 0 ;  
- }  
-  
- . b t n - c o p y - p a r l a y   {  
-         b a c k g r o u n d :   # f f d 7 0 0 ;  
-         c o l o r :   # 0 0 0 ;  
-         b o r d e r :   n o n e ;  
-         w i d t h :   1 0 0 % ;  
-         p a d d i n g :   1 2 p x ;  
-         b o r d e r - r a d i u s :   8 p x ;  
-         f o n t - w e i g h t :   8 0 0 ;  
-         f o n t - s i z e :   1 r e m ;  
-         t e x t - t r a n s f o r m :   u p p e r c a s e ;  
-         c u r s o r :   p o i n t e r ;  
-         t r a n s i t i o n :   t r a n s f o r m   0 . 2 s ,   b a c k g r o u n d   0 . 2 s ;  
- }  
-  
- . b t n - c o p y - p a r l a y : a c t i v e   {  
-         t r a n s f o r m :   s c a l e ( 0 . 9 6 ) ;  
- }  
-  
- . b t n - c o p y - p a r l a y . c o p i e d   {  
-         b a c k g r o u n d :   # 0 0 f f 8 8 ;  
-         c o l o r :   # 0 0 0 ;  
- }  
-  
- / *   S i m p l e s   a n i m a √ ß √ £ o   d e   S h i n e   n o   b o t √ £ o   * /  
- @ k e y f r a m e s   s h i n e   {  
-         0 %   {  
-                 b a c k g r o u n d - p o s i t i o n :   - 1 0 0 p x ;  
-         }  
-  
-         1 0 0 %   {  
-                 b a c k g r o u n d - p o s i t i o n :   3 0 0 p x ;  
-         }  
- }  
-  
- / *   A r e a   d e   J o g o s   -   A j u s t e   * /  
- . g a m e - c a r d   . a c t i o n s - a r e a   {  
-         m a r g i n - t o p :   1 2 p x ;  
-         p a d d i n g - t o p :   1 2 p x ;  
-         b o r d e r - t o p :   1 p x   s o l i d   r g b a ( 2 5 5 ,   2 5 5 ,   2 5 5 ,   0 . 0 5 ) ;  
-         d i s p l a y :   f l e x ;  
-         g a p :   1 0 p x ;  
- }  
-  
- . b t n - c o p y - c o d e   {  
-         f l e x :   1 ;  
-         b a c k g r o u n d :   r g b a ( 2 5 5 ,   2 5 5 ,   2 5 5 ,   0 . 1 ) ;  
-         b o r d e r :   1 p x   s o l i d   r g b a ( 2 5 5 ,   2 5 5 ,   2 5 5 ,   0 . 2 ) ;  
-         c o l o r :   # f f f ;  
-         p a d d i n g :   8 p x ;  
-         b o r d e r - r a d i u s :   6 p x ;  
-         c u r s o r :   p o i n t e r ;  
-         f o n t - s i z e :   0 . 8 r e m ;  
-         t r a n s i t i o n :   a l l   0 . 2 s ;  
- }  
-  
- . b t n - c o p y - c o d e : h o v e r   {  
-         b a c k g r o u n d :   r g b a ( 2 5 5 ,   2 5 5 ,   2 5 5 ,   0 . 2 ) ;  
- }  
- 
+/* Desktop overrides handled by .app-container max-width */
