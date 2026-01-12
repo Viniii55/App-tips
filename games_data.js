@@ -241,9 +241,9 @@ window.LIVE_GAMES = [
             "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Transdev_Burnley_Pendle_logo.png"
         },
         "tip": {
-            "market": "Gol a Qualquer Momento: Salah",
-            "odd": 1.85,
-            "win_rate": 88
+            "market": "Vencer: Liverpool",
+            "odd": 1.22,
+            "win_rate": 90
         }
     },
     {
@@ -545,9 +545,9 @@ window.LIVE_GAMES = [
             "logo": "https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg"
         },
         "tip": {
-            "market": "Gol a Qualquer Momento: Saka",
-            "odd": 1.85,
-            "win_rate": 92
+            "market": "Vencer: Arsenal",
+            "odd": 1.5,
+            "win_rate": 73
         }
     },
     {
@@ -621,9 +621,9 @@ window.LIVE_GAMES = [
             "logo": "https://upload.wikimedia.org/wikipedia/en/5/58/CF_Torre_Levante_logo.png"
         },
         "tip": {
-            "market": "Gol a Qualquer Momento: Vini Jr",
-            "odd": 1.85,
-            "win_rate": 93
+            "market": "Vencer: Real Madrid",
+            "odd": 1.13,
+            "win_rate": 97
         }
     },
     {
@@ -754,9 +754,9 @@ window.LIVE_GAMES = [
             "logo": "https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg"
         },
         "tip": {
-            "market": "Gol a Qualquer Momento: Lewandowski",
-            "odd": 1.85,
-            "win_rate": 92
+            "market": "Vencer: Barcelona",
+            "odd": 1.48,
+            "win_rate": 74
         }
     },
     {
@@ -850,8 +850,8 @@ window.LIVE_GAMES = [
         },
         "tip": {
             "market": "Dupla Chance: Real Betis ou Empate",
-            "odd": 1.27,
-            "win_rate": 93
+            "odd": 1.24,
+            "win_rate": 95
         }
     },
     {
@@ -906,9 +906,9 @@ window.LIVE_GAMES = [
             "logo": "https://upload.wikimedia.org/wikipedia/en/6/6e/Real_Oviedo_logo.svg"
         },
         "tip": {
-            "market": "Vencer: Barcelona",
-            "odd": 1.06,
-            "win_rate": 98
+            "market": "Gol a Qualquer Momento: Lewandowski",
+            "odd": 1.85,
+            "win_rate": 88
         }
     },
     {
@@ -1051,7 +1051,7 @@ window.LIVE_GAMES = [
         "date": "2026-01-13T17:30:00Z",
         "teamA": {
             "name": "VfB Stuttgart",
-            "logo": "https://ui-avatars.com/api/?name=VfB%20Stuttgart&background=bfd7c9&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/VfB_Stuttgart_Logo.svg"
         },
         "teamB": {
             "name": "Eintracht Frankfurt",
@@ -1070,11 +1070,11 @@ window.LIVE_GAMES = [
         "date": "2026-01-13T19:30:00Z",
         "teamA": {
             "name": "FSV Mainz 05",
-            "logo": "https://ui-avatars.com/api/?name=FSV%20Mainz%2005&background=a4902f&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/1/1b/1._FSV_Mainz_05_logo.svg"
         },
         "teamB": {
             "name": "1. FC Heidenheim",
-            "logo": "https://ui-avatars.com/api/?name=1.%20FC%20Heidenheim&background=5de9bf&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/9/9d/1._FC_Heidenheim_1846.svg"
         },
         "tip": {
             "market": "Dupla Chance: FSV Mainz 05 ou Empate",
@@ -1089,7 +1089,7 @@ window.LIVE_GAMES = [
         "date": "2026-01-13T19:30:00Z",
         "teamA": {
             "name": "Hamburger SV",
-            "logo": "https://ui-avatars.com/api/?name=Hamburger%20SV&background=45962f&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Hamburger_SV_logo.svg"
         },
         "teamB": {
             "name": "Bayer Leverkusen",
@@ -1116,8 +1116,8 @@ window.LIVE_GAMES = [
         },
         "tip": {
             "market": "Vencer: Borussia Dortmund",
-            "odd": 1.38,
-            "win_rate": 79
+            "odd": 1.37,
+            "win_rate": 80
         }
     },
     {
@@ -1165,7 +1165,7 @@ window.LIVE_GAMES = [
         "date": "2026-01-14T19:30:00Z",
         "teamA": {
             "name": "TSG Hoffenheim",
-            "logo": "https://ui-avatars.com/api/?name=TSG%20Hoffenheim&background=c4609d&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/7/78/TSG_1899_Hoffenheim_Logo_before_2007.png"
         },
         "teamB": {
             "name": "Borussia Monchengladbach",
@@ -1203,7 +1203,7 @@ window.LIVE_GAMES = [
         "date": "2026-01-15T19:30:00Z",
         "teamA": {
             "name": "Augsburg",
-            "logo": "https://ui-avatars.com/api/?name=Augsburg&background=ffd45d&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/4/45/FH-Augsburg-Logo.svg"
         },
         "teamB": {
             "name": "Union Berlin",
@@ -1621,7 +1621,7 @@ window.LIVE_GAMES = [
         "date": "2026-01-18T17:00:00Z",
         "teamA": {
             "name": "Torino",
-            "logo": "https://ui-avatars.com/api/?name=Torino&background=72e4b8&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/8/87/Tapporosso_-_Centrale_del_Latte_di_Torino_-_logo_%28Italy%29.svg"
         },
         "teamB": {
             "name": "AS Roma",
@@ -2218,8 +2218,8 @@ window.LIVE_GAMES = [
         },
         "tip": {
             "market": "Vencer: Ajax",
-            "odd": 1.45,
-            "win_rate": 75
+            "odd": 1.44,
+            "win_rate": 76
         }
     },
     {
@@ -2370,8 +2370,8 @@ window.LIVE_GAMES = [
         },
         "tip": {
             "market": "Vencer: Feyenoord",
-            "odd": 1.39,
-            "win_rate": 79
+            "odd": 1.4,
+            "win_rate": 78
         }
     },
     {
@@ -2654,9 +2654,9 @@ window.LIVE_GAMES = [
             "logo": "https://upload.wikimedia.org/wikipedia/en/0/02/Royale_Union_Saint-Gilloise_logo.png"
         },
         "tip": {
-            "market": "Vencer: Bayern Munich",
-            "odd": 1.08,
-            "win_rate": 98
+            "market": "Gol a Qualquer Momento: Kane",
+            "odd": 1.85,
+            "win_rate": 95
         }
     },
     {
@@ -2692,9 +2692,9 @@ window.LIVE_GAMES = [
             "logo": "https://upload.wikimedia.org/wikipedia/en/9/9b/Pafos_FC_crest.svg"
         },
         "tip": {
-            "market": "Vencer: Chelsea",
-            "odd": 1.11,
-            "win_rate": 98
+            "market": "Gol a Qualquer Momento: Palmer",
+            "odd": 1.85,
+            "win_rate": 86
         }
     },
     {
@@ -2736,82 +2736,6 @@ window.LIVE_GAMES = [
         }
     },
     {
-        "id": "230cc244629492f81d1e9b5b482ea05a",
-        "sport": "basketball",
-        "league": "NBA",
-        "date": "2026-01-12T01:11:00Z",
-        "teamA": {
-            "name": "Denver Nuggets",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/c/cf/George_karl.jpg"
-        },
-        "teamB": {
-            "name": "Milwaukee Bucks",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/4/48/Milwaukee_Bucks_2006_Jersey_logo.svg"
-        },
-        "tip": {
-            "market": "Vencer: Denver Nuggets",
-            "odd": 1.15,
-            "win_rate": 95
-        }
-    },
-    {
-        "id": "da88ede61ab04b8f3bb31d18bb33b03e",
-        "sport": "basketball",
-        "league": "NBA",
-        "date": "2026-01-12T01:11:00Z",
-        "teamA": {
-            "name": "Phoenix Suns",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/4/41/Phoenix_Suns_Arena.png"
-        },
-        "teamB": {
-            "name": "Washington Wizards",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/1/16/Washington_Wizards_logo_%282011-2015%29.svg"
-        },
-        "tip": {
-            "market": "Escanteios: Mais de 8.5",
-            "odd": 1.65,
-            "win_rate": 91
-        }
-    },
-    {
-        "id": "337fdea46a5e7e784adb5058e364491e",
-        "sport": "basketball",
-        "league": "NBA",
-        "date": "2026-01-12T01:42:00Z",
-        "teamA": {
-            "name": "Golden State Warriors",
-            "logo": "https://upload.wikimedia.org/wikipedia/en/0/01/Golden_State_Warriors_logo.svg"
-        },
-        "teamB": {
-            "name": "Atlanta Hawks",
-            "logo": "https://upload.wikimedia.org/wikipedia/en/2/24/Atlanta_Hawks_logo.svg"
-        },
-        "tip": {
-            "market": "Vencer: Atlanta Hawks",
-            "odd": 1.37,
-            "win_rate": 80
-        }
-    },
-    {
-        "id": "36fcfef1bd63f4ffa34b87ba9251e130",
-        "sport": "basketball",
-        "league": "NBA",
-        "date": "2026-01-12T02:10:00Z",
-        "teamA": {
-            "name": "Sacramento Kings",
-            "logo": "https://upload.wikimedia.org/wikipedia/en/c/c7/SacramentoKings.svg"
-        },
-        "teamB": {
-            "name": "Houston Rockets",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Houston_Rockets_Wordmark_Logo_2003-current.png"
-        },
-        "tip": {
-            "market": "Vencer: Houston Rockets",
-            "odd": 1.35,
-            "win_rate": 81
-        }
-    },
-    {
         "id": "37ad3adb35ed4728a96f52ce3ef3be12",
         "sport": "basketball",
         "league": "NBA",
@@ -2825,9 +2749,9 @@ window.LIVE_GAMES = [
             "logo": "https://upload.wikimedia.org/wikipedia/commons/5/53/Utah_Jazz_Logo%2C_1980-1996.png"
         },
         "tip": {
-            "market": "Escanteios: Mais de 8.5",
-            "odd": 1.65,
-            "win_rate": 91
+            "market": "Vencer: Cleveland Cavaliers",
+            "odd": 1.13,
+            "win_rate": 97
         }
     },
     {
@@ -2926,25 +2850,6 @@ window.LIVE_GAMES = [
         }
     },
     {
-        "id": "d48193fef08ca62ade864612a40e2a4e",
-        "sport": "american_football",
-        "league": "Americanfootball Nfl",
-        "date": "2026-01-12T01:16:32Z",
-        "teamA": {
-            "name": "New England Patriots",
-            "logo": "https://upload.wikimedia.org/wikipedia/en/b/b9/New_England_Patriots_logo.svg"
-        },
-        "teamB": {
-            "name": "Los Angeles Chargers",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Los_Angeles_Chargers_2020_wordmark.svg"
-        },
-        "tip": {
-            "market": "Vencer: New England Patriots",
-            "odd": 1.29,
-            "win_rate": 85
-        }
-    },
-    {
         "id": "932813a3782921beb4f7fecdf247865e",
         "sport": "american_football",
         "league": "Americanfootball Nfl",
@@ -2999,25 +2904,6 @@ window.LIVE_GAMES = [
             "market": "Vencer: Seattle Seahawks",
             "odd": 1.31,
             "win_rate": 83
-        }
-    },
-    {
-        "id": "ad845e4428af5e3af90345614494e2df",
-        "sport": "hockey",
-        "league": "Icehockey Nhl",
-        "date": "2026-01-12T01:08:48Z",
-        "teamA": {
-            "name": "San Jose Sharks",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/2/21/San_Jose_Sharks_2021_Wordmark_Logo.png"
-        },
-        "teamB": {
-            "name": "Vegas Golden Knights",
-            "logo": "https://upload.wikimedia.org/wikipedia/en/a/ac/Vegas_Golden_Knights_logo.svg"
-        },
-        "tip": {
-            "market": "Escanteios: Mais de 8.5",
-            "odd": 1.65,
-            "win_rate": 91
         }
     },
     {
@@ -3198,11 +3084,11 @@ window.LIVE_GAMES = [
         "date": "2026-01-17T16:00:00Z",
         "teamA": {
             "name": "Karol Rosa",
-            "logo": "https://ui-avatars.com/api/?name=Karol%20Rosa&background=3369f4&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Karol%20Rosa&background=8566c0&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Deniz Ilbay",
-            "logo": "https://ui-avatars.com/api/?name=Deniz%20Ilbay&background=94e79f&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Deniz%20Ilbay&background=25c3dd&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Deniz Ilbay",
@@ -3217,11 +3103,11 @@ window.LIVE_GAMES = [
         "date": "2026-01-17T16:00:00Z",
         "teamA": {
             "name": "James Hendin",
-            "logo": "https://ui-avatars.com/api/?name=James%20Hendin&background=b863ed&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=James%20Hendin&background=153fa4&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Gjoni Palokaj",
-            "logo": "https://ui-avatars.com/api/?name=Gjoni%20Palokaj&background=53c224&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Gjoni%20Palokaj&background=1018b9&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Dupla Chance: Gjoni Palokaj ou Empate",
@@ -3236,11 +3122,11 @@ window.LIVE_GAMES = [
         "date": "2026-01-17T16:00:00Z",
         "teamA": {
             "name": "Kamil Oniszczuk",
-            "logo": "https://ui-avatars.com/api/?name=Kamil%20Oniszczuk&background=6c2b0b&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Kamil%20Oniszczuk&background=54b4af&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Marek Bartl",
-            "logo": "https://ui-avatars.com/api/?name=Marek%20Bartl&background=89b250&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Marek%20Bartl&background=43105d&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Dupla Chance: Kamil Oniszczuk ou Empate",
@@ -3255,11 +3141,11 @@ window.LIVE_GAMES = [
         "date": "2026-01-17T16:00:00Z",
         "teamA": {
             "name": "Krzysztof Jotko",
-            "logo": "https://ui-avatars.com/api/?name=Krzysztof%20Jotko&background=18f3e0&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Krzysztof%20Jotko&background=370785&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Kerim Engizek",
-            "logo": "https://ui-avatars.com/api/?name=Kerim%20Engizek&background=7ef7fb&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Kerim%20Engizek&background=3800f9&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Dupla Chance: Kerim Engizek ou Empate",
@@ -3274,7 +3160,7 @@ window.LIVE_GAMES = [
         "date": "2026-01-24T20:00:00Z",
         "teamA": {
             "name": "Alex Hernandez",
-            "logo": "https://ui-avatars.com/api/?name=Alex%20Hernandez&background=e973a3&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Alex%20Hernandez&background=b4dda6&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Michael Johnson",
@@ -3297,7 +3183,7 @@ window.LIVE_GAMES = [
         },
         "teamB": {
             "name": "Alex Perez",
-            "logo": "https://ui-avatars.com/api/?name=Alex%20Perez&background=278b0e&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Alex%20Perez&background=3cc1be&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Charles Johnson",
@@ -3312,11 +3198,11 @@ window.LIVE_GAMES = [
         "date": "2026-01-24T20:00:00Z",
         "teamA": {
             "name": "Andrey Pulyaev",
-            "logo": "https://ui-avatars.com/api/?name=Andrey%20Pulyaev&background=3503bb&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Andrey%20Pulyaev&background=e9c762&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Ateba Gautier",
-            "logo": "https://ui-avatars.com/api/?name=Ateba%20Gautier&background=b7fce8&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Ateba%20Gautier&background=87b6c1&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Ateba Gautier",
@@ -3331,11 +3217,11 @@ window.LIVE_GAMES = [
         "date": "2026-01-24T20:00:00Z",
         "teamA": {
             "name": "Cameron Smotherman",
-            "logo": "https://ui-avatars.com/api/?name=Cameron%20Smotherman&background=42edb2&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Cameron%20Smotherman&background=9a014d&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Ricky Turcios",
-            "logo": "https://ui-avatars.com/api/?name=Ricky%20Turcios&background=b461e1&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Ricky%20Turcios&background=0c70ff&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Cameron Smotherman",
@@ -3350,11 +3236,11 @@ window.LIVE_GAMES = [
         "date": "2026-01-24T20:00:00Z",
         "teamA": {
             "name": "Deiveson Figueiredo",
-            "logo": "https://ui-avatars.com/api/?name=Deiveson%20Figueiredo&background=7aaa01&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Deiveson%20Figueiredo&background=7d79a5&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Umar Nurmagomedov",
-            "logo": "https://ui-avatars.com/api/?name=Umar%20Nurmagomedov&background=e98efd&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Umar%20Nurmagomedov&background=415ac1&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Umar Nurmagomedov",
@@ -3369,11 +3255,11 @@ window.LIVE_GAMES = [
         "date": "2026-01-24T20:00:00Z",
         "teamA": {
             "name": "Denzel Freeman",
-            "logo": "https://ui-avatars.com/api/?name=Denzel%20Freeman&background=4f1996&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Denzel%20Freeman&background=dc3558&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Josh Hokit",
-            "logo": "https://ui-avatars.com/api/?name=Josh%20Hokit&background=651f0b&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Josh%20Hokit&background=f7edcc&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Josh Hokit",
@@ -3388,11 +3274,11 @@ window.LIVE_GAMES = [
         "date": "2026-01-24T20:00:00Z",
         "teamA": {
             "name": "Modestas Bukauskas",
-            "logo": "https://ui-avatars.com/api/?name=Modestas%20Bukauskas&background=df476b&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Modestas%20Bukauskas&background=6bcca5&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Nikita Krylov",
-            "logo": "https://ui-avatars.com/api/?name=Nikita%20Krylov&background=54dc9f&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Nikita%20Krylov&background=110b91&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Dupla Chance: Modestas Bukauskas ou Empate",
@@ -3407,7 +3293,7 @@ window.LIVE_GAMES = [
         "date": "2026-01-24T20:00:00Z",
         "teamA": {
             "name": "Rose Namajunas",
-            "logo": "https://ui-avatars.com/api/?name=Rose%20Namajunas&background=056026&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Rose%20Namajunas&background=2fb858&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Natalia Silva",
@@ -3430,7 +3316,7 @@ window.LIVE_GAMES = [
         },
         "teamB": {
             "name": "Adam Fugitt",
-            "logo": "https://ui-avatars.com/api/?name=Adam%20Fugitt&background=fff7c2&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Adam%20Fugitt&background=786782&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Ty Miller",
@@ -3464,11 +3350,11 @@ window.LIVE_GAMES = [
         "date": "2026-01-25T02:00:00Z",
         "teamA": {
             "name": "Waldo Cortes-Acosta",
-            "logo": "https://ui-avatars.com/api/?name=Waldo%20Cortes-Acosta&background=50424a&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Waldo%20Cortes-Acosta&background=77e96e&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Derrick Lewis",
-            "logo": "https://ui-avatars.com/api/?name=Derrick%20Lewis&background=97b1ed&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Derrick%20Lewis&background=81c7e7&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Waldo Cortes-Acosta",
@@ -3483,11 +3369,11 @@ window.LIVE_GAMES = [
         "date": "2026-01-25T02:00:00Z",
         "teamA": {
             "name": "Sean O'Malley",
-            "logo": "https://ui-avatars.com/api/?name=Sean%20O%27Malley&background=b6b203&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Sean%20O%27Malley&background=1034dc&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Song Yadong",
-            "logo": "https://ui-avatars.com/api/?name=Song%20Yadong&background=431818&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Song%20Yadong&background=5eb313&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Sean O'Malley",
@@ -3502,11 +3388,11 @@ window.LIVE_GAMES = [
         "date": "2026-01-25T02:30:00Z",
         "teamA": {
             "name": "Kayla Harrison",
-            "logo": "https://ui-avatars.com/api/?name=Kayla%20Harrison&background=c744e0&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Kayla%20Harrison&background=d1d7be&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Amanda Nunes",
-            "logo": "https://ui-avatars.com/api/?name=Amanda%20Nunes&background=e9ee21&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Amanda%20Nunes&background=66bb55&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Kayla Harrison",
@@ -3521,11 +3407,11 @@ window.LIVE_GAMES = [
         "date": "2026-01-25T04:30:00Z",
         "teamA": {
             "name": "Justin Gaethje",
-            "logo": "https://ui-avatars.com/api/?name=Justin%20Gaethje&background=6f750c&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Justin%20Gaethje&background=9b40ce&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Paddy Pimblett",
-            "logo": "https://ui-avatars.com/api/?name=Paddy%20Pimblett&background=fa0968&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Paddy%20Pimblett&background=cf6c0d&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Paddy Pimblett",
@@ -3540,11 +3426,11 @@ window.LIVE_GAMES = [
         "date": "2026-01-31T22:00:00Z",
         "teamA": {
             "name": "Quillan Salkilld",
-            "logo": "https://ui-avatars.com/api/?name=Quillan%20Salkilld&background=131cd3&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Quillan%20Salkilld&background=f9dbee&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Zhu Rong",
-            "logo": "https://ui-avatars.com/api/?name=Zhu%20Rong&background=70fe84&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Zhu%20Rong&background=30db11&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Quillan Salkilld",
@@ -3559,11 +3445,11 @@ window.LIVE_GAMES = [
         "date": "2026-01-31T23:15:00Z",
         "teamA": {
             "name": "Jacob Malkoun",
-            "logo": "https://ui-avatars.com/api/?name=Jacob%20Malkoun&background=4ceb04&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Jacob%20Malkoun&background=161ad7&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Torrez Finney",
-            "logo": "https://ui-avatars.com/api/?name=Torrez%20Finney&background=0ec5f0&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Torrez%20Finney&background=18a4c3&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Dupla Chance: Jacob Malkoun ou Empate",
@@ -3578,11 +3464,11 @@ window.LIVE_GAMES = [
         "date": "2026-01-31T23:45:00Z",
         "teamA": {
             "name": "Cam Rowston",
-            "logo": "https://ui-avatars.com/api/?name=Cam%20Rowston&background=7f7dbc&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Cam%20Rowston&background=f78f88&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Cody Brundage",
-            "logo": "https://ui-avatars.com/api/?name=Cody%20Brundage&background=1b4a32&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Cody%20Brundage&background=9914df&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Cam Rowston",
@@ -3597,11 +3483,11 @@ window.LIVE_GAMES = [
         "date": "2026-02-01T01:15:00Z",
         "teamA": {
             "name": "Kaan Ofli",
-            "logo": "https://ui-avatars.com/api/?name=Kaan%20Ofli&background=799eb6&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Kaan%20Ofli&background=80fb45&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Yi Zha",
-            "logo": "https://ui-avatars.com/api/?name=Yi%20Zha&background=0b549a&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Yi%20Zha&background=0ae4f3&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Yi Zha",
@@ -3616,11 +3502,11 @@ window.LIVE_GAMES = [
         "date": "2026-02-01T01:45:00Z",
         "teamA": {
             "name": "Junior Tafa",
-            "logo": "https://ui-avatars.com/api/?name=Junior%20Tafa&background=965cd8&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Junior%20Tafa&background=7a8098&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Billy Elekana",
-            "logo": "https://ui-avatars.com/api/?name=Billy%20Elekana&background=10fbec&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Billy%20Elekana&background=0cb0a7&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Billy Elekana",
@@ -3635,11 +3521,11 @@ window.LIVE_GAMES = [
         "date": "2026-02-01T02:15:00Z",
         "teamA": {
             "name": "Jonathan Micallef",
-            "logo": "https://ui-avatars.com/api/?name=Jonathan%20Micallef&background=837c4d&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Jonathan%20Micallef&background=f1ee1f&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Oban Elliott",
-            "logo": "https://ui-avatars.com/api/?name=Oban%20Elliott&background=fc8dd8&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Oban%20Elliott&background=363ca4&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Dupla Chance: Jonathan Micallef ou Empate",
@@ -3654,11 +3540,11 @@ window.LIVE_GAMES = [
         "date": "2026-02-01T02:30:00Z",
         "teamA": {
             "name": "Jim Crute",
-            "logo": "https://ui-avatars.com/api/?name=Jim%20Crute&background=228cbe&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Jim%20Crute&background=0b5a9f&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Dustin Jacoby",
-            "logo": "https://ui-avatars.com/api/?name=Dustin%20Jacoby&background=e2afdf&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Dustin%20Jacoby&background=6dcb20&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Dupla Chance: Dustin Jacoby ou Empate",
@@ -3673,11 +3559,11 @@ window.LIVE_GAMES = [
         "date": "2026-02-01T03:00:00Z",
         "teamA": {
             "name": "Tai Tuivasa",
-            "logo": "https://ui-avatars.com/api/?name=Tai%20Tuivasa&background=1c4c5e&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Tai%20Tuivasa&background=f1819e&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Tallison Teixeira",
-            "logo": "https://ui-avatars.com/api/?name=Tallison%20Teixeira&background=8769ae&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Tallison%20Teixeira&background=d2636e&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Tallison Teixeira",
@@ -3692,11 +3578,11 @@ window.LIVE_GAMES = [
         "date": "2026-02-01T03:20:00Z",
         "teamA": {
             "name": "Rafael Fiziev",
-            "logo": "https://ui-avatars.com/api/?name=Rafael%20Fiziev&background=a6eb6e&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Rafael%20Fiziev&background=b40ad5&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Mauricio Ruffy",
-            "logo": "https://ui-avatars.com/api/?name=Mauricio%20Ruffy&background=d94de3&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Mauricio%20Ruffy&background=366180&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Dupla Chance: Rafael Fiziev ou Empate",
@@ -3711,11 +3597,11 @@ window.LIVE_GAMES = [
         "date": "2026-02-01T03:45:00Z",
         "teamA": {
             "name": "Daniel Hooker",
-            "logo": "https://ui-avatars.com/api/?name=Daniel%20Hooker&background=11ea0d&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Daniel%20Hooker&background=c18035&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Benoit Saint-Denis",
-            "logo": "https://ui-avatars.com/api/?name=Benoit%20Saint-Denis&background=c519ec&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Benoit%20Saint-Denis&background=d11a01&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Benoit Saint-Denis",
@@ -3730,7 +3616,7 @@ window.LIVE_GAMES = [
         "date": "2026-02-01T04:15:00Z",
         "teamA": {
             "name": "Alex Volkanovski",
-            "logo": "https://ui-avatars.com/api/?name=Alex%20Volkanovski&background=b6dba5&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Alex%20Volkanovski&background=a51d4c&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Diego Lopes",
@@ -3749,11 +3635,11 @@ window.LIVE_GAMES = [
         "date": "2026-02-22T05:00:00Z",
         "teamA": {
             "name": "Sean Strickland",
-            "logo": "https://ui-avatars.com/api/?name=Sean%20Strickland&background=c3ee8e&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Sean%20Strickland&background=1eecc8&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Anthony Hernandez",
-            "logo": "https://ui-avatars.com/api/?name=Anthony%20Hernandez&background=b4c5cd&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Anthony%20Hernandez&background=56fce0&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Anthony Hernandez",
@@ -3768,11 +3654,11 @@ window.LIVE_GAMES = [
         "date": "2026-03-08T04:30:00Z",
         "teamA": {
             "name": "Max Holloway",
-            "logo": "https://ui-avatars.com/api/?name=Max%20Holloway&background=5be4b2&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Max%20Holloway&background=8c4d30&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Charles Oliveira",
-            "logo": "https://ui-avatars.com/api/?name=Charles%20Oliveira&background=2a6a4a&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Charles%20Oliveira&background=96bbdc&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Max Holloway",
@@ -3787,11 +3673,11 @@ window.LIVE_GAMES = [
         "date": "2026-03-29T02:00:00Z",
         "teamA": {
             "name": "Charles Oliveira",
-            "logo": "https://ui-avatars.com/api/?name=Charles%20Oliveira&background=2a6a4a&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Charles%20Oliveira&background=96bbdc&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Max Holloway",
-            "logo": "https://ui-avatars.com/api/?name=Max%20Holloway&background=5be4b2&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Max%20Holloway&background=8c4d30&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Max Holloway",
@@ -3806,11 +3692,11 @@ window.LIVE_GAMES = [
         "date": "2026-06-02T02:00:00Z",
         "teamA": {
             "name": "Islam Makhachev",
-            "logo": "https://ui-avatars.com/api/?name=Islam%20Makhachev&background=be22f4&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Islam%20Makhachev&background=1bf4ef&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Ilia Topuria",
-            "logo": "https://ui-avatars.com/api/?name=Ilia%20Topuria&background=62dd81&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Ilia%20Topuria&background=4ca3b3&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Islam Makhachev",
@@ -3825,11 +3711,11 @@ window.LIVE_GAMES = [
         "date": "2026-06-14T02:00:00Z",
         "teamA": {
             "name": "Alex Pereira",
-            "logo": "https://ui-avatars.com/api/?name=Alex%20Pereira&background=281cdd&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Alex%20Pereira&background=a3aba9&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Carlos Ulberg",
-            "logo": "https://ui-avatars.com/api/?name=Carlos%20Ulberg&background=34adca&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Carlos%20Ulberg&background=25f1fb&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Alex Pereira",
@@ -3844,11 +3730,11 @@ window.LIVE_GAMES = [
         "date": "2026-06-14T02:00:00Z",
         "teamA": {
             "name": "Alex Pereira",
-            "logo": "https://ui-avatars.com/api/?name=Alex%20Pereira&background=281cdd&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Alex%20Pereira&background=a3aba9&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Jiri Prochazka",
-            "logo": "https://ui-avatars.com/api/?name=Jiri%20Prochazka&background=2449f2&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Jiri%20Prochazka&background=8ebdde&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Alex Pereira",
@@ -3863,11 +3749,11 @@ window.LIVE_GAMES = [
         "date": "2026-06-14T02:00:00Z",
         "teamA": {
             "name": "Alex Pereira",
-            "logo": "https://ui-avatars.com/api/?name=Alex%20Pereira&background=281cdd&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Alex%20Pereira&background=a3aba9&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Jon Jones",
-            "logo": "https://ui-avatars.com/api/?name=Jon%20Jones&background=8eb03a&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Jon%20Jones&background=19afae&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Jon Jones",
@@ -3882,11 +3768,11 @@ window.LIVE_GAMES = [
         "date": "2026-06-14T02:00:00Z",
         "teamA": {
             "name": "Magomed Ankalaev",
-            "logo": "https://ui-avatars.com/api/?name=Magomed%20Ankalaev&background=6ef1eb&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Magomed%20Ankalaev&background=7c85ea&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Carlos Ulberg",
-            "logo": "https://ui-avatars.com/api/?name=Carlos%20Ulberg&background=34adca&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Carlos%20Ulberg&background=25f1fb&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Magomed Ankalaev",
@@ -3901,7 +3787,7 @@ window.LIVE_GAMES = [
         "date": "2026-06-27T14:00:00Z",
         "teamA": {
             "name": "Valentina Shevchenko",
-            "logo": "https://ui-avatars.com/api/?name=Valentina%20Shevchenko&background=c11158&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Valentina%20Shevchenko&background=4e02d3&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Natalia Silva",
@@ -3920,7 +3806,7 @@ window.LIVE_GAMES = [
         "date": "2026-06-28T02:00:00Z",
         "teamA": {
             "name": "Alexandre Pantoja",
-            "logo": "https://ui-avatars.com/api/?name=Alexandre%20Pantoja&background=160f04&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Alexandre%20Pantoja&background=2e8911&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Joshua Van",
@@ -3939,11 +3825,11 @@ window.LIVE_GAMES = [
         "date": "2026-06-28T02:00:00Z",
         "teamA": {
             "name": "Tom Aspinall",
-            "logo": "https://ui-avatars.com/api/?name=Tom%20Aspinall&background=c5d4c9&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Tom%20Aspinall&background=7321cc&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Ciryl Gane",
-            "logo": "https://ui-avatars.com/api/?name=Ciryl%20Gane&background=7c210a&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Ciryl%20Gane&background=5b68c9&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Tom Aspinall",
@@ -3958,7 +3844,7 @@ window.LIVE_GAMES = [
         "date": "2026-06-28T02:00:00Z",
         "teamA": {
             "name": "Islam Makhachev",
-            "logo": "https://ui-avatars.com/api/?name=Islam%20Makhachev&background=be22f4&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Islam%20Makhachev&background=1bf4ef&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Michael Morales",
@@ -3981,7 +3867,7 @@ window.LIVE_GAMES = [
         },
         "teamB": {
             "name": "Tatsuro Taira",
-            "logo": "https://ui-avatars.com/api/?name=Tatsuro%20Taira&background=9052b5&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Tatsuro%20Taira&background=0ccb67&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Tatsuro Taira",
@@ -3996,11 +3882,11 @@ window.LIVE_GAMES = [
         "date": "2026-06-28T02:00:00Z",
         "teamA": {
             "name": "Weili Zhang",
-            "logo": "https://ui-avatars.com/api/?name=Weili%20Zhang&background=e2a633&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Weili%20Zhang&background=0d12cd&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Mackenzie Dern",
-            "logo": "https://ui-avatars.com/api/?name=Mackenzie%20Dern&background=5e47ac&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Mackenzie%20Dern&background=14fcdb&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Weili Zhang",
@@ -4015,11 +3901,11 @@ window.LIVE_GAMES = [
         "date": "2026-06-28T02:00:00Z",
         "teamA": {
             "name": "Merab Dvalishvili",
-            "logo": "https://ui-avatars.com/api/?name=Merab%20Dvalishvili&background=b5c88e&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Merab%20Dvalishvili&background=0fb284&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Petr Yan",
-            "logo": "https://ui-avatars.com/api/?name=Petr%20Yan&background=50572f&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Petr%20Yan&background=f07cf4&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Petr Yan",
@@ -4034,11 +3920,11 @@ window.LIVE_GAMES = [
         "date": "2026-08-02T03:10:00Z",
         "teamA": {
             "name": "Ilia Topuria",
-            "logo": "https://ui-avatars.com/api/?name=Ilia%20Topuria&background=62dd81&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Ilia%20Topuria&background=4ca3b3&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Arman Tsarukyan",
-            "logo": "https://ui-avatars.com/api/?name=Arman%20Tsarukyan&background=6646a8&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Arman%20Tsarukyan&background=997148&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Ilia Topuria",
@@ -4076,7 +3962,7 @@ window.LIVE_GAMES = [
         },
         "teamB": {
             "name": "Tatsuro Taira",
-            "logo": "https://ui-avatars.com/api/?name=Tatsuro%20Taira&background=9052b5&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Tatsuro%20Taira&background=0ccb67&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Escanteios: Mais de 8.5",
@@ -4091,11 +3977,11 @@ window.LIVE_GAMES = [
         "date": "2027-01-01T03:30:00Z",
         "teamA": {
             "name": "Islam Makhachev",
-            "logo": "https://ui-avatars.com/api/?name=Islam%20Makhachev&background=be22f4&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Islam%20Makhachev&background=1bf4ef&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Kamaru Usman",
-            "logo": "https://ui-avatars.com/api/?name=Kamaru%20Usman&background=199c4c&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Kamaru%20Usman&background=bde8e8&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Islam Makhachev",
@@ -4110,11 +3996,11 @@ window.LIVE_GAMES = [
         "date": "2027-01-01T04:30:00Z",
         "teamA": {
             "name": "Alex Pereira",
-            "logo": "https://ui-avatars.com/api/?name=Alex%20Pereira&background=281cdd&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Alex%20Pereira&background=a3aba9&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Carlos Ulberg",
-            "logo": "https://ui-avatars.com/api/?name=Carlos%20Ulberg&background=34adca&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Carlos%20Ulberg&background=25f1fb&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Alex Pereira",
@@ -4129,11 +4015,11 @@ window.LIVE_GAMES = [
         "date": "2027-01-01T05:00:00Z",
         "teamA": {
             "name": "Tom Aspinall",
-            "logo": "https://ui-avatars.com/api/?name=Tom%20Aspinall&background=c5d4c9&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Tom%20Aspinall&background=7321cc&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Ciryl Gane",
-            "logo": "https://ui-avatars.com/api/?name=Ciryl%20Gane&background=7c210a&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Ciryl%20Gane&background=5b68c9&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Escanteios: Mais de 8.5",
@@ -4148,111 +4034,16 @@ window.LIVE_GAMES = [
         "date": "2027-07-02T02:00:00Z",
         "teamA": {
             "name": "Islam Makhachev",
-            "logo": "https://ui-avatars.com/api/?name=Islam%20Makhachev&background=be22f4&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Islam%20Makhachev&background=1bf4ef&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Kamaru Usman",
-            "logo": "https://ui-avatars.com/api/?name=Kamaru%20Usman&background=199c4c&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Kamaru%20Usman&background=bde8e8&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Islam Makhachev",
             "odd": 1.3,
             "win_rate": 84
-        }
-    },
-    {
-        "id": "2e43acf816238612ac609565e4c7254a",
-        "sport": "tennis",
-        "league": "Tennis Atp Aus Open Singles",
-        "date": "2026-01-12T03:00:00Z",
-        "teamA": {
-            "name": "Yannick Hanfmann",
-            "logo": "https://ui-avatars.com/api/?name=Yannick%20Hanfmann&background=8b0946&color=fff&size=128&bold=true&font-size=0.4"
-        },
-        "teamB": {
-            "name": "Benjamin Hassan",
-            "logo": "https://ui-avatars.com/api/?name=Benjamin%20Hassan&background=0e529c&color=fff&size=128&bold=true&font-size=0.4"
-        },
-        "tip": {
-            "market": "Vencer: Yannick Hanfmann",
-            "odd": 1.18,
-            "win_rate": 93
-        }
-    },
-    {
-        "id": "4883f6f9e1763c7371b726d032c70fab",
-        "sport": "tennis",
-        "league": "Tennis Atp Aus Open Singles",
-        "date": "2026-01-12T03:00:00Z",
-        "teamA": {
-            "name": "Brandon Holt",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Vermont%2C_the_unspoiled_land_%28IA_vermontunspoiled00proc%29.pdf"
-        },
-        "teamB": {
-            "name": "Lukas Neumayer",
-            "logo": "https://ui-avatars.com/api/?name=Lukas%20Neumayer&background=e1d4a8&color=fff&size=128&bold=true&font-size=0.4"
-        },
-        "tip": {
-            "market": "Vencer: Lukas Neumayer",
-            "odd": 1.43,
-            "win_rate": 76
-        }
-    },
-    {
-        "id": "cfed161f63b89d6003df878ec95805a0",
-        "sport": "tennis",
-        "league": "Tennis Atp Aus Open Singles",
-        "date": "2026-01-12T03:00:00Z",
-        "teamA": {
-            "name": "Luka Pavlovic",
-            "logo": "https://ui-avatars.com/api/?name=Luka%20Pavlovic&background=700ef2&color=fff&size=128&bold=true&font-size=0.4"
-        },
-        "teamB": {
-            "name": "Colton Smith",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a0/The_Glendale_News_1907-09-28_%28IA_cgl_000744%29.pdf"
-        },
-        "tip": {
-            "market": "Vencer: Colton Smith",
-            "odd": 1.19,
-            "win_rate": 92
-        }
-    },
-    {
-        "id": "2a52dd0f1aff401c0e56d5fa4eb8752d",
-        "sport": "tennis",
-        "league": "Tennis Atp Aus Open Singles",
-        "date": "2026-01-12T03:00:00Z",
-        "teamA": {
-            "name": "Jaime Faria",
-            "logo": "https://ui-avatars.com/api/?name=Jaime%20Faria&background=d8ad45&color=fff&size=128&bold=true&font-size=0.4"
-        },
-        "teamB": {
-            "name": "Luka Mikrut",
-            "logo": "https://ui-avatars.com/api/?name=Luka%20Mikrut&background=8b13eb&color=fff&size=128&bold=true&font-size=0.4"
-        },
-        "tip": {
-            "market": "Dupla Chance: Jaime Faria ou Empate",
-            "odd": 1.07,
-            "win_rate": 96
-        }
-    },
-    {
-        "id": "f640c99a749f385932b2d7e397ccfb85",
-        "sport": "tennis",
-        "league": "Tennis Atp Aus Open Singles",
-        "date": "2026-01-12T03:00:00Z",
-        "teamA": {
-            "name": "Philip Sekulic",
-            "logo": "https://ui-avatars.com/api/?name=Philip%20Sekulic&background=ebaf6f&color=fff&size=128&bold=true&font-size=0.4"
-        },
-        "teamB": {
-            "name": "Marco Trungelliti",
-            "logo": "https://ui-avatars.com/api/?name=Marco%20Trungelliti&background=7f8522&color=fff&size=128&bold=true&font-size=0.4"
-        },
-        "tip": {
-            "market": "Vencer: Marco Trungelliti",
-            "odd": 1.26,
-            "win_rate": 87
         }
     },
     {
@@ -4262,7 +4053,7 @@ window.LIVE_GAMES = [
         "date": "2026-01-12T04:00:00Z",
         "teamA": {
             "name": "Rei Sakamoto",
-            "logo": "https://ui-avatars.com/api/?name=Rei%20Sakamoto&background=19322e&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Rei%20Sakamoto&background=c3d648&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Daniel Evans",
@@ -4281,11 +4072,11 @@ window.LIVE_GAMES = [
         "date": "2026-01-12T04:00:00Z",
         "teamA": {
             "name": "Nikoloz Basilashvili",
-            "logo": "https://ui-avatars.com/api/?name=Nikoloz%20Basilashvili&background=fc24ed&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Nikoloz%20Basilashvili&background=e2a082&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Gonzalo Bueno",
-            "logo": "https://ui-avatars.com/api/?name=Gonzalo%20Bueno&background=bab850&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Gonzalo%20Bueno&background=b09f01&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Nikoloz Basilashvili",
@@ -4304,7 +4095,7 @@ window.LIVE_GAMES = [
         },
         "teamB": {
             "name": "Hugo Dellien",
-            "logo": "https://ui-avatars.com/api/?name=Hugo%20Dellien&background=db444d&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Hugo%20Dellien&background=43e328&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Vencer: Bernard Tomic",
@@ -4319,11 +4110,11 @@ window.LIVE_GAMES = [
         "date": "2026-01-12T05:00:00Z",
         "teamA": {
             "name": "Dusan Lajovic",
-            "logo": "https://ui-avatars.com/api/?name=Dusan%20Lajovic&background=9b37b4&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Dusan%20Lajovic&background=0d7c1b&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Facundo Diaz Acosta",
-            "logo": "https://ui-avatars.com/api/?name=Facundo%20Diaz%20Acosta&background=dc1247&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Facundo%20Diaz%20Acosta&background=19da25&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Dupla Chance: Facundo Diaz Acosta ou Empate",
@@ -4338,11 +4129,11 @@ window.LIVE_GAMES = [
         "date": "2026-01-12T05:00:00Z",
         "teamA": {
             "name": "Mark Lajal",
-            "logo": "https://ui-avatars.com/api/?name=Mark%20Lajal&background=0e8237&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Mark%20Lajal&background=2c9b5b&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Francesco Passaro",
-            "logo": "https://ui-avatars.com/api/?name=Francesco%20Passaro&background=6fb868&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Francesco%20Passaro&background=d61da7&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Dupla Chance: Mark Lajal ou Empate",
@@ -4357,11 +4148,11 @@ window.LIVE_GAMES = [
         "date": "2026-01-12T05:00:00Z",
         "teamA": {
             "name": "Pierre-Hugues Herbert",
-            "logo": "https://ui-avatars.com/api/?name=Pierre-Hugues%20Herbert&background=379aad&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Pierre-Hugues%20Herbert&background=8d77d9&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Guy Den Ouden",
-            "logo": "https://ui-avatars.com/api/?name=Guy%20Den%20Ouden&background=6748c3&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Guy%20Den%20Ouden&background=aee30f&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Dupla Chance: Pierre-Hugues Herbert ou Empate",
@@ -4376,11 +4167,11 @@ window.LIVE_GAMES = [
         "date": "2026-01-12T05:00:00Z",
         "teamA": {
             "name": "Murphy Cassone",
-            "logo": "https://ui-avatars.com/api/?name=Murphy%20Cassone&background=21f679&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Murphy%20Cassone&background=e90a2a&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Yu Hsiou Hsu",
-            "logo": "https://ui-avatars.com/api/?name=Yu%20Hsiou%20Hsu&background=cc7682&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Yu%20Hsiou%20Hsu&background=e57cf2&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Dupla Chance: Murphy Cassone ou Empate",
@@ -4399,7 +4190,7 @@ window.LIVE_GAMES = [
         },
         "teamB": {
             "name": "Daniel Merida Aguilar",
-            "logo": "https://ui-avatars.com/api/?name=Daniel%20Merida%20Aguilar&background=da8be0&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Daniel%20Merida%20Aguilar&background=cfc9a3&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Dupla Chance: Daniel Merida Aguilar ou Empate",
@@ -4414,15 +4205,15 @@ window.LIVE_GAMES = [
         "date": "2026-01-12T07:00:00Z",
         "teamA": {
             "name": "Zsombor Piros",
-            "logo": "https://ui-avatars.com/api/?name=Zsombor%20Piros&background=150d87&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Zsombor%20Piros&background=fc3309&color=fff&size=128&bold=true&font-size=0.4"
         },
         "teamB": {
             "name": "Lukas Klein",
-            "logo": "https://ui-avatars.com/api/?name=Lukas%20Klein&background=4c1770&color=fff&size=128&bold=true&font-size=0.4"
+            "logo": "https://ui-avatars.com/api/?name=Lukas%20Klein&background=8e5b17&color=fff&size=128&bold=true&font-size=0.4"
         },
         "tip": {
             "market": "Dupla Chance: Lukas Klein ou Empate",
-            "odd": 1.15,
+            "odd": 1.14,
             "win_rate": 96
         }
     }
