@@ -1,5 +1,6 @@
 import requests
 import json
+import os
 from datetime import datetime
 
 # --- CONFIGURAÇÃO ---
@@ -413,6 +414,37 @@ def fetch_games():
         parlay_total_odd *= m['tip']['odd']
     
     if parlay_total_odd < 1.01: parlay_total_odd = 1.0
+
+    # --- PERSISTÊNCIA DE HISTÓRICO (PREPARAÇÃO V3) ---
+    try:
+        # Carrega histórico existente
+        history_file = "bets_history.json"
+        if os.path.exists(history_file):
+            with open(history_file, "r") as f:
+                history = json.load(f)
+        else:
+            history = []
+
+        # Adiciona novos jogos ao histórico (sem duplicar ID)
+        existing_ids = {h['id'] for h in history}
+        new_count = 0
+        for m in all_matches:
+            if m['id'] not in existing_ids:
+                # Adiciona status 'PENDING' para futura conferência
+                m['status'] = 'PENDING' 
+                history.append(m)
+                new_count += 1
+        
+        # Mantém apenas os últimos 1000 jogos para não pesar
+        if len(history) > 1000:
+            history = history[-1000:]
+
+        with open(history_file, "w") as f:
+            json.dump(history, f, indent=4)
+            
+        print(f">> Histórico atualizado: {new_count} novos jogos gravados.")
+    except Exception as e:
+        print(f"XX Erro ao gravar histórico: {e}")
 
     # Salva no JS
     try:

@@ -2,7 +2,7 @@ name: SuperTips Auto Update
 
 on:
   schedule:
-    - cron: '*/30 * * * *' # Roda a cada 30 minutos
+    - cron: '0 */6 * * *' # Roda a cada 6 horas para economizar API (00h, 06h, 12h, 18h)
   workflow_dispatch: # Permite rodar manualmente clicando num botão
 
 jobs:
