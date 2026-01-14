@@ -42,61 +42,21 @@
             </div>
         </div>
 
-        <!-- NAVEGAÇÃO DE ESPORTES (ICONS) -->
-        <div class="sports-nav-container">
-            <div class="sports-nav">
-                <button class="nav-icon-item active" data-sport="all">
-                    <div class="icon-circle">🔥</div>
-                    <span>Tudo</span>
-                </button>
-                <button class="nav-icon-item" data-sport="soccer">
-                    <div class="icon-circle">⚽</div>
-                    <span>Futebol</span>
-                </button>
-                <button class="nav-icon-item" data-sport="basketball">
-                    <div class="icon-circle">🏀</div>
-                    <span>Basquete</span>
-                </button>
-                <button class="nav-icon-item" data-sport="tennis">
-                    <div class="icon-circle">🎾</div>
-                    <span>Tênis</span>
-                </button>
-                <button class="nav-icon-item" data-sport="mma">
-                    <div class="icon-circle">🥊</div>
-                    <span>Lutas</span>
-                </button>
-                <button class="nav-icon-item" data-sport="american_football">
-                    <div class="icon-circle">🏈</div>
-                    <span>Fut. Am.</span>
-                </button>
-                <button class="nav-icon-item" data-sport="ice_hockey">
-                    <div class="icon-circle">🏒</div>
-                    <span>Hockey</span>
-                </button>
-            </div>
-        </div>
-
         <main style="padding-bottom: 80px; padding-top: 20px;">
             <!-- TRUST SCOREBOARD -->
             <div id="trust-scoreboard"
-                style="display: flex; gap: 10px; overflow-x: auto; margin-bottom: 25px; padding: 0 5px;">
+                style="display: flex; gap: 10px; overflow-x: auto; margin-bottom: 25px; padding: 0 5px; justify-content: center;">
                 <div class="score-card"
                     style="background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 10px 15px; min-width: 110px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
                     <div style="font-size: 0.7rem; color: #888; font-weight: 600; text-transform: uppercase;">Acertos
                         Hoje</div>
-                    <div style="font-size: 1.5rem; font-weight: 900; color: #2ecc71;">24</div>
+                    <div id="stats-hits" style="font-size: 1.5rem; font-weight: 900; color: #2ecc71;">--</div>
                 </div>
                 <div class="score-card"
                     style="background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 10px 15px; min-width: 110px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
                     <div style="font-size: 0.7rem; color: #888; font-weight: 600; text-transform: uppercase;">
                         Assertividade</div>
-                    <div style="font-size: 1.5rem; font-weight: 900; color: #e90029;">84%</div>
-                </div>
-                <div class="score-card"
-                    style="background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 10px 15px; min-width: 110px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-                    <div style="font-size: 0.7rem; color: #888; font-weight: 600; text-transform: uppercase;">Lucro
-                        Médio</div>
-                    <div style="font-size: 1.5rem; font-weight: 900; color: #f39c12;">R$ 340</div>
+                    <div id="stats-winrate" style="font-size: 1.5rem; font-weight: 900; color: #e90029;">--%</div>
                 </div>
             </div>
 
@@ -123,15 +83,48 @@
             </div>
 
             <!-- FEED DE JOGOS -->
+            <div class="sports-nav-container">
+                <div class="sports-nav">
+                    <button class="nav-icon-item active" data-sport="all">
+                        <div class="icon-circle">🔥</div>
+                        <span>Tudo</span>
+                    </button>
+                    <button class="nav-icon-item" data-sport="soccer">
+                        <div class="icon-circle">⚽</div>
+                        <span>Futebol</span>
+                    </button>
+                    <button class="nav-icon-item" data-sport="basketball">
+                        <div class="icon-circle">🏀</div>
+                        <span>Basquete</span>
+                    </button>
+                    <button class="nav-icon-item" data-sport="tennis">
+                        <div class="icon-circle">🎾</div>
+                        <span>Tênis</span>
+                    </button>
+
+                    <button class="nav-icon-item" data-sport="american_football">
+                        <div class="icon-circle">🏈</div>
+                        <span>Fut. Am.</span>
+                    </button>
+                    <button class="nav-icon-item" data-sport="ice_hockey">
+                        <div class="icon-circle">🏒</div>
+                        <span>Hockey</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Título da Seção -->
+            <div style="padding: 0 20px; margin-top: 20px; margin-bottom: 5px;">
+                <h3 style="margin: 0; font-size: 1.1rem; font-weight: 800; color: #111;">Jogos de HOJE 🔥</h3>
+            </div>
+
             <div id="games-feed" class="games-feed">
                 <!-- Cards injetados via JS -->
             </div>
 
         </main>
     </div> <!-- Fim app-container -->
-    </footer>
 
-    </main>
 
     <!-- ONBOARDING MODAL (Tutorial) -->
     <div id="onboarding-modal" class="modal hidden" style="z-index: 2000;">
@@ -214,33 +207,37 @@
 
     <!-- MODAL INTERSTITIAL (LEMBRETE APOSTA) -->
     <div id="bet-reminder-modal" class="modal hidden" style="z-index: 10000;">
-        <div class="modal-content"
-            style="padding: 25px; text-align: center; max-width: 340px; border: 2px solid #e90029;">
-            <div style="font-size: 3rem; margin-bottom: 10px;">⚠️</div>
-            <h3 style="color: #e90029; margin: 0 0 15px 0; font-weight: 900; text-transform: uppercase;">Atenção Máxima
-            </h3>
-
-            <div
-                style="text-align: left; background: #fafafa; padding: 15px; border-radius: 8px; margin-bottom: 20px; font-size: 0.85rem; color: #333; border: 1px solid #eee;">
-                <p style="margin: 0 0 10px 0;"><strong>1. Conta Nova:</strong> A IA foi calibrada para contas criadas
-                    HOJE. Não nos responsabilizamos por red/perdas em contas antigas.</p>
-                <p style="margin: 0;"><strong>2. Gestão de Banca:</strong> Recomendamos entrada inicial de <strong>R$
-                        30,00</strong> para validação do algoritmo.</p>
+        <div class="modal-content">
+            <div class="modal-header-alert">
+                <div style="font-size: 2.5rem;">⚠️</div>
+                <h3>Atenção Máxima</h3>
             </div>
 
-            <p style="font-size: 0.7rem; color: #999; margin-bottom: 20px;">
-                Ao continuar, você concorda com nossos Termos de Uso e exime a plataforma de eventuais perdas.
-            </p>
+            <div class="modal-body" style="text-align: center;">
+                <div
+                    style="text-align: left; background: #fafafa; padding: 18px; border-radius: 12px; margin-bottom: 25px; font-size: 0.85rem; color: #333; border: 1px solid #eee; line-height: 1.5;">
+                    <p style="margin: 0 0 12px 0;"><strong>1. Conta Nova:</strong> A IA foi calibrada para contas
+                        criadas <strong>HOJE</strong> na Superbet. Não nos responsabilizamos por perdas em contas
+                        antigas.</p>
+                    <p style="margin: 0;"><strong>2. Gestão de Banca:</strong> Recomendamos entrada inicial de
+                        <strong>R$ 30,00</strong> para validação imediata do algoritmo.
+                    </p>
+                </div>
 
-            <button id="btn-confirm-bet" class="btn-action"
-                style="font-size: 1rem; padding: 15px; background: #2ecc71;">
-                ENTENDI E QUERO APOSTAR ✅
-            </button>
+                <p style="font-size: 0.7rem; color: #999; margin-bottom: 25px;">
+                    Ao continuar, você concorda com nossos Termos de Uso e exime a plataforma de eventuais prejuízos.
+                </p>
 
-            <button id="btn-cancel-bet"
-                style="background: none; border: none; font-size: 0.8rem; color: #999; margin-top: 15px; text-decoration: underline; cursor: pointer;">
-                Cancelar
-            </button>
+                <button id="btn-confirm-bet" class="btn-action"
+                    style="font-size: 1rem; padding: 18px; background: #2ecc71; box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);">
+                    ENTENDI E QUERO APOSTAR ✅
+                </button>
+
+                <button id="btn-cancel-bet"
+                    style="background: none; border: none; font-size: 0.8rem; color: #999; margin-top: 20px; text-decoration: underline; cursor: pointer; display: block; width: 100%;">
+                    Cancelar
+                </button>
+            </div>
         </div>
     </div>
 

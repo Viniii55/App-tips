@@ -7,7 +7,8 @@ const state = {
         day: 'numeric',
         month: 'long'
     }),
-    isVerified: localStorage.getItem('superbet_verified') === 'true' // Persistência básica
+    isVerified: localStorage.getItem('superbet_verified') === 'true', // Persistência básica
+    matchData: []
 };
 
 // DOM Elements
@@ -19,12 +20,11 @@ const dom = {
     checkTerms: document.getElementById('check-terms'),
     btnFinishOnboarding: document.getElementById('btn-finish-onboarding'),
     btnCreateAccount: document.getElementById('btn-create-account-onboarding'),
+    highlightCard: document.getElementById('highlight-card'),
     parlayCard: document.getElementById('parlay-card'),
     parlayItems: document.getElementById('parlay-items-container'),
     parlayOdd: document.getElementById('parlay-total-odd')
 };
-
-// ... (Resto do código) ...
 
 function initFilters() {
     dom.tabs.forEach(tab => {
@@ -33,11 +33,13 @@ function initFilters() {
             dom.tabs.forEach(t => t.classList.remove('active'));
             // Add active (Encontra o elemento pai .nav-icon-item se clicou no filho)
             const target = e.target.closest('.nav-icon-item');
-            target.classList.add('active');
-            // Update State
-            state.activeFilter = target.dataset.sport;
-            // Rerender
-            renderFeed();
+            if (target) {
+                target.classList.add('active');
+                // Update State
+                state.activeFilter = target.dataset.sport;
+                // Rerender
+                renderFeed();
+            }
         });
     });
 }
@@ -47,8 +49,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Check if onboarding is done
     const onboarded = localStorage.getItem('supertips_onboarding_v2');
     if (!onboarded) {
-        dom.onboardingModal.classList.remove('hidden');
-        setupOnboarding();
+        if (dom.onboardingModal) {
+            dom.onboardingModal.classList.remove('hidden');
+            setupOnboarding();
+        }
     } else {
         state.isVerified = true;
     }
@@ -57,6 +61,8 @@ document.addEventListener('DOMContentLoaded', () => {
         state.matchData = window.gamesData;
     } else if (window.LIVE_GAMES) {
         state.matchData = window.LIVE_GAMES;
+    } else {
+        state.matchData = [];
     }
 
     // --- NORMALIZAÇÃO DE DADOS (Blindagem 100M) ---
@@ -69,6 +75,9 @@ document.addEventListener('DOMContentLoaded', () => {
         renderHighlight();
     }
 
+    // --- RENDER STATS (Placar de Confiança) ---
+    renderStats();
+
     initFilters();
     renderFeed();
 
@@ -78,37 +87,66 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnCancelBet = document.getElementById('btn-cancel-bet');
     let pendingAffiliateLink = null;
 
-    // Delegação de evento para pegar cliques em QUALQUER botão de aposta dinâmico
-    document.addEventListener('click', (e) => {
-        // Verifica se clicou num botão de aposta (mas não nos botões do próprio modal ou onboarding)
-        if (e.target.closest('.game-card .btn-action') || e.target.closest('.parlay-card .btn-action')) {
-            e.preventDefault(); // PARE!
+    if (betReminderModal && btnConfirmBet && btnCancelBet) {
+        // Delegação de evento para pegar cliques em QUALQUER botão de aposta dinâmico
+        document.addEventListener('click', (e) => {
+            // Verifica se clicou num botão de aposta (mas não nos botões do próprio modal ou onboarding)
+            const btn = e.target.closest('.btn-action, .card-header-cta, .odd-button');
 
-            // Pega o link original
-            const btn = e.target.closest('a');
-            if (btn) pendingAffiliateLink = btn.href;
+            if (btn) {
+                // Check if it's already an internal modal action
+                if (btn.id === 'btn-confirm-bet' || btn.id === 'btn-cancel-bet' || btn.id === 'btn-finish-onboarding') return;
 
-            // Mostra o alerta
-            betReminderModal.classList.remove('hidden');
-        }
-    });
+                // Se estiver no onboarding, não mostra o lembrete de aposta
+                if (e.target.closest('#onboarding-modal')) return;
 
-    // Ação Confirmar
-    btnConfirmBet.addEventListener('click', () => {
-        betReminderModal.classList.add('hidden');
-        if (pendingAffiliateLink) {
-            window.open(pendingAffiliateLink, '_blank');
-        }
-    });
+                e.preventDefault(); // PARE!
 
-    // Ação Cancelar
-    btnCancelBet.addEventListener('click', () => {
-        betReminderModal.classList.add('hidden');
-    });
+                // Salva os dados do jogo para copiar ao confirmar
+                const gameCard = e.target.closest('.game-card, .parlay-card');
+                if (gameCard && gameCard.dataset.match) {
+                    try {
+                        window.pendingMatchToCopy = JSON.parse(gameCard.dataset.match);
+                    } catch (err) { console.error("Erro ao ler dados do jogo"); }
+                }
+
+                // Pega o link original
+                pendingAffiliateLink = btn.href || state.affiliateLink;
+
+                // Mostra o alerta
+                betReminderModal.classList.remove('hidden');
+            }
+        });
+
+        // Ação Confirmar
+        btnConfirmBet.addEventListener('click', () => {
+            betReminderModal.classList.add('hidden');
+            if (pendingAffiliateLink) {
+                // Se tivermos dados de aposta pendentes, copia antes de abrir
+                if (window.pendingMatchToCopy) {
+                    window.copySingleTip(window.pendingMatchToCopy);
+                    // Pequeno delay para garantir o copy antes do redirect se for mesma aba (mas aqui é _blank)
+                    setTimeout(() => {
+                        window.open(pendingAffiliateLink, '_blank');
+                        window.pendingMatchToCopy = null;
+                    }, 100);
+                } else {
+                    window.open(pendingAffiliateLink, '_blank');
+                }
+            }
+        });
+
+        // Ação Cancelar
+        btnCancelBet.addEventListener('click', () => {
+            betReminderModal.classList.add('hidden');
+        });
+    }
 
 });
 
 function setupOnboarding() {
+    if (!dom.btnCreateAccount || !dom.btnFinishOnboarding) return;
+
     // Logic: Enable BOTH buttons only if checks are valid
     function checkValidity() {
         if (dom.check18.checked && dom.checkTerms.checked) {
@@ -136,8 +174,8 @@ function setupOnboarding() {
     dom.btnCreateAccount.style.pointerEvents = 'none';
     dom.btnCreateAccount.style.opacity = '0.5';
 
-    dom.check18.addEventListener('change', checkValidity);
-    dom.checkTerms.addEventListener('change', checkValidity);
+    if (dom.check18) dom.check18.addEventListener('change', checkValidity);
+    if (dom.checkTerms) dom.checkTerms.addEventListener('change', checkValidity);
 
     // Setup Affiliate Link on the Big Button
     dom.btnCreateAccount.href = state.affiliateLink;
@@ -151,64 +189,74 @@ function setupOnboarding() {
     });
 }
 
+// --- FUNCTION: Render "Múltiplas Populares" Combo Card ---
+// --- FUNCTION: Render "Múltiplas Populares" Combo Card ---
+// Replaces the original renderHighlight with the new Parlay Card logic
+// --- FUNCTION: Render "Destaque do Dia" ---
 function renderHighlight() {
-    // Safety Force: Se não tiver highlight mas tiver dados normais, pega o primeiro
-    if (!window.highlightMatch && window.gamesData && window.gamesData.length > 0) {
-        window.highlightMatch = window.gamesData[0]; // Fallback forçado no Front
+    const card = dom.highlightCard;
+    if (!card) return;
+
+    const match = window.highlightMatch;
+
+    // Se não tiver destaque, esconde
+    if (!match) {
+        card.classList.add('hidden');
+        return;
     }
 
-    if (window.highlightMatch) {
-        const game = window.highlightMatch;
-        // Validação extra pra não quebrar
-        if (!game.teamA || !game.teamB || !game.tip) return;
+    // Se tiver, mostra e preenche
+    card.classList.remove('hidden');
+    card.style.display = 'block';
 
-        dom.highlightCard.classList.remove('hidden');
+    const content = document.getElementById('highlight-content');
+    if (!content) return;
 
-        const winRate = game.tip.win_rate || 85;
+    // Formata Data
+    const dateObj = new Date(match.date);
+    const timeStr = dateObj.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
 
-        // UI Avatars Fallback
-        const imgA = game.teamA.logo || `https://ui-avatars.com/api/?name=${game.teamA.name}&background=eee&color=333`;
-        const imgB = game.teamB.logo || `https://ui-avatars.com/api/?name=${game.teamB.name}&background=eee&color=333`;
-
-        dom.highlightContent.innerHTML = `
-            <div style="display: flex; justify-content: space-around; align-items: start; margin-bottom: 25px;">
-                <div style="display: flex; flex-direction: column; align-items: center; width: 40%;">
-                    <div style="width: 70px; height: 70px; margin-bottom: 8px;">
-                        <img src="${imgA}" style="width: 100%; height: 100%; object-fit: contain;">
-                    </div>
-                    <div style="font-weight: 700; text-align: center; font-size: 0.85rem; line-height: 1.2;">${game.teamA.name}</div>
-                </div>
-                
-                <div style="font-size: 1.5rem; font-weight: 900; color: #ddd; margin-top: 20px;">VS</div>
-                
-                <div style="display: flex; flex-direction: column; align-items: center; width: 40%;">
-                    <div style="width: 70px; height: 70px; margin-bottom: 8px;">
-                        <img src="${imgB}" style="width: 100%; height: 100%; object-fit: contain;">
-                    </div>
-                    <div style="font-weight: 700; text-align: center; font-size: 0.85rem; line-height: 1.2;">${game.teamB.name}</div>
-                </div>
-            </div>
+    content.innerHTML = `
+        <div style="display:flex; flex-direction:column; gap:15px;">
             
-            <div style="background: #f8f9fa; border: 1px solid #eee; padding: 15px; border-radius: 12px; margin-bottom: 15px;">
-                <div style="color: #666; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; margin-bottom: 5px;">MERCADO INDICADO</div>
-                <div style="color: #e90029; font-size: 1.1rem; font-weight: 900;">${game.tip.market}</div>
-                <div style="color: #111; font-weight: 800; font-size: 1.1rem; margin-top: 5px;">ODD ${game.tip.odd}</div>
+            <!-- Times -->
+            <div style="display:flex; justify-content:space-between; align-items:center; padding:0 10px;">
+                <div style="display:flex; flex-direction:column; align-items:center; gap:5px; width:30%;">
+                    <img src="${match.teamA.logo}" style="width:50px; height:50px; object-fit:contain;">
+                    <span style="font-size:0.8rem; font-weight:700; color:#333; text-align:center; line-height:1.2;">${match.teamA.name}</span>
+                </div>
+
+                <div style="font-size:1.5rem; font-weight:900; color:#ddd;">VS</div>
+
+                <div style="display:flex; flex-direction:column; align-items:center; gap:5px; width:30%;">
+                    <img src="${match.teamB.logo}" style="width:50px; height:50px; object-fit:contain;">
+                    <span style="font-size:0.8rem; font-weight:700; color:#333; text-align:center; line-height:1.2;">${match.teamB.name}</span>
+                </div>
             </div>
 
-            <div class="prob-bar-area">
-                <span style="font-size:0.7rem; font-weight:700; color:#888;">PROBABILIDADE:</span>
-                <div class="prob-bar-bg">
-                    <div class="prob-bar-fill" style="width: ${winRate}%"></div>
+            <!-- Tip Box -->
+            <div style="background:#f8f9fa; border:1px dashed #e90029; border-radius:8px; padding:12px;">
+                <div style="font-size:0.75rem; color:#666; margin-bottom:5px;">${match.league} • ${timeStr}</div>
+                <div style="font-size:0.9rem; font-weight:700; color:#e90029; margin-bottom:5px;">${match.tip.market}</div>
+                
+                 <div style="display:flex; align-items:center; justify-content:center; gap:10px;">
+                    <span style="color:#2ecc71; font-weight:900; font-size:1.1rem;">${match.tip.win_rate}% Probabilidade</span>
                 </div>
-                <span class="prob-val">${winRate}%</span>
             </div>
-            
-            <a href="${state.affiliateLink}" target="_blank" class="btn-action" style="text-decoration: none; margin-top: 15px;">
+
+            <!-- Botão -->
+            <a href="${state.affiliateLink}" target="_blank" class="btn-action">
                 APOSTAR AGORA 🚀
             </a>
-        `;
-    }
+        </div>
+    `;
+
+    // Atribui os dados do jogo para o destaque também copiar
+    card.dataset.match = JSON.stringify(match);
 }
+
+// Override (Ensure it runs)
+window.renderHighlight = renderHighlight;
 
 function copySingleTip(matchIndex) {
     // Acha o match pelo ID ou Index (simplificado aqui passamos o objeto direto no onclick se possivel, mas stringify é ruim)
@@ -232,131 +280,295 @@ function getSportIcon(sportKey) {
     return icons[sportKey] || icons['default'];
 }
 
-function setupModalEvents() {
-    if (dom.btnCreate) dom.btnCreate.href = state.affiliateLink;
-    dom.btnValidate.addEventListener('click', () => {
-        const id = dom.inputId.value;
-        if (id.length > 4) {
-            localStorage.setItem('superbet_verified', 'true');
-            state.isVerified = true;
-            dom.modal.classList.add('hidden');
-            renderFeed();
-            alert("ID Validado! Bônus SuperOdds Ativado.");
-        } else {
-            alert("ID Inválido. Certifique-se de copiar o ID da sua NOVA conta no perfil.");
-        }
-    });
-}
+// --- FUNÇÃO DE RENDERIZAÇÃO AGRUPADA POR LIGA ---
+// --- FUNÇÃO DE RENDERIZAÇÃO AGRUPADA POR LIGA ---
+function renderFeed(filterSport) {
+    try {
+        // Use current state filter if argument is not provided
+        const currentFilter = filterSport || state.activeFilter;
 
-function initFilters() {
-    dom.tabs.forEach(tab => {
-        tab.addEventListener('click', (e) => {
-            dom.tabs.forEach(t => t.classList.remove('active'));
-            const target = e.target.closest('.nav-icon-item'); // Garante pegar o item certo
-            if (target) {
-                target.classList.add('active');
-                state.activeFilter = target.dataset.sport;
-                renderFeed();
+        const container = dom.feed;
+        if (!container) return;
+
+        container.innerHTML = '';
+
+        const allGames = state.matchData || [];
+
+        // 1. Filtra os jogos
+        let filtered = allGames.filter(g => {
+            const gDate = new Date(g.date);
+            const now = new Date();
+            const isToday = gDate.getDate() === now.getDate() &&
+                gDate.getMonth() === now.getMonth() &&
+                gDate.getFullYear() === now.getFullYear();
+
+            // Lógica Pedida:
+            // "Na aba TUDO apenas exiba os jogos de hoje"
+            if (currentFilter === 'all') {
+                return isToday;
+            }
+
+            // "Quando clicar em esporte específico pode mostrar datas futuras"
+            return g.sport === currentFilter;
+        });
+
+        // 2. Classifica por Data (Jogos de hoje primeiro)
+        filtered.sort((a, b) => new Date(a.date) - new Date(b.date));
+
+        if (filtered.length === 0) {
+            container.innerHTML = '<div style="text-align:center; padding:20px; color:#999;">Nenhum jogo encontrado.</div>';
+            return;
+        }
+
+        // 3. Agrupa por Liga
+        const groups = {};
+
+        filtered.forEach(game => {
+            // Usa o nome da liga já formatado pelo Python (ex: "Brasileirão Série A")
+            // Se não tiver, usa o raw e dá uma limpada básica
+            let displayLeague = game.league || game.raw_league || 'Outros';
+
+            if (!groups[displayLeague]) {
+                groups[displayLeague] = {
+                    games: [],
+                    sport: game.sport,
+                    hasToday: false
+                };
+            }
+            groups[displayLeague].games.push(game);
+
+            // Verifica se é hoje (UTC safe check simplificado para UX local)
+            const gDate = new Date(game.date);
+            const now = new Date();
+            // Compara dia/mes/ano
+            if (gDate.getDate() === now.getDate() && gDate.getMonth() === now.getMonth() && gDate.getFullYear() === now.getFullYear()) {
+                groups[displayLeague].hasToday = true;
             }
         });
-    });
-}
 
-function renderFeed() {
-    dom.feed.innerHTML = '';
-    let filtered = state.matchData.filter(m =>
-        state.activeFilter === 'all' || m.sport === state.activeFilter
-    );
-    filtered.sort((a, b) => new Date(a.date) - new Date(b.date));
-    let lastDateStr = '';
+        // 4. Ordenação das Ligas
+        const priorityLeagues = [
+            'Brasileirão', 'Serie A', 'Copa do Brasil',
+            'Libertadores', 'Sudamericana', 'Champions',
+            'Premier League', 'La Liga', 'Bundesliga',
+            'Ligue 1', 'NBA', 'UFC'
+        ];
 
-    filtered.forEach(match => {
-        const dateObj = new Date(match.date);
-        const dateStr = state.dateFormat.format(dateObj);
+        const sortedLeagues = Object.keys(groups).sort((a, b) => {
+            const groupA = groups[a];
+            const groupB = groups[b];
 
-        if (dateStr !== lastDateStr) {
+            // 1. Prioridade Absoluta: Tem jogo hoje? (Aberto vs Fechado)
+            if (groupA.hasToday && !groupB.hasToday) return -1;
+            if (!groupA.hasToday && groupB.hasToday) return 1;
+
+            // 2. Prioridade de Familiaridade
+            // Verifica se o nome da liga CONTÉM alguma palavra chave (ex: "Brasileirão Série B" contains "Brasileirão")
+            const getRank = (name) => {
+                const idx = priorityLeagues.findIndex(p => name.includes(p));
+                return idx === -1 ? 999 : idx;
+            };
+
+            return getRank(a) - getRank(b);
+        });
+
+        // 5. Renderiza
+        sortedLeagues.forEach(leagueName => {
+            const group = groups[leagueName];
+            const isOpen = group.hasToday; // Só abre se tiver jogo hoje
+
+            // Wrapper
+            const wrapper = document.createElement('div');
+            wrapper.className = 'league-wrapper'; // Classe para CSS futuro se precisar
+            wrapper.style.marginBottom = '12px';
+
+            // Header
             const header = document.createElement('div');
-            header.className = 'date-header';
-            header.innerText = dateStr.charAt(0).toUpperCase() + dateStr.slice(1);
-            dom.feed.appendChild(header);
-            lastDateStr = dateStr;
-        }
-        const card = createGameCard(match);
-        dom.feed.appendChild(card);
-    });
+            header.style.cssText = `
+                display: flex; justify-content: space-between; align-items: center;
+                padding: 10px 5px; cursor: pointer; border-bottom: 1px solid #eee;
+            `;
 
-    if (filtered.length === 0) {
-        dom.feed.innerHTML = '<div style="text-align:center; padding: 40px; color: #666;">Carregando oportunidades da IA...</div>';
+            const headerColor = isOpen ? '#111' : '#888';
+            const arrowRot = isOpen ? '90deg' : '0deg';
+            const badge = isOpen ? `<span style="background:#e90029; color:white; font-size:0.6rem; padding:2px 6px; border-radius:4px; font-weight:700; margin-left:8px;">HOJE</span>` : '';
+
+            header.innerHTML = `
+                <div style="display:flex; align-items:center;">
+                    <span style="font-size:1.2rem; margin-right:8px;">${getSportIcon(group.sport)}</span>
+                    <span style="font-weight:800; color:${headerColor}; font-size:0.95rem;">${leagueName}</span>
+                    ${badge}
+                </div>
+                <div class="arrow" style="transition:0.3s; transform: rotate(${arrowRot}); color:#ccc; font-size:1.2rem;">›</div>
+            `;
+
+            // Lista
+            const list = document.createElement('div');
+            list.style.display = isOpen ? 'block' : 'none';
+            list.style.paddingTop = '5px';
+
+            group.games.forEach(game => {
+                list.appendChild(createMatchRow(game));
+            });
+
+            // Click Interaction
+            header.addEventListener('click', () => {
+                const isHidden = list.style.display === 'none';
+                list.style.display = isHidden ? 'block' : 'none';
+                const arrow = header.querySelector('.arrow');
+                if (arrow) arrow.style.transform = isHidden ? 'rotate(90deg)' : 'rotate(0deg)';
+                header.querySelector('span[style*="font-weight:800"]').style.color = isHidden ? '#111' : '#888';
+            });
+
+            wrapper.appendChild(header);
+            wrapper.appendChild(list);
+            container.appendChild(wrapper);
+        });
+
+    } catch (e) {
+        console.error("Erro renderFeed:", e);
+        if (dom.feed) dom.feed.innerHTML = '<div style="padding:20px; text-align:center;">Erro ao carregar jogos. Tente recarregar.</div>';
     }
 }
 
-function createGameCard(match) {
+// Cria o Card estilo "Linha" (Row) igual ao print
+function createMatchRow(match) {
     const el = document.createElement('div');
-    el.className = 'game-card';
+    el.className = 'game-card match-row'; // match-row para estilo específico
 
+    // Formata Hora
     const dateObj = new Date(match.date);
     const timeStr = dateObj.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
-    const sportIcon = getSportIcon(match.sport);
-    const winRate = match.tip.win_rate || 75;
+    const isToday = new Date().toDateString() === dateObj.toDateString();
+    const dateStr = isToday ? `Hoje, ${timeStr}` : `${dateObj.getDate()}/${dateObj.getMonth() + 1}, ${timeStr}`;
 
-    // UI Avatars for Games
-    const imgA = match.teamA.logo || `https://ui-avatars.com/api/?name=${match.teamA.name}&background=eee&color=333`;
-    const imgB = match.teamB.logo || `https://ui-avatars.com/api/?name=${match.teamB.name}&background=eee&color=333`;
+    const iconA = match.teamA.logo || 'https://via.placeholder.com/30';
+    const iconB = match.teamB.logo || 'https://via.placeholder.com/30';
 
     el.innerHTML = `
-        <div class="card-header">
-            <span class="league-info"><span class="sport-icon">${sportIcon}</span> ${match.league}</span>
-            <span class="game-time">${timeStr}</span>
-        </div>
-
-        <div class="teams-container">
-            <div class="team">
-                <div class="team-avatar">
-                    <img src="${imgA}" onerror="this.src='https://ui-avatars.com/api/?name=${match.teamA.name}&background=eee&color=333'">
-                </div>
-                <span class="team-name">${match.teamA.name}</span>
-            </div>
-            <span class="vs-text">VS</span>
-            <div class="team">
-                <div class="team-avatar">
-                    <img src="${imgB}" onerror="this.src='https://ui-avatars.com/api/?name=${match.teamB.name}&background=eee&color=333'">
-                </div>
-                <span class="team-name">${match.teamB.name}</span>
-            </div>
-        </div>
-
-        <div class="tip-container">
-            <div class="market-name" style="margin-bottom: 10px;">${match.tip.market}</div>
-            
-            <div class="prob-bar-area">
-                <span style="font-size:0.7rem; font-weight:700; color:#888;">IA PROB:</span>
-                <div class="prob-bar-bg">
-                    <div class="prob-bar-fill" style="width: ${winRate}%"></div>
-                </div>
-                <span class="prob-val">${winRate}%</span>
+        <div class="row-left" style="width: 100%;">
+            <div class="row-meta">
+                <span class="match-time">${dateStr}</span>
+                <div class="card-header-cta">Criar Aposta ></div>
             </div>
             
-            <a href="${state.affiliateLink}" target="_blank" class="btn-action" style="text-decoration: none;">
-                APOSTAR AGORA
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                <div class="teams-container" style="margin-bottom: 0;">
+                    <div class="team-row">
+                        <img src="${iconA}" class="team-logo">
+                        <span class="team-name" style="font-size: 0.9rem;">${match.teamA.name}</span>
+                    </div>
+                    <div class="team-row">
+                        <img src="${iconB}" class="team-logo">
+                        <span class="team-name" style="font-size: 0.9rem;">${match.teamB.name}</span>
+                    </div>
+                </div>
+
+                <div class="row-right" style="min-width: unset;">
+                    <div class="tip-market">${match.tip.market}</div>
+                    <div class="odd-button" style="padding: 6px 12px; min-width: 80px;">
+                        <span class="odd-label" style="font-size: 0.6rem;">PROB.</span>
+                        <span class="odd-value" style="font-size: 0.9rem;">${match.tip.win_rate}%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botão Apostar Agora -->
+            <a href="${state.affiliateLink}" target="_blank" class="btn-action">
+                APOSTAR AGORA 🚀
             </a>
-            
-            <div class="actions-area" style="justify-content: center; margin-top: 15px;">
-                 <span class="superbet-badge-tiny">VERIFICADO PELA IA</span>
-            </div>
         </div>
     `;
 
-    // Click no card leva pro link
-    el.addEventListener('click', (e) => {
-        if (e.target.tagName !== 'A') {
-            window.open(state.affiliateLink, '_blank');
-        }
-    });
+    // Atribui os dados do jogo para o delegador conseguir ler
+    el.dataset.match = JSON.stringify(match);
 
     return el;
 }
 
 // Global para ser acessível pelo HTML onclick
+// Global para ser acessível pelo HTML onclick
 window.openVerificationModal = function () {
-    dom.modal.classList.remove('hidden');
+    if (dom.onboardingModal) {
+        dom.onboardingModal.classList.remove('hidden');
+    }
+}
+
+// --- UTIL: TOAST NOTIFICATION SYSTEM ---
+function showToast(message, icon = '✅') {
+    let container = document.querySelector('.toast-container');
+    if (!container) {
+        container = document.createElement('div');
+        container.className = 'toast-container';
+        document.body.appendChild(container);
+    }
+
+    const toast = document.createElement('div');
+    toast.className = 'toast';
+    toast.innerHTML = `<span class="toast-icon">${icon}</span> ${message}`;
+
+    container.appendChild(toast);
+
+    // Trigger animation
+    requestAnimationFrame(() => {
+        toast.classList.add('show');
+    });
+
+    // Remove after 3s
+    setTimeout(() => {
+        toast.classList.remove('show');
+        setTimeout(() => toast.remove(), 300);
+    }, 3000);
+}
+
+// --- FEATURE: COPIAR APOSTA REAL ---
+window.copySingleTip = function (matchData) {
+    if (!matchData) return;
+
+    // Tenta parsear se vier como string (do HTML attribute)
+    let match = matchData;
+    if (typeof matchData === 'string') {
+        try { match = JSON.parse(matchData); } catch (e) { }
+    }
+
+    const textToCopy = `🔥 *Dica SuperTips:*\n\n⚽ ${match.teamA.name} x ${match.teamB.name}\n🏆 ${match.league}\n\n🎯 *Aposta:* ${match.tip.market}\n📈 *Probabilidade:* ${match.tip.win_rate}%\n\n👉 Aposte aqui: ${state.affiliateLink}`;
+
+    if (navigator.clipboard) {
+        navigator.clipboard.writeText(textToCopy).then(() => {
+            showToast("Aposta copiada com sucesso!");
+        }).catch(() => {
+            showToast("Erro ao copiar.", "❌");
+        });
+    } else {
+        // Fallback antigo
+        const ta = document.createElement('textarea');
+        ta.value = textToCopy;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        showToast("Aposta copiada com sucesso!");
+    }
+}
+
+// Nova função para renderizar os stats
+function renderStats() {
+    const elHits = document.getElementById('stats-hits');
+    const elWinRate = document.getElementById('stats-winrate');
+
+    // Default (local) simulation if data is missing
+    let hits = 18;
+    let winRate = 84;
+
+    if (window.dailyStats) {
+        hits = window.dailyStats.hits;
+        winRate = window.dailyStats.win_rate;
+    } else {
+        // Fallback Local Simulation based on time
+        const hour = new Date().getHours();
+        hits = Math.max(2, Math.floor(4 + (hour * 1.5)));
+    }
+
+    if (elHits) elHits.textContent = hits;
+    if (elWinRate) elWinRate.textContent = `${winRate}%`;
 }
