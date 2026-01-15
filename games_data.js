@@ -1,5 +1,43 @@
 window.gamesData = [
     {
+        "id": "736941",
+        "sport": "soccer",
+        "league": "Serie A",
+        "date": "2026-01-15T17:30Z",
+        "teamA": {
+            "name": "Hellas Verona",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/119.png"
+        },
+        "teamB": {
+            "name": "Bologna",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/107.png"
+        },
+        "tip": {
+            "market": "Vencer: Bologna",
+            "odd": 2.15,
+            "win_rate": 44
+        }
+    },
+    {
+        "id": "736935",
+        "sport": "soccer",
+        "league": "Serie A",
+        "date": "2026-01-15T19:45Z",
+        "teamA": {
+            "name": "Como",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2572.png"
+        },
+        "teamB": {
+            "name": "AC Milan",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/103.png"
+        },
+        "tip": {
+            "market": "Vencer: Milan",
+            "odd": 2.45,
+            "win_rate": 38
+        }
+    },
+    {
         "id": "748337",
         "sport": "soccer",
         "league": "La Liga",
@@ -90,8 +128,8 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Liverpool",
-            "odd": 1.22,
-            "win_rate": 77
+            "odd": 1.24,
+            "win_rate": 76
         }
     },
     {
@@ -566,8 +604,8 @@ window.highlightMatch = {
     },
     "tip": {
         "market": "Vencer: Liverpool",
-        "odd": 1.22,
-        "win_rate": 77
+        "odd": 1.24,
+        "win_rate": 76
     }
 };
 window.dailyStats = {
