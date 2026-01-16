@@ -1,62 +1,5 @@
 window.gamesData = [
     {
-        "id": "736941",
-        "sport": "soccer",
-        "league": "Serie A",
-        "date": "2026-01-15T17:30Z",
-        "teamA": {
-            "name": "Hellas Verona",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/119.png"
-        },
-        "teamB": {
-            "name": "Bologna",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/107.png"
-        },
-        "tip": {
-            "market": "Vencer: Bologna",
-            "odd": 2.1,
-            "win_rate": 45
-        }
-    },
-    {
-        "id": "401810433",
-        "sport": "basketball",
-        "league": "NBA",
-        "date": "2026-01-15T19:00Z",
-        "teamA": {
-            "name": "Orlando Magic",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png"
-        },
-        "teamB": {
-            "name": "Memphis Grizzlies",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png"
-        },
-        "tip": {
-            "market": "Vencer: Magic",
-            "odd": 1.46,
-            "win_rate": 65
-        }
-    },
-    {
-        "id": "736935",
-        "sport": "soccer",
-        "league": "Serie A",
-        "date": "2026-01-15T19:45Z",
-        "teamA": {
-            "name": "Como",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2572.png"
-        },
-        "teamB": {
-            "name": "AC Milan",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/103.png"
-        },
-        "tip": {
-            "market": "Vencer: Milan",
-            "odd": 2.3,
-            "win_rate": 41
-        }
-    },
-    {
         "id": "401810434",
         "sport": "basketball",
         "league": "NBA",
@@ -71,8 +14,8 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Pistons",
-            "odd": 1.35,
-            "win_rate": 70
+            "odd": 3.07,
+            "win_rate": 30
         }
     },
     {
@@ -90,8 +33,8 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Canadiens",
-            "odd": 1.8,
-            "win_rate": 52
+            "odd": 1.6,
+            "win_rate": 59
         }
     },
     {
@@ -108,9 +51,9 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/phi.png"
         },
         "tip": {
-            "market": "Vencer: Penguins",
-            "odd": 1.57,
-            "win_rate": 60
+            "market": "Vencer: Flyers",
+            "odd": 2.78,
+            "win_rate": 34
         }
     },
     {
@@ -128,8 +71,8 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Capitals",
-            "odd": 1.56,
-            "win_rate": 61
+            "odd": 2.94,
+            "win_rate": 32
         }
     },
     {
@@ -146,9 +89,9 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/van.png"
         },
         "tip": {
-            "market": "Vencer: Blue Jackets",
-            "odd": 1.6,
-            "win_rate": 59
+            "market": "Vencer: Canucks",
+            "odd": 3.2,
+            "win_rate": 29
         }
     },
     {
@@ -165,9 +108,9 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png"
         },
         "tip": {
-            "market": "Vencer: Celtics",
-            "odd": 1.68,
-            "win_rate": 56
+            "market": "Vencer: Heat",
+            "odd": 2.06,
+            "win_rate": 46
         }
     },
     {
@@ -185,8 +128,8 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Thunder",
-            "odd": 1.51,
-            "win_rate": 63
+            "odd": 1.57,
+            "win_rate": 60
         }
     },
     {
@@ -204,8 +147,8 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Spurs",
-            "odd": 1.34,
-            "win_rate": 70
+            "odd": 1.88,
+            "win_rate": 50
         }
     },
     {
@@ -223,8 +166,8 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Bruins",
-            "odd": 1.56,
-            "win_rate": 61
+            "odd": 2.29,
+            "win_rate": 41
         }
     },
     {
@@ -241,9 +184,9 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/wpg.png"
         },
         "tip": {
-            "market": "Vencer: Wild",
-            "odd": 1.68,
-            "win_rate": 56
+            "market": "Vencer: Jets",
+            "odd": 2.62,
+            "win_rate": 36
         }
     },
     {
@@ -298,9 +241,9 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/dal.png"
         },
         "tip": {
-            "market": "Vencer: Mammoth",
-            "odd": 1.89,
-            "win_rate": 50
+            "market": "Vencer: Stars",
+            "odd": 2.24,
+            "win_rate": 42
         }
     },
     {
@@ -317,9 +260,9 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nyi.png"
         },
         "tip": {
-            "market": "Vencer: Oilers",
-            "odd": 1.62,
-            "win_rate": 58
+            "market": "Vencer: Islanders",
+            "odd": 1.89,
+            "win_rate": 50
         }
     },
     {
@@ -337,8 +280,8 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Golden Knights",
-            "odd": 1.7,
-            "win_rate": 55
+            "odd": 1.77,
+            "win_rate": 53
         }
     },
     {
@@ -356,8 +299,8 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Warriors",
-            "odd": 1.4,
-            "win_rate": 67
+            "odd": 1.38,
+            "win_rate": 68
         }
     },
     {
@@ -375,8 +318,8 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Hawks",
-            "odd": 1.6,
-            "win_rate": 59
+            "odd": 1.56,
+            "win_rate": 61
         }
     },
     {
@@ -394,8 +337,8 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Lakers",
-            "odd": 1.56,
-            "win_rate": 61
+            "odd": 1.62,
+            "win_rate": 58
         }
     },
     {
@@ -507,9 +450,9 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png"
         },
         "tip": {
-            "market": "Vencer: C Palace",
-            "odd": 2.75,
-            "win_rate": 34
+            "market": "Vencer: Sunderland",
+            "odd": 2.65,
+            "win_rate": 35
         }
     },
     {
@@ -603,8 +546,8 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Patriots",
-            "odd": 1.57,
-            "win_rate": 60
+            "odd": 1.59,
+            "win_rate": 59
         }
     },
     {
@@ -970,6 +913,6 @@ window.highlightMatch = {
     }
 };
 window.dailyStats = {
-    "hits": 30,
-    "win_rate": 90
+    "hits": 31,
+    "win_rate": 89
 };
