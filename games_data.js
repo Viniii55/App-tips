@@ -1,5 +1,24 @@
 window.gamesData = [
     {
+        "id": "736991",
+        "sport": "soccer",
+        "league": "Serie A",
+        "date": "2026-01-16T19:45Z",
+        "teamA": {
+            "name": "Pisa",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3956.png"
+        },
+        "teamB": {
+            "name": "Atalanta",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/105.png"
+        },
+        "tip": {
+            "market": "Vencer: Atalanta",
+            "odd": 1.51,
+            "win_rate": 62
+        }
+    },
+    {
         "id": "748337",
         "sport": "soccer",
         "league": "La Liga",
@@ -14,8 +33,8 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Espanyol",
-            "odd": 1.91,
-            "win_rate": 49
+            "odd": 1.87,
+            "win_rate": 50
         }
     },
     {
@@ -108,9 +127,9 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png"
         },
         "tip": {
-            "market": "Vencer: C Palace",
-            "odd": 2.75,
-            "win_rate": 34
+            "market": "Vencer: Sunderland",
+            "odd": 2.7,
+            "win_rate": 35
         }
     },
     {
@@ -337,8 +356,8 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Real Madrid",
-            "odd": 1.28,
-            "win_rate": 74
+            "odd": 1.26,
+            "win_rate": 75
         }
     },
     {
@@ -489,8 +508,8 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Fluminense",
-            "odd": 1.67,
-            "win_rate": 57
+            "odd": 1.74,
+            "win_rate": 54
         }
     },
     {
