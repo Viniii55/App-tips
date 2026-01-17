@@ -14,8 +14,46 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Man City",
-            "odd": 1.95,
-            "win_rate": 48
+            "odd": 2.3,
+            "win_rate": 41
+        }
+    },
+    {
+        "id": "748342",
+        "sport": "soccer",
+        "league": "La Liga",
+        "date": "2026-01-17T13:00Z",
+        "teamA": {
+            "name": "Real Madrid",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png"
+        },
+        "teamB": {
+            "name": "Levante",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png"
+        },
+        "tip": {
+            "market": "Vencer: Real Madrid",
+            "odd": 1.15,
+            "win_rate": 82
+        }
+    },
+    {
+        "id": "736989",
+        "sport": "soccer",
+        "league": "Serie A",
+        "date": "2026-01-17T14:00Z",
+        "teamA": {
+            "name": "Udinese",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/118.png"
+        },
+        "teamB": {
+            "name": "Internazionale",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/110.png"
+        },
+        "tip": {
+            "market": "Vencer: Inter Milan",
+            "odd": 1.42,
+            "win_rate": 67
         }
     },
     {
@@ -52,8 +90,8 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Leeds",
-            "odd": 2.1,
-            "win_rate": 45
+            "odd": 2.15,
+            "win_rate": 44
         }
     },
     {
@@ -90,8 +128,8 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Sunderland",
-            "odd": 2.4,
-            "win_rate": 39
+            "odd": 2.35,
+            "win_rate": 40
         }
     },
     {
@@ -109,8 +147,46 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Spurs",
-            "odd": 1.74,
-            "win_rate": 54
+            "odd": 1.71,
+            "win_rate": 55
+        }
+    },
+    {
+        "id": "748339",
+        "sport": "soccer",
+        "league": "La Liga",
+        "date": "2026-01-17T15:15Z",
+        "teamA": {
+            "name": "Mallorca",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/84.png"
+        },
+        "teamB": {
+            "name": "Athletic Club",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/93.png"
+        },
+        "tip": {
+            "market": "Vencer: Athletic",
+            "odd": 2.15,
+            "win_rate": 44
+        }
+    },
+    {
+        "id": "736993",
+        "sport": "soccer",
+        "league": "Serie A",
+        "date": "2026-01-17T17:00Z",
+        "teamA": {
+            "name": "Napoli",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/114.png"
+        },
+        "teamB": {
+            "name": "Sassuolo",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3997.png"
+        },
+        "tip": {
+            "market": "Vencer: Napoli",
+            "odd": 1.43,
+            "win_rate": 66
         }
     },
     {
@@ -128,8 +204,65 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Arsenal",
-            "odd": 1.56,
-            "win_rate": 61
+            "odd": 1.57,
+            "win_rate": 60
+        }
+    },
+    {
+        "id": "748340",
+        "sport": "soccer",
+        "league": "La Liga",
+        "date": "2026-01-17T17:30Z",
+        "teamA": {
+            "name": "Osasuna",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/97.png"
+        },
+        "teamB": {
+            "name": "Real Oviedo",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/92.png"
+        },
+        "tip": {
+            "market": "Vencer: Osasuna",
+            "odd": 1.8,
+            "win_rate": 52
+        }
+    },
+    {
+        "id": "736986",
+        "sport": "soccer",
+        "league": "Serie A",
+        "date": "2026-01-17T19:45Z",
+        "teamA": {
+            "name": "Cagliari",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2925.png"
+        },
+        "teamB": {
+            "name": "Juventus",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/111.png"
+        },
+        "tip": {
+            "market": "Vencer: Juventus",
+            "odd": 1.49,
+            "win_rate": 63
+        }
+    },
+    {
+        "id": "748341",
+        "sport": "soccer",
+        "league": "La Liga",
+        "date": "2026-01-17T20:00Z",
+        "teamA": {
+            "name": "Real Betis",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png"
+        },
+        "teamB": {
+            "name": "Villarreal",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png"
+        },
+        "tip": {
+            "market": "Vencer: Villarreal",
+            "odd": 2.6,
+            "win_rate": 36
         }
     },
     {
@@ -494,25 +627,6 @@ window.gamesData = [
         }
     },
     {
-        "id": "401840975",
-        "sport": "soccer",
-        "league": "Brasileirão",
-        "date": "2026-01-28T23:00Z",
-        "teamA": {
-            "name": "Mirassol",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9169.png"
-        },
-        "teamB": {
-            "name": "Vasco da Gama",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3454.png"
-        },
-        "tip": {
-            "market": "Vencer: Mirassol",
-            "odd": 1.71,
-            "win_rate": 55
-        }
-    },
-    {
         "id": "401840976",
         "sport": "soccer",
         "league": "Brasileirão",
@@ -533,22 +647,22 @@ window.gamesData = [
     }
 ];
 window.highlightMatch = {
-    "id": "740810",
+    "id": "748342",
     "sport": "soccer",
-    "league": "Premier League",
-    "date": "2026-01-17T15:00Z",
+    "league": "La Liga",
+    "date": "2026-01-17T13:00Z",
     "teamA": {
-        "name": "Liverpool",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png"
+        "name": "Real Madrid",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png"
     },
     "teamB": {
-        "name": "Burnley",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/379.png"
+        "name": "Levante",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png"
     },
     "tip": {
-        "market": "Vencer: Liverpool",
-        "odd": 1.22,
-        "win_rate": 77
+        "market": "Vencer: Real Madrid",
+        "odd": 1.15,
+        "win_rate": 82
     }
 };
 window.dailyStats = {
