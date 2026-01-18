@@ -1,5 +1,195 @@
 window.gamesData = [
     {
+        "id": "736992",
+        "sport": "soccer",
+        "league": "Serie A",
+        "date": "2026-01-18T11:30Z",
+        "teamA": {
+            "name": "Parma",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/115.png"
+        },
+        "teamB": {
+            "name": "Genoa",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3263.png"
+        },
+        "tip": {
+            "market": "Vencer: Genoa",
+            "odd": 2.85,
+            "win_rate": 33
+        }
+    },
+    {
+        "id": "748338",
+        "sport": "soccer",
+        "league": "La Liga",
+        "date": "2026-01-18T13:00Z",
+        "teamA": {
+            "name": "Getafe",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2922.png"
+        },
+        "teamB": {
+            "name": "Valencia",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png"
+        },
+        "tip": {
+            "market": "Vencer: Getafe",
+            "odd": 2.5,
+            "win_rate": 38
+        }
+    },
+    {
+        "id": "740815",
+        "sport": "soccer",
+        "league": "Premier League",
+        "date": "2026-01-18T14:00Z",
+        "teamA": {
+            "name": "Wolverhampton Wanderers",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/380.png"
+        },
+        "teamB": {
+            "name": "Newcastle United",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/361.png"
+        },
+        "tip": {
+            "market": "Vencer: Newcastle",
+            "odd": 1.74,
+            "win_rate": 54
+        }
+    },
+    {
+        "id": "736987",
+        "sport": "soccer",
+        "league": "Serie A",
+        "date": "2026-01-18T14:00Z",
+        "teamA": {
+            "name": "Bologna",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/107.png"
+        },
+        "teamB": {
+            "name": "Fiorentina",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/109.png"
+        },
+        "tip": {
+            "market": "Vencer: Bologna",
+            "odd": 2.35,
+            "win_rate": 40
+        }
+    },
+    {
+        "id": "748334",
+        "sport": "soccer",
+        "league": "La Liga",
+        "date": "2026-01-18T15:15Z",
+        "teamA": {
+            "name": "Atlético Madrid",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
+        },
+        "teamB": {
+            "name": "Alavés",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png"
+        },
+        "tip": {
+            "market": "Vencer: Atlético",
+            "odd": 1.36,
+            "win_rate": 69
+        }
+    },
+    {
+        "id": "740806",
+        "sport": "soccer",
+        "league": "Premier League",
+        "date": "2026-01-18T16:30Z",
+        "teamA": {
+            "name": "Aston Villa",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png"
+        },
+        "teamB": {
+            "name": "Everton",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/368.png"
+        },
+        "tip": {
+            "market": "Vencer: Aston Villa",
+            "odd": 1.61,
+            "win_rate": 59
+        }
+    },
+    {
+        "id": "736990",
+        "sport": "soccer",
+        "league": "Serie A",
+        "date": "2026-01-18T17:00Z",
+        "teamA": {
+            "name": "Torino",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/239.png"
+        },
+        "teamB": {
+            "name": "AS Roma",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/104.png"
+        },
+        "tip": {
+            "market": "Vencer: AS Roma",
+            "odd": 1.91,
+            "win_rate": 49
+        }
+    },
+    {
+        "id": "748335",
+        "sport": "soccer",
+        "league": "La Liga",
+        "date": "2026-01-18T17:30Z",
+        "teamA": {
+            "name": "Celta Vigo",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/85.png"
+        },
+        "teamB": {
+            "name": "Rayo Vallecano",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png"
+        },
+        "tip": {
+            "market": "Vencer: Celta Vigo",
+            "odd": 1.87,
+            "win_rate": 50
+        }
+    },
+    {
+        "id": "736988",
+        "sport": "soccer",
+        "league": "Serie A",
+        "date": "2026-01-18T19:45Z",
+        "teamA": {
+            "name": "AC Milan",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/103.png"
+        },
+        "teamB": {
+            "name": "Lecce",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/113.png"
+        },
+        "tip": {
+            "market": "Vencer: Milan",
+            "odd": 1.26,
+            "win_rate": 75
+        }
+    },
+    {
+        "id": "748343",
+        "sport": "soccer",
+        "league": "La Liga",
+        "date": "2026-01-18T20:00Z",
+        "teamA": {
+            "name": "Real Sociedad",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png"
+        },
+        "teamB": {
+            "name": "Barcelona",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png"
+        },
+        "tip": {
+            "market": "Vencer: Barcelona",
+            "odd": 1.61,
+            "win_rate": 59
+        }
+    },
+    {
         "id": "401772983",
         "sport": "american_football",
         "league": "NFL",
@@ -185,8 +375,8 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Spurs",
-            "odd": 2.5,
-            "win_rate": 38
+            "odd": 2.55,
+            "win_rate": 37
         }
     },
     {
@@ -343,22 +533,22 @@ window.gamesData = [
     }
 ];
 window.highlightMatch = {
-    "id": "401772983",
-    "sport": "american_football",
-    "league": "NFL",
-    "date": "2026-01-18T20:00Z",
+    "id": "736988",
+    "sport": "soccer",
+    "league": "Serie A",
+    "date": "2026-01-18T19:45Z",
     "teamA": {
-        "name": "New England Patriots",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png"
+        "name": "AC Milan",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/103.png"
     },
     "teamB": {
-        "name": "Houston Texans",
-        "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png"
+        "name": "Lecce",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/113.png"
     },
     "tip": {
-        "market": "Vencer: Patriots",
-        "odd": 1.57,
-        "win_rate": 60
+        "market": "Vencer: Milan",
+        "odd": 1.26,
+        "win_rate": 75
     }
 };
 window.dailyStats = {
