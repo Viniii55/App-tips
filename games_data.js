@@ -1,5 +1,81 @@
 window.gamesData = [
     {
+        "id": "736985",
+        "sport": "soccer",
+        "league": "Serie A",
+        "date": "2026-01-19T17:30Z",
+        "teamA": {
+            "name": "Cremonese",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4050.png"
+        },
+        "teamB": {
+            "name": "Hellas Verona",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/119.png"
+        },
+        "tip": {
+            "market": "Vencer: Cremonese",
+            "odd": 2.5,
+            "win_rate": 38
+        }
+    },
+    {
+        "id": "736984",
+        "sport": "soccer",
+        "league": "Serie A",
+        "date": "2026-01-19T19:45Z",
+        "teamA": {
+            "name": "Lazio",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/112.png"
+        },
+        "teamB": {
+            "name": "Como",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2572.png"
+        },
+        "tip": {
+            "market": "Vencer: Como",
+            "odd": 2.7,
+            "win_rate": 35
+        }
+    },
+    {
+        "id": "740807",
+        "sport": "soccer",
+        "league": "Premier League",
+        "date": "2026-01-19T20:00Z",
+        "teamA": {
+            "name": "Brighton & Hove Albion",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/331.png"
+        },
+        "teamB": {
+            "name": "AFC Bournemouth",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png"
+        },
+        "tip": {
+            "market": "Vencer: Brighton",
+            "odd": 1.83,
+            "win_rate": 51
+        }
+    },
+    {
+        "id": "748336",
+        "sport": "soccer",
+        "league": "La Liga",
+        "date": "2026-01-19T20:00Z",
+        "teamA": {
+            "name": "Elche",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png"
+        },
+        "teamB": {
+            "name": "Sevilla",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png"
+        },
+        "tip": {
+            "market": "Vencer: Elche",
+            "odd": 2.3,
+            "win_rate": 41
+        }
+    },
+    {
         "id": "757761",
         "sport": "soccer",
         "league": "Champions League",
@@ -71,8 +147,8 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Arsenal",
-            "odd": 2.55,
-            "win_rate": 37
+            "odd": 2.5,
+            "win_rate": 38
         }
     },
     {
@@ -147,8 +223,8 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Dortmund",
-            "odd": 2.55,
-            "win_rate": 37
+            "odd": 2.4,
+            "win_rate": 39
         }
     },
     {
@@ -166,8 +242,8 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Villarreal",
-            "odd": 1.54,
-            "win_rate": 61
+            "odd": 1.5,
+            "win_rate": 63
         }
     },
     {
@@ -324,22 +400,22 @@ window.gamesData = [
     }
 ];
 window.highlightMatch = {
-    "id": "757761",
+    "id": "736985",
     "sport": "soccer",
-    "league": "Champions League",
-    "date": "2026-01-20T15:30Z",
+    "league": "Serie A",
+    "date": "2026-01-19T17:30Z",
     "teamA": {
-        "name": "Kairat Almaty",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2528.png"
+        "name": "Cremonese",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4050.png"
     },
     "teamB": {
-        "name": "Club Brugge",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/570.png"
+        "name": "Hellas Verona",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/119.png"
     },
     "tip": {
-        "market": "Vencer: Club Brugge",
-        "odd": 1.57,
-        "win_rate": 60
+        "market": "Vencer: Cremonese",
+        "odd": 2.5,
+        "win_rate": 38
     }
 };
 window.dailyStats = {
