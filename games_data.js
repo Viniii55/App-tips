@@ -1,195 +1,5 @@
 window.gamesData = [
     {
-        "id": "401810464",
-        "sport": "basketball",
-        "league": "NBA",
-        "date": "2026-01-20T00:00Z",
-        "teamA": {
-            "name": "Philadelphia 76ers",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png"
-        },
-        "teamB": {
-            "name": "Indiana Pacers",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png"
-        },
-        "tip": {
-            "market": "Vencer: 76ers",
-            "odd": 2.49,
-            "win_rate": 38
-        }
-    },
-    {
-        "id": "401810465",
-        "sport": "basketball",
-        "league": "NBA",
-        "date": "2026-01-20T00:30Z",
-        "teamA": {
-            "name": "Brooklyn Nets",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png"
-        },
-        "teamB": {
-            "name": "Phoenix Suns",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png"
-        },
-        "tip": {
-            "market": "Vencer: Nets",
-            "odd": 1.69,
-            "win_rate": 56
-        }
-    },
-    {
-        "id": "401803125",
-        "sport": "ice_hockey",
-        "league": "NHL",
-        "date": "2026-01-20T00:30Z",
-        "teamA": {
-            "name": "Toronto Maple Leafs",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tor.png"
-        },
-        "teamB": {
-            "name": "Minnesota Wild",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/min.png"
-        },
-        "tip": {
-            "market": "Vencer: Maple Leafs",
-            "odd": 2.49,
-            "win_rate": 38
-        }
-    },
-    {
-        "id": "401809250",
-        "sport": "basketball",
-        "league": "NBA",
-        "date": "2026-01-20T01:00Z",
-        "teamA": {
-            "name": "Detroit Pistons",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png"
-        },
-        "teamB": {
-            "name": "Boston Celtics",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png"
-        },
-        "tip": {
-            "market": "Vencer: Pistons",
-            "odd": 2.73,
-            "win_rate": 34
-        }
-    },
-    {
-        "id": "401803126",
-        "sport": "ice_hockey",
-        "league": "NHL",
-        "date": "2026-01-20T01:00Z",
-        "teamA": {
-            "name": "Vegas Golden Knights",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/vgk.png"
-        },
-        "teamB": {
-            "name": "Philadelphia Flyers",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/phi.png"
-        },
-        "tip": {
-            "market": "Vencer: Flyers",
-            "odd": 2.99,
-            "win_rate": 31
-        }
-    },
-    {
-        "id": "401803127",
-        "sport": "ice_hockey",
-        "league": "NHL",
-        "date": "2026-01-20T01:30Z",
-        "teamA": {
-            "name": "Chicago Blackhawks",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/chi.png"
-        },
-        "teamB": {
-            "name": "Winnipeg Jets",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/wpg.png"
-        },
-        "tip": {
-            "market": "Vencer: Blackhawks",
-            "odd": 2.24,
-            "win_rate": 42
-        }
-    },
-    {
-        "id": "401803128",
-        "sport": "ice_hockey",
-        "league": "NHL",
-        "date": "2026-01-20T02:00Z",
-        "teamA": {
-            "name": "Calgary Flames",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/cgy.png"
-        },
-        "teamB": {
-            "name": "New Jersey Devils",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nj.png"
-        },
-        "tip": {
-            "market": "Vencer: Devils",
-            "odd": 2.97,
-            "win_rate": 31
-        }
-    },
-    {
-        "id": "401810467",
-        "sport": "basketball",
-        "league": "NBA",
-        "date": "2026-01-20T03:00Z",
-        "teamA": {
-            "name": "Golden State Warriors",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png"
-        },
-        "teamB": {
-            "name": "Miami Heat",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png"
-        },
-        "tip": {
-            "market": "Vencer: Warriors",
-            "odd": 1.51,
-            "win_rate": 63
-        }
-    },
-    {
-        "id": "401803129",
-        "sport": "ice_hockey",
-        "league": "NHL",
-        "date": "2026-01-20T03:00Z",
-        "teamA": {
-            "name": "Vancouver Canucks",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/van.png"
-        },
-        "teamB": {
-            "name": "New York Islanders",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nyi.png"
-        },
-        "tip": {
-            "market": "Vencer: Islanders",
-            "odd": 1.65,
-            "win_rate": 57
-        }
-    },
-    {
-        "id": "401803130",
-        "sport": "ice_hockey",
-        "league": "NHL",
-        "date": "2026-01-20T03:00Z",
-        "teamA": {
-            "name": "Anaheim Ducks",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/ana.png"
-        },
-        "teamB": {
-            "name": "New York Rangers",
-            "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nyr.png"
-        },
-        "tip": {
-            "market": "Vencer: Ducks",
-            "odd": 1.74,
-            "win_rate": 54
-        }
-    },
-    {
         "id": "757761",
         "sport": "soccer",
         "league": "Champions League",
@@ -204,8 +14,8 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Club Brugge",
-            "odd": 1.53,
-            "win_rate": 62
+            "odd": 1.45,
+            "win_rate": 65
         }
     },
     {
@@ -223,7 +33,7 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Man City",
-            "odd": 1.38,
+            "odd": 1.39,
             "win_rate": 68
         }
     },
@@ -242,8 +52,8 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Napoli",
-            "odd": 1.95,
-            "win_rate": 48
+            "odd": 1.67,
+            "win_rate": 56
         }
     },
     {
@@ -261,8 +71,8 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Arsenal",
-            "odd": 2.55,
-            "win_rate": 37
+            "odd": 2.6,
+            "win_rate": 36
         }
     },
     {
@@ -280,8 +90,8 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Olympiacos",
-            "odd": 2.5,
-            "win_rate": 38
+            "odd": 2.35,
+            "win_rate": 40
         }
     },
     {
@@ -299,7 +109,7 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Real Madrid",
-            "odd": 1.3,
+            "odd": 1.31,
             "win_rate": 72
         }
     },
@@ -337,8 +147,8 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Dortmund",
-            "odd": 2.35,
-            "win_rate": 40
+            "odd": 2.4,
+            "win_rate": 39
         }
     },
     {
@@ -356,8 +166,46 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Villarreal",
-            "odd": 1.47,
-            "win_rate": 64
+            "odd": 1.39,
+            "win_rate": 68
+        }
+    },
+    {
+        "id": "737001",
+        "sport": "soccer",
+        "league": "Serie A",
+        "date": "2026-01-23T19:45Z",
+        "teamA": {
+            "name": "Internazionale",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/110.png"
+        },
+        "teamB": {
+            "name": "Pisa",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3956.png"
+        },
+        "tip": {
+            "market": "Vencer: Inter Milan",
+            "odd": 1.12,
+            "win_rate": 84
+        }
+    },
+    {
+        "id": "748353",
+        "sport": "soccer",
+        "league": "La Liga",
+        "date": "2026-01-23T20:00Z",
+        "teamA": {
+            "name": "Levante",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png"
+        },
+        "teamB": {
+            "name": "Elche",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png"
+        },
+        "tip": {
+            "market": "Vencer: Levante",
+            "odd": 2.55,
+            "win_rate": 37
         }
     },
     {
@@ -514,25 +362,25 @@ window.gamesData = [
     }
 ];
 window.highlightMatch = {
-    "id": "401810464",
-    "sport": "basketball",
-    "league": "NBA",
-    "date": "2026-01-20T00:00Z",
+    "id": "737001",
+    "sport": "soccer",
+    "league": "Serie A",
+    "date": "2026-01-23T19:45Z",
     "teamA": {
-        "name": "Philadelphia 76ers",
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png"
+        "name": "Internazionale",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/110.png"
     },
     "teamB": {
-        "name": "Indiana Pacers",
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png"
+        "name": "Pisa",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3956.png"
     },
     "tip": {
-        "market": "Vencer: 76ers",
-        "odd": 2.49,
-        "win_rate": 38
+        "market": "Vencer: Inter Milan",
+        "odd": 1.12,
+        "win_rate": 84
     }
 };
 window.dailyStats = {
     "hits": 35,
-    "win_rate": 91
+    "win_rate": 88
 };
