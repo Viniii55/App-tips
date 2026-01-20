@@ -14,8 +14,8 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Club Brugge",
-            "odd": 1.45,
-            "win_rate": 65
+            "odd": 1.48,
+            "win_rate": 64
         }
     },
     {
@@ -70,9 +70,9 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/359.png"
         },
         "tip": {
-            "market": "Vencer: Arsenal",
-            "odd": 2.6,
-            "win_rate": 36
+            "market": "Vencer: Inter Milan",
+            "odd": 2.65,
+            "win_rate": 35
         }
     },
     {
@@ -90,8 +90,8 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Olympiacos",
-            "odd": 2.35,
-            "win_rate": 40
+            "odd": 2.3,
+            "win_rate": 41
         }
     },
     {
@@ -128,8 +128,8 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: PSG",
-            "odd": 1.77,
-            "win_rate": 53
+            "odd": 1.74,
+            "win_rate": 54
         }
     },
     {
@@ -166,8 +166,8 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Villarreal",
-            "odd": 1.39,
-            "win_rate": 68
+            "odd": 1.34,
+            "win_rate": 70
         }
     },
     {
