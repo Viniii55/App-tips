@@ -1,6 +1,8 @@
 :root {
-    --primary: #e90029;
-    --dark: #111111;
+    --primary: #ff5e00;
+    /* New Orange Accent */
+    --dark: #002b5c;
+    /* New Navy Blue Dark */
     --gray: #f5f6f9;
     --white: #ffffff;
     --text-main: #2c3e50;
@@ -47,7 +49,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background: #fff;
+    background: #002b5c;
+    /* Navy Blue Header */
     position: sticky;
     top: 0;
     z-index: 100;
@@ -58,12 +61,14 @@ body {
     font-size: 1.5rem;
     font-weight: 900;
     margin: 0;
-    color: var(--dark);
+    color: #fff;
+    /* White Text */
     letter-spacing: -1px;
 }
 
 .highlight-text {
     color: var(--primary);
+    /* Orange */
 }
 
 .user-actions {
@@ -123,11 +128,17 @@ body {
 }
 
 .banner-1 {
-    background: linear-gradient(135deg, #e90029 0%, #ff4b1f 100%);
+    background: linear-gradient(135deg, #ff5e00 0%, #ff9100 100%);
+    /* Orange Gradient */
 }
 
 .banner-2 {
-    background: linear-gradient(135deg, #111 0%, #333 100%);
+    background: linear-gradient(135deg, #002b5c 0%, #001f3f 100%);
+    /* Navy Gradient */
+}
+
+.banner-history {
+    background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
 }
 
 .banner-item h3 {
@@ -437,12 +448,13 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     transition: all 0.2s ease;
-    box-shadow: 0 4px 0 #b30020;
+    box-shadow: 0 4px 0 #cc4b00;
+    /* Darker Orange Shadow */
 }
 
 .btn-action:active {
     transform: translateY(2px);
-    box-shadow: 0 2px 0 #b30020;
+    box-shadow: 0 2px 0 #cc4b00;
 }
 
 .btn-action.outline {
@@ -569,7 +581,7 @@ body {
 }
 
 .modal-header-alert {
-    background: #e90029;
+    background: #002b5c;
     color: white;
     padding: 30px 20px;
     text-align: center;
@@ -595,12 +607,12 @@ body {
 
 /* --- COMBO/PARLAY CARD (MÚLTIPLAS POPULARES) --- */
 .combo-section {
-    background: linear-gradient(135deg, #e90029 0%, #b30020 100%);
+    background: linear-gradient(135deg, #002b5c 0%, #004085 100%);
     border-radius: 12px;
     padding: 15px;
     margin-bottom: 25px;
     color: white;
-    box-shadow: 0 8px 20px rgba(233, 0, 41, 0.25);
+    box-shadow: 0 8px 20px rgba(0, 43, 92, 0.25);
     position: relative;
     overflow: hidden;
 }

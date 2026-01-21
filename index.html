@@ -35,12 +35,20 @@
                 <p>Turbine seus lucros hoje!</p>
                 <button class="btn-banner">VER AGORA</button>
             </div>
+            <div class="banner-item banner-history">
+                <h3>HISTÓRICO<br>Diário</h3>
+                <p>Veja nossos palpites finalizados.</p>
+                <button class="btn-banner" onclick="showHistory()">VER ACERTOS</button>
+            </div>
             <div class="banner-item banner-2">
                 <h3>GRUPO<br>VIP</h3>
                 <p>Entre na comunidade.</p>
                 <button class="btn-banner">ACESSAR</button>
             </div>
         </div>
+
+
+
 
         <main style="padding-bottom: 80px; padding-top: 20px;">
             <!-- TRUST SCOREBOARD -->
@@ -56,15 +64,15 @@
                     style="background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 10px 15px; min-width: 110px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
                     <div style="font-size: 0.7rem; color: #888; font-weight: 600; text-transform: uppercase;">
                         Assertividade</div>
-                    <div id="stats-winrate" style="font-size: 1.5rem; font-weight: 900; color: #e90029;">--%</div>
+                    <div id="stats-winrate" style="font-size: 1.5rem; font-weight: 900; color: #ff5e00;">--%</div>
                 </div>
             </div>
 
             <!-- DESTAQUE DO DIA (JOGAÇO) -->
             <div id="highlight-card" class="parlay-card hidden"
-                style="background: #fff; border: 1px solid #e90029; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(233, 0, 41, 0.15);">
+                style="background: #fff; border: 1px solid #002b5c; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0, 43, 92, 0.15);">
                 <div class="parlay-header"
-                    style="background: linear-gradient(90deg, #e90029 0%, #b30020 100%); color: white; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
+                    style="background: linear-gradient(90deg, #002b5c 0%, #004085 100%); color: white; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
                     <div class="parlay-title" style="display: flex; align-items: center; gap: 8px;">
                         <span style="font-size: 1.2rem;">🔥</span>
                         <h3

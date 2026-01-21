@@ -284,13 +284,58 @@ function getSportIcon(sportKey) {
 // --- FUNÇÃO DE RENDERIZAÇÃO AGRUPADA POR LIGA ---
 function renderFeed(filterSport) {
     try {
-        // Use current state filter if argument is not provided
         const currentFilter = filterSport || state.activeFilter;
-
         const container = dom.feed;
         if (!container) return;
 
         container.innerHTML = '';
+
+        // --- HISTORY VIEW ---
+        if (currentFilter === 'history') {
+            const historyData = window.historyTips || [];
+
+            // FILTER: ONLY TODAY
+            const now = new Date();
+            const todayFiltered = historyData.filter(m => {
+                try {
+                    const d = new Date(m.date);
+                    return d.getDate() === now.getDate() &&
+                        d.getMonth() === now.getMonth() &&
+                        d.getFullYear() === now.getFullYear();
+                } catch (e) { return false; }
+            });
+
+            if (todayFiltered.length === 0) {
+                container.innerHTML = '<div style="text-align:center; padding:40px; color:#999; font-style:italic;">Nenhum resultado finalizado hoje (ainda).</div>';
+                return;
+            }
+
+            // Reverse to show newest first
+            const sortedHistory = [...todayFiltered].reverse();
+
+            // Simple Header
+            const header = document.createElement('div');
+            header.innerHTML = `
+                <div style="padding: 0 5px 15px 5px; display:flex; justify-content:space-between; align-items:flex-end;">
+                     <div>
+                        <h3 style="margin:0; font-size:1.1rem; color:#333;">Resultados de Hoje</h3>
+                        <p style="margin:5px 0 0 0; font-size:0.8rem; color:#888;">Apenas jogos finalizados nas últimas 24h.</p>
+                     </div>
+                </div>
+            `;
+            container.appendChild(header);
+
+            sortedHistory.forEach(match => {
+                container.appendChild(createHistoryRow(match));
+            });
+
+            // Hide Highlight on History Tab
+            if (dom.highlightCard) dom.highlightCard.classList.add('hidden');
+            return;
+        }
+
+        // --- NORMAL FEED VIEW ---
+        if (dom.highlightCard && window.highlightMatch) dom.highlightCard.classList.remove('hidden');
 
         const allGames = state.matchData || [];
 
@@ -431,10 +476,58 @@ function renderFeed(filterSport) {
     }
 }
 
+// Helper para Histórico Clean
+function createHistoryRow(match) {
+    const el = document.createElement('div');
+    el.style.cssText = `
+        background: #fff;
+        border-radius: 8px;
+        padding: 12px;
+        margin-bottom: 10px;
+        border: 1px solid #eee;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    `;
+
+    const isWin = match.result === 'WIN';
+    const resultColor = isWin ? '#2ecc71' : '#e74c3c';
+    const resultIcon = isWin ? '✅ GREEN' : '❌ RED';
+    const bgBadge = isWin ? '#eafaf1' : '#fdedec';
+
+    // Normalize team names handling
+    const teamA = match.teamA ? match.teamA.name : (match.match_name ? match.match_name.split(' x ')[0] : 'Time A');
+    const teamB = match.teamB ? match.teamB.name : (match.match_name ? match.match_name.split(' x ')[1] : 'Time B');
+
+    // Date
+    let dateStr = "Finalizado";
+    try {
+        const d = new Date(match.date);
+        dateStr = `${d.getDate()}/${d.getMonth() + 1}`;
+    } catch (e) { }
+
+    el.innerHTML = `
+        <div style="display:flex; flex-direction:column; gap:4px;">
+             <div style="font-size:0.75rem; color:#999;">${dateStr} • ${match.league}</div>
+             <div style="font-size:0.9rem; font-weight:700; color:#333;">${teamA} vs ${teamB}</div>
+             <div style="font-size:0.8rem; color:#555;">Tip: <strong>${match.tip.market}</strong></div>
+        </div>
+        
+        <div style="display:flex; flex-direction:column; align-items:flex-end; gap:5px;">
+            <div style="background:${bgBadge}; color:${resultColor}; font-weight:900; font-size:0.7rem; padding:4px 8px; border-radius:4px; letter-spacing:0.5px;">
+                ${resultIcon}
+            </div>
+            <div style="font-size:0.7rem; color:#ccc;">ODD @${match.tip.odd}</div>
+        </div>
+    `;
+
+    return el;
+}
+
 // Cria o Card estilo "Linha" (Row) igual ao print
 function createMatchRow(match) {
     const el = document.createElement('div');
-    el.className = 'game-card match-row'; // match-row para estilo específico
+    el.className = 'game-card match-row';
 
     // Formata Hora
     const dateObj = new Date(match.date);
@@ -445,6 +538,28 @@ function createMatchRow(match) {
     const iconA = match.teamA.logo || 'https://via.placeholder.com/30';
     const iconB = match.teamB.logo || 'https://via.placeholder.com/30';
 
+    // Smart Analysis Logic
+    let analysisHtml = '';
+    if (match.tip.analysis) {
+        analysisHtml = `
+            <div style="background: #f8f9fa; border-left: 3px solid #ff5e00; padding: 8px 12px; margin-top: 12px; border-radius: 0 4px 4px 0;">
+                <div style="display:flex; align-items:center; gap:6px; margin-bottom:4px;">
+                    <span style="font-size:0.75rem; font-weight:800; color:#333; text-transform:uppercase;">💡 Análise IA</span>
+                </div>
+                <p style="font-size:0.75rem; color:#555; margin:0; line-height:1.4;">
+                    "${match.tip.analysis}"
+                </p>
+            </div>
+        `;
+    }
+
+    // Market Icon/Badge based on type
+    let marketBadgeColor = '#e90029';
+    let marketIcon = '🎯';
+    if (match.tip.type === 'Gols') { marketBadgeColor = '#2980b9'; marketIcon = '⚽'; }
+    if (match.tip.type === 'Escanteios') { marketBadgeColor = '#8e44ad'; marketIcon = '⛳'; }
+    if (match.tip.type === 'Chutes') { marketBadgeColor = '#d35400'; marketIcon = '👟'; }
+
     el.innerHTML = `
         <div class="row-left" style="width: 100%;">
             <div class="row-meta">
@@ -452,7 +567,7 @@ function createMatchRow(match) {
                 <div class="card-header-cta">Criar Aposta ></div>
             </div>
             
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
                 <div class="teams-container" style="margin-bottom: 0;">
                     <div class="team-row">
                         <img src="${iconA}" class="team-logo">
@@ -465,7 +580,9 @@ function createMatchRow(match) {
                 </div>
 
                 <div class="row-right" style="min-width: unset;">
-                    <div class="tip-market">${match.tip.market}</div>
+                    <div class="tip-market" style="color:${marketBadgeColor}">
+                        ${marketIcon} ${match.tip.market.replace('Vencer:', '').replace('Total de Gols:', 'Gols').replace('Escanteios:', 'Cantos')}
+                    </div>
                     <div class="odd-button" style="padding: 6px 12px; min-width: 80px;">
                         <span class="odd-label" style="font-size: 0.6rem;">PROB.</span>
                         <span class="odd-value" style="font-size: 0.9rem;">${match.tip.win_rate}%</span>
@@ -473,8 +590,10 @@ function createMatchRow(match) {
                 </div>
             </div>
 
+            ${analysisHtml}
+
             <!-- Botão Apostar Agora -->
-            <a href="${state.affiliateLink}" target="_blank" class="btn-action">
+            <a href="${state.affiliateLink}" target="_blank" class="btn-action" style="margin-top:12px;">
                 APOSTAR AGORA 🚀
             </a>
         </div>
@@ -571,4 +690,19 @@ function renderStats() {
 
     if (elHits) elHits.textContent = hits;
     if (elWinRate) elWinRate.textContent = `${winRate}%`;
+}
+
+// Função Helper Global para o Banner de Histórico
+window.showHistory = function () {
+    // Remove active class das tabs
+    dom.tabs.forEach(t => t.classList.remove('active'));
+
+    // Set state manual
+    state.activeFilter = 'history';
+
+    // Renderiza
+    renderFeed('history');
+
+    // Scroll suave até o feed
+    dom.feed.scrollIntoView({ behavior: 'smooth' });
 }
