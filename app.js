@@ -1,6 +1,29 @@
+// --- FUNCTION: Show Super Odds View ---
+window.showSuperOdds = function () {
+    // Remove active class from tabs
+    dom.tabs.forEach(t => t.classList.remove('active'));
+
+    // Set state
+    state.activeFilter = 'superodds';
+
+    // Render
+    renderFeed();
+
+    // Scroll to feed
+    if (dom.feed) dom.feed.scrollIntoView({ behavior: 'smooth' });
+}
+
+// Global scope for History as well
+window.showHistory = function () {
+    dom.tabs.forEach(t => t.classList.remove('active'));
+    state.activeFilter = 'history';
+    renderFeed();
+    if (dom.feed) dom.feed.scrollIntoView({ behavior: 'smooth' });
+}
 // SuperTips Hub Logic
 const state = {
     activeFilter: 'all',
+    superodds: [],
     affiliateLink: "https://superbet.com/registro",
     dateFormat: new Intl.DateTimeFormat('pt-BR', {
         weekday: 'long',
@@ -280,6 +303,14 @@ function getSportIcon(sportKey) {
     return icons[sportKey] || icons['default'];
 }
 
+// --- GLOBAL EXPORTS ---
+window.showSuperOdds = function () {
+    dom.tabs.forEach(t => t.classList.remove('active'));
+    state.activeFilter = 'superodds';
+    renderFeed();
+    if (dom.feed) dom.feed.scrollIntoView({ behavior: 'smooth' });
+}
+
 // --- FUNÇÃO DE RENDERIZAÇÃO AGRUPADA POR LIGA ---
 // --- FUNÇÃO DE RENDERIZAÇÃO AGRUPADA POR LIGA ---
 function renderFeed(filterSport) {
@@ -334,6 +365,61 @@ function renderFeed(filterSport) {
             return;
         }
 
+        // --- SUPER ODDS VIEW (BEST TIPS TODAY & UPCOMING) ---
+        if (currentFilter === 'superodds') {
+            const allGames = state.matchData || [];
+
+            // 1. Tenta pegar jogos de HOJE com Win Rate >= 80%
+            const now = new Date();
+            now.setHours(0, 0, 0, 0); // Zera hora para comparar datas
+
+            let superGames = allGames.filter(g => {
+                const d = new Date(g.date);
+                // Verifica se é hoje ou futuro próximo
+                const isFutureOrToday = d >= now;
+                return isFutureOrToday && g.tip.win_rate >= 80;
+            });
+
+            // Se encontrar, ordena por Data (mais próximo) e depois por Win Rate
+            superGames.sort((a, b) => {
+                // Se dias forem diferentes, prioriza o mais cedo
+                const dateA = new Date(a.date);
+                const dateB = new Date(b.date);
+                if (dateA.toDateString() !== dateB.toDateString()) {
+                    return dateA - dateB;
+                }
+                // Se for mesmo dia, prioriza win rate maior
+                return b.tip.win_rate - a.tip.win_rate;
+            });
+
+            // Header
+            const header = document.createElement('div');
+            header.innerHTML = `
+                <div style="padding: 15px; margin-bottom: 20px; background: linear-gradient(135deg, #ff5e00 0%, #ff9100 100%); border-radius: 12px; color: white; text-align: center; box-shadow: 0 4px 15px rgba(255, 94, 0, 0.3);">
+                     <h2 style="margin:0; font-size:1.5rem; font-weight:900; font-style:italic;">SUPER ODDS 🔥</h2>
+                     <p style="margin:5px 0 0 0; font-size:0.9rem; opacity:0.9;">As melhores oportunidades selecionadas a dedo.</p>
+                </div>
+            `;
+            container.appendChild(header);
+
+            if (superGames.length === 0) {
+                container.innerHTML += `
+                    <div style="text-align:center; padding:40px; color:#999;">
+                        <div style="font-size:2rem; margin-bottom:10px;">😴</div>
+                        Nenhuma Super Odd encontrada para as próximas horas.<br>O mercado está fechado no momento.
+                    </div>`;
+                if (dom.highlightCard) dom.highlightCard.classList.add('hidden');
+                return;
+            }
+
+            superGames.forEach(game => {
+                container.appendChild(createMatchRow(game));
+            });
+
+            if (dom.highlightCard) dom.highlightCard.classList.add('hidden');
+            return;
+        }
+
         // --- NORMAL FEED VIEW ---
         if (dom.highlightCard && window.highlightMatch) dom.highlightCard.classList.remove('hidden');
 
@@ -343,18 +429,21 @@ function renderFeed(filterSport) {
         let filtered = allGames.filter(g => {
             const gDate = new Date(g.date);
             const now = new Date();
-            const isToday = gDate.getDate() === now.getDate() &&
-                gDate.getMonth() === now.getMonth() &&
-                gDate.getFullYear() === now.getFullYear();
 
-            // Lógica Pedida:
-            // "Na aba TUDO apenas exiba os jogos de hoje"
+            // Melhoria na Lógica de Data (Timezone Safe)
+            const diffMs = gDate - now;
+            const diffHours = diffMs / (1000 * 60 * 60);
+
+            // Aceita jogos de 4h atrás (pra pegar os que estão no fim) até 24h pra frente
+            const isRelevant = diffHours > -4 && diffHours < 24;
+
+            // Na aba TUDO: mostra apenas jogos relevantes (hoje/agora)
             if (currentFilter === 'all') {
-                return isToday;
+                return isRelevant;
             }
 
-            // "Quando clicar em esporte específico pode mostrar datas futuras"
-            return g.sport === currentFilter;
+            // Nas abas de Esporte: também filtra por relevância para não encher de lixo futuro
+            return g.sport === currentFilter && isRelevant;
         });
 
         // 2. Classifica por Data (Jogos de hoje primeiro)

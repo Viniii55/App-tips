@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Login - SuperTips</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #001f3f;
+        }
+
+        .login-wrapper {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('login-bg.png') no-repeat center center/cover;
+        }
+
+        /* Overlay Escuro para legibilidade */
+        .login-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(0, 43, 92, 0.6) 0%, rgba(0, 31, 63, 0.95) 100%);
+            z-index: 1;
+        }
+
+        /* Glass Card */
+        .login-card {
+            position: relative;
+            z-index: 2;
+            width: 90%;
+            max-width: 400px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 40px 30px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .login-logo {
+            width: 80px;
+            height: auto;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 0 10px rgba(255, 94, 0, 0.5));
+        }
+
+        .login-title {
+            color: #fff;
+            font-size: 1.8rem;
+            font-weight: 900;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        .login-subtitle {
+            color: #ccc;
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        /* Inputs */
+        .input-group {
+            width: 100%;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .custom-input {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 16px 16px 16px 45px;
+            /* Padding left for icon */
+            color: #fff;
+            font-size: 1rem;
+            font-family: 'Inter', sans-serif;
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+        .custom-input::placeholder {
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .custom-input:focus {
+            border-color: #ff5e00;
+            background: rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 0 4px rgba(255, 94, 0, 0.1);
+        }
+
+        /* Icons absolute positioning */
+        .input-icon {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        /* Button */
+        .btn-login {
+            background: linear-gradient(135deg, #ff5e00 0%, #ff9100 100%);
+            color: white;
+            width: 100%;
+            padding: 16px;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 800;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(255, 94, 0, 0.3);
+            margin-top: 10px;
+        }
+
+        .btn-login:active {
+            transform: scale(0.98);
+        }
+
+        .forgot-pass {
+            margin-top: 20px;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .forgot-pass:hover {
+            color: #ff5e00;
+        }
+
+        .signup-link {
+            margin-top: 30px;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+
+        .signup-link a {
+            color: #ff5e00;
+            font-weight: 700;
+            text-decoration: none;
+            margin-left: 5px;
+        }
+
+        /* Particles/Decorations */
+        .bg-glow {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(255, 94, 0, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            top: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-wrapper">
+        <div class="login-overlay"></div>
+
+        <div class="login-card">
+            <div class="bg-glow"></div>
+
+            <img src="favicon.png" alt="SuperTips Logo" class="login-logo">
+
+            <h1 class="login-title">LOGIN</h1>
+            <p class="login-subtitle">Acesse as melhores dicas do mercado.</p>
+
+            <form id="loginForm" onsubmit="handleLogin(event)">
+                <div class="input-group">
+                    <span class="input-icon">✉️</span>
+                    <input type="email" class="custom-input" placeholder="Seu e-mail" required
+                        value="membro@supertips.com">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-icon">🔒</span>
+                    <input type="password" class="custom-input" placeholder="Sua senha" required value="senha123">
+                </div>
+
+                <button type="submit" class="btn-login">ENTRAR 🚀</button>
+            </form>
+
+            <a href="#" class="forgot-pass">Esqueceu a senha?</a>
+
+            <div class="signup-link">
+                Não tem conta? <a href="#">Cadastre-se</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function handleLogin(e) {
+            e.preventDefault();
+            const btn = document.querySelector('.btn-login');
+            const originalText = btn.innerHTML;
+
+            // Loading State
+            btn.innerHTML = 'VALIDANDO...';
+            btn.style.opacity = '0.8';
+
+            setTimeout(() => {
+                // Success Simulation
+                btn.innerHTML = 'SUCESSO! ✅';
+                btn.style.background = '#2ecc71';
+
+                setTimeout(() => {
+                    // Redirect to App
+                    localStorage.setItem('supertips_auth', 'true');
+                    window.location.href = 'index.html';
+                }, 800);
+            }, 1000);
+        }
+    </script>
+
+</body>
+
+</html>

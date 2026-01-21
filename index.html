@@ -1,257 +1,459 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>SuperTips - Oportunidades Diárias</title>
-    <!-- Google Fonts: Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Login - SuperTips</title>
+    <link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #001f3f;
+        }
+
+        .login-wrapper {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('login-bg.png') no-repeat center center/cover;
+        }
+
+        /* Overlay Escuro para legibilidade */
+        .login-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(0, 43, 92, 0.6) 0%, rgba(0, 31, 63, 0.95) 100%);
+            z-index: 1;
+        }
+
+        /* Glass Card */
+        .login-card {
+            position: relative;
+            z-index: 2;
+            width: 90%;
+            max-width: 400px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 40px 30px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .login-logo {
+            width: 140px; /* Reduzido de 180px/auto */
+            height: auto;
+            margin-bottom: 5px; /* Espaço para o texto LOGIN */
+            filter: drop-shadow(0 0 15px rgba(255, 94, 0, 0.3)); /* Glow */
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .login-logo {
+            width: 200px;
+            height: auto;
+            margin-bottom: -10px;
+            /* Negative margin to pull closer */
+            filter: drop-shadow(0 0 15px rgba(255, 94, 0, 0.6));
+        }
+
+        .login-title {
+            color: #fff;
+            font-size: 1.8rem;
+            font-weight: 900;
+            margin-top: 0;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        .login-subtitle {
+            color: #ccc;
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        /* Inputs */
+        .input-group {
+            width: 100%;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .custom-input {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 16px 16px 16px 45px;
+            /* Padding left for icon */
+            color: #fff;
+            font-size: 1rem;
+            font-family: 'Inter', sans-serif;
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+        .custom-input::placeholder {
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .custom-input:focus {
+            border-color: #ff5e00;
+            background: rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 0 4px rgba(255, 94, 0, 0.1);
+        }
+
+        /* Icons absolute positioning */
+        .input-icon {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        /* Button */
+        .btn-login {
+            background: linear-gradient(135deg, #ff5e00 0%, #ff9100 100%);
+            color: white;
+            width: 100%;
+            padding: 16px;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 800;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(255, 94, 0, 0.3);
+            margin-top: 10px;
+        }
+
+        .btn-login:active {
+            transform: scale(0.98);
+        }
+
+        .forgot-pass {
+            margin-top: 20px;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .forgot-pass:hover {
+            color: #ff5e00;
+        }
+
+        .signup-link {
+            margin-top: 30px;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+
+        .signup-link a {
+            color: #ff5e00;
+            font-weight: 700;
+            text-decoration: none;
+            margin-left: 5px;
+        }
+
+        /* Particles/Decorations */
+        .bg-glow {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(255, 94, 0, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            top: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+            pointer-events: none;
+        }
+    </style>
 </head>
 
 <body>
 
-    <div class="app-container">
-        <!-- HEADER -->
-        <header class="app-header">
-            <div class="logo-area">
-                <h1>SUPER<span class="highlight-text">TIPS</span></h1>
+    <div class="login-wrapper">
+        <div class="login-overlay"></div>
+
+        <div class="login-card">
+            <div class="bg-glow"></div>
+
+            <img src="favicon.png" alt="SuperTips Logo" class="login-logo">
+
+            <h1 class="login-title">LOGIN</h1>
+            <p class="login-subtitle">Acesse as melhores dicas do mercado.</p>
+
+            <form id="loginForm" onsubmit="handleLogin(event)">
+                <div class="input-group">
+                    <span class="input-icon">✉️</span>
+                    <input type="email" class="custom-input" placeholder="Seu e-mail" required
+                        value="membro@supertips.com">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-icon">🔒</span>
+                    <input type="password" id="loginPass" class="custom-input" placeholder="Sua senha" required
+                        value="senha123">
+                </div>
+
+                <button type="submit" class="btn-login">ENTRAR 🚀</button>
+            </form>
+
+            <div class="divider">
+                <span>ou continue com</span>
             </div>
-            <div class="user-actions">
-                <button class="btn-icon">🔔</button>
-                <button class="btn-profile">
-                    <img src="https://ui-avatars.com/api/?name=User&background=333&color=fff" alt="User">
+
+            <div class="social-login">
+                <button class="btn-social google" onclick="handleSocialLogin('Google')">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png"
+                        alt="G">
+                    Google
+                </button>
+                <button class="btn-social apple" onclick="handleSocialLogin('Apple')">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="A">
+                    Apple
                 </button>
             </div>
-        </header>
 
-        <!-- CARROSSEL DE BANNERS -->
-        <div class="banners-carousel">
-            <div class="banner-item banner-1">
-                <h3>SUPER<br>ODDS</h3>
-                <p>Turbine seus lucros hoje!</p>
-                <button class="btn-banner">VER AGORA</button>
-            </div>
-            <div class="banner-item banner-history">
-                <h3>HISTÓRICO<br>Diário</h3>
-                <p>Veja nossos palpites finalizados.</p>
-                <button class="btn-banner" onclick="showHistory()">VER ACERTOS</button>
-            </div>
-            <div class="banner-item banner-2">
-                <h3>GRUPO<br>VIP</h3>
-                <p>Entre na comunidade.</p>
-                <button class="btn-banner">ACESSAR</button>
-            </div>
-        </div>
+            <a href="#" class="forgot-pass"
+                onclick="alert('Função de recuperar senha será enviada para seu e-mail!')">Esqueceu a senha?</a>
 
-
-
-
-        <main style="padding-bottom: 80px; padding-top: 20px;">
-            <!-- TRUST SCOREBOARD -->
-            <div id="trust-scoreboard"
-                style="display: flex; gap: 10px; overflow-x: auto; margin-bottom: 25px; padding: 0 5px; justify-content: center;">
-                <div class="score-card"
-                    style="background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 10px 15px; min-width: 110px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-                    <div style="font-size: 0.7rem; color: #888; font-weight: 600; text-transform: uppercase;">Acertos
-                        Hoje</div>
-                    <div id="stats-hits" style="font-size: 1.5rem; font-weight: 900; color: #2ecc71;">--</div>
-                </div>
-                <div class="score-card"
-                    style="background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 10px 15px; min-width: 110px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-                    <div style="font-size: 0.7rem; color: #888; font-weight: 600; text-transform: uppercase;">
-                        Assertividade</div>
-                    <div id="stats-winrate" style="font-size: 1.5rem; font-weight: 900; color: #ff5e00;">--%</div>
-                </div>
-            </div>
-
-            <!-- DESTAQUE DO DIA (JOGAÇO) -->
-            <div id="highlight-card" class="parlay-card hidden"
-                style="background: #fff; border: 1px solid #002b5c; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0, 43, 92, 0.15);">
-                <div class="parlay-header"
-                    style="background: linear-gradient(90deg, #002b5c 0%, #004085 100%); color: white; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
-                    <div class="parlay-title" style="display: flex; align-items: center; gap: 8px;">
-                        <span style="font-size: 1.2rem;">🔥</span>
-                        <h3
-                            style="color: white; font-style: italic; font-weight: 900; margin: 0; text-transform: uppercase; font-size: 0.9rem;">
-                            Destaque do Dia</h3>
-                    </div>
-                    <div class="parlay-badge"
-                        style="background: rgba(255,255,255,0.2); color: #fff; padding: 4px 10px; border-radius: 20px; font-weight: 800; font-size: 0.7rem; border: 1px solid rgba(255,255,255,0.3);">
-                        MELHOR ODD
-                    </div>
-                </div>
-
-                <div id="highlight-content" style="padding: 20px; text-align: center;">
-                    <!-- JS injeta aqui -->
-                </div>
-            </div>
-
-            <!-- FEED DE JOGOS -->
-            <div class="sports-nav-container">
-                <div class="sports-nav">
-                    <button class="nav-icon-item active" data-sport="all">
-                        <div class="icon-circle">🔥</div>
-                        <span>Tudo</span>
-                    </button>
-                    <button class="nav-icon-item" data-sport="soccer">
-                        <div class="icon-circle">⚽</div>
-                        <span>Futebol</span>
-                    </button>
-                    <button class="nav-icon-item" data-sport="basketball">
-                        <div class="icon-circle">🏀</div>
-                        <span>Basquete</span>
-                    </button>
-                    <button class="nav-icon-item" data-sport="tennis">
-                        <div class="icon-circle">🎾</div>
-                        <span>Tênis</span>
-                    </button>
-
-                    <button class="nav-icon-item" data-sport="american_football">
-                        <div class="icon-circle">🏈</div>
-                        <span>Fut. Am.</span>
-                    </button>
-                    <button class="nav-icon-item" data-sport="ice_hockey">
-                        <div class="icon-circle">🏒</div>
-                        <span>Hockey</span>
-                    </button>
-                </div>
-            </div>
-
-            <!-- Título da Seção -->
-            <div style="padding: 0 20px; margin-top: 20px; margin-bottom: 5px;">
-                <h3 style="margin: 0; font-size: 1.1rem; font-weight: 800; color: #111;">Jogos de HOJE 🔥</h3>
-            </div>
-
-            <div id="games-feed" class="games-feed">
-                <!-- Cards injetados via JS -->
-            </div>
-
-        </main>
-    </div> <!-- Fim app-container -->
-
-
-    <!-- ONBOARDING MODAL (Tutorial) -->
-    <div id="onboarding-modal" class="modal hidden" style="z-index: 2000;">
-        <div class="modal-content" style="max-width: 400px; padding: 0; overflow: hidden; text-align: left;">
-
-            <!-- HEADER MODAL -->
-            <div style="background: #e90029; padding: 20px; text-align: center;">
-                <h3 style="color: white; margin: 0; font-style: italic; font-weight: 900;">SUPER<span
-                        style="color: #ffd700;">TIPS</span></h3>
-                <p style="color: rgba(255,255,255,0.8); font-size: 0.8rem; margin: 5px 0 0 0;">Configuração Inicial</p>
-            </div>
-
-            <!-- STEP ÚNICO: TUDO EM UM -->
-            <div id="onboarding-content" style="padding: 25px; max-height: 80vh; overflow-y: auto;">
-
-                <!-- BLOCO LEGAL -->
-                <h4 style="margin-bottom: 10px; color: #111;">⚠️ Aviso Importante</h4>
-                <p style="font-size: 0.85rem; color: #666; line-height: 1.5; margin-bottom: 20px;">
-                    Para garantir a assertividade da IA (87%), nosso algoritmo foi calibrado exclusivamente para
-                    <strong>CONTAS NOVAS</strong>.
-                </p>
-
-                <div
-                    style="background: #fff5f5; border: 1px dashed #e90029; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
-                    <p style="font-size: 0.8rem; color: #e90029; margin: 0; font-weight: 700;">
-                        🚫 Contas antigas podem apresentar erros de leitura.
-                    </p>
-                </div>
-
-                <!-- CHECKBOXES (Obrigatórios) -->
-                <div style="margin-bottom: 25px;">
-                    <div style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 15px;">
-                        <input type="checkbox" id="check-18" style="transform: scale(1.3); margin-top: 2px;">
-                        <label for="check-18" style="font-size: 0.8rem; color: #333; line-height: 1.4;">
-                            Tenho mais de 18 anos.
-                        </label>
-                    </div>
-
-                    <div style="display: flex; gap: 10px; align-items: flex-start; margin-bottom: 10px;">
-                        <input type="checkbox" id="check-terms" style="transform: scale(1.3); margin-top: 2px;">
-                        <label for="check-terms" style="font-size: 0.8rem; color: #333; line-height: 1.4;">
-                            Não tenho conta na Superbet (ou vou criar uma nova).
-                        </label>
-                    </div>
-                </div>
-
-                <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
-
-                <!-- CTA CONVERSÃO -->
-                <div style="text-align: center;">
-                    <div
-                        style="background: #fdf6e3; border: 1px solid #f1c40f; padding: 10px; border-radius: 6px; margin-bottom: 15px; text-align: left;">
-                        <p style="font-size: 0.75rem; color: #8a6d3b; margin: 0; font-weight: 700;">
-                            💰 Gestão de Banca Recomendada:
-                        </p>
-                        <p style="font-size: 0.75rem; color: #555; margin: 5px 0 0 0; line-height: 1.3;">
-                            Para correta leitura do algoritmo nas primeiras entradas, recomendamos iniciar com uma banca
-                            de validação de <strong>pelo menos R$ 30,00</strong>.
-                        </p>
-                    </div>
-
-                    <p style="font-size: 0.9rem; margin-bottom: 15px; font-weight: 700;">Passo Final: Ativar Algoritmo
-                    </p>
-
-                    <a id="btn-create-account-onboarding" href="#" target="_blank" class="btn-action"
-                        style="text-decoration: none; margin-bottom: 15px; background: #e90029; font-size: 1rem; padding: 15px; display: block;">
-                        CRIAR CONTA NOVA E ATIVAR 🚀
-                    </a>
-
-                    <button id="btn-finish-onboarding" disabled
-                        style="background: none; border: none; color: #999; font-size: 0.75rem; text-decoration: underline; cursor: pointer;">
-                        Já criei, depositei e ativei
-                    </button>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-
-    <!-- MODAL INTERSTITIAL (LEMBRETE APOSTA) -->
-    <div id="bet-reminder-modal" class="modal hidden" style="z-index: 10000;">
-        <div class="modal-content">
-            <div class="modal-header-alert">
-                <div style="font-size: 2.5rem;">⚠️</div>
-                <h3>Atenção Máxima</h3>
-            </div>
-
-            <div class="modal-body" style="text-align: center;">
-                <div
-                    style="text-align: left; background: #fafafa; padding: 18px; border-radius: 12px; margin-bottom: 25px; font-size: 0.85rem; color: #333; border: 1px solid #eee; line-height: 1.5;">
-                    <p style="margin: 0 0 12px 0;"><strong>1. Conta Nova:</strong> A IA foi calibrada para contas
-                        criadas <strong>HOJE</strong> na Superbet. Não nos responsabilizamos por perdas em contas
-                        antigas.</p>
-                    <p style="margin: 0;"><strong>2. Gestão de Banca:</strong> Recomendamos entrada inicial de
-                        <strong>R$ 30,00</strong> para validação imediata do algoritmo.
-                    </p>
-                </div>
-
-                <p style="font-size: 0.7rem; color: #999; margin-bottom: 25px;">
-                    Ao continuar, você concorda com nossos Termos de Uso e exime a plataforma de eventuais prejuízos.
-                </p>
-
-                <button id="btn-confirm-bet" class="btn-action"
-                    style="font-size: 1rem; padding: 18px; background: #2ecc71; box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);">
-                    ENTENDI E QUERO APOSTAR ✅
-                </button>
-
-                <button id="btn-cancel-bet"
-                    style="background: none; border: none; font-size: 0.8rem; color: #999; margin-top: 20px; text-decoration: underline; cursor: pointer; display: block; width: 100%;">
-                    Cancelar
-                </button>
+            <div class="signup-link">
+                Não tem conta? <a href="#" onclick="openSignupModal()">Cadastre-se</a>
             </div>
         </div>
     </div>
 
-    <!-- Dados (Pode estar vazio se local) -->
-    <script src="games_data.js"></script>
-    <script src="app.js"></script>
+    <!-- SIGN UP MODAL -->
+    <div id="signupModal" class="modal hidden">
+        <div class="login-card" style="margin-top: 50px;">
+            <button class="close-modal" onclick="closeSignupModal()">×</button>
+            <h2 class="login-title" style="font-size: 1.5rem;">CRIAR CONTA</h2>
+            <p class="login-subtitle">Junte-se à elite das apostas.</p>
+
+            <form id="signupForm" onsubmit="handleSignup(event)">
+                <div class="input-group">
+                    <span class="input-icon">👤</span>
+                    <input type="text" id="regName" class="custom-input" placeholder="Nome completo" required>
+                </div>
+                <div class="input-group">
+                    <span class="input-icon">✉️</span>
+                    <input type="email" id="regEmail" class="custom-input" placeholder="Seu melhor e-mail" required>
+                </div>
+                <div class="input-group">
+                    <span class="input-icon">🔒</span>
+                    <input type="password" id="regPass" class="custom-input" placeholder="Crie uma senha" required>
+                </div>
+                <button type="submit" class="btn-login"
+                    style="background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);">CADASTRAR GRÁTIS</button>
+            </form>
+        </div>
+    </div>
+
+    <style>
+        /* Additional Styles for Social & Modal */
+        .divider {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 20px 0;
+            width: 100%;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 0.8rem;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .divider span {
+            padding: 0 10px;
+        }
+
+        .social-login {
+            display: flex;
+            gap: 10px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .btn-social {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 10px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.05);
+            color: white;
+            cursor: pointer;
+            transition: background 0.2s;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .btn-social:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-social img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .btn-social.apple img {
+            filter: invert(1);
+        }
+
+        /* Modal Overrides */
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(5px);
+        }
+
+        .modal.hidden {
+            display: none;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 1.5rem;
+            cursor: pointer;
+            opacity: 0.7;
+        }
+
+        .close-modal:hover {
+            opacity: 1;
+        }
+    </style>
+
+    <script>
+        // --- LOGIN LOGIC ---
+        function handleLogin(e) {
+            e.preventDefault();
+            const btn = e.target.querySelector('.btn-login');
+
+            // Simula verificação
+            const email = document.getElementById('loginPass').value; // Just check logic placeholder
+
+            enableLoading(btn, "VALIDANDO...");
+
+            setTimeout(() => {
+                finishLogin(btn);
+            }, 1000);
+        }
+
+        function handleSocialLogin(provider) {
+            const btns = document.querySelectorAll('.btn-social');
+            // Visual feedback only
+            alert(`Login com ${provider} simulado com sucesso!`);
+            localStorage.setItem('supertips_auth', 'social_' + provider);
+            window.location.href = 'app.html';
+        }
+
+        // --- SIGNUP LOGIC ---
+        function openSignupModal() {
+            document.getElementById('signupModal').classList.remove('hidden');
+        }
+
+        function closeSignupModal() {
+            document.getElementById('signupModal').classList.add('hidden');
+        }
+
+        function handleSignup(e) {
+            e.preventDefault();
+            const email = document.getElementById('regEmail').value;
+            const pass = document.getElementById('regPass').value;
+            const name = document.getElementById('regName').value;
+
+            const btn = e.target.querySelector('.btn-login');
+            enableLoading(btn, "CRIANDO CONTA...");
+
+            setTimeout(() => {
+                // STORE DATA
+                localStorage.setItem('supertips_user_email', email);
+                localStorage.setItem('supertips_user_name', name);
+                localStorage.setItem('supertips_auth', 'true');
+
+                btn.innerHTML = 'CONTA CRIADA! 🎉';
+                btn.style.background = '#2ecc71';
+
+                setTimeout(() => {
+                    window.location.href = 'app.html';
+                }, 1000);
+            }, 1500);
+        }
+
+        function enableLoading(btn, text) {
+            btn.dataset.original = btn.innerHTML;
+            btn.innerHTML = text;
+            btn.style.opacity = '0.7';
+            btn.style.cursor = 'wait';
+        }
+
+        function finishLogin(btn) {
+            btn.innerHTML = 'SUCESSO! ✅';
+            btn.style.background = '#2ecc71';
+            btn.style.opacity = '1';
+            setTimeout(() => {
+                localStorage.setItem('supertips_auth', 'true');
+                window.location.href = 'app.html';
+            }, 800);
+        }
+    </script>
+
 </body>
 
 </html>

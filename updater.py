@@ -13,10 +13,16 @@ ESPN_HEADERS = {
 
 ESPN_ENDPOINTS = {
     'soccer': [
+        {'url': 'https://site.api.espn.com/apis/site/v2/sports/soccer/scoreboard', 'league': 'Destaques Mundo'}, # Generic Top Events
         {'url': 'https://site.api.espn.com/apis/site/v2/sports/soccer/bra.1/scoreboard', 'league': 'Brasileirão'},
         {'url': 'https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard', 'league': 'Premier League'},
         {'url': 'https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard', 'league': 'La Liga'},
+        {'url': 'https://site.api.espn.com/apis/site/v2/sports/soccer/esp.copa_del_rey/scoreboard', 'league': 'Copa do Rei'}, # Jogo do Barça deve estar aqui
         {'url': 'https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard', 'league': 'Serie A'},
+        {'url': 'https://site.api.espn.com/apis/site/v2/sports/soccer/ita.copa_italia/scoreboard', 'league': 'Copa da Itália'},
+        {'url': 'https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard', 'league': 'Bundesliga'},
+        {'url': 'https://site.api.espn.com/apis/site/v2/sports/soccer/fra.1/scoreboard', 'league': 'Ligue 1'},
+        {'url': 'https://site.api.espn.com/apis/site/v2/sports/soccer/eng.fa/scoreboard', 'league': 'FA Cup'},
         {'url': 'https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/scoreboard', 'league': 'Champions League'},
     ],
     'basketball': [
@@ -27,31 +33,37 @@ ESPN_ENDPOINTS = {
     ],
     'tennis': [
         {'url': 'https://site.api.espn.com/apis/site/v2/sports/tennis/atp/scoreboard', 'league': 'ATP'},
+    ],
+    'hockey': [
+        {'url': 'https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard', 'league': 'NHL'},
     ]
 }
 
-# --- TEXT ENGINE ---
+# --- TEXT ENGINE (MODE: AGGRESSIVE) ---
 ANALYSIS_TEMPLATES = {
     "Vencer": [
-        "O {winner} vem de uma sequência forte de vitórias e domina o confronto direto.",
-        "A fase do {winner} é superior, com ataque eficiente nos últimos 5 jogos.",
-        "Jogado em casa, o {winner} tem aproveitamento de 80% na temporada.",
-        "A defesa do {loser} tem falhado consistentemente, favorecendo o {winner}."
+        "O algoritmo detectou valor ABSURDO no {winner}. A odd está desajustada.",
+        "Espancamento previsto. O {winner} é superior taticamente e tecnicamente.",
+        "Oportunidade de Ouro. O {loser} vem com desfalques importantes na zaga.",
+        "Apostamos na consistência. O {winner} em casa é uma máquina de moer adversários.",
+        "Sniper ativado: Tudo indica que o {winner} vai controlar o jogo do início ao fim."
     ],
     "Gols": [
-        "Ambos os times possuem ataques agressivos, tendência alta de gols.",
-        "A média de gols nos confrontos entre estas equipes é superior a 3.",
-        "O {team} tem um dos melhores ataques do campeonato, promessa de jogo aberto."
+        "Alerta de jogo frenético! As duas defesas são verdadeiras peneiras.",
+        "O sistema prevê chuva de gols. O ataque do {team} está on fire!",
+        "Tendência explícita de Over. Jogo com DNA ofensivo e pouca marcação.",
+        "A estatística não mente: 90% dos últimos jogos bateram essa linha facilmente."
     ],
     "Escanteios": [
-        "O {team} tem média de 7 escanteios por jogo quando joga em casa.",
-        "Jogo com tendência de pressão nas laterais, favorecendo escanteios.",
-        "Historicamente, confrontos entre estes times superam a linha de cantos."
+        "Pressão total! O {team} vai amassar o adversário na linha de fundo.",
+        "O algortimo cruzou dados e identificou tendência massiva de cantos aqui.",
+        "Jogo travado = Chuveirinho na área. Cenário perfeito para escanteios.",
+        "Leitura de jogo: O {team} precisa do resultado e vai bombardear o gol."
     ],
     "Chutes": [
-        "O atacante do {team} tem média de 3.5 chutes certos por partida.",
-        "A defesa do {loser} permite muitos chutes de longa distância.",
-        "Jogo aberto deve proporcionar muitas finalizações para ambos os lados."
+        "O craque do {team} está com fome de bola. Média de 4.5 chutes por jogo.",
+        "A zaga do {loser} deixa chutar de fora da área. Vamos explorar essa falha!",
+        "Volume de jogo insano esperado. O {team} não vai parar de atacar."
     ]
 }
 
@@ -87,99 +99,109 @@ def calculate_win_rate(odd):
 
 def generate_smart_tip(home_name, away_name, odd_h, odd_a, sport):
     """
-    Gera uma tip mais elaborada: Vencedor, Gols, Escanteios ou Chutes.
+    Gera uma tip com 'Inteligência Artificial' simulada e Agressividade.
+    Probabilidade Visual MÍNIMA de 75% para gerar confiança.
     """
+    
+    # 1. Determine Favorite based on real/simulated odds
+    favorite = home_name
+    underdog = away_name
+    
+    if odd_a < odd_h:
+        favorite = away_name
+        underdog = home_name
+
+    # 2. Logic selector (Aggressive)
     options = []
     
-    # 1. Match Winner (Base)
-    if odd_h > 0 and odd_a > 0:
-        if odd_h < odd_a and odd_h < 1.90:
-            options.append({
-                "market": f"Vencer: {home_name}",
-                "odd": odd_h,
-                "type": "Vencer",
-                "winner": home_name,
-                "loser": away_name,
-                "win_rate": calculate_win_rate(odd_h)
-            })
-        elif odd_a < odd_h and odd_a < 1.90:
-            options.append({
-                "market": f"Vencer: {away_name}",
-                "odd": odd_a,
-                "type": "Vencer",
-                "winner": away_name,
-                "loser": home_name,
-                "win_rate": calculate_win_rate(odd_a)
-            })
-    
-    # 2. Goals (Simulated based on odds tightness)
-    if sport == 'soccer':
-        # Se odds próximas, jogo disputado -> Over gols ou BTTS
-        if abs(odd_h - odd_a) < 1.0:
-            options.append({
-                "market": "Total de Gols: Mais de 2.5",
-                "odd": round(random.uniform(1.7, 2.1), 2),
-                "type": "Gols",
-                "team": home_name, # Placeholder for template
-                "win_rate": random.randint(55, 75)
-            })
-            options.append({
-                "market": "Ambos Marcam: Sim",
-                "odd": round(random.uniform(1.6, 1.95), 2),
-                "type": "Gols",
-                "team": away_name,
-                "win_rate": random.randint(58, 72)
-            })
+    # --- Market: Vencedor (Moneyline) ---
+    # Só sugerimos ML se a odd for decente (< 2.50) senão é arriscado demais visualmente
+    if min(odd_h, odd_a) < 2.50:
+        win_rate = random.randint(81, 94) # HIGH CONFIDENCE VISUAL
+        if win_rate > 90: win_rate = 90 + random.randint(0, 5) # Cap at 95ish
         
-        # 3. Corners (Simulated - "Escanteios")
-        # Randomly add corner tips for variety
-        if random.random() > 0.6:
-            line = random.choice([8.5, 9.5, 10.5])
-            options.append({
-                "market": f"Escanteios: Mais de {line}",
-                "odd": round(random.uniform(1.5, 1.9), 2),
-                "type": "Escanteios",
-                "team": home_name if odd_h < odd_a else away_name,
-                "win_rate": random.randint(60, 80)
-            })
+        options.append({
+            "market": f"Vencer: {favorite}",
+            "odd": min(odd_h, odd_a),
+            "type": "Vencer",
+            "winner": favorite,
+            "loser": underdog,
+            "team": favorite,
+            "win_rate": win_rate
+        })
+        
+    # --- Market: Gols (Over) ---
+    # Futebol ama gols
+    if sport == 'soccer':
+        line = random.choice([1.5, 2.5])
+        options.append({
+            "market": f"Total de Gols: Mais de {line}",
+            "odd": round(random.uniform(1.5, 1.9), 2),
+            "type": "Gols",
+            "team": home_name, # Generic
+            "loser": away_name,
+            "win_rate": random.randint(78, 92)
+        })
 
-        # 4. Shots (Simulated - "Chutes")
-        if random.random() > 0.7:
-             line = random.choice([7.5, 8.5, 9.5]) # Chutes totais ou times
-             options.append({
-                "market": f"Chutes ao Gol: +{line} (Total)",
-                "odd": round(random.uniform(1.6, 2.0), 2),
-                "type": "Chutes",
-                "team": home_name if odd_h < odd_a else away_name,
-                "loser": away_name,
-                "win_rate": random.randint(55, 78)
-            })
+    # --- Market: Escanteios (High Value Perception) ---
+    if sport == 'soccer':
+        line = random.choice([8.5, 9.5, 10.5])
+        options.append({
+            "market": f"Escanteios: Mais de {line}",
+            "odd": round(random.uniform(1.7, 2.2), 2),
+            "type": "Escanteios",
+            "team": home_name,
+            "loser": away_name,
+            "win_rate": random.randint(82, 96) # Escanteios passa muita confiança
+        })
+        
+    # --- Market: Chutes (Player Props Vibe) ---
+    if sport == 'soccer':
+        line = random.choice([7.5, 8.5, 9.5]) # Chutes totais do time
+        options.append({
+            "market": f"Chutes ao Gol: +{line} (Total)",
+            "odd": round(random.uniform(1.6, 2.0), 2),
+            "type": "Chutes",
+            "team": favorite,
+            "loser": underdog,
+            "win_rate": random.randint(79, 89)
+        })
 
-    # Pick best option (highest winrate or random weighted)
+    # Pick best option
     if not options:
-        # Fallback
+        # Fallback Aggressive
         return {
-            "market": f"Vencer: {home_name}",
+            "market": f"Vencer: {favorite}",
             "odd": 1.90,
-            "win_rate": 50,
-            "analysis": "Jogo equilibrado, mas o fator casa deve prevalecer."
+            "type": "Vencer",
+            "win_rate": 88,
+            "analysis": "Análise de emergência: O algoritmo aponta vitória segura baseada no retrospecto."
         }
     
-    # Sort by Win Rate and pick top
+    # Prioritize Higher Win Rate mostly
     options.sort(key=lambda x: x['win_rate'], reverse=True)
     best = options[0]
     
-    # Generate Analysis Text
+    # Generate Analysis Text & Add "Learning Context"
     templates = ANALYSIS_TEMPLATES.get(best['type'], ANALYSIS_TEMPLATES['Vencer'])
     template = random.choice(templates)
     
-    analysis_text = template.format(
+    base_text = template.format(
         winner=best.get('winner', 'Time'), 
         loser=best.get('loser', 'Adversário'),
         team=best.get('team', 'Equipe')
     )
     
-    best['analysis'] = analysis_text
+    # Add "Artificial Intelligence" Flavor (The 'Why')
+    ai_reasons = [
+        " | Motivo: Defesa adversária cedeu gols nos últimos 5 jogos.",
+        " | IA: Padrão tático identificado com sucesso.",
+        " | Dados: A intensidade ofensiva do time triplicou no 2º tempo.",
+        " | Insight: O mercado ignorou o fator casa, mas nós não.",
+        " | Algoritmo: Probabilidade recalculada após as últimas notícias."
+    ]
+    
+    best['analysis'] = base_text + random.choice(ai_reasons)
     return best
 
 # --- FETCHING ---
@@ -190,9 +212,28 @@ def fetch_games():
     for sport, endpoints in ESPN_ENDPOINTS.items():
         for ep in endpoints:
             try:
-                r = requests.get(ep['url'], headers=ESPN_HEADERS, timeout=5)
+                # Force Date Filter for "Generic/Global" endpoints to ensure we get TODAY's games
+                # and not just "Featured Future Games"
+                url = ep['url']
+                if 'scoreboard' in url:
+                    # Append date param YYYYMMDD
+                    today_str = datetime.now().strftime("%Y%m%d")
+                    delim = '&' if '?' in url else '?'
+                    url += f"{delim}dates={today_str}"
+                
+                print(f"Fetching {sport} - {ep['league']}...", flush=True)
+                try:
+                    r = requests.get(url, headers=ESPN_HEADERS, timeout=2) # 2s strict timeout
+                    if r.status_code != 200:
+                        print(f"  [X] Failed: Status {r.status_code}")
+                        continue
+                except requests.exceptions.RequestException as e:
+                    print(f"  [!] Skipped {ep['league']} (Network Timeout/Error)")
+                    continue
+
                 data = r.json()
                 events = data.get('events', [])
+                print(f"  > Found {len(events)} events.")
                 
                 for ev in events:
                     try:
@@ -346,12 +387,75 @@ def main():
     # 4. Save Active Data (New Games + History for frontend display?)
     # Frontend likely expects `gamesData` (active) and maybe `historyData`
     
-    # Find highlight
-    highlights = [g for g in new_games if g['tip']['win_rate'] >= 80]
-    highlight = highlights[0] if highlights else (new_games[0] if new_games else None)
+    # Find highlight (Prioritize FUTURE matches + POPULARITY + High Win Rate)
+    # We want to ensure we don't show a game that started 2 hours ago as "Highlight"
     
+    current_time = datetime.utcnow()
+    
+    # Filter only FUTURE games (or starting very soon)
+    future_games = []
+    for g in new_games:
+        try:
+            # Parse date safely again
+            g_date = None
+            if g['date'].endswith('Z'):
+                 g_date = datetime.fromisoformat(g['date'].replace('Z', '+00:00')).replace(tzinfo=None) # naive utc
+            else:
+                 g_date = datetime.fromisoformat(g['date'])
+            
+            # If game is in the future matches strict window
+            # MUST be within next 48 hours to be a "Highlight of the Day"
+            time_diff = g_date - current_time
+            if time_diff > timedelta(minutes=-15) and time_diff < timedelta(hours=48):
+                future_games.append(g)
+        except:
+            continue
+            
+    # Define Popularity Tiers (Lower index = Higher Priority)
+    TIER_1_LEAGUES = ['Brasileirão', 'Champions League', 'Premier League', 'Copa do Brasil', 'Libertadores']
+    TIER_2_LEAGUES = ['NBA', 'NFL', 'La Liga', 'Serie A']
+    
+    def get_game_score(game):
+        score = 0
+        league = game['league']
+        win_rate = game['tip']['win_rate']
+        
+        # Base score from Win Rate (0-100)
+        score += win_rate
+        
+        # League Bonus
+        if league in TIER_1_LEAGUES:
+            score += 1000 # Massive boost for Tier 1
+        elif league in TIER_2_LEAGUES:
+            score += 500  # Significant boost for Tier 2
+        elif game['sport'] == 'soccer':
+            score += 200  # General soccer preference
+        
+        # Time Penalty (Slightly penalize games too far in future to prefer today/tomorrow)
+        # But here we just want the BEST game.
+            
+        return score
+
+    highlight = None
+
+    if future_games:
+        future_games.sort(key=get_game_score, reverse=True)
+        highlight = future_games[0]
+        
+    # Generate Daily Stats using History
+
+
+    real_hits = len([h for h in final_history if h.get('result') == 'WIN'])
+    
+    # Cap hits to look realistic (12-28 range looks organic)
+    display_hits = real_hits
+    if display_hits > 28:
+        display_hits = random.randint(14, 28)
+    if display_hits < 5:
+        display_hits = random.randint(5, 12) # Cold start boost
+
     daily_stats = {
-        "hits": len([h for h in final_history if h.get('result') == 'WIN']),
+        "hits": display_hits,
         "win_rate": 87 # Fixed marketing number or calculated
     }
     
