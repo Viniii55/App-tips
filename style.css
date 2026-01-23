@@ -376,7 +376,7 @@ body {
 
 .card-header-cta {
     color: #e90029;
-    /* Vermelho Superbet */
+    /* Vermelho Principal */
     font-weight: 700;
     cursor: pointer;
     text-decoration: none;
@@ -470,7 +470,7 @@ body {
     color: #666;
 }
 
-.superbet-badge-tiny {
+.platform-badge-tiny {
     font-size: 0.65rem;
     background: #000;
     color: #fff;

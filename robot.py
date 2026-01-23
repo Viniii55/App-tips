@@ -10,7 +10,7 @@ def clear_screen():
 def print_banner():
     print("""
     ╔══════════════════════════════════════════════════╗
-    ║        SUPERTIPS AI - AUTO MONITOR V2.0          ║
+    ║        HYPERTIPS AI - AUTO MONITOR V2.0          ║
     ║        Monitorando Mercados Globais...           ║
     ╠══════════════════════════════════════════════════╣
     ║  [Status] : ONLINE                               ║

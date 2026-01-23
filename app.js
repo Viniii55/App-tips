@@ -20,17 +20,17 @@ window.showHistory = function () {
     renderFeed();
     if (dom.feed) dom.feed.scrollIntoView({ behavior: 'smooth' });
 }
-// SuperTips Hub Logic
+// ProTips Hub Logic
 const state = {
     activeFilter: 'all',
     superodds: [],
-    affiliateLink: "https://superbet.com/registro",
+    affiliateLink: "https://plataforma.com/registro",
     dateFormat: new Intl.DateTimeFormat('pt-BR', {
         weekday: 'long',
         day: 'numeric',
         month: 'long'
     }),
-    isVerified: localStorage.getItem('superbet_verified') === 'true', // Persistência básica
+    isVerified: localStorage.getItem('platform_verified') === 'true', // Persistência básica
     matchData: []
 };
 
@@ -70,7 +70,7 @@ function initFilters() {
 // Init
 document.addEventListener('DOMContentLoaded', () => {
     // Check if onboarding is done
-    const onboarded = localStorage.getItem('supertips_onboarding_v2');
+    const onboarded = localStorage.getItem('protips_onboarding_v2');
     if (!onboarded) {
         if (dom.onboardingModal) {
             dom.onboardingModal.classList.remove('hidden');
@@ -205,7 +205,7 @@ function setupOnboarding() {
 
     // Finish Action (Close Modal)
     dom.btnFinishOnboarding.addEventListener('click', () => {
-        localStorage.setItem('supertips_onboarding_v2', 'true');
+        localStorage.setItem('protips_onboarding_v2', 'true');
         dom.onboardingModal.classList.add('hidden');
         state.isVerified = true;
         renderFeed();
@@ -321,43 +321,125 @@ function renderFeed(filterSport) {
 
         container.innerHTML = '';
 
-        // --- HISTORY VIEW ---
+        // --- HISTORY VIEW (LAST 7 DAYS) ---
         if (currentFilter === 'history') {
             const historyData = window.historyTips || [];
 
-            // FILTER: ONLY TODAY
-            const now = new Date();
-            const todayFiltered = historyData.filter(m => {
-                try {
-                    const d = new Date(m.date);
-                    return d.getDate() === now.getDate() &&
-                        d.getMonth() === now.getMonth() &&
-                        d.getFullYear() === now.getFullYear();
-                } catch (e) { return false; }
+            // 1. Render Filters
+            const filterContainer = document.createElement('div');
+            filterContainer.style.cssText = `
+                display: flex; gap: 8px; padding-bottom: 15px; overflow-x: auto;
+                margin-bottom: 10px; scrollbar-width: none;
+             `;
+
+            // Default state if undefined
+            if (!state.historyFilter) state.historyFilter = 'all';
+
+            const sports = [
+                { id: 'all', label: 'Tudo', icon: '🔥' },
+                { id: 'soccer', label: 'Futebol', icon: '⚽' },
+                { id: 'basketball', label: 'Basquete', icon: '🏀' }
+            ];
+
+            sports.forEach(s => {
+                const isActive = state.historyFilter === s.id;
+                const btn = document.createElement('button');
+                btn.innerHTML = `${s.icon} ${s.label}`;
+
+                // Style Logic
+                const activeStyle = `background: #002b5c; color: white; border-color: #002b5c; box-shadow: 0 2px 5px rgba(0,43,92,0.2);`;
+                const inactiveStyle = `background: white; color: #555; border-color: #eee;`;
+
+                btn.style.cssText = `
+                    border: 1px solid; padding: 8px 16px; border-radius: 20px; 
+                    font-size: 0.8rem; font-weight: 700; cursor: pointer; white-space: nowrap;
+                    ${isActive ? activeStyle : inactiveStyle}
+                `;
+
+                btn.onclick = () => {
+                    state.historyFilter = s.id;
+                    renderFeed('history');
+                };
+
+                filterContainer.appendChild(btn);
             });
 
-            if (todayFiltered.length === 0) {
-                container.innerHTML = '<div style="text-align:center; padding:40px; color:#999; font-style:italic;">Nenhum resultado finalizado hoje (ainda).</div>';
+            container.appendChild(filterContainer);
+
+            // 2. Filter Data
+            let filteredHistory = historyData;
+            if (state.historyFilter !== 'all') {
+                filteredHistory = historyData.filter(m => m.sport === state.historyFilter);
+            }
+
+
+
+            // Group by Date
+            const grouped = {};
+
+            filteredHistory.forEach(match => {
+                try {
+                    const d = new Date(match.date);
+                    // Key: YYYY-MM-DD
+                    const key = d.toISOString().split('T')[0];
+                    if (!grouped[key]) grouped[key] = [];
+                    grouped[key].push(match);
+                } catch (e) { }
+            });
+
+            const dates = Object.keys(grouped).sort().reverse(); // Newest first
+
+            if (dates.length === 0) {
+                container.innerHTML += `<div style="text-align:center; padding:40px; color:#999; font-style:italic;">
+                    Nenhum resultado de ${state.historyFilter === 'all' ? 'jogos' : state.historyFilter} encontrado.
+                </div>`;
                 return;
             }
 
-            // Reverse to show newest first
-            const sortedHistory = [...todayFiltered].reverse();
+            // Render Groups
+            dates.forEach(dateKey => {
+                const dayGames = grouped[dateKey];
 
-            // Simple Header
-            const header = document.createElement('div');
-            header.innerHTML = `
-                <div style="padding: 0 5px 15px 5px; display:flex; justify-content:space-between; align-items:flex-end;">
-                     <div>
-                        <h3 style="margin:0; font-size:1.1rem; color:#333;">Resultados de Hoje</h3>
-                        <p style="margin:5px 0 0 0; font-size:0.8rem; color:#888;">Apenas jogos finalizados nas últimas 24h.</p>
-                     </div>
-                </div>
-            `;
-            container.appendChild(header);
+                // Formata Data Legível (Hoje, Ontem, etc)
+                const d = new Date(dateKey);
+                // Ajuste de fuso para exibir dia correto
+                d.setMinutes(d.getMinutes() + d.getTimezoneOffset());
 
-            sortedHistory.forEach(match => {
-                container.appendChild(createHistoryRow(match));
+                const now = new Date();
+                now.setHours(0, 0, 0, 0);
+
+                // Diff in days
+                const diffTime = Math.abs(now - d);
+                const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+                let label = d.toLocaleDateString('pt-BR');
+                if (diffDays === 0) label = "Hoje 🟢";
+                else if (diffDays === 1) label = "Ontem";
+
+                // Header do Dia
+                const groupHeader = document.createElement('div');
+                groupHeader.style.cssText = `
+                    background: #f1f3f5; color: #555; font-weight: 800; font-size: 0.85rem;
+                    padding: 8px 15px; border-radius: 6px; margin: 15px 0 10px 0;
+                    display: flex; justify-content: space-between;
+                `;
+
+                // Calculate Win Rate for this day
+                const wins = dayGames.filter(g => g.result === 'WIN').length;
+                const total = dayGames.length;
+                const dailyRate = total > 0 ? Math.round((wins / total) * 100) : 0;
+
+                groupHeader.innerHTML = `
+                    <span>📅 ${label}</span>
+                    <span style="color:${dailyRate >= 80 ? '#2ecc71' : '#666'}">${wins}/${total} Greens</span>
+                `;
+
+                container.appendChild(groupHeader);
+
+                // Render Games
+                dayGames.forEach(match => {
+                    container.appendChild(createHistoryRow(match));
+                });
             });
 
             // Hide Highlight on History Tab
@@ -434,15 +516,15 @@ function renderFeed(filterSport) {
             const diffMs = gDate - now;
             const diffHours = diffMs / (1000 * 60 * 60);
 
-            // Aceita jogos de 4h atrás (pra pegar os que estão no fim) até 24h pra frente
-            const isRelevant = diffHours > -4 && diffHours < 24;
+            // Aceita jogos de 12h atrás (pra pegar resultados recentes) até 48h pra frente (agenda)
+            const isRelevant = diffHours > -12 && diffHours < 48;
 
             // Na aba TUDO: mostra apenas jogos relevantes (hoje/agora)
             if (currentFilter === 'all') {
                 return isRelevant;
             }
 
-            // Nas abas de Esporte: também filtra por relevância para não encher de lixo futuro
+            // Nas abas de Esporte: também filtra por relevância
             return g.sport === currentFilter && isRelevant;
         });
 
@@ -739,7 +821,7 @@ window.copySingleTip = function (matchData) {
         try { match = JSON.parse(matchData); } catch (e) { }
     }
 
-    const textToCopy = `🔥 *Dica SuperTips:*\n\n⚽ ${match.teamA.name} x ${match.teamB.name}\n🏆 ${match.league}\n\n🎯 *Aposta:* ${match.tip.market}\n📈 *Probabilidade:* ${match.tip.win_rate}%\n\n👉 Aposte aqui: ${state.affiliateLink}`;
+    const textToCopy = `🔥 *Dica HyperTips:*\n\n⚽ ${match.teamA.name} x ${match.teamB.name}\n🏆 ${match.league}\n\n🎯 *Aposta:* ${match.tip.market}\n📈 *Probabilidade:* ${match.tip.win_rate}%\n\n👉 Aposte aqui: ${state.affiliateLink}`;
 
     if (navigator.clipboard) {
         navigator.clipboard.writeText(textToCopy).then(() => {
@@ -788,6 +870,7 @@ window.showHistory = function () {
 
     // Set state manual
     state.activeFilter = 'history';
+    state.historyFilter = 'all'; // Reseta filtro interno para 'Tudo'
 
     // Renderiza
     renderFeed('history');
