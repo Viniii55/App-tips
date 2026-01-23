@@ -24,7 +24,7 @@ window.showHistory = function () {
 const state = {
     activeFilter: 'all',
     superodds: [],
-    affiliateLink: "https://plataforma.com/registro",
+    affiliateLink: "https://brsuperbet.com/registro_4903",
     dateFormat: new Intl.DateTimeFormat('pt-BR', {
         weekday: 'long',
         day: 'numeric',
