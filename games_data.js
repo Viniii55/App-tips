@@ -13,13 +13,14 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png"
         },
         "tip": {
-            "market": "Escanteios: Mais de 8.5",
-            "odd": 1.72,
-            "type": "Escanteios",
-            "team": "Levante",
+            "market": "Vencer: Levante",
+            "odd": 2.4,
+            "type": "Vencer",
+            "winner": "Levante",
             "loser": "Elche",
-            "win_rate": 95,
-            "analysis": "O algortimo cruzou dados e identificou tendência massiva de cantos aqui. | Motivo: Defesa adversária cedeu gols nos últimos 5 jogos."
+            "team": "Levante",
+            "win_rate": 94,
+            "analysis": "Oportunidade de Ouro. O Elche vem com desfalques importantes na zaga. | Algoritmo: Probabilidade recalculada após as últimas notícias."
         },
         "result": null
     },
@@ -43,8 +44,8 @@ window.gamesData = [
             "winner": "Internazionale",
             "loser": "Pisa",
             "team": "Internazionale",
-            "win_rate": 95,
-            "analysis": "Oportunidade de Ouro. O Pisa vem com desfalques importantes na zaga. | Algoritmo: Probabilidade recalculada após as últimas notícias."
+            "win_rate": 87,
+            "analysis": "O algoritmo detectou valor ABSURDO no Internazionale. A odd está desajustada. | IA: Padrão tático identificado com sucesso."
         },
         "result": null
     },
@@ -62,13 +63,13 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/127.png"
         },
         "tip": {
-            "market": "Total de Gols: Mais de 1.5",
-            "odd": 1.6,
-            "type": "Gols",
+            "market": "Escanteios: Mais de 9.5",
+            "odd": 1.78,
+            "type": "Escanteios",
             "team": "St. Pauli",
             "loser": "Hamburg SV",
-            "win_rate": 91,
-            "analysis": "Tendência explícita de Over. Jogo com DNA ofensivo e pouca marcação. | Algoritmo: Probabilidade recalculada após as últimas notícias."
+            "win_rate": 85,
+            "analysis": "O algortimo cruzou dados e identificou tendência massiva de cantos aqui. | Insight: O mercado ignorou o fator casa, mas nós não."
         },
         "result": null
     },
@@ -86,13 +87,13 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png"
         },
         "tip": {
-            "market": "Total de Gols: Mais de 2.5",
-            "odd": 1.85,
-            "type": "Gols",
+            "market": "Escanteios: Mais de 9.5",
+            "odd": 2.11,
+            "type": "Escanteios",
             "team": "AJ Auxerre",
             "loser": "Paris Saint-Germain",
-            "win_rate": 92,
-            "analysis": "O sistema prevê chuva de gols. O ataque do AJ Auxerre está on fire! | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
+            "win_rate": 90,
+            "analysis": "Leitura de jogo: O AJ Auxerre precisa do resultado e vai bombardear o gol. | IA: Padrão tático identificado com sucesso."
         },
         "result": null
     },
@@ -111,13 +112,13 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Detroit Pistons",
-            "odd": 1.5882352941176472,
+            "odd": 1.5555555555555556,
             "type": "Vencer",
             "winner": "Detroit Pistons",
             "loser": "Houston Rockets",
             "team": "Detroit Pistons",
-            "win_rate": 90,
-            "analysis": "Sniper ativado: Tudo indica que o Detroit Pistons vai controlar o jogo do início ao fim. | Motivo: Defesa adversária cedeu gols nos últimos 5 jogos."
+            "win_rate": 92,
+            "analysis": "Apostamos na consistência. O Detroit Pistons em casa é uma máquina de moer adversários. | IA: Padrão tático identificado com sucesso."
         },
         "result": null
     },
@@ -136,13 +137,13 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Phoenix Suns",
-            "odd": 1.6451612903225805,
+            "odd": 1.6756756756756757,
             "type": "Vencer",
             "winner": "Phoenix Suns",
             "loser": "Atlanta Hawks",
             "team": "Phoenix Suns",
-            "win_rate": 81,
-            "analysis": "Oportunidade de Ouro. O Atlanta Hawks vem com desfalques importantes na zaga. | Algoritmo: Probabilidade recalculada após as últimas notícias."
+            "win_rate": 93,
+            "analysis": "Oportunidade de Ouro. O Atlanta Hawks vem com desfalques importantes na zaga. | Insight: O mercado ignorou o fator casa, mas nós não."
         },
         "result": null
     },
@@ -161,13 +162,13 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Boston Celtics",
-            "odd": 1.289855072463768,
+            "odd": 1.263157894736842,
             "type": "Vencer",
             "winner": "Boston Celtics",
             "loser": "Brooklyn Nets",
             "team": "Boston Celtics",
             "win_rate": 83,
-            "analysis": "Espancamento previsto. O Boston Celtics é superior taticamente e tecnicamente. | IA: Padrão tático identificado com sucesso."
+            "analysis": "Sniper ativado: Tudo indica que o Boston Celtics vai controlar o jogo do início ao fim. | Motivo: Defesa adversária cedeu gols nos últimos 5 jogos."
         },
         "result": null
     },
@@ -191,8 +192,8 @@ window.gamesData = [
             "winner": "Cleveland Cavaliers",
             "loser": "Sacramento Kings",
             "team": "Cleveland Cavaliers",
-            "win_rate": 83,
-            "analysis": "O algoritmo detectou valor ABSURDO no Cleveland Cavaliers. A odd está desajustada. | Insight: O mercado ignorou o fator casa, mas nós não."
+            "win_rate": 89,
+            "analysis": "Sniper ativado: Tudo indica que o Cleveland Cavaliers vai controlar o jogo do início ao fim. | Algoritmo: Probabilidade recalculada após as últimas notícias."
         },
         "result": null
     },
@@ -211,13 +212,13 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Memphis Grizzlies",
-            "odd": 1.5714285714285714,
+            "odd": 1.4587155963302751,
             "type": "Vencer",
             "winner": "Memphis Grizzlies",
             "loser": "New Orleans Pelicans",
             "team": "Memphis Grizzlies",
-            "win_rate": 87,
-            "analysis": "O algoritmo detectou valor ABSURDO no Memphis Grizzlies. A odd está desajustada. | IA: Padrão tático identificado com sucesso."
+            "win_rate": 90,
+            "analysis": "Apostamos na consistência. O Memphis Grizzlies em casa é uma máquina de moer adversários. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
         },
         "result": null
     },
@@ -236,13 +237,13 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Oklahoma City Thunder",
-            "odd": 1.0833333333333333,
+            "odd": 1.0689655172413792,
             "type": "Vencer",
             "winner": "Oklahoma City Thunder",
             "loser": "Indiana Pacers",
             "team": "Oklahoma City Thunder",
-            "win_rate": 94,
-            "analysis": "Espancamento previsto. O Oklahoma City Thunder é superior taticamente e tecnicamente. | Insight: O mercado ignorou o fator casa, mas nós não."
+            "win_rate": 92,
+            "analysis": "Oportunidade de Ouro. O Indiana Pacers vem com desfalques importantes na zaga. | Algoritmo: Probabilidade recalculada após as últimas notícias."
         },
         "result": null
     },
@@ -261,13 +262,13 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Milwaukee Bucks",
-            "odd": 1.5050505050505052,
+            "odd": 1.4201680672268908,
             "type": "Vencer",
             "winner": "Milwaukee Bucks",
             "loser": "Denver Nuggets",
             "team": "Milwaukee Bucks",
-            "win_rate": 84,
-            "analysis": "Oportunidade de Ouro. O Denver Nuggets vem com desfalques importantes na zaga. | Insight: O mercado ignorou o fator casa, mas nós não."
+            "win_rate": 90,
+            "analysis": "Apostamos na consistência. O Milwaukee Bucks em casa é uma máquina de moer adversários. | Algoritmo: Probabilidade recalculada após as últimas notícias."
         },
         "result": null
     },
@@ -286,13 +287,13 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Toronto Raptors",
-            "odd": 1.7407407407407407,
+            "odd": 1.704225352112676,
             "type": "Vencer",
             "winner": "Toronto Raptors",
             "loser": "Portland Trail Blazers",
             "team": "Toronto Raptors",
-            "win_rate": 88,
-            "analysis": "O algoritmo detectou valor ABSURDO no Toronto Raptors. A odd está desajustada. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
+            "win_rate": 84,
+            "analysis": "Apostamos na consistência. O Toronto Raptors em casa é uma máquina de moer adversários. | Insight: O mercado ignorou o fator casa, mas nós não."
         },
         "result": null
     },
@@ -311,13 +312,13 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Vegas Golden Knights",
-            "odd": 1.8695652173913042,
+            "odd": 1.8333333333333335,
             "type": "Vencer",
             "winner": "Vegas Golden Knights",
             "loser": "Toronto Maple Leafs",
             "team": "Vegas Golden Knights",
-            "win_rate": 93,
-            "analysis": "Oportunidade de Ouro. O Toronto Maple Leafs vem com desfalques importantes na zaga. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
+            "win_rate": 82,
+            "analysis": "O algoritmo detectou valor ABSURDO no Vegas Golden Knights. A odd está desajustada. | Insight: O mercado ignorou o fator casa, mas nós não."
         },
         "result": null
     },
@@ -341,8 +342,8 @@ window.gamesData = [
             "winner": "Tampa Bay Lightning",
             "loser": "Chicago Blackhawks",
             "team": "Tampa Bay Lightning",
-            "win_rate": 85,
-            "analysis": "Sniper ativado: Tudo indica que o Tampa Bay Lightning vai controlar o jogo do início ao fim. | Motivo: Defesa adversária cedeu gols nos últimos 5 jogos."
+            "win_rate": 81,
+            "analysis": "Espancamento previsto. O Tampa Bay Lightning é superior taticamente e tecnicamente. | Motivo: Defesa adversária cedeu gols nos últimos 5 jogos."
         },
         "result": null
     },
@@ -366,8 +367,8 @@ window.gamesData = [
             "winner": "Dallas Stars",
             "loser": "St. Louis Blues",
             "team": "Dallas Stars",
-            "win_rate": 82,
-            "analysis": "Sniper ativado: Tudo indica que o Dallas Stars vai controlar o jogo do início ao fim. | IA: Padrão tático identificado com sucesso."
+            "win_rate": 88,
+            "analysis": "Espancamento previsto. O Dallas Stars é superior taticamente e tecnicamente. | Insight: O mercado ignorou o fator casa, mas nós não."
         },
         "result": null
     },
@@ -391,8 +392,8 @@ window.gamesData = [
             "winner": "Colorado Avalanche",
             "loser": "Philadelphia Flyers",
             "team": "Colorado Avalanche",
-            "win_rate": 83,
-            "analysis": "O algoritmo detectou valor ABSURDO no Colorado Avalanche. A odd está desajustada. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
+            "win_rate": 86,
+            "analysis": "Apostamos na consistência. O Colorado Avalanche em casa é uma máquina de moer adversários. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
         },
         "result": null
     },
@@ -416,8 +417,8 @@ window.gamesData = [
             "winner": "Washington Capitals",
             "loser": "Calgary Flames",
             "team": "Washington Capitals",
-            "win_rate": 91,
-            "analysis": "O algoritmo detectou valor ABSURDO no Washington Capitals. A odd está desajustada. | Insight: O mercado ignorou o fator casa, mas nós não."
+            "win_rate": 95,
+            "analysis": "Oportunidade de Ouro. O Calgary Flames vem com desfalques importantes na zaga. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
         },
         "result": null
     },
@@ -441,8 +442,8 @@ window.gamesData = [
             "winner": "New Jersey Devils",
             "loser": "Vancouver Canucks",
             "team": "New Jersey Devils",
-            "win_rate": 89,
-            "analysis": "Sniper ativado: Tudo indica que o New Jersey Devils vai controlar o jogo do início ao fim. | Algoritmo: Probabilidade recalculada após as últimas notícias."
+            "win_rate": 81,
+            "analysis": "Sniper ativado: Tudo indica que o New Jersey Devils vai controlar o jogo do início ao fim. | Insight: O mercado ignorou o fator casa, mas nós não."
         },
         "result": null
     },
@@ -466,8 +467,8 @@ window.gamesData = [
             "winner": "San Jose Sharks",
             "loser": "New York Rangers",
             "team": "San Jose Sharks",
-            "win_rate": 86,
-            "analysis": "Oportunidade de Ouro. O New York Rangers vem com desfalques importantes na zaga. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
+            "win_rate": 90,
+            "analysis": "O algoritmo detectou valor ABSURDO no San Jose Sharks. A odd está desajustada. | IA: Padrão tático identificado com sucesso."
         },
         "result": null
     },
@@ -491,8 +492,8 @@ window.gamesData = [
             "winner": "Seattle Kraken",
             "loser": "Anaheim Ducks",
             "team": "Seattle Kraken",
-            "win_rate": 85,
-            "analysis": "Espancamento previsto. O Seattle Kraken é superior taticamente e tecnicamente. | Motivo: Defesa adversária cedeu gols nos últimos 5 jogos."
+            "win_rate": 90,
+            "analysis": "Oportunidade de Ouro. O Anaheim Ducks vem com desfalques importantes na zaga. | Motivo: Defesa adversária cedeu gols nos últimos 5 jogos."
         },
         "result": null
     }
@@ -512,17 +513,18 @@ window.highlightMatch = {
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png"
     },
     "tip": {
-        "market": "Escanteios: Mais de 8.5",
-        "odd": 1.72,
-        "type": "Escanteios",
-        "team": "Levante",
+        "market": "Vencer: Levante",
+        "odd": 2.4,
+        "type": "Vencer",
+        "winner": "Levante",
         "loser": "Elche",
-        "win_rate": 95,
-        "analysis": "O algortimo cruzou dados e identificou tendência massiva de cantos aqui. | Motivo: Defesa adversária cedeu gols nos últimos 5 jogos."
+        "team": "Levante",
+        "win_rate": 94,
+        "analysis": "Oportunidade de Ouro. O Elche vem com desfalques importantes na zaga. | Algoritmo: Probabilidade recalculada após as últimas notícias."
     },
     "result": null
 };
 window.dailyStats = {
-    "hits": 9,
+    "hits": 5,
     "win_rate": 87
 };
