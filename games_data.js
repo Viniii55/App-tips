@@ -13,13 +13,13 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/366.png"
         },
         "tip": {
-            "market": "Escanteios: Mais de 10.5",
-            "odd": 2.14,
+            "market": "Escanteios: Mais de 9.5",
+            "odd": 2.03,
             "type": "Escanteios",
             "team": "West Ham United",
             "loser": "Sunderland",
-            "win_rate": 93,
-            "analysis": "Leitura de jogo: O West Ham United precisa do resultado e vai bombardear o gol. | IA: Padrão tático identificado com sucesso."
+            "win_rate": 86,
+            "analysis": "O algortimo cruzou dados e identificou tendência massiva de cantos aqui. | Algoritmo: Probabilidade recalculada após as últimas notícias."
         },
         "result": null
     },
@@ -43,8 +43,8 @@ window.gamesData = [
             "winner": "Tottenham Hotspur",
             "loser": "Burnley",
             "team": "Tottenham Hotspur",
-            "win_rate": 86,
-            "analysis": "Sniper ativado: Tudo indica que o Tottenham Hotspur vai controlar o jogo do início ao fim. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
+            "win_rate": 90,
+            "analysis": "Espancamento previsto. O Tottenham Hotspur é superior taticamente e tecnicamente. | Algoritmo: Probabilidade recalculada após as últimas notícias."
         },
         "result": null
     },
@@ -62,13 +62,13 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/331.png"
         },
         "tip": {
-            "market": "Escanteios: Mais de 10.5",
-            "odd": 1.81,
-            "type": "Escanteios",
+            "market": "Total de Gols: Mais de 1.5",
+            "odd": 1.62,
+            "type": "Gols",
             "team": "Fulham",
             "loser": "Brighton & Hove Albion",
-            "win_rate": 93,
-            "analysis": "O algortimo cruzou dados e identificou tendência massiva de cantos aqui. | Algoritmo: Probabilidade recalculada após as últimas notícias."
+            "win_rate": 87,
+            "analysis": "O sistema prevê chuva de gols. O ataque do Fulham está on fire! | IA: Padrão tático identificado com sucesso."
         },
         "result": null
     },
@@ -86,14 +86,13 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/380.png"
         },
         "tip": {
-            "market": "Vencer: Manchester City",
-            "odd": 1.303030303030303,
-            "type": "Vencer",
-            "winner": "Manchester City",
-            "loser": "Wolverhampton Wanderers",
+            "market": "Escanteios: Mais de 8.5",
+            "odd": 1.77,
+            "type": "Escanteios",
             "team": "Manchester City",
-            "win_rate": 95,
-            "analysis": "Apostamos na consistência. O Manchester City em casa é uma máquina de moer adversários. | IA: Padrão tático identificado com sucesso."
+            "loser": "Wolverhampton Wanderers",
+            "win_rate": 92,
+            "analysis": "Pressão total! O Manchester City vai amassar o adversário na linha de fundo. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
         },
         "result": null
     },
@@ -111,14 +110,13 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png"
         },
         "tip": {
-            "market": "Vencer: Liverpool",
-            "odd": 1.8695652173913042,
-            "type": "Vencer",
-            "winner": "Liverpool",
-            "loser": "AFC Bournemouth",
-            "team": "Liverpool",
-            "win_rate": 86,
-            "analysis": "Apostamos na consistência. O Liverpool em casa é uma máquina de moer adversários. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
+            "market": "Escanteios: Mais de 8.5",
+            "odd": 1.95,
+            "type": "Escanteios",
+            "team": "AFC Bournemouth",
+            "loser": "Liverpool",
+            "win_rate": 96,
+            "analysis": "O algortimo cruzou dados e identificou tendência massiva de cantos aqui. | IA: Padrão tático identificado com sucesso."
         },
         "result": null
     },
@@ -137,13 +135,13 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Rayo Vallecano",
-            "odd": 2.35,
+            "odd": 2.25,
             "type": "Vencer",
             "winner": "Rayo Vallecano",
             "loser": "Osasuna",
             "team": "Rayo Vallecano",
-            "win_rate": 90,
-            "analysis": "Sniper ativado: Tudo indica que o Rayo Vallecano vai controlar o jogo do início ao fim. | IA: Padrão tático identificado com sucesso."
+            "win_rate": 93,
+            "analysis": "Oportunidade de Ouro. O Osasuna vem com desfalques importantes na zaga. | Motivo: Defesa adversária cedeu gols nos últimos 5 jogos."
         },
         "result": null
     },
@@ -161,13 +159,14 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/88.png"
         },
         "tip": {
-            "market": "Total de Gols: Mais de 1.5",
-            "odd": 1.8,
-            "type": "Gols",
-            "team": "Valencia",
+            "market": "Vencer: Valencia",
+            "odd": 2.45,
+            "type": "Vencer",
+            "winner": "Valencia",
             "loser": "Espanyol",
-            "win_rate": 92,
-            "analysis": "A estatística não mente: 90% dos últimos jogos bateram essa linha facilmente. | Motivo: Defesa adversária cedeu gols nos últimos 5 jogos."
+            "team": "Valencia",
+            "win_rate": 93,
+            "analysis": "Espancamento previsto. O Valencia é superior taticamente e tecnicamente. | Insight: O mercado ignorou o fator casa, mas nós não."
         },
         "result": null
     },
@@ -186,12 +185,12 @@ window.gamesData = [
         },
         "tip": {
             "market": "Escanteios: Mais de 9.5",
-            "odd": 1.72,
+            "odd": 1.75,
             "type": "Escanteios",
             "team": "Sevilla",
             "loser": "Athletic Club",
-            "win_rate": 95,
-            "analysis": "Leitura de jogo: O Sevilla precisa do resultado e vai bombardear o gol. | IA: Padrão tático identificado com sucesso."
+            "win_rate": 84,
+            "analysis": "Jogo travado = Chuveirinho na área. Cenário perfeito para escanteios. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
         },
         "result": null
     },
@@ -209,86 +208,13 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png"
         },
         "tip": {
-            "market": "Escanteios: Mais de 10.5",
-            "odd": 2.05,
+            "market": "Escanteios: Mais de 8.5",
+            "odd": 1.91,
             "type": "Escanteios",
             "team": "Villarreal",
             "loser": "Real Madrid",
             "win_rate": 93,
-            "analysis": "Pressão total! O Villarreal vai amassar o adversário na linha de fundo. | Motivo: Defesa adversária cedeu gols nos últimos 5 jogos."
-        },
-        "result": null
-    },
-    {
-        "id": "736995",
-        "sport": "soccer",
-        "league": "Serie A",
-        "date": "2026-01-24T14:00Z",
-        "teamA": {
-            "name": "Como",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2572.png"
-        },
-        "teamB": {
-            "name": "Torino",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/239.png"
-        },
-        "tip": {
-            "market": "Total de Gols: Mais de 2.5",
-            "odd": 1.7,
-            "type": "Gols",
-            "team": "Como",
-            "loser": "Torino",
-            "win_rate": 91,
-            "analysis": "O sistema prevê chuva de gols. O ataque do Como está on fire! | Motivo: Defesa adversária cedeu gols nos últimos 5 jogos."
-        },
-        "result": null
-    },
-    {
-        "id": "736996",
-        "sport": "soccer",
-        "league": "Serie A",
-        "date": "2026-01-24T17:00Z",
-        "teamA": {
-            "name": "Fiorentina",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/109.png"
-        },
-        "teamB": {
-            "name": "Cagliari",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2925.png"
-        },
-        "tip": {
-            "market": "Escanteios: Mais de 9.5",
-            "odd": 1.97,
-            "type": "Escanteios",
-            "team": "Fiorentina",
-            "loser": "Cagliari",
-            "win_rate": 90,
-            "analysis": "O algortimo cruzou dados e identificou tendência massiva de cantos aqui. | Motivo: Defesa adversária cedeu gols nos últimos 5 jogos."
-        },
-        "result": null
-    },
-    {
-        "id": "736999",
-        "sport": "soccer",
-        "league": "Serie A",
-        "date": "2026-01-24T19:45Z",
-        "teamA": {
-            "name": "Lecce",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/113.png"
-        },
-        "teamB": {
-            "name": "Lazio",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/112.png"
-        },
-        "tip": {
-            "market": "Vencer: Lazio",
-            "odd": 2.0,
-            "type": "Vencer",
-            "winner": "Lazio",
-            "loser": "Lecce",
-            "team": "Lazio",
-            "win_rate": 89,
-            "analysis": "Apostamos na consistência. O Lazio em casa é uma máquina de moer adversários. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
+            "analysis": "Pressão total! O Villarreal vai amassar o adversário na linha de fundo. | Insight: O mercado ignorou o fator casa, mas nós não."
         },
         "result": null
     },
@@ -307,12 +233,12 @@ window.gamesData = [
         },
         "tip": {
             "market": "Escanteios: Mais de 10.5",
-            "odd": 2.19,
+            "odd": 1.86,
             "type": "Escanteios",
             "team": "Atlético-MG",
             "loser": "Palmeiras",
-            "win_rate": 95,
-            "analysis": "Jogo travado = Chuveirinho na área. Cenário perfeito para escanteios. | IA: Padrão tático identificado com sucesso."
+            "win_rate": 96,
+            "analysis": "Leitura de jogo: O Atlético-MG precisa do resultado e vai bombardear o gol. | Insight: O mercado ignorou o fator casa, mas nós não."
         },
         "result": null
     },
@@ -330,14 +256,13 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6079.png"
         },
         "tip": {
-            "market": "Vencer: Coritiba",
-            "odd": 2.15,
-            "type": "Vencer",
-            "winner": "Coritiba",
-            "loser": "Red Bull Bragantino",
+            "market": "Escanteios: Mais de 10.5",
+            "odd": 1.92,
+            "type": "Escanteios",
             "team": "Coritiba",
-            "win_rate": 90,
-            "analysis": "Apostamos na consistência. O Coritiba em casa é uma máquina de moer adversários. | IA: Padrão tático identificado com sucesso."
+            "loser": "Red Bull Bragantino",
+            "win_rate": 93,
+            "analysis": "Jogo travado = Chuveirinho na área. Cenário perfeito para escanteios. | Insight: O mercado ignorou o fator casa, mas nós não."
         },
         "result": null
     },
@@ -356,12 +281,12 @@ window.gamesData = [
         },
         "tip": {
             "market": "Total de Gols: Mais de 2.5",
-            "odd": 1.64,
+            "odd": 1.82,
             "type": "Gols",
             "team": "Internacional",
             "loser": "Athletico-PR",
-            "win_rate": 92,
-            "analysis": "O sistema prevê chuva de gols. O ataque do Internacional está on fire! | Algoritmo: Probabilidade recalculada após as últimas notícias."
+            "win_rate": 90,
+            "analysis": "A estatística não mente: 90% dos últimos jogos bateram essa linha facilmente. | Algoritmo: Probabilidade recalculada após as últimas notícias."
         },
         "result": null
     },
@@ -379,14 +304,13 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4936.png"
         },
         "tip": {
-            "market": "Vencer: Vitória",
-            "odd": 1.6896551724137931,
-            "type": "Vencer",
-            "winner": "Vitória",
-            "loser": "Remo",
+            "market": "Total de Gols: Mais de 1.5",
+            "odd": 1.81,
+            "type": "Gols",
             "team": "Vitória",
-            "win_rate": 94,
-            "analysis": "Sniper ativado: Tudo indica que o Vitória vai controlar o jogo do início ao fim. | Insight: O mercado ignorou o fator casa, mas nós não."
+            "loser": "Remo",
+            "win_rate": 90,
+            "analysis": "O sistema prevê chuva de gols. O ataque do Vitória está on fire! | Insight: O mercado ignorou o fator casa, mas nós não."
         },
         "result": null
     },
@@ -404,13 +328,13 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6273.png"
         },
         "tip": {
-            "market": "Escanteios: Mais de 8.5",
-            "odd": 1.85,
+            "market": "Escanteios: Mais de 9.5",
+            "odd": 1.72,
             "type": "Escanteios",
             "team": "Fluminense",
             "loser": "Grêmio",
-            "win_rate": 93,
-            "analysis": "Leitura de jogo: O Fluminense precisa do resultado e vai bombardear o gol. | Algoritmo: Probabilidade recalculada após as últimas notícias."
+            "win_rate": 91,
+            "analysis": "Leitura de jogo: O Fluminense precisa do resultado e vai bombardear o gol. | Motivo: Defesa adversária cedeu gols nos últimos 5 jogos."
         },
         "result": null
     },
@@ -428,14 +352,13 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2674.png"
         },
         "tip": {
-            "market": "Vencer: Santos",
-            "odd": 2.35,
-            "type": "Vencer",
-            "winner": "Santos",
-            "loser": "Chapecoense",
-            "team": "Santos",
+            "market": "Escanteios: Mais de 10.5",
+            "odd": 2.04,
+            "type": "Escanteios",
+            "team": "Chapecoense",
+            "loser": "Santos",
             "win_rate": 92,
-            "analysis": "Sniper ativado: Tudo indica que o Santos vai controlar o jogo do início ao fim. | Insight: O mercado ignorou o fator casa, mas nós não."
+            "analysis": "O algortimo cruzou dados e identificou tendência massiva de cantos aqui. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
         },
         "result": null
     },
@@ -453,13 +376,13 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9967.png"
         },
         "tip": {
-            "market": "Total de Gols: Mais de 2.5",
-            "odd": 1.64,
-            "type": "Gols",
+            "market": "Escanteios: Mais de 8.5",
+            "odd": 2.05,
+            "type": "Escanteios",
             "team": "Corinthians",
             "loser": "Bahia",
-            "win_rate": 89,
-            "analysis": "Alerta de jogo frenético! As duas defesas são verdadeiras peneiras. | Motivo: Defesa adversária cedeu gols nos últimos 5 jogos."
+            "win_rate": 95,
+            "analysis": "Leitura de jogo: O Corinthians precisa do resultado e vai bombardear o gol. | Motivo: Defesa adversária cedeu gols nos últimos 5 jogos."
         },
         "result": null
     },
@@ -477,13 +400,88 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/819.png"
         },
         "tip": {
-            "market": "Escanteios: Mais de 10.5",
-            "odd": 2.16,
-            "type": "Escanteios",
-            "team": "São Paulo",
-            "loser": "Flamengo",
+            "market": "Vencer: Flamengo",
+            "odd": 2.0,
+            "type": "Vencer",
+            "winner": "Flamengo",
+            "loser": "São Paulo",
+            "team": "Flamengo",
             "win_rate": 92,
-            "analysis": "Leitura de jogo: O São Paulo precisa do resultado e vai bombardear o gol. | Algoritmo: Probabilidade recalculada após as últimas notícias."
+            "analysis": "Oportunidade de Ouro. O São Paulo vem com desfalques importantes na zaga. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
+        },
+        "result": null
+    },
+    {
+        "id": "736995",
+        "sport": "soccer",
+        "league": "Serie A",
+        "date": "2026-01-24T14:00Z",
+        "teamA": {
+            "name": "Como",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2572.png"
+        },
+        "teamB": {
+            "name": "Torino",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/239.png"
+        },
+        "tip": {
+            "market": "Vencer: Como",
+            "odd": 1.5405405405405406,
+            "type": "Vencer",
+            "winner": "Como",
+            "loser": "Torino",
+            "team": "Como",
+            "win_rate": 84,
+            "analysis": "Sniper ativado: Tudo indica que o Como vai controlar o jogo do início ao fim. | Motivo: Defesa adversária cedeu gols nos últimos 5 jogos."
+        },
+        "result": null
+    },
+    {
+        "id": "736996",
+        "sport": "soccer",
+        "league": "Serie A",
+        "date": "2026-01-24T17:00Z",
+        "teamA": {
+            "name": "Fiorentina",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/109.png"
+        },
+        "teamB": {
+            "name": "Cagliari",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2925.png"
+        },
+        "tip": {
+            "market": "Vencer: Fiorentina",
+            "odd": 1.7692307692307692,
+            "type": "Vencer",
+            "winner": "Fiorentina",
+            "loser": "Cagliari",
+            "team": "Fiorentina",
+            "win_rate": 93,
+            "analysis": "Sniper ativado: Tudo indica que o Fiorentina vai controlar o jogo do início ao fim. | Insight: O mercado ignorou o fator casa, mas nós não."
+        },
+        "result": null
+    },
+    {
+        "id": "736999",
+        "sport": "soccer",
+        "league": "Serie A",
+        "date": "2026-01-24T19:45Z",
+        "teamA": {
+            "name": "Lecce",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/113.png"
+        },
+        "teamB": {
+            "name": "Lazio",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/112.png"
+        },
+        "tip": {
+            "market": "Escanteios: Mais de 10.5",
+            "odd": 1.73,
+            "type": "Escanteios",
+            "team": "Lecce",
+            "loser": "Lazio",
+            "win_rate": 92,
+            "analysis": "Pressão total! O Lecce vai amassar o adversário na linha de fundo. | Motivo: Defesa adversária cedeu gols nos últimos 5 jogos."
         },
         "result": null
     },
@@ -501,13 +499,14 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11420.png"
         },
         "tip": {
-            "market": "Chutes ao Gol: +7.5 (Total)",
-            "odd": 1.91,
-            "type": "Chutes",
-            "team": "RB Leipzig",
+            "market": "Vencer: RB Leipzig",
+            "odd": 1.606060606060606,
+            "type": "Vencer",
+            "winner": "RB Leipzig",
             "loser": "1. FC Heidenheim 1846",
-            "win_rate": 89,
-            "analysis": "A zaga do 1. FC Heidenheim 1846 deixa chutar de fora da área. Vamos explorar essa falha! | Algoritmo: Probabilidade recalculada após as últimas notícias."
+            "team": "RB Leipzig",
+            "win_rate": 94,
+            "analysis": "Sniper ativado: Tudo indica que o RB Leipzig vai controlar o jogo do início ao fim. | Algoritmo: Probabilidade recalculada após as últimas notícias."
         },
         "result": null
     },
@@ -525,13 +524,13 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/137.png"
         },
         "tip": {
-            "market": "Escanteios: Mais de 9.5",
-            "odd": 1.71,
+            "market": "Escanteios: Mais de 10.5",
+            "odd": 2.0,
             "type": "Escanteios",
             "team": "Bayer Leverkusen",
             "loser": "Werder Bremen",
-            "win_rate": 95,
-            "analysis": "Leitura de jogo: O Bayer Leverkusen precisa do resultado e vai bombardear o gol. | Motivo: Defesa adversária cedeu gols nos últimos 5 jogos."
+            "win_rate": 86,
+            "analysis": "Jogo travado = Chuveirinho na área. Cenário perfeito para escanteios. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
         },
         "result": null
     },
@@ -549,14 +548,13 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3841.png"
         },
         "tip": {
-            "market": "Vencer: Bayern Munich",
-            "odd": 1.0833333333333333,
-            "type": "Vencer",
-            "winner": "Bayern Munich",
-            "loser": "FC Augsburg",
+            "market": "Escanteios: Mais de 8.5",
+            "odd": 1.84,
+            "type": "Escanteios",
             "team": "Bayern Munich",
-            "win_rate": 95,
-            "analysis": "Apostamos na consistência. O Bayern Munich em casa é uma máquina de moer adversários. | Insight: O mercado ignorou o fator casa, mas nós não."
+            "loser": "FC Augsburg",
+            "win_rate": 93,
+            "analysis": "Jogo travado = Chuveirinho na área. Cenário perfeito para escanteios. | Algoritmo: Probabilidade recalculada após as últimas notícias."
         },
         "result": null
     },
@@ -574,13 +572,14 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7911.png"
         },
         "tip": {
-            "market": "Escanteios: Mais de 10.5",
-            "odd": 1.71,
-            "type": "Escanteios",
-            "team": "Eintracht Frankfurt",
-            "loser": "TSG Hoffenheim",
-            "win_rate": 89,
-            "analysis": "Jogo travado = Chuveirinho na área. Cenário perfeito para escanteios. | Motivo: Defesa adversária cedeu gols nos últimos 5 jogos."
+            "market": "Vencer: TSG Hoffenheim",
+            "odd": 2.1,
+            "type": "Vencer",
+            "winner": "TSG Hoffenheim",
+            "loser": "Eintracht Frankfurt",
+            "team": "TSG Hoffenheim",
+            "win_rate": 93,
+            "analysis": "Apostamos na consistência. O TSG Hoffenheim em casa é uma máquina de moer adversários. | Algoritmo: Probabilidade recalculada após as últimas notícias."
         },
         "result": null
     },
@@ -599,13 +598,13 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Mainz",
-            "odd": 2.25,
+            "odd": 2.3,
             "type": "Vencer",
             "winner": "Mainz",
             "loser": "VfL Wolfsburg",
             "team": "Mainz",
-            "win_rate": 89,
-            "analysis": "O algoritmo detectou valor ABSURDO no Mainz. A odd está desajustada. | IA: Padrão tático identificado com sucesso."
+            "win_rate": 92,
+            "analysis": "Sniper ativado: Tudo indica que o Mainz vai controlar o jogo do início ao fim. | IA: Padrão tático identificado com sucesso."
         },
         "result": null
     },
@@ -623,13 +622,13 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/124.png"
         },
         "tip": {
-            "market": "Escanteios: Mais de 10.5",
-            "odd": 1.73,
+            "market": "Escanteios: Mais de 8.5",
+            "odd": 2.11,
             "type": "Escanteios",
             "team": "1. FC Union Berlin",
             "loser": "Borussia Dortmund",
-            "win_rate": 94,
-            "analysis": "Pressão total! O 1. FC Union Berlin vai amassar o adversário na linha de fundo. | Insight: O mercado ignorou o fator casa, mas nós não."
+            "win_rate": 95,
+            "analysis": "Pressão total! O 1. FC Union Berlin vai amassar o adversário na linha de fundo. | Algoritmo: Probabilidade recalculada após as últimas notícias."
         },
         "result": null
     },
@@ -647,13 +646,13 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/273.png"
         },
         "tip": {
-            "market": "Total de Gols: Mais de 1.5",
-            "odd": 1.53,
-            "type": "Gols",
+            "market": "Escanteios: Mais de 9.5",
+            "odd": 1.72,
+            "type": "Escanteios",
             "team": "Stade Rennais",
             "loser": "Lorient",
-            "win_rate": 91,
-            "analysis": "A estatística não mente: 90% dos últimos jogos bateram essa linha facilmente. | IA: Padrão tático identificado com sucesso."
+            "win_rate": 95,
+            "analysis": "O algortimo cruzou dados e identificou tendência massiva de cantos aqui. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
         },
         "result": null
     },
@@ -672,12 +671,12 @@ window.gamesData = [
         },
         "tip": {
             "market": "Escanteios: Mais de 10.5",
-            "odd": 2.19,
+            "odd": 1.85,
             "type": "Escanteios",
             "team": "Le Havre AC",
             "loser": "AS Monaco",
-            "win_rate": 93,
-            "analysis": "O algortimo cruzou dados e identificou tendência massiva de cantos aqui. | IA: Padrão tático identificado com sucesso."
+            "win_rate": 95,
+            "analysis": "Jogo travado = Chuveirinho na área. Cenário perfeito para escanteios. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
         },
         "result": null
     },
@@ -695,13 +694,13 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/175.png"
         },
         "tip": {
-            "market": "Escanteios: Mais de 9.5",
-            "odd": 1.83,
-            "type": "Escanteios",
+            "market": "Total de Gols: Mais de 2.5",
+            "odd": 1.88,
+            "type": "Gols",
             "team": "Marseille",
             "loser": "Lens",
-            "win_rate": 96,
-            "analysis": "Jogo travado = Chuveirinho na área. Cenário perfeito para escanteios. | IA: Padrão tático identificado com sucesso."
+            "win_rate": 92,
+            "analysis": "Tendência explícita de Over. Jogo com DNA ofensivo e pouca marcação. | Algoritmo: Probabilidade recalculada após as últimas notícias."
         },
         "result": null
     },
@@ -725,8 +724,8 @@ window.gamesData = [
             "winner": "Charlotte Hornets",
             "loser": "Washington Wizards",
             "team": "Charlotte Hornets",
-            "win_rate": 85,
-            "analysis": "Sniper ativado: Tudo indica que o Charlotte Hornets vai controlar o jogo do início ao fim. | Insight: O mercado ignorou o fator casa, mas nós não."
+            "win_rate": 90,
+            "analysis": "Apostamos na consistência. O Charlotte Hornets em casa é uma máquina de moer adversários. | Motivo: Defesa adversária cedeu gols nos últimos 5 jogos."
         },
         "result": null
     },
@@ -745,13 +744,13 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Philadelphia 76ers",
-            "odd": 1.9090909090909092,
+            "odd": 1.8928571428571428,
             "type": "Vencer",
             "winner": "Philadelphia 76ers",
             "loser": "New York Knicks",
             "team": "Philadelphia 76ers",
-            "win_rate": 85,
-            "analysis": "Apostamos na consistência. O Philadelphia 76ers em casa é uma máquina de moer adversários. | IA: Padrão tático identificado com sucesso."
+            "win_rate": 92,
+            "analysis": "Espancamento previsto. O Philadelphia 76ers é superior taticamente e tecnicamente. | IA: Padrão tático identificado com sucesso."
         },
         "result": null
     },
@@ -775,8 +774,8 @@ window.gamesData = [
             "winner": "Minnesota Timberwolves",
             "loser": "Golden State Warriors",
             "team": "Minnesota Timberwolves",
-            "win_rate": 81,
-            "analysis": "Apostamos na consistência. O Minnesota Timberwolves em casa é uma máquina de moer adversários. | IA: Padrão tático identificado com sucesso."
+            "win_rate": 86,
+            "analysis": "Espancamento previsto. O Minnesota Timberwolves é superior taticamente e tecnicamente. | Insight: O mercado ignorou o fator casa, mas nós não."
         },
         "result": null
     },
@@ -801,7 +800,7 @@ window.gamesData = [
             "loser": "Cleveland Cavaliers",
             "team": "Orlando Magic",
             "win_rate": 86,
-            "analysis": "Apostamos na consistência. O Orlando Magic em casa é uma máquina de moer adversários. | IA: Padrão tático identificado com sucesso."
+            "analysis": "O algoritmo detectou valor ABSURDO no Orlando Magic. A odd está desajustada. | Motivo: Defesa adversária cedeu gols nos últimos 5 jogos."
         },
         "result": null
     },
@@ -825,8 +824,8 @@ window.gamesData = [
             "winner": "Chicago Bulls",
             "loser": "Boston Celtics",
             "team": "Chicago Bulls",
-            "win_rate": 83,
-            "analysis": "Sniper ativado: Tudo indica que o Chicago Bulls vai controlar o jogo do início ao fim. | Motivo: Defesa adversária cedeu gols nos últimos 5 jogos."
+            "win_rate": 91,
+            "analysis": "O algoritmo detectou valor ABSURDO no Chicago Bulls. A odd está desajustada. | Insight: O mercado ignorou o fator casa, mas nós não."
         },
         "result": null
     },
@@ -850,8 +849,8 @@ window.gamesData = [
             "winner": "Los Angeles Lakers",
             "loser": "Dallas Mavericks",
             "team": "Los Angeles Lakers",
-            "win_rate": 89,
-            "analysis": "O algoritmo detectou valor ABSURDO no Los Angeles Lakers. A odd está desajustada. | IA: Padrão tático identificado com sucesso."
+            "win_rate": 87,
+            "analysis": "Apostamos na consistência. O Los Angeles Lakers em casa é uma máquina de moer adversários. | Motivo: Defesa adversária cedeu gols nos últimos 5 jogos."
         },
         "result": null
     },
@@ -875,8 +874,8 @@ window.gamesData = [
             "winner": "Miami Heat",
             "loser": "Utah Jazz",
             "team": "Miami Heat",
-            "win_rate": 87,
-            "analysis": "Espancamento previsto. O Miami Heat é superior taticamente e tecnicamente. | Algoritmo: Probabilidade recalculada após as últimas notícias."
+            "win_rate": 90,
+            "analysis": "Oportunidade de Ouro. O Utah Jazz vem com desfalques importantes na zaga. | Algoritmo: Probabilidade recalculada após as últimas notícias."
         },
         "result": null
     },
@@ -900,8 +899,8 @@ window.gamesData = [
             "winner": "New England Patriots",
             "loser": "Denver Broncos",
             "team": "New England Patriots",
-            "win_rate": 81,
-            "analysis": "Oportunidade de Ouro. O Denver Broncos vem com desfalques importantes na zaga. | IA: Padrão tático identificado com sucesso."
+            "win_rate": 92,
+            "analysis": "Sniper ativado: Tudo indica que o New England Patriots vai controlar o jogo do início ao fim. | IA: Padrão tático identificado com sucesso."
         },
         "result": null
     },
@@ -925,8 +924,8 @@ window.gamesData = [
             "winner": "Seattle Seahawks",
             "loser": "Los Angeles Rams",
             "team": "Seattle Seahawks",
-            "win_rate": 83,
-            "analysis": "O algoritmo detectou valor ABSURDO no Seattle Seahawks. A odd está desajustada. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
+            "win_rate": 86,
+            "analysis": "Sniper ativado: Tudo indica que o Seattle Seahawks vai controlar o jogo do início ao fim. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
         },
         "result": null
     },
@@ -950,8 +949,8 @@ window.gamesData = [
             "winner": "New York Islanders",
             "loser": "Buffalo Sabres",
             "team": "New York Islanders",
-            "win_rate": 82,
-            "analysis": "Espancamento previsto. O New York Islanders é superior taticamente e tecnicamente. | Insight: O mercado ignorou o fator casa, mas nós não."
+            "win_rate": 84,
+            "analysis": "Espancamento previsto. O New York Islanders é superior taticamente e tecnicamente. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
         },
         "result": null
     },
@@ -975,8 +974,8 @@ window.gamesData = [
             "winner": "Utah Mammoth",
             "loser": "Nashville Predators",
             "team": "Utah Mammoth",
-            "win_rate": 85,
-            "analysis": "Sniper ativado: Tudo indica que o Utah Mammoth vai controlar o jogo do início ao fim. | IA: Padrão tático identificado com sucesso."
+            "win_rate": 87,
+            "analysis": "Apostamos na consistência. O Utah Mammoth em casa é uma máquina de moer adversários. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
         },
         "result": null
     },
@@ -995,13 +994,13 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Boston Bruins",
-            "odd": 1.8333333333333335,
+            "odd": 1.8695652173913042,
             "type": "Vencer",
             "winner": "Boston Bruins",
             "loser": "Montreal Canadiens",
             "team": "Boston Bruins",
-            "win_rate": 82,
-            "analysis": "Oportunidade de Ouro. O Montreal Canadiens vem com desfalques importantes na zaga. | Algoritmo: Probabilidade recalculada após as últimas notícias."
+            "win_rate": 90,
+            "analysis": "Sniper ativado: Tudo indica que o Boston Bruins vai controlar o jogo do início ao fim. | Insight: O mercado ignorou o fator casa, mas nós não."
         },
         "result": null
     },
@@ -1020,12 +1019,12 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Carolina Hurricanes",
-            "odd": 1.8,
+            "odd": 1.7692307692307692,
             "type": "Vencer",
             "winner": "Carolina Hurricanes",
             "loser": "Ottawa Senators",
             "team": "Carolina Hurricanes",
-            "win_rate": 93,
+            "win_rate": 83,
             "analysis": "Apostamos na consistência. O Carolina Hurricanes em casa é uma máquina de moer adversários. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
         },
         "result": null
@@ -1050,8 +1049,8 @@ window.gamesData = [
             "winner": "Tampa Bay Lightning",
             "loser": "Columbus Blue Jackets",
             "team": "Tampa Bay Lightning",
-            "win_rate": 83,
-            "analysis": "Sniper ativado: Tudo indica que o Tampa Bay Lightning vai controlar o jogo do início ao fim. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
+            "win_rate": 88,
+            "analysis": "Espancamento previsto. O Tampa Bay Lightning é superior taticamente e tecnicamente. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
         },
         "result": null
     },
@@ -1075,8 +1074,8 @@ window.gamesData = [
             "winner": "Winnipeg Jets",
             "loser": "Detroit Red Wings",
             "team": "Winnipeg Jets",
-            "win_rate": 91,
-            "analysis": "O algoritmo detectou valor ABSURDO no Winnipeg Jets. A odd está desajustada. | IA: Padrão tático identificado com sucesso."
+            "win_rate": 93,
+            "analysis": "Sniper ativado: Tudo indica que o Winnipeg Jets vai controlar o jogo do início ao fim. | Motivo: Defesa adversária cedeu gols nos últimos 5 jogos."
         },
         "result": null
     },
@@ -1100,8 +1099,8 @@ window.gamesData = [
             "winner": "Los Angeles Kings",
             "loser": "St. Louis Blues",
             "team": "Los Angeles Kings",
-            "win_rate": 93,
-            "analysis": "Apostamos na consistência. O Los Angeles Kings em casa é uma máquina de moer adversários. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
+            "win_rate": 84,
+            "analysis": "O algoritmo detectou valor ABSURDO no Los Angeles Kings. A odd está desajustada. | Insight: O mercado ignorou o fator casa, mas nós não."
         },
         "result": null
     },
@@ -1125,8 +1124,8 @@ window.gamesData = [
             "winner": "Minnesota Wild",
             "loser": "Florida Panthers",
             "team": "Minnesota Wild",
-            "win_rate": 93,
-            "analysis": "Apostamos na consistência. O Minnesota Wild em casa é uma máquina de moer adversários. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
+            "win_rate": 82,
+            "analysis": "Oportunidade de Ouro. O Florida Panthers vem com desfalques importantes na zaga. | IA: Padrão tático identificado com sucesso."
         },
         "result": null
     },
@@ -1150,8 +1149,8 @@ window.gamesData = [
             "winner": "Edmonton Oilers",
             "loser": "Washington Capitals",
             "team": "Edmonton Oilers",
-            "win_rate": 91,
-            "analysis": "Apostamos na consistência. O Edmonton Oilers em casa é uma máquina de moer adversários. | Motivo: Defesa adversária cedeu gols nos últimos 5 jogos."
+            "win_rate": 87,
+            "analysis": "Espancamento previsto. O Edmonton Oilers é superior taticamente e tecnicamente. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
         },
         "result": null
     }
@@ -2041,27 +2040,26 @@ window.historyTips = [
     }
 ];
 window.highlightMatch = {
-    "id": "740823",
+    "id": "740817",
     "sport": "soccer",
     "league": "Premier League",
-    "date": "2026-01-24T15:00Z",
+    "date": "2026-01-24T17:30Z",
     "teamA": {
-        "name": "Manchester City",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png"
+        "name": "AFC Bournemouth",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png"
     },
     "teamB": {
-        "name": "Wolverhampton Wanderers",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/380.png"
+        "name": "Liverpool",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png"
     },
     "tip": {
-        "market": "Vencer: Manchester City",
-        "odd": 1.303030303030303,
-        "type": "Vencer",
-        "winner": "Manchester City",
-        "loser": "Wolverhampton Wanderers",
-        "team": "Manchester City",
-        "win_rate": 95,
-        "analysis": "Apostamos na consistência. O Manchester City em casa é uma máquina de moer adversários. | IA: Padrão tático identificado com sucesso."
+        "market": "Escanteios: Mais de 8.5",
+        "odd": 1.95,
+        "type": "Escanteios",
+        "team": "AFC Bournemouth",
+        "loser": "Liverpool",
+        "win_rate": 96,
+        "analysis": "O algortimo cruzou dados e identificou tendência massiva de cantos aqui. | IA: Padrão tático identificado com sucesso."
     },
     "result": null
 };
