@@ -733,26 +733,5 @@
             "type": "Vencer"
         },
         "result": "WIN"
-    },
-    {
-        "id": "401810448",
-        "sport": "basketball",
-        "league": "Liga",
-        "date": "2026-01-17T22:00Z",
-        "teamA": {
-            "name": "Dallas Mavericks",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png"
-        },
-        "teamB": {
-            "name": "Utah Jazz",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png"
-        },
-        "tip": {
-            "market": "Vencer: Utah Jazz",
-            "odd": 3.33,
-            "win_rate": 79,
-            "type": "Vencer"
-        },
-        "result": "LOSS"
     }
 ]
