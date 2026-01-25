@@ -754,47 +754,5 @@
             "type": "Vencer"
         },
         "result": "LOSS"
-    },
-    {
-        "id": "401810447",
-        "sport": "basketball",
-        "league": "Liga",
-        "date": "2026-01-17T03:00Z",
-        "teamA": {
-            "name": "Sacramento Kings",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png"
-        },
-        "teamB": {
-            "name": "Washington Wizards",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png"
-        },
-        "tip": {
-            "market": "Vencer: Sacramento Kings",
-            "odd": 1.74,
-            "win_rate": 87,
-            "type": "Vencer"
-        },
-        "result": "WIN"
-    },
-    {
-        "id": "401810446",
-        "sport": "basketball",
-        "league": "Liga",
-        "date": "2026-01-17T02:30Z",
-        "teamA": {
-            "name": "Houston Rockets",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png"
-        },
-        "teamB": {
-            "name": "Minnesota Timberwolves",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png"
-        },
-        "tip": {
-            "market": "Vencer: Houston Rockets",
-            "odd": 1.59,
-            "win_rate": 87,
-            "type": "Vencer"
-        },
-        "result": "WIN"
     }
 ]
