@@ -2,7 +2,7 @@ name: HyperTips Auto Update
 
 on:
   schedule:
-    - cron: '0 */2 * * *' # Roda a cada 2 horas
+    - cron: '0 9,21 * * *' # Roda as 06:00 e 18:00 BRT (09:00 e 21:00 UTC)
   workflow_dispatch:
 
 permissions:
