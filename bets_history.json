@@ -628,26 +628,5 @@
             "type": "Vencer"
         },
         "result": "WIN"
-    },
-    {
-        "id": "401810455",
-        "sport": "basketball",
-        "league": "Liga",
-        "date": "2026-01-18T02:00Z",
-        "teamA": {
-            "name": "Denver Nuggets",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png"
-        },
-        "teamB": {
-            "name": "Washington Wizards",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png"
-        },
-        "tip": {
-            "market": "Vencer: Denver Nuggets",
-            "odd": 1.7,
-            "win_rate": 87,
-            "type": "Vencer"
-        },
-        "result": "WIN"
     }
 ]
