@@ -21,6 +21,99 @@ window.showHistory = function () {
     if (dom.feed) dom.feed.scrollIntoView({ behavior: 'smooth' });
 }
 // ProTips Hub Logic
+// --- PWA & INSTALL LOGIC ---
+let deferredPrompt;
+
+// Register SW
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js').then(reg => console.log('SW Reg', reg));
+    });
+}
+
+// Capture Install Prompt
+window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    console.log('Install Prompt CAUGHT');
+});
+
+// --- DRAG SCROLL FOR DESKTOP ---
+function enableDragScroll(selector) {
+    const el = document.querySelector(selector);
+    if (!el) return;
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+    el.addEventListener('mousedown', (e) => {
+        isDown = true;
+        el.style.cursor = 'grabbing';
+        startX = e.pageX - el.offsetLeft;
+        scrollLeft = el.scrollLeft;
+    });
+    el.addEventListener('mouseleave', () => { isDown = false; el.style.cursor = 'grab'; });
+    el.addEventListener('mouseup', () => { isDown = false; el.style.cursor = 'grab'; });
+    el.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - el.offsetLeft;
+        const walk = (x - startX) * 2;
+        el.scrollLeft = scrollLeft - walk;
+    });
+    el.style.cursor = 'grab';
+}
+
+// Global App Init
+document.addEventListener('DOMContentLoaded', () => {
+    initFilters();
+
+    // Enable Drag
+    enableDragScroll('.banners-carousel');
+    enableDragScroll('.sports-nav');
+
+    // ... Bell Button Logic ...
+    const installBtn = document.querySelector('.btn-icon'); // Bell Icon
+    if (installBtn) {
+        installBtn.addEventListener('click', () => {
+
+            // 1. If Native Prompt available (Android mostly)
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                deferredPrompt.userChoice.then((choiceResult) => {
+                    if (choiceResult.outcome === 'accepted') {
+                        console.log('User accepted install');
+                    }
+                    deferredPrompt = null;
+                });
+                return;
+            }
+
+            // 2. If iOS or Manual mode needed
+            const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+            const modal = document.getElementById('install-modal');
+            const instructions = document.getElementById('install-instructions');
+
+            if (modal) {
+                if (isIOS) {
+                    instructions.innerHTML = `
+                        Para instalar no iPhone:<br><br>
+                        1. Toque no botão <strong>Compartilhar</strong> (quadrado com seta) abaixo.<br>
+                        2. Role para cima e toque em <strong>"Adicionar à Tela de Início"</strong>.
+                    `;
+                } else {
+                    instructions.innerHTML = `
+                        Para instalar o App:<br><br>
+                        1. Toque no menu do navegador (três pontos).<br>
+                        2. Selecione <strong>"Instalar aplicativo"</strong> ou <strong>"Adicionar à tela inicial"</strong>.
+                    `;
+                }
+                modal.classList.remove('hidden');
+            }
+        });
+    }
+});
+// ----------------------------
+
 const state = {
     activeFilter: 'all',
     superodds: [],
@@ -319,6 +412,16 @@ function renderFeed(filterSport) {
         const container = dom.feed;
         if (!container) return;
 
+        // --- UPDATE SECTION TITLE ---
+        const titleEl = document.getElementById('feed-title');
+        if (titleEl) {
+            if (currentFilter === 'history') {
+                titleEl.textContent = 'Histórico Diário 📜';
+            } else {
+                titleEl.textContent = 'Jogos de HOJE 🔥';
+            }
+        }
+
         container.innerHTML = '';
 
         // --- HISTORY VIEW (LAST 7 DAYS) ---
@@ -516,8 +619,8 @@ function renderFeed(filterSport) {
             const diffMs = gDate - now;
             const diffHours = diffMs / (1000 * 60 * 60);
 
-            // Aceita jogos de 12h atrás (pra pegar resultados recentes) até 48h pra frente (agenda)
-            const isRelevant = diffHours > -12 && diffHours < 48;
+            // Aceita jogos de 24h atrás (pra pegar resultados de hoje cedo) até 48h pra frente (agenda)
+            const isRelevant = diffHours > -24 && diffHours < 48;
 
             // Na aba TUDO: mostra apenas jogos relevantes (hoje/agora)
             if (currentFilter === 'all') {
