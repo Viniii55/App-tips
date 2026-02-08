@@ -1,5 +1,53 @@
 window.gamesData = [
     {
+        "id": "740838",
+        "sport": "soccer",
+        "league": "Premier League",
+        "date": "2026-02-08T14:00Z",
+        "teamA": {
+            "name": "Brighton & Hove Albion",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/331.png"
+        },
+        "teamB": {
+            "name": "Crystal Palace",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png"
+        },
+        "tip": {
+            "market": "Total de Gols: Mais de 1.5",
+            "odd": 1.56,
+            "type": "Gols",
+            "team": "Brighton & Hove Albion",
+            "loser": "Crystal Palace",
+            "win_rate": 90,
+            "analysis": "O sistema prevê chuva de gols. O ataque do Brighton & Hove Albion está on fire! | Insight: O mercado ignorou o fator casa, mas nós não."
+        },
+        "result": null
+    },
+    {
+        "id": "740845",
+        "sport": "soccer",
+        "league": "Premier League",
+        "date": "2026-02-08T16:30Z",
+        "teamA": {
+            "name": "Liverpool",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png"
+        },
+        "teamB": {
+            "name": "Manchester City",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png"
+        },
+        "tip": {
+            "market": "Chutes ao Gol: +9.5 (Total)",
+            "odd": 1.98,
+            "type": "Chutes",
+            "team": "Liverpool",
+            "loser": "Manchester City",
+            "win_rate": 85,
+            "analysis": "O craque do Liverpool está com fome de bola. Média de 4.5 chutes por jogo. | Algoritmo: Probabilidade recalculada após as últimas notícias."
+        },
+        "result": null
+    },
+    {
         "id": "401840993",
         "sport": "soccer",
         "league": "Brasileirão",
@@ -13,336 +61,403 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/819.png"
         },
         "tip": {
-            "market": "Escanteios: Mais de 9.5",
-            "odd": 1.78,
+            "market": "Escanteios: Mais de 10.5",
+            "odd": 2.1,
             "type": "Escanteios",
             "team": "Vitória",
             "loser": "Flamengo",
-            "win_rate": 90,
-            "analysis": "O algortimo cruzou dados e identificou tendência massiva de cantos aqui. | Insight: O mercado ignorou o fator casa, mas nós não."
+            "win_rate": 89,
+            "analysis": "O algortimo cruzou dados e identificou tendência massiva de cantos aqui. | Motivo: Defesa adversária cedeu gols nos últimos 5 jogos."
         },
         "result": null
     },
     {
-        "id": "748366",
+        "id": "748367",
         "sport": "soccer",
         "league": "La Liga",
-        "date": "2026-02-07T20:00Z",
+        "date": "2026-02-08T13:00Z",
         "teamA": {
-            "name": "Real Sociedad",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png"
+            "name": "Alavés",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png"
         },
         "teamB": {
-            "name": "Elche",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png"
-        },
-        "tip": {
-            "market": "Escanteios: Mais de 9.5",
-            "odd": 1.81,
-            "type": "Escanteios",
-            "team": "Real Sociedad",
-            "loser": "Elche",
-            "win_rate": 90,
-            "analysis": "Jogo travado = Chuveirinho na área. Cenário perfeito para escanteios. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
-        },
-        "result": null
-    },
-    {
-        "id": "737020",
-        "sport": "soccer",
-        "league": "Serie A",
-        "date": "2026-02-07T19:45Z",
-        "teamA": {
-            "name": "Fiorentina",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/109.png"
-        },
-        "teamB": {
-            "name": "Torino",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/239.png"
+            "name": "Getafe",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2922.png"
         },
         "tip": {
             "market": "Escanteios: Mais de 8.5",
-            "odd": 2.14,
+            "odd": 1.99,
             "type": "Escanteios",
-            "team": "Fiorentina",
-            "loser": "Torino",
-            "win_rate": 96,
-            "analysis": "O algortimo cruzou dados e identificou tendência massiva de cantos aqui. | IA: Padrão tático identificado com sucesso."
+            "team": "Alavés",
+            "loser": "Getafe",
+            "win_rate": 86,
+            "analysis": "Jogo travado = Chuveirinho na área. Cenário perfeito para escanteios. | Algoritmo: Probabilidade recalculada após as últimas notícias."
         },
         "result": null
     },
     {
-        "id": "746598",
+        "id": "748373",
+        "sport": "soccer",
+        "league": "La Liga",
+        "date": "2026-02-08T15:15Z",
+        "teamA": {
+            "name": "Athletic Club",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/93.png"
+        },
+        "teamB": {
+            "name": "Levante",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png"
+        },
+        "tip": {
+            "market": "Chutes ao Gol: +7.5 (Total)",
+            "odd": 1.85,
+            "type": "Chutes",
+            "team": "Athletic Club",
+            "loser": "Levante",
+            "win_rate": 86,
+            "analysis": "Volume de jogo insano esperado. O Athletic Club não vai parar de atacar. | Algoritmo: Probabilidade recalculada após as últimas notícias."
+        },
+        "result": null
+    },
+    {
+        "id": "748365",
+        "sport": "soccer",
+        "league": "La Liga",
+        "date": "2026-02-08T15:15Z",
+        "teamA": {
+            "name": "Sevilla",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png"
+        },
+        "teamB": {
+            "name": "Girona",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9812.png"
+        },
+        "tip": {
+            "market": "Vencer: Sevilla",
+            "odd": 2.05,
+            "type": "Vencer",
+            "winner": "Sevilla",
+            "loser": "Girona",
+            "team": "Sevilla",
+            "win_rate": 91,
+            "analysis": "O algoritmo detectou valor ABSURDO no Sevilla. A odd está desajustada. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
+        },
+        "result": null
+    },
+    {
+        "id": "748369",
+        "sport": "soccer",
+        "league": "La Liga",
+        "date": "2026-02-08T17:30Z",
+        "teamA": {
+            "name": "Atlético Madrid",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
+        },
+        "teamB": {
+            "name": "Real Betis",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png"
+        },
+        "tip": {
+            "market": "Escanteios: Mais de 10.5",
+            "odd": 1.97,
+            "type": "Escanteios",
+            "team": "Atlético Madrid",
+            "loser": "Real Betis",
+            "win_rate": 88,
+            "analysis": "Jogo travado = Chuveirinho na área. Cenário perfeito para escanteios. | Motivo: Defesa adversária cedeu gols nos últimos 5 jogos."
+        },
+        "result": null
+    },
+    {
+        "id": "748364",
+        "sport": "soccer",
+        "league": "La Liga",
+        "date": "2026-02-08T20:00Z",
+        "teamA": {
+            "name": "Valencia",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png"
+        },
+        "teamB": {
+            "name": "Real Madrid",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png"
+        },
+        "tip": {
+            "market": "Vencer: Real Madrid",
+            "odd": 1.5882352941176472,
+            "type": "Vencer",
+            "winner": "Real Madrid",
+            "loser": "Valencia",
+            "team": "Real Madrid",
+            "win_rate": 95,
+            "analysis": "O algoritmo detectou valor ABSURDO no Real Madrid. A odd está desajustada. | IA: Padrão tático identificado com sucesso."
+        },
+        "result": null
+    },
+    {
+        "id": "737021",
+        "sport": "soccer",
+        "league": "Serie A",
+        "date": "2026-02-08T11:30Z",
+        "teamA": {
+            "name": "Bologna",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/107.png"
+        },
+        "teamB": {
+            "name": "Parma",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/115.png"
+        },
+        "tip": {
+            "market": "Escanteios: Mais de 9.5",
+            "odd": 2.09,
+            "type": "Escanteios",
+            "team": "Bologna",
+            "loser": "Parma",
+            "win_rate": 96,
+            "analysis": "Jogo travado = Chuveirinho na área. Cenário perfeito para escanteios. | Insight: O mercado ignorou o fator casa, mas nós não."
+        },
+        "result": null
+    },
+    {
+        "id": "737016",
+        "sport": "soccer",
+        "league": "Serie A",
+        "date": "2026-02-08T14:00Z",
+        "teamA": {
+            "name": "Lecce",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/113.png"
+        },
+        "teamB": {
+            "name": "Udinese",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/118.png"
+        },
+        "tip": {
+            "market": "Escanteios: Mais de 8.5",
+            "odd": 2.17,
+            "type": "Escanteios",
+            "team": "Lecce",
+            "loser": "Udinese",
+            "win_rate": 96,
+            "analysis": "Pressão total! O Lecce vai amassar o adversário na linha de fundo. | IA: Padrão tático identificado com sucesso."
+        },
+        "result": null
+    },
+    {
+        "id": "737023",
+        "sport": "soccer",
+        "league": "Serie A",
+        "date": "2026-02-08T17:00Z",
+        "teamA": {
+            "name": "Sassuolo",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3997.png"
+        },
+        "teamB": {
+            "name": "Internazionale",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/110.png"
+        },
+        "tip": {
+            "market": "Escanteios: Mais de 9.5",
+            "odd": 1.87,
+            "type": "Escanteios",
+            "team": "Sassuolo",
+            "loser": "Internazionale",
+            "win_rate": 85,
+            "analysis": "Pressão total! O Sassuolo vai amassar o adversário na linha de fundo. | Algoritmo: Probabilidade recalculada após as últimas notícias."
+        },
+        "result": null
+    },
+    {
+        "id": "737017",
+        "sport": "soccer",
+        "league": "Serie A",
+        "date": "2026-02-08T19:45Z",
+        "teamA": {
+            "name": "Juventus",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/111.png"
+        },
+        "teamB": {
+            "name": "Lazio",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/112.png"
+        },
+        "tip": {
+            "market": "Vencer: Juventus",
+            "odd": 1.4081632653061225,
+            "type": "Vencer",
+            "winner": "Juventus",
+            "loser": "Lazio",
+            "team": "Juventus",
+            "win_rate": 90,
+            "analysis": "Apostamos na consistência. O Juventus em casa é uma máquina de moer adversários. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
+        },
+        "result": null
+    },
+    {
+        "id": "746899",
+        "sport": "soccer",
+        "league": "Bundesliga",
+        "date": "2026-02-08T14:30Z",
+        "teamA": {
+            "name": "FC Cologne",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/122.png"
+        },
+        "teamB": {
+            "name": "RB Leipzig",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11420.png"
+        },
+        "tip": {
+            "market": "Escanteios: Mais de 10.5",
+            "odd": 1.98,
+            "type": "Escanteios",
+            "team": "FC Cologne",
+            "loser": "RB Leipzig",
+            "win_rate": 86,
+            "analysis": "Leitura de jogo: O FC Cologne precisa do resultado e vai bombardear o gol. | Algoritmo: Probabilidade recalculada após as últimas notícias."
+        },
+        "result": null
+    },
+    {
+        "id": "746903",
+        "sport": "soccer",
+        "league": "Bundesliga",
+        "date": "2026-02-08T16:30Z",
+        "teamA": {
+            "name": "Bayern Munich",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/132.png"
+        },
+        "teamB": {
+            "name": "TSG Hoffenheim",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7911.png"
+        },
+        "tip": {
+            "market": "Total de Gols: Mais de 2.5",
+            "odd": 1.61,
+            "type": "Gols",
+            "team": "Bayern Munich",
+            "loser": "TSG Hoffenheim",
+            "win_rate": 89,
+            "analysis": "A estatística não mente: 90% dos últimos jogos bateram essa linha facilmente. | Insight: O mercado ignorou o fator casa, mas nós não."
+        },
+        "result": null
+    },
+    {
+        "id": "746599",
         "sport": "soccer",
         "league": "Ligue 1",
-        "date": "2026-02-07T20:05Z",
+        "date": "2026-02-08T14:00Z",
         "teamA": {
-            "name": "Nantes",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/165.png"
+            "name": "Nice",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2502.png"
         },
         "teamB": {
-            "name": "Lyon",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/167.png"
+            "name": "AS Monaco",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/174.png"
         },
         "tip": {
-            "market": "Vencer: Lyon",
-            "odd": 1.7407407407407407,
+            "market": "Vencer: AS Monaco",
+            "odd": 2.1,
             "type": "Vencer",
-            "winner": "Lyon",
-            "loser": "Nantes",
-            "team": "Lyon",
-            "win_rate": 94,
-            "analysis": "Espancamento previsto. O Lyon é superior taticamente e tecnicamente. | Motivo: Defesa adversária cedeu gols nos últimos 5 jogos."
-        },
-        "result": null
-    },
-    {
-        "id": "401810602",
-        "sport": "basketball",
-        "league": "NBA",
-        "date": "2026-02-07T20:00Z",
-        "teamA": {
-            "name": "Brooklyn Nets",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png"
-        },
-        "teamB": {
-            "name": "Washington Wizards",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png"
-        },
-        "tip": {
-            "market": "Vencer: Brooklyn Nets",
-            "odd": 1.61,
-            "type": "Vencer",
-            "winner": "Brooklyn Nets",
-            "loser": "Washington Wizards",
-            "team": "Brooklyn Nets",
-            "win_rate": 84,
-            "analysis": "Apostamos na consistência. O Brooklyn Nets em casa é uma máquina de moer adversários. | Algoritmo: Probabilidade recalculada após as últimas notícias."
-        },
-        "result": null
-    },
-    {
-        "id": "401810603",
-        "sport": "basketball",
-        "league": "NBA",
-        "date": "2026-02-07T20:30Z",
-        "teamA": {
-            "name": "Oklahoma City Thunder",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png"
-        },
-        "teamB": {
-            "name": "Houston Rockets",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png"
-        },
-        "tip": {
-            "market": "Vencer: Houston Rockets",
-            "odd": 1.66,
-            "type": "Vencer",
-            "winner": "Houston Rockets",
-            "loser": "Oklahoma City Thunder",
-            "team": "Houston Rockets",
-            "win_rate": 84,
-            "analysis": "O algoritmo detectou valor ABSURDO no Houston Rockets. A odd está desajustada. | IA: Padrão tático identificado com sucesso."
-        },
-        "result": null
-    },
-    {
-        "id": "401810604",
-        "sport": "basketball",
-        "league": "NBA",
-        "date": "2026-02-07T23:00Z",
-        "teamA": {
-            "name": "San Antonio Spurs",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png"
-        },
-        "teamB": {
-            "name": "Dallas Mavericks",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png"
-        },
-        "tip": {
-            "market": "Vencer: San Antonio Spurs",
-            "odd": 1.2352941176470589,
-            "type": "Vencer",
-            "winner": "San Antonio Spurs",
-            "loser": "Dallas Mavericks",
-            "team": "San Antonio Spurs",
-            "win_rate": 90,
-            "analysis": "Oportunidade de Ouro. O Dallas Mavericks vem com desfalques importantes na zaga. | Motivo: Defesa adversária cedeu gols nos últimos 5 jogos."
-        },
-        "result": null
-    },
-    {
-        "id": "401810605",
-        "sport": "basketball",
-        "league": "NBA",
-        "date": "2026-02-08T00:00Z",
-        "teamA": {
-            "name": "Orlando Magic",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png"
-        },
-        "teamB": {
-            "name": "Utah Jazz",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png"
-        },
-        "tip": {
-            "market": "Vencer: Orlando Magic",
-            "odd": 1.3278688524590163,
-            "type": "Vencer",
-            "winner": "Orlando Magic",
-            "loser": "Utah Jazz",
-            "team": "Orlando Magic",
-            "win_rate": 93,
-            "analysis": "Espancamento previsto. O Orlando Magic é superior taticamente e tecnicamente. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
-        },
-        "result": null
-    },
-    {
-        "id": "401810606",
-        "sport": "basketball",
-        "league": "NBA",
-        "date": "2026-02-08T00:30Z",
-        "teamA": {
-            "name": "Atlanta Hawks",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png"
-        },
-        "teamB": {
-            "name": "Charlotte Hornets",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png"
-        },
-        "tip": {
-            "market": "Vencer: Charlotte Hornets",
-            "odd": 1.7692307692307692,
-            "type": "Vencer",
-            "winner": "Charlotte Hornets",
-            "loser": "Atlanta Hawks",
-            "team": "Charlotte Hornets",
-            "win_rate": 89,
-            "analysis": "Apostamos na consistência. O Charlotte Hornets em casa é uma máquina de moer adversários. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
-        },
-        "result": null
-    },
-    {
-        "id": "401810607",
-        "sport": "basketball",
-        "league": "NBA",
-        "date": "2026-02-08T01:00Z",
-        "teamA": {
-            "name": "Chicago Bulls",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png"
-        },
-        "teamB": {
-            "name": "Denver Nuggets",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png"
-        },
-        "tip": {
-            "market": "Vencer: Denver Nuggets",
-            "odd": 1.3703703703703702,
-            "type": "Vencer",
-            "winner": "Denver Nuggets",
-            "loser": "Chicago Bulls",
-            "team": "Denver Nuggets",
+            "winner": "AS Monaco",
+            "loser": "Nice",
+            "team": "AS Monaco",
             "win_rate": 88,
-            "analysis": "Oportunidade de Ouro. O Chicago Bulls vem com desfalques importantes na zaga. | Insight: O mercado ignorou o fator casa, mas nós não."
+            "analysis": "O algoritmo detectou valor ABSURDO no AS Monaco. A odd está desajustada. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
         },
         "result": null
     },
     {
-        "id": "401810608",
-        "sport": "basketball",
-        "league": "NBA",
-        "date": "2026-02-08T01:30Z",
+        "id": "746593",
+        "sport": "soccer",
+        "league": "Ligue 1",
+        "date": "2026-02-08T16:15Z",
         "teamA": {
-            "name": "Los Angeles Lakers",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png"
+            "name": "AJ Auxerre",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/172.png"
         },
         "teamB": {
-            "name": "Golden State Warriors",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png"
+            "name": "Paris FC",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6851.png"
         },
         "tip": {
-            "market": "Vencer: Los Angeles Lakers",
-            "odd": 1.819672131147541,
+            "market": "Escanteios: Mais de 10.5",
+            "odd": 1.74,
+            "type": "Escanteios",
+            "team": "AJ Auxerre",
+            "loser": "Paris FC",
+            "win_rate": 95,
+            "analysis": "Leitura de jogo: O AJ Auxerre precisa do resultado e vai bombardear o gol. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
+        },
+        "result": null
+    },
+    {
+        "id": "746592",
+        "sport": "soccer",
+        "league": "Ligue 1",
+        "date": "2026-02-08T16:15Z",
+        "teamA": {
+            "name": "Angers",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7868.png"
+        },
+        "teamB": {
+            "name": "Toulouse",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/179.png"
+        },
+        "tip": {
+            "market": "Vencer: Toulouse",
+            "odd": 2.1,
             "type": "Vencer",
-            "winner": "Los Angeles Lakers",
-            "loser": "Golden State Warriors",
-            "team": "Los Angeles Lakers",
+            "winner": "Toulouse",
+            "loser": "Angers",
+            "team": "Toulouse",
+            "win_rate": 90,
+            "analysis": "Apostamos na consistência. O Toulouse em casa é uma máquina de moer adversários. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
+        },
+        "result": null
+    },
+    {
+        "id": "746600",
+        "sport": "soccer",
+        "league": "Ligue 1",
+        "date": "2026-02-08T16:15Z",
+        "teamA": {
+            "name": "Le Havre AC",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3236.png"
+        },
+        "teamB": {
+            "name": "Strasbourg",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/180.png"
+        },
+        "tip": {
+            "market": "Vencer: Strasbourg",
+            "odd": 1.8695652173913042,
+            "type": "Vencer",
+            "winner": "Strasbourg",
+            "loser": "Le Havre AC",
+            "team": "Strasbourg",
+            "win_rate": 94,
+            "analysis": "O algoritmo detectou valor ABSURDO no Strasbourg. A odd está desajustada. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
+        },
+        "result": null
+    },
+    {
+        "id": "746595",
+        "sport": "soccer",
+        "league": "Ligue 1",
+        "date": "2026-02-08T19:45Z",
+        "teamA": {
+            "name": "Paris Saint-Germain",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png"
+        },
+        "teamB": {
+            "name": "Marseille",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/176.png"
+        },
+        "tip": {
+            "market": "Total de Gols: Mais de 1.5",
+            "odd": 1.77,
+            "type": "Gols",
+            "team": "Paris Saint-Germain",
+            "loser": "Marseille",
             "win_rate": 92,
-            "analysis": "Espancamento previsto. O Los Angeles Lakers é superior taticamente e tecnicamente. | Algoritmo: Probabilidade recalculada após as últimas notícias."
-        },
-        "result": null
-    },
-    {
-        "id": "401810609",
-        "sport": "basketball",
-        "league": "NBA",
-        "date": "2026-02-08T02:00Z",
-        "teamA": {
-            "name": "Phoenix Suns",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png"
-        },
-        "teamB": {
-            "name": "Philadelphia 76ers",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png"
-        },
-        "tip": {
-            "market": "Vencer: Phoenix Suns",
-            "odd": 1.704225352112676,
-            "type": "Vencer",
-            "winner": "Phoenix Suns",
-            "loser": "Philadelphia 76ers",
-            "team": "Phoenix Suns",
-            "win_rate": 85,
-            "analysis": "Sniper ativado: Tudo indica que o Phoenix Suns vai controlar o jogo do início ao fim. | Insight: O mercado ignorou o fator casa, mas nós não."
-        },
-        "result": null
-    },
-    {
-        "id": "401810610",
-        "sport": "basketball",
-        "league": "NBA",
-        "date": "2026-02-08T03:00Z",
-        "teamA": {
-            "name": "Portland Trail Blazers",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png"
-        },
-        "teamB": {
-            "name": "Memphis Grizzlies",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png"
-        },
-        "tip": {
-            "market": "Vencer: Portland Trail Blazers",
-            "odd": 1.3076923076923077,
-            "type": "Vencer",
-            "winner": "Portland Trail Blazers",
-            "loser": "Memphis Grizzlies",
-            "team": "Portland Trail Blazers",
-            "win_rate": 82,
-            "analysis": "Sniper ativado: Tudo indica que o Portland Trail Blazers vai controlar o jogo do início ao fim. | Algoritmo: Probabilidade recalculada após as últimas notícias."
-        },
-        "result": null
-    },
-    {
-        "id": "401810611",
-        "sport": "basketball",
-        "league": "NBA",
-        "date": "2026-02-08T03:00Z",
-        "teamA": {
-            "name": "Sacramento Kings",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png"
-        },
-        "teamB": {
-            "name": "Cleveland Cavaliers",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png"
-        },
-        "tip": {
-            "market": "Vencer: Cleveland Cavaliers",
-            "odd": 1.1666666666666667,
-            "type": "Vencer",
-            "winner": "Cleveland Cavaliers",
-            "loser": "Sacramento Kings",
-            "team": "Cleveland Cavaliers",
-            "win_rate": 89,
-            "analysis": "Sniper ativado: Tudo indica que o Cleveland Cavaliers vai controlar o jogo do início ao fim. | IA: Padrão tático identificado com sucesso."
+            "analysis": "A estatística não mente: 90% dos últimos jogos bateram essa linha facilmente. | Algoritmo: Probabilidade recalculada após as últimas notícias."
         },
         "result": null
     },
@@ -360,13 +475,14 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/111.png"
         },
         "tip": {
-            "market": "Escanteios: Mais de 8.5",
-            "odd": 2.14,
-            "type": "Escanteios",
-            "team": "Galatasaray",
-            "loser": "Juventus",
-            "win_rate": 93,
-            "analysis": "O algortimo cruzou dados e identificou tendência massiva de cantos aqui. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
+            "market": "Vencer: Juventus",
+            "odd": 2.2,
+            "type": "Vencer",
+            "winner": "Juventus",
+            "loser": "Galatasaray",
+            "team": "Juventus",
+            "win_rate": 94,
+            "analysis": "Apostamos na consistência. O Juventus em casa é uma máquina de moer adversários. | Algoritmo: Probabilidade recalculada após as últimas notícias."
         },
         "result": null
     },
@@ -384,13 +500,13 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png"
         },
         "tip": {
-            "market": "Escanteios: Mais de 10.5",
-            "odd": 2.08,
-            "type": "Escanteios",
+            "market": "Total de Gols: Mais de 2.5",
+            "odd": 1.79,
+            "type": "Gols",
             "team": "AS Monaco",
             "loser": "Paris Saint-Germain",
-            "win_rate": 95,
-            "analysis": "Leitura de jogo: O AS Monaco precisa do resultado e vai bombardear o gol. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
+            "win_rate": 91,
+            "analysis": "Tendência explícita de Over. Jogo com DNA ofensivo e pouca marcação. | IA: Padrão tático identificado com sucesso."
         },
         "result": null
     },
@@ -408,13 +524,14 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png"
         },
         "tip": {
-            "market": "Total de Gols: Mais de 2.5",
-            "odd": 1.73,
-            "type": "Gols",
-            "team": "Benfica",
-            "loser": "Real Madrid",
-            "win_rate": 89,
-            "analysis": "A estatística não mente: 90% dos últimos jogos bateram essa linha facilmente. | Motivo: Defesa adversária cedeu gols nos últimos 5 jogos."
+            "market": "Vencer: Real Madrid",
+            "odd": 1.8695652173913042,
+            "type": "Vencer",
+            "winner": "Real Madrid",
+            "loser": "Benfica",
+            "team": "Real Madrid",
+            "win_rate": 92,
+            "analysis": "Espancamento previsto. O Real Madrid é superior taticamente e tecnicamente. | Insight: O mercado ignorou o fator casa, mas nós não."
         },
         "result": null
     },
@@ -432,61 +549,113 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/105.png"
         },
         "tip": {
-            "market": "Escanteios: Mais de 10.5",
-            "odd": 1.83,
+            "market": "Escanteios: Mais de 9.5",
+            "odd": 1.96,
             "type": "Escanteios",
             "team": "Borussia Dortmund",
             "loser": "Atalanta",
-            "win_rate": 94,
-            "analysis": "Jogo travado = Chuveirinho na área. Cenário perfeito para escanteios. | IA: Padrão tático identificado com sucesso."
+            "win_rate": 88,
+            "analysis": "Leitura de jogo: O Borussia Dortmund precisa do resultado e vai bombardear o gol. | Algoritmo: Probabilidade recalculada após as últimas notícias."
         },
         "result": null
     },
     {
-        "id": "401850946",
-        "sport": "soccer",
-        "league": "FA Cup",
-        "date": "2026-02-13T19:45Z",
+        "id": "401810612",
+        "sport": "basketball",
+        "league": "NBA",
+        "date": "2026-02-08T17:30Z",
         "teamA": {
-            "name": "Hull City",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/306.png"
+            "name": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png"
         },
         "teamB": {
-            "name": "Chelsea",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png"
+            "name": "New York Knicks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png"
         },
         "tip": {
-            "market": "Chutes ao Gol: +8.5 (Total)",
-            "odd": 1.92,
-            "type": "Chutes",
-            "team": "Chelsea",
-            "loser": "Hull City",
+            "market": "Vencer: Boston Celtics",
+            "odd": 1.5714285714285714,
+            "type": "Vencer",
+            "winner": "Boston Celtics",
+            "loser": "New York Knicks",
+            "team": "Boston Celtics",
+            "win_rate": 93,
+            "analysis": "Apostamos na consistência. O Boston Celtics em casa é uma máquina de moer adversários. | IA: Padrão tático identificado com sucesso."
+        },
+        "result": null
+    },
+    {
+        "id": "401810613",
+        "sport": "basketball",
+        "league": "NBA",
+        "date": "2026-02-08T19:00Z",
+        "teamA": {
+            "name": "Washington Wizards",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png"
+        },
+        "teamB": {
+            "name": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png"
+        },
+        "tip": {
+            "market": "Vencer: Miami Heat",
+            "odd": 1.2127659574468086,
+            "type": "Vencer",
+            "winner": "Miami Heat",
+            "loser": "Washington Wizards",
+            "team": "Miami Heat",
             "win_rate": 89,
-            "analysis": "Volume de jogo insano esperado. O Chelsea não vai parar de atacar. | IA: Padrão tático identificado com sucesso."
+            "analysis": "Sniper ativado: Tudo indica que o Miami Heat vai controlar o jogo do início ao fim. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
         },
         "result": null
     },
     {
-        "id": "401850948",
-        "sport": "soccer",
-        "league": "FA Cup",
-        "date": "2026-02-13T19:45Z",
+        "id": "401810614",
+        "sport": "basketball",
+        "league": "NBA",
+        "date": "2026-02-08T20:00Z",
         "teamA": {
-            "name": "Wrexham",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/352.png"
+            "name": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png"
         },
         "teamB": {
-            "name": "Ipswich Town",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/373.png"
+            "name": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png"
         },
         "tip": {
-            "market": "Escanteios: Mais de 9.5",
-            "odd": 1.87,
-            "type": "Escanteios",
-            "team": "Wrexham",
-            "loser": "Ipswich Town",
-            "win_rate": 95,
-            "analysis": "O algortimo cruzou dados e identificou tendência massiva de cantos aqui. | IA: Padrão tático identificado com sucesso."
+            "market": "Vencer: Toronto Raptors",
+            "odd": 1.2666666666666666,
+            "type": "Vencer",
+            "winner": "Toronto Raptors",
+            "loser": "Indiana Pacers",
+            "team": "Toronto Raptors",
+            "win_rate": 84,
+            "analysis": "Sniper ativado: Tudo indica que o Toronto Raptors vai controlar o jogo do início ao fim. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
+        },
+        "result": null
+    },
+    {
+        "id": "401810615",
+        "sport": "basketball",
+        "league": "NBA",
+        "date": "2026-02-08T20:00Z",
+        "teamA": {
+            "name": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png"
+        },
+        "teamB": {
+            "name": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png"
+        },
+        "tip": {
+            "market": "Vencer: Minnesota Timberwolves",
+            "odd": 1.3076923076923077,
+            "type": "Vencer",
+            "winner": "Minnesota Timberwolves",
+            "loser": "LA Clippers",
+            "team": "Minnesota Timberwolves",
+            "win_rate": 81,
+            "analysis": "Oportunidade de Ouro. O LA Clippers vem com desfalques importantes na zaga. | IA: Padrão tático identificado com sucesso."
         },
         "result": null
     },
@@ -505,13 +674,13 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Seattle Seahawks",
-            "odd": 1.434782608695652,
+            "odd": 1.4081632653061225,
             "type": "Vencer",
             "winner": "Seattle Seahawks",
             "loser": "New England Patriots",
             "team": "Seattle Seahawks",
-            "win_rate": 83,
-            "analysis": "O algoritmo detectou valor ABSURDO no Seattle Seahawks. A odd está desajustada. | Algoritmo: Probabilidade recalculada após as últimas notícias."
+            "win_rate": 82,
+            "analysis": "O algoritmo detectou valor ABSURDO no Seattle Seahawks. A odd está desajustada. | Insight: O mercado ignorou o fator casa, mas nós não."
         },
         "result": null
     },
@@ -530,13 +699,13 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Buffalo Sabres",
-            "odd": 1.96,
+            "odd": 1.84,
             "type": "Vencer",
             "winner": "Buffalo Sabres",
             "loser": "New Jersey Devils",
             "team": "Buffalo Sabres",
-            "win_rate": 82,
-            "analysis": "O algoritmo detectou valor ABSURDO no Buffalo Sabres. A odd está desajustada. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
+            "win_rate": 88,
+            "analysis": "Oportunidade de Ouro. O New Jersey Devils vem com desfalques importantes na zaga. | IA: Padrão tático identificado com sucesso."
         },
         "result": null
     },
@@ -554,14 +723,14 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/phi.png"
         },
         "tip": {
-            "market": "Vencer: Washington Capitals",
-            "odd": 1.68,
+            "market": "Vencer: Philadelphia Flyers",
+            "odd": 1.93,
             "type": "Vencer",
-            "winner": "Washington Capitals",
-            "loser": "Philadelphia Flyers",
-            "team": "Washington Capitals",
-            "win_rate": 88,
-            "analysis": "Espancamento previsto. O Washington Capitals é superior taticamente e tecnicamente. | Motivo: Defesa adversária cedeu gols nos últimos 5 jogos."
+            "winner": "Philadelphia Flyers",
+            "loser": "Washington Capitals",
+            "team": "Philadelphia Flyers",
+            "win_rate": 85,
+            "analysis": "Apostamos na consistência. O Philadelphia Flyers em casa é uma máquina de moer adversários. | Insight: O mercado ignorou o fator casa, mas nós não."
         },
         "result": null
     },
@@ -580,13 +749,13 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Toronto Maple Leafs",
-            "odd": 1.99,
+            "odd": 2.48,
             "type": "Vencer",
             "winner": "Toronto Maple Leafs",
             "loser": "Tampa Bay Lightning",
             "team": "Toronto Maple Leafs",
-            "win_rate": 92,
-            "analysis": "Sniper ativado: Tudo indica que o Toronto Maple Leafs vai controlar o jogo do início ao fim. | Algoritmo: Probabilidade recalculada após as últimas notícias."
+            "win_rate": 85,
+            "analysis": "Espancamento previsto. O Toronto Maple Leafs é superior taticamente e tecnicamente. | Motivo: Defesa adversária cedeu gols nos últimos 5 jogos."
         },
         "result": null
     },
@@ -605,13 +774,13 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Seattle Kraken",
-            "odd": 2.41,
+            "odd": 2.23,
             "type": "Vencer",
             "winner": "Seattle Kraken",
             "loser": "Dallas Stars",
             "team": "Seattle Kraken",
-            "win_rate": 85,
-            "analysis": "Apostamos na consistência. O Seattle Kraken em casa é uma máquina de moer adversários. | Algoritmo: Probabilidade recalculada após as últimas notícias."
+            "win_rate": 84,
+            "analysis": "Sniper ativado: Tudo indica que o Seattle Kraken vai controlar o jogo do início ao fim. | Motivo: Defesa adversária cedeu gols nos últimos 5 jogos."
         },
         "result": null
     },
@@ -630,13 +799,13 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Utah Mammoth",
-            "odd": 2.19,
+            "odd": 1.96,
             "type": "Vencer",
             "winner": "Utah Mammoth",
             "loser": "Colorado Avalanche",
             "team": "Utah Mammoth",
-            "win_rate": 81,
-            "analysis": "O algoritmo detectou valor ABSURDO no Utah Mammoth. A odd está desajustada. | IA: Padrão tático identificado com sucesso."
+            "win_rate": 92,
+            "analysis": "O algoritmo detectou valor ABSURDO no Utah Mammoth. A odd está desajustada. | Motivo: Defesa adversária cedeu gols nos últimos 5 jogos."
         },
         "result": null
     },
@@ -654,14 +823,14 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/wpg.png"
         },
         "tip": {
-            "market": "Vencer: Winnipeg Jets",
-            "odd": 1.66,
+            "market": "Vencer: Vancouver Canucks",
+            "odd": 2.28,
             "type": "Vencer",
-            "winner": "Winnipeg Jets",
-            "loser": "Vancouver Canucks",
-            "team": "Winnipeg Jets",
-            "win_rate": 81,
-            "analysis": "O algoritmo detectou valor ABSURDO no Winnipeg Jets. A odd está desajustada. | Algoritmo: Probabilidade recalculada após as últimas notícias."
+            "winner": "Vancouver Canucks",
+            "loser": "Winnipeg Jets",
+            "team": "Vancouver Canucks",
+            "win_rate": 82,
+            "analysis": "Apostamos na consistência. O Vancouver Canucks em casa é uma máquina de moer adversários. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
         },
         "result": null
     },
@@ -680,10 +849,13 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Vegas Golden Knights",
-            "odd": 1.9,
+            "odd": 2.0,
             "type": "Vencer",
-            "win_rate": 88,
-            "analysis": "Análise de emergência: O algoritmo aponta vitória segura baseada no retrospecto."
+            "winner": "Vegas Golden Knights",
+            "loser": "Los Angeles Kings",
+            "team": "Vegas Golden Knights",
+            "win_rate": 87,
+            "analysis": "Espancamento previsto. O Vegas Golden Knights é superior taticamente e tecnicamente. | Algoritmo: Probabilidade recalculada após as últimas notícias."
         },
         "result": null
     },
@@ -701,19 +873,173 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/edm.png"
         },
         "tip": {
-            "market": "Vencer: Anaheim Ducks",
-            "odd": 2.42,
+            "market": "Vencer: Edmonton Oilers",
+            "odd": 2.06,
             "type": "Vencer",
-            "winner": "Anaheim Ducks",
-            "loser": "Edmonton Oilers",
-            "team": "Anaheim Ducks",
-            "win_rate": 85,
-            "analysis": "Sniper ativado: Tudo indica que o Anaheim Ducks vai controlar o jogo do início ao fim. | Algoritmo: Probabilidade recalculada após as últimas notícias."
+            "winner": "Edmonton Oilers",
+            "loser": "Anaheim Ducks",
+            "team": "Edmonton Oilers",
+            "win_rate": 87,
+            "analysis": "Oportunidade de Ouro. O Anaheim Ducks vem com desfalques importantes na zaga. | IA: Padrão tático identificado com sucesso."
+        },
+        "result": null
+    },
+    {
+        "id": "401850946",
+        "sport": "soccer",
+        "league": "FA Cup",
+        "date": "2026-02-13T19:45Z",
+        "teamA": {
+            "name": "Hull City",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/306.png"
+        },
+        "teamB": {
+            "name": "Chelsea",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png"
+        },
+        "tip": {
+            "market": "Escanteios: Mais de 8.5",
+            "odd": 2.12,
+            "type": "Escanteios",
+            "team": "Hull City",
+            "loser": "Chelsea",
+            "win_rate": 87,
+            "analysis": "Leitura de jogo: O Hull City precisa do resultado e vai bombardear o gol. | Insight: O mercado ignorou o fator casa, mas nós não."
+        },
+        "result": null
+    },
+    {
+        "id": "401850948",
+        "sport": "soccer",
+        "league": "FA Cup",
+        "date": "2026-02-13T19:45Z",
+        "teamA": {
+            "name": "Wrexham",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/352.png"
+        },
+        "teamB": {
+            "name": "Ipswich Town",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/373.png"
+        },
+        "tip": {
+            "market": "Vencer: Ipswich Town",
+            "odd": 2.0,
+            "type": "Vencer",
+            "winner": "Ipswich Town",
+            "loser": "Wrexham",
+            "team": "Ipswich Town",
+            "win_rate": 89,
+            "analysis": "Oportunidade de Ouro. O Wrexham vem com desfalques importantes na zaga. | IA: Padrão tático identificado com sucesso."
         },
         "result": null
     }
 ];
 window.historyTips = [
+    {
+        "id": "740842",
+        "sport": "soccer",
+        "league": "Liga",
+        "date": "2026-02-07T15:00Z",
+        "teamA": {
+            "name": "Fulham",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/370.png"
+        },
+        "teamB": {
+            "name": "Everton",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/368.png"
+        },
+        "tip": {
+            "market": "Vencer: Everton",
+            "odd": 1.78,
+            "win_rate": 94,
+            "type": "Vencer"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "740837",
+        "sport": "soccer",
+        "league": "Liga",
+        "date": "2026-02-07T15:00Z",
+        "teamA": {
+            "name": "AFC Bournemouth",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png"
+        },
+        "teamB": {
+            "name": "Aston Villa",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png"
+        },
+        "tip": {
+            "market": "Menos de 3.5 Gols",
+            "odd": 1.4,
+            "win_rate": 91,
+            "type": "Vencer"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "740840",
+        "sport": "soccer",
+        "league": "Liga",
+        "date": "2026-02-07T15:00Z",
+        "teamA": {
+            "name": "Wolverhampton Wanderers",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/380.png"
+        },
+        "teamB": {
+            "name": "Chelsea",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png"
+        },
+        "tip": {
+            "market": "Vencer: Chelsea",
+            "odd": 1.86,
+            "win_rate": 80,
+            "type": "Vencer"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "740836",
+        "sport": "soccer",
+        "league": "Liga",
+        "date": "2026-02-07T15:00Z",
+        "teamA": {
+            "name": "Arsenal",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/359.png"
+        },
+        "teamB": {
+            "name": "Sunderland",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/366.png"
+        },
+        "tip": {
+            "market": "Vencer: Arsenal",
+            "odd": 1.6,
+            "win_rate": 85,
+            "type": "Vencer"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "740839",
+        "sport": "soccer",
+        "league": "Liga",
+        "date": "2026-02-07T15:00Z",
+        "teamA": {
+            "name": "Burnley",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/379.png"
+        },
+        "teamB": {
+            "name": "West Ham United",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/371.png"
+        },
+        "tip": {
+            "market": "Vencer: Burnley",
+            "odd": 1.85,
+            "win_rate": 84,
+            "type": "Vencer"
+        },
+        "result": "LOSS"
+    },
     {
         "id": "740841",
         "sport": "soccer",
@@ -729,8 +1055,8 @@ window.historyTips = [
         },
         "tip": {
             "market": "Vencer: Leeds United",
-            "odd": 1.49,
-            "win_rate": 91,
+            "odd": 1.7,
+            "win_rate": 94,
             "type": "Vencer"
         },
         "result": "WIN"
@@ -749,12 +1075,12 @@ window.historyTips = [
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/97.png"
         },
         "tip": {
-            "market": "Vencer: Osasuna",
-            "odd": 1.95,
-            "win_rate": 88,
+            "market": "Vencer: Celta Vigo",
+            "odd": 1.83,
+            "win_rate": 84,
             "type": "Vencer"
         },
-        "result": "WIN"
+        "result": "LOSS"
     },
     {
         "id": "737018",
@@ -770,12 +1096,12 @@ window.historyTips = [
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3956.png"
         },
         "tip": {
-            "market": "Menos de 3.5 Gols",
-            "odd": 1.4,
-            "win_rate": 85,
+            "market": "Mais de 4.5 Gols",
+            "odd": 3.5,
+            "win_rate": 80,
             "type": "Vencer"
         },
-        "result": "WIN"
+        "result": "LOSS"
     },
     {
         "id": "746597",
@@ -793,7 +1119,7 @@ window.historyTips = [
         "tip": {
             "market": "Menos de 3.5 Gols",
             "odd": 1.4,
-            "win_rate": 87,
+            "win_rate": 91,
             "type": "Vencer"
         },
         "result": "WIN"
@@ -814,31 +1140,10 @@ window.historyTips = [
         "tip": {
             "market": "Menos de 3.5 Gols",
             "odd": 1.4,
-            "win_rate": 91,
+            "win_rate": 93,
             "type": "Vencer"
         },
         "result": "WIN"
-    },
-    {
-        "id": "401810595",
-        "sport": "basketball",
-        "league": "Liga",
-        "date": "2026-02-06T03:00Z",
-        "teamA": {
-            "name": "Los Angeles Lakers",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png"
-        },
-        "teamB": {
-            "name": "Philadelphia 76ers",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png"
-        },
-        "tip": {
-            "market": "Vencer: Philadelphia 76ers",
-            "odd": 3.04,
-            "win_rate": 80,
-            "type": "Vencer"
-        },
-        "result": "LOSS"
     },
     {
         "id": "401810594",
@@ -855,11 +1160,32 @@ window.historyTips = [
         },
         "tip": {
             "market": "Vencer: Golden State Warriors",
-            "odd": 2.02,
-            "win_rate": 81,
+            "odd": 1.8,
+            "win_rate": 84,
             "type": "Vencer"
         },
         "result": "WIN"
+    },
+    {
+        "id": "401810592",
+        "sport": "basketball",
+        "league": "Liga",
+        "date": "2026-02-06T01:00Z",
+        "teamA": {
+            "name": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png"
+        },
+        "teamB": {
+            "name": "Charlotte Hornets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png"
+        },
+        "tip": {
+            "market": "Vencer: Houston Rockets",
+            "odd": 2.04,
+            "win_rate": 88,
+            "type": "Vencer"
+        },
+        "result": "LOSS"
     },
     {
         "id": "401840979",
@@ -875,9 +1201,9 @@ window.historyTips = [
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3456.png"
         },
         "tip": {
-            "market": "Vencer: Cruzeiro",
-            "odd": 2.05,
-            "win_rate": 89,
+            "market": "Vencer: Coritiba",
+            "odd": 1.81,
+            "win_rate": 91,
             "type": "Vencer"
         },
         "result": "WIN"
@@ -917,9 +1243,9 @@ window.historyTips = [
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3445.png"
         },
         "tip": {
-            "market": "Menos de 3.5 Gols",
-            "odd": 1.4,
-            "win_rate": 91,
+            "market": "Mais de 4.5 Gols",
+            "odd": 3.5,
+            "win_rate": 84,
             "type": "Vencer"
         },
         "result": "WIN"
@@ -939,7 +1265,7 @@ window.historyTips = [
         },
         "tip": {
             "market": "Vencer: Grêmio",
-            "odd": 1.85,
+            "odd": 1.51,
             "win_rate": 88,
             "type": "Vencer"
         },
@@ -960,8 +1286,8 @@ window.historyTips = [
         },
         "tip": {
             "market": "Vencer: Palmeiras",
-            "odd": 1.88,
-            "win_rate": 86,
+            "odd": 1.87,
+            "win_rate": 80,
             "type": "Vencer"
         },
         "result": "WIN"
@@ -980,12 +1306,33 @@ window.historyTips = [
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9169.png"
         },
         "tip": {
-            "market": "Mais de 4.5 Gols",
-            "odd": 3.5,
-            "win_rate": 83,
+            "market": "Menos de 3.5 Gols",
+            "odd": 1.4,
+            "win_rate": 93,
             "type": "Vencer"
         },
-        "result": "LOSS"
+        "result": "WIN"
+    },
+    {
+        "id": "401840986",
+        "sport": "soccer",
+        "league": "Liga",
+        "date": "2026-02-04T23:00Z",
+        "teamA": {
+            "name": "Santos",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2674.png"
+        },
+        "teamB": {
+            "name": "São Paulo",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2026.png"
+        },
+        "tip": {
+            "market": "Menos de 3.5 Gols",
+            "odd": 1.4,
+            "win_rate": 88,
+            "type": "Vencer"
+        },
+        "result": "WIN"
     },
     {
         "id": "401840984",
@@ -1002,29 +1349,50 @@ window.historyTips = [
         },
         "tip": {
             "market": "Vencer: Red Bull Bragantino",
-            "odd": 1.93,
-            "win_rate": 93,
+            "odd": 1.69,
+            "win_rate": 84,
             "type": "Vencer"
         },
         "result": "WIN"
     },
     {
-        "id": "401840978",
-        "sport": "soccer",
+        "id": "401810580",
+        "sport": "basketball",
         "league": "Liga",
-        "date": "2026-02-04T22:00Z",
+        "date": "2026-02-04T04:00Z",
         "teamA": {
-            "name": "Flamengo",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/819.png"
+            "name": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png"
         },
         "teamB": {
-            "name": "Internacional",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1936.png"
+            "name": "Phoenix Suns",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png"
         },
         "tip": {
-            "market": "Menos de 3.5 Gols",
-            "odd": 1.4,
-            "win_rate": 92,
+            "market": "Vencer: Phoenix Suns",
+            "odd": 1.63,
+            "win_rate": 95,
+            "type": "Vencer"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "401810579",
+        "sport": "basketball",
+        "league": "Liga",
+        "date": "2026-02-04T03:00Z",
+        "teamA": {
+            "name": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png"
+        },
+        "teamB": {
+            "name": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png"
+        },
+        "tip": {
+            "market": "Vencer: Philadelphia 76ers",
+            "odd": 1.78,
+            "win_rate": 83,
             "type": "Vencer"
         },
         "result": "WIN"
@@ -1044,8 +1412,8 @@ window.historyTips = [
         },
         "tip": {
             "market": "Vencer: Chicago Bulls",
-            "odd": 3.12,
-            "win_rate": 88,
+            "odd": 2.87,
+            "win_rate": 84,
             "type": "Vencer"
         },
         "result": "LOSS"
@@ -1064,54 +1432,12 @@ window.historyTips = [
             "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png"
         },
         "tip": {
-            "market": "Vencer: Los Angeles Lakers",
-            "odd": 1.6,
-            "win_rate": 83,
+            "market": "Vencer: Brooklyn Nets",
+            "odd": 1.88,
+            "win_rate": 86,
             "type": "Vencer"
         },
-        "result": "WIN"
-    },
-    {
-        "id": "401810573",
-        "sport": "basketball",
-        "league": "Liga",
-        "date": "2026-02-04T00:00Z",
-        "teamA": {
-            "name": "Washington Wizards",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png"
-        },
-        "teamB": {
-            "name": "New York Knicks",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png"
-        },
-        "tip": {
-            "market": "Vencer: New York Knicks",
-            "odd": 2.05,
-            "win_rate": 83,
-            "type": "Vencer"
-        },
-        "result": "WIN"
-    },
-    {
-        "id": "401810571",
-        "sport": "basketball",
-        "league": "Liga",
-        "date": "2026-02-04T00:00Z",
-        "teamA": {
-            "name": "Detroit Pistons",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png"
-        },
-        "teamB": {
-            "name": "Denver Nuggets",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png"
-        },
-        "tip": {
-            "market": "Vencer: Detroit Pistons",
-            "odd": 1.72,
-            "win_rate": 90,
-            "type": "Vencer"
-        },
-        "result": "WIN"
+        "result": "LOSS"
     },
     {
         "id": "737012",
@@ -1128,8 +1454,8 @@ window.historyTips = [
         },
         "tip": {
             "market": "Vencer: AC Milan",
-            "odd": 2.0,
-            "win_rate": 93,
+            "odd": 1.75,
+            "win_rate": 83,
             "type": "Vencer"
         },
         "result": "WIN"
@@ -1148,9 +1474,30 @@ window.historyTips = [
             "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png"
         },
         "tip": {
-            "market": "Vencer: Philadelphia 76ers",
-            "odd": 1.83,
-            "win_rate": 95,
+            "market": "Vencer: LA Clippers",
+            "odd": 2.03,
+            "win_rate": 93,
+            "type": "Vencer"
+        },
+        "result": "LOSS"
+    },
+    {
+        "id": "401810568",
+        "sport": "basketball",
+        "league": "Liga",
+        "date": "2026-02-03T00:00Z",
+        "teamA": {
+            "name": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png"
+        },
+        "teamB": {
+            "name": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png"
+        },
+        "tip": {
+            "market": "Vencer: Houston Rockets",
+            "odd": 2.16,
+            "win_rate": 80,
             "type": "Vencer"
         },
         "result": "WIN"
@@ -1170,8 +1517,8 @@ window.historyTips = [
         },
         "tip": {
             "market": "Vencer: Sunderland",
-            "odd": 1.9,
-            "win_rate": 83,
+            "odd": 1.54,
+            "win_rate": 84,
             "type": "Vencer"
         },
         "result": "WIN"
@@ -1191,29 +1538,8 @@ window.historyTips = [
         },
         "tip": {
             "market": "Vencer: Mallorca",
-            "odd": 1.86,
-            "win_rate": 88,
-            "type": "Vencer"
-        },
-        "result": "WIN"
-    },
-    {
-        "id": "401810567",
-        "sport": "basketball",
-        "league": "Liga",
-        "date": "2026-02-02T20:00Z",
-        "teamA": {
-            "name": "Charlotte Hornets",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png"
-        },
-        "teamB": {
-            "name": "New Orleans Pelicans",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png"
-        },
-        "tip": {
-            "market": "Vencer: Charlotte Hornets",
-            "odd": 1.72,
-            "win_rate": 93,
+            "odd": 1.64,
+            "win_rate": 89,
             "type": "Vencer"
         },
         "result": "WIN"
@@ -1233,8 +1559,8 @@ window.historyTips = [
         },
         "tip": {
             "market": "Vencer: Udinese",
-            "odd": 1.81,
-            "win_rate": 86,
+            "odd": 1.63,
+            "win_rate": 85,
             "type": "Vencer"
         },
         "result": "WIN"
@@ -1255,7 +1581,7 @@ window.historyTips = [
         "tip": {
             "market": "Menos de 3.5 Gols",
             "odd": 1.4,
-            "win_rate": 84,
+            "win_rate": 88,
             "type": "Vencer"
         },
         "result": "WIN"
@@ -1276,7 +1602,7 @@ window.historyTips = [
         "tip": {
             "market": "Menos de 3.5 Gols",
             "odd": 1.4,
-            "win_rate": 92,
+            "win_rate": 91,
             "type": "Vencer"
         },
         "result": "WIN"
@@ -1297,7 +1623,7 @@ window.historyTips = [
         "tip": {
             "market": "Menos de 3.5 Gols",
             "odd": 1.4,
-            "win_rate": 93,
+            "win_rate": 84,
             "type": "Vencer"
         },
         "result": "WIN"
@@ -1317,8 +1643,8 @@ window.historyTips = [
         },
         "tip": {
             "market": "Vencer: Manchester United",
-            "odd": 1.94,
-            "win_rate": 80,
+            "odd": 1.56,
+            "win_rate": 94,
             "type": "Vencer"
         },
         "result": "WIN"
@@ -1338,144 +1664,38 @@ window.historyTips = [
         },
         "tip": {
             "market": "Vencer: Aston Villa",
-            "odd": 2.08,
-            "win_rate": 93,
-            "type": "Vencer"
-        },
-        "result": "LOSS"
-    },
-    {
-        "id": "740834",
-        "sport": "soccer",
-        "league": "Liga",
-        "date": "2026-01-31T20:00Z",
-        "teamA": {
-            "name": "Liverpool",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png"
-        },
-        "teamB": {
-            "name": "Newcastle United",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/361.png"
-        },
-        "tip": {
-            "market": "Vencer: Liverpool",
-            "odd": 1.62,
-            "win_rate": 85,
-            "type": "Vencer"
-        },
-        "result": "WIN"
-    },
-    {
-        "id": "740835",
-        "sport": "soccer",
-        "league": "Liga",
-        "date": "2026-01-31T17:30Z",
-        "teamA": {
-            "name": "Chelsea",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png"
-        },
-        "teamB": {
-            "name": "West Ham United",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/371.png"
-        },
-        "tip": {
-            "market": "Vencer: Chelsea",
-            "odd": 1.55,
-            "win_rate": 86,
-            "type": "Vencer"
-        },
-        "result": "WIN"
-    },
-    {
-        "id": "740827",
-        "sport": "soccer",
-        "league": "Liga",
-        "date": "2026-01-31T15:00Z",
-        "teamA": {
-            "name": "Wolverhampton Wanderers",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/380.png"
-        },
-        "teamB": {
-            "name": "AFC Bournemouth",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png"
-        },
-        "tip": {
-            "market": "Vencer: AFC Bournemouth",
-            "odd": 2.05,
-            "win_rate": 86,
-            "type": "Vencer"
-        },
-        "result": "WIN"
-    },
-    {
-        "id": "740831",
-        "sport": "soccer",
-        "league": "Liga",
-        "date": "2026-01-31T15:00Z",
-        "teamA": {
-            "name": "Brighton & Hove Albion",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/331.png"
-        },
-        "teamB": {
-            "name": "Everton",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/368.png"
-        },
-        "tip": {
-            "market": "Mais de 4.5 Gols",
-            "odd": 3.5,
-            "win_rate": 92,
-            "type": "Vencer"
-        },
-        "result": "LOSS"
-    },
-    {
-        "id": "740829",
-        "sport": "soccer",
-        "league": "Liga",
-        "date": "2026-01-31T15:00Z",
-        "teamA": {
-            "name": "Leeds United",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/357.png"
-        },
-        "teamB": {
-            "name": "Arsenal",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/359.png"
-        },
-        "tip": {
-            "market": "Vencer: Leeds United",
-            "odd": 2.06,
-            "win_rate": 85,
+            "odd": 2.04,
+            "win_rate": 83,
             "type": "Vencer"
         },
         "result": "LOSS"
     }
 ];
 window.highlightMatch = {
-    "id": "401810605",
-    "sport": "basketball",
-    "league": "NBA",
-    "date": "2026-02-08T00:00Z",
+    "id": "740838",
+    "sport": "soccer",
+    "league": "Premier League",
+    "date": "2026-02-08T14:00Z",
     "teamA": {
-        "name": "Orlando Magic",
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png"
+        "name": "Brighton & Hove Albion",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/331.png"
     },
     "teamB": {
-        "name": "Utah Jazz",
-        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png"
+        "name": "Crystal Palace",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png"
     },
     "tip": {
-        "market": "Vencer: Orlando Magic",
-        "odd": 1.3278688524590163,
-        "type": "Vencer",
-        "winner": "Orlando Magic",
-        "loser": "Utah Jazz",
-        "team": "Orlando Magic",
-        "win_rate": 93,
-        "analysis": "Espancamento previsto. O Orlando Magic é superior taticamente e tecnicamente. | Dados: A intensidade ofensiva do time triplicou no 2º tempo."
+        "market": "Total de Gols: Mais de 1.5",
+        "odd": 1.56,
+        "type": "Gols",
+        "team": "Brighton & Hove Albion",
+        "loser": "Crystal Palace",
+        "win_rate": 90,
+        "analysis": "O sistema prevê chuva de gols. O ataque do Brighton & Hove Albion está on fire! | Insight: O mercado ignorou o fator casa, mas nós não."
     },
     "result": null
 };
 window.dailyStats = {
-    "hits": 28,
-    "win_rate": 84
+    "hits": 26,
+    "win_rate": 85
 };
