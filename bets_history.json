@@ -1,42 +1,42 @@
 [
     {
-        "id": "401810622",
+        "id": "401810625",
         "sport": "basketball",
         "league": "Liga",
-        "date": "2026-02-10T02:00Z",
+        "date": "2026-02-10T03:00Z",
         "teamA": {
-            "name": "Denver Nuggets",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png"
+            "name": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png"
         },
         "teamB": {
-            "name": "Cleveland Cavaliers",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png"
+            "name": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png"
         },
         "tip": {
-            "market": "Vencer: Denver Nuggets",
-            "odd": 1.92,
-            "win_rate": 83,
+            "market": "Vencer: Portland Trail Blazers",
+            "odd": 1.6,
+            "win_rate": 82,
             "type": "Vencer"
         },
-        "result": "LOSS"
+        "result": "WIN"
     },
     {
-        "id": "401810620",
+        "id": "401810616",
         "sport": "basketball",
         "league": "Liga",
-        "date": "2026-02-10T01:00Z",
+        "date": "2026-02-10T00:00Z",
         "teamA": {
-            "name": "Minnesota Timberwolves",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png"
+            "name": "Charlotte Hornets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png"
         },
         "teamB": {
-            "name": "Atlanta Hawks",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png"
+            "name": "Detroit Pistons",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png"
         },
         "tip": {
-            "market": "Vencer: Minnesota Timberwolves",
-            "odd": 1.88,
-            "win_rate": 82,
+            "market": "Vencer: Detroit Pistons",
+            "odd": 2.04,
+            "win_rate": 80,
             "type": "Vencer"
         },
         "result": "WIN"
@@ -56,8 +56,8 @@
         },
         "tip": {
             "market": "Vencer: Villarreal",
-            "odd": 1.71,
-            "win_rate": 82,
+            "odd": 1.54,
+            "win_rate": 87,
             "type": "Vencer"
         },
         "result": "WIN"
@@ -77,8 +77,8 @@
         },
         "tip": {
             "market": "Vencer: AS Roma",
-            "odd": 1.55,
-            "win_rate": 87,
+            "odd": 1.73,
+            "win_rate": 84,
             "type": "Vencer"
         },
         "result": "WIN"
@@ -97,30 +97,9 @@
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4050.png"
         },
         "tip": {
-            "market": "Vencer: Cremonese",
-            "odd": 3.02,
-            "win_rate": 84,
-            "type": "Vencer"
-        },
-        "result": "LOSS"
-    },
-    {
-        "id": "748364",
-        "sport": "soccer",
-        "league": "Liga",
-        "date": "2026-02-08T20:00Z",
-        "teamA": {
-            "name": "Valencia",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png"
-        },
-        "teamB": {
-            "name": "Real Madrid",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png"
-        },
-        "tip": {
-            "market": "Vencer: Real Madrid",
-            "odd": 2.11,
-            "win_rate": 90,
+            "market": "Vencer: Atalanta",
+            "odd": 1.68,
+            "win_rate": 81,
             "type": "Vencer"
         },
         "result": "WIN"
@@ -140,8 +119,8 @@
         },
         "tip": {
             "market": "Vencer: Atlético Madrid",
-            "odd": 1.94,
-            "win_rate": 85,
+            "odd": 1.84,
+            "win_rate": 95,
             "type": "Vencer"
         },
         "result": "LOSS"
@@ -161,8 +140,50 @@
         },
         "tip": {
             "market": "Vencer: Manchester City",
-            "odd": 1.86,
-            "win_rate": 88,
+            "odd": 1.63,
+            "win_rate": 91,
+            "type": "Vencer"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "748373",
+        "sport": "soccer",
+        "league": "Liga",
+        "date": "2026-02-08T15:15Z",
+        "teamA": {
+            "name": "Athletic Club",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/93.png"
+        },
+        "teamB": {
+            "name": "Levante",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png"
+        },
+        "tip": {
+            "market": "Vencer: Athletic Club",
+            "odd": 1.55,
+            "win_rate": 87,
+            "type": "Vencer"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "748365",
+        "sport": "soccer",
+        "league": "Liga",
+        "date": "2026-02-08T15:15Z",
+        "teamA": {
+            "name": "Sevilla",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png"
+        },
+        "teamB": {
+            "name": "Girona",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9812.png"
+        },
+        "tip": {
+            "market": "Menos de 3.5 Gols",
+            "odd": 1.4,
+            "win_rate": 80,
             "type": "Vencer"
         },
         "result": "WIN"
@@ -182,92 +203,29 @@
         },
         "tip": {
             "market": "Vencer: Crystal Palace",
-            "odd": 1.62,
+            "odd": 1.95,
+            "win_rate": 90,
+            "type": "Vencer"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "740839",
+        "sport": "soccer",
+        "league": "Liga",
+        "date": "2026-02-07T15:00Z",
+        "teamA": {
+            "name": "Burnley",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/379.png"
+        },
+        "teamB": {
+            "name": "West Ham United",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/371.png"
+        },
+        "tip": {
+            "market": "Vencer: Burnley",
+            "odd": 1.84,
             "win_rate": 80,
-            "type": "Vencer"
-        },
-        "result": "WIN"
-    },
-    {
-        "id": "748367",
-        "sport": "soccer",
-        "league": "Liga",
-        "date": "2026-02-08T13:00Z",
-        "teamA": {
-            "name": "Alavés",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png"
-        },
-        "teamB": {
-            "name": "Getafe",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2922.png"
-        },
-        "tip": {
-            "market": "Vencer: Alavés",
-            "odd": 2.02,
-            "win_rate": 85,
-            "type": "Vencer"
-        },
-        "result": "LOSS"
-    },
-    {
-        "id": "740844",
-        "sport": "soccer",
-        "league": "Liga",
-        "date": "2026-02-07T17:30Z",
-        "teamA": {
-            "name": "Newcastle United",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/361.png"
-        },
-        "teamB": {
-            "name": "Brentford",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/337.png"
-        },
-        "tip": {
-            "market": "Vencer: Newcastle United",
-            "odd": 1.98,
-            "win_rate": 91,
-            "type": "Vencer"
-        },
-        "result": "LOSS"
-    },
-    {
-        "id": "740840",
-        "sport": "soccer",
-        "league": "Liga",
-        "date": "2026-02-07T15:00Z",
-        "teamA": {
-            "name": "Wolverhampton Wanderers",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/380.png"
-        },
-        "teamB": {
-            "name": "Chelsea",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png"
-        },
-        "tip": {
-            "market": "Vencer: Chelsea",
-            "odd": 2.12,
-            "win_rate": 95,
-            "type": "Vencer"
-        },
-        "result": "WIN"
-    },
-    {
-        "id": "740837",
-        "sport": "soccer",
-        "league": "Liga",
-        "date": "2026-02-07T15:00Z",
-        "teamA": {
-            "name": "AFC Bournemouth",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png"
-        },
-        "teamB": {
-            "name": "Aston Villa",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png"
-        },
-        "tip": {
-            "market": "Mais de 4.5 Gols",
-            "odd": 3.5,
-            "win_rate": 92,
             "type": "Vencer"
         },
         "result": "LOSS"
@@ -287,8 +245,50 @@
         },
         "tip": {
             "market": "Vencer: Arsenal",
-            "odd": 1.81,
-            "win_rate": 92,
+            "odd": 1.78,
+            "win_rate": 90,
+            "type": "Vencer"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "740837",
+        "sport": "soccer",
+        "league": "Liga",
+        "date": "2026-02-07T15:00Z",
+        "teamA": {
+            "name": "AFC Bournemouth",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png"
+        },
+        "teamB": {
+            "name": "Aston Villa",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png"
+        },
+        "tip": {
+            "market": "Menos de 3.5 Gols",
+            "odd": 1.4,
+            "win_rate": 87,
+            "type": "Vencer"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "740840",
+        "sport": "soccer",
+        "league": "Liga",
+        "date": "2026-02-07T15:00Z",
+        "teamA": {
+            "name": "Wolverhampton Wanderers",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/380.png"
+        },
+        "teamB": {
+            "name": "Chelsea",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png"
+        },
+        "tip": {
+            "market": "Vencer: Chelsea",
+            "odd": 2.18,
+            "win_rate": 90,
             "type": "Vencer"
         },
         "result": "WIN"
@@ -308,8 +308,8 @@
         },
         "tip": {
             "market": "Vencer: Manchester United",
-            "odd": 1.61,
-            "win_rate": 85,
+            "odd": 1.7,
+            "win_rate": 90,
             "type": "Vencer"
         },
         "result": "WIN"
@@ -329,8 +329,8 @@
         },
         "tip": {
             "market": "Vencer: Leeds United",
-            "odd": 1.77,
-            "win_rate": 80,
+            "odd": 1.62,
+            "win_rate": 93,
             "type": "Vencer"
         },
         "result": "WIN"
@@ -350,8 +350,8 @@
         },
         "tip": {
             "market": "Vencer: Osasuna",
-            "odd": 1.64,
-            "win_rate": 83,
+            "odd": 1.7,
+            "win_rate": 94,
             "type": "Vencer"
         },
         "result": "WIN"
@@ -370,12 +370,12 @@
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3956.png"
         },
         "tip": {
-            "market": "Menos de 3.5 Gols",
-            "odd": 1.4,
-            "win_rate": 95,
+            "market": "Mais de 4.5 Gols",
+            "odd": 3.5,
+            "win_rate": 83,
             "type": "Vencer"
         },
-        "result": "WIN"
+        "result": "LOSS"
     },
     {
         "id": "746597",
@@ -393,7 +393,7 @@
         "tip": {
             "market": "Menos de 3.5 Gols",
             "odd": 1.4,
-            "win_rate": 85,
+            "win_rate": 83,
             "type": "Vencer"
         },
         "result": "WIN"
@@ -412,30 +412,30 @@
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/125.png"
         },
         "tip": {
-            "market": "Menos de 3.5 Gols",
-            "odd": 1.4,
-            "win_rate": 84,
+            "market": "Mais de 4.5 Gols",
+            "odd": 3.5,
+            "win_rate": 81,
             "type": "Vencer"
         },
-        "result": "WIN"
+        "result": "LOSS"
     },
     {
-        "id": "401810593",
+        "id": "401810595",
         "sport": "basketball",
         "league": "Liga",
-        "date": "2026-02-06T01:30Z",
+        "date": "2026-02-06T03:00Z",
         "teamA": {
-            "name": "Dallas Mavericks",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png"
+            "name": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png"
         },
         "teamB": {
-            "name": "San Antonio Spurs",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png"
+            "name": "Philadelphia 76ers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png"
         },
         "tip": {
-            "market": "Vencer: San Antonio Spurs",
-            "odd": 1.73,
-            "win_rate": 82,
+            "market": "Vencer: Los Angeles Lakers",
+            "odd": 1.62,
+            "win_rate": 86,
             "type": "Vencer"
         },
         "result": "WIN"
@@ -455,8 +455,8 @@
         },
         "tip": {
             "market": "Vencer: Coritiba",
-            "odd": 1.93,
-            "win_rate": 90,
+            "odd": 1.84,
+            "win_rate": 82,
             "type": "Vencer"
         },
         "result": "WIN"
@@ -476,8 +476,8 @@
         },
         "tip": {
             "market": "Vencer: Toronto Raptors",
-            "odd": 1.86,
-            "win_rate": 91,
+            "odd": 1.51,
+            "win_rate": 90,
             "type": "Vencer"
         },
         "result": "WIN"
@@ -498,7 +498,7 @@
         "tip": {
             "market": "Menos de 3.5 Gols",
             "odd": 1.4,
-            "win_rate": 94,
+            "win_rate": 92,
             "type": "Vencer"
         },
         "result": "WIN"
@@ -517,9 +517,30 @@
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3445.png"
         },
         "tip": {
-            "market": "Menos de 3.5 Gols",
-            "odd": 1.4,
-            "win_rate": 88,
+            "market": "Mais de 4.5 Gols",
+            "odd": 3.5,
+            "win_rate": 95,
+            "type": "Vencer"
+        },
+        "result": "LOSS"
+    },
+    {
+        "id": "401840987",
+        "sport": "soccer",
+        "league": "Liga",
+        "date": "2026-02-05T00:30Z",
+        "teamA": {
+            "name": "Grêmio",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6273.png"
+        },
+        "teamB": {
+            "name": "Botafogo",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6086.png"
+        },
+        "tip": {
+            "market": "Vencer: Grêmio",
+            "odd": 1.83,
+            "win_rate": 84,
             "type": "Vencer"
         },
         "result": "WIN"
@@ -539,29 +560,8 @@
         },
         "tip": {
             "market": "Vencer: Palmeiras",
-            "odd": 1.6,
-            "win_rate": 84,
-            "type": "Vencer"
-        },
-        "result": "WIN"
-    },
-    {
-        "id": "401840987",
-        "sport": "soccer",
-        "league": "Liga",
-        "date": "2026-02-05T00:30Z",
-        "teamA": {
-            "name": "Grêmio",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6273.png"
-        },
-        "teamB": {
-            "name": "Botafogo",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6086.png"
-        },
-        "tip": {
-            "market": "Vencer: Grêmio",
-            "odd": 1.73,
-            "win_rate": 84,
+            "odd": 1.53,
+            "win_rate": 82,
             "type": "Vencer"
         },
         "result": "WIN"
@@ -582,7 +582,28 @@
         "tip": {
             "market": "Menos de 3.5 Gols",
             "odd": 1.4,
-            "win_rate": 88,
+            "win_rate": 80,
+            "type": "Vencer"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "401840986",
+        "sport": "soccer",
+        "league": "Liga",
+        "date": "2026-02-04T23:00Z",
+        "teamA": {
+            "name": "Santos",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2674.png"
+        },
+        "teamB": {
+            "name": "São Paulo",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2026.png"
+        },
+        "tip": {
+            "market": "Menos de 3.5 Gols",
+            "odd": 1.4,
+            "win_rate": 83,
             "type": "Vencer"
         },
         "result": "WIN"
@@ -601,30 +622,30 @@
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7632.png"
         },
         "tip": {
-            "market": "Vencer: Atlético-MG",
-            "odd": 3.08,
-            "win_rate": 80,
+            "market": "Vencer: Red Bull Bragantino",
+            "odd": 1.95,
+            "win_rate": 91,
             "type": "Vencer"
         },
-        "result": "LOSS"
+        "result": "WIN"
     },
     {
-        "id": "401840978",
-        "sport": "soccer",
+        "id": "401810580",
+        "sport": "basketball",
         "league": "Liga",
-        "date": "2026-02-04T22:00Z",
+        "date": "2026-02-04T04:00Z",
         "teamA": {
-            "name": "Flamengo",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/819.png"
+            "name": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png"
         },
         "teamB": {
-            "name": "Internacional",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1936.png"
+            "name": "Phoenix Suns",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png"
         },
         "tip": {
-            "market": "Menos de 3.5 Gols",
-            "odd": 1.4,
-            "win_rate": 88,
+            "market": "Vencer: Phoenix Suns",
+            "odd": 2.06,
+            "win_rate": 85,
             "type": "Vencer"
         },
         "result": "WIN"
@@ -644,29 +665,29 @@
         },
         "tip": {
             "market": "Vencer: Philadelphia 76ers",
-            "odd": 1.86,
-            "win_rate": 80,
+            "odd": 1.64,
+            "win_rate": 93,
             "type": "Vencer"
         },
         "result": "WIN"
     },
     {
-        "id": "401810576",
+        "id": "401810577",
         "sport": "basketball",
         "league": "Liga",
         "date": "2026-02-04T01:00Z",
         "teamA": {
-            "name": "Dallas Mavericks",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png"
+            "name": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png"
         },
         "teamB": {
-            "name": "Boston Celtics",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png"
+            "name": "Chicago Bulls",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png"
         },
         "tip": {
-            "market": "Vencer: Boston Celtics",
-            "odd": 2.08,
-            "win_rate": 91,
+            "market": "Vencer: Milwaukee Bucks",
+            "odd": 1.65,
+            "win_rate": 92,
             "type": "Vencer"
         },
         "result": "WIN"
@@ -685,30 +706,9 @@
             "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png"
         },
         "tip": {
-            "market": "Vencer: Brooklyn Nets",
-            "odd": 2.06,
-            "win_rate": 92,
-            "type": "Vencer"
-        },
-        "result": "LOSS"
-    },
-    {
-        "id": "401810573",
-        "sport": "basketball",
-        "league": "Liga",
-        "date": "2026-02-04T00:00Z",
-        "teamA": {
-            "name": "Washington Wizards",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png"
-        },
-        "teamB": {
-            "name": "New York Knicks",
-            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png"
-        },
-        "tip": {
-            "market": "Vencer: New York Knicks",
-            "odd": 2.16,
-            "win_rate": 82,
+            "market": "Vencer: Los Angeles Lakers",
+            "odd": 1.61,
+            "win_rate": 80,
             "type": "Vencer"
         },
         "result": "WIN"
@@ -727,11 +727,11 @@
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/103.png"
         },
         "tip": {
-            "market": "Vencer: Bologna",
-            "odd": 1.92,
-            "win_rate": 94,
+            "market": "Vencer: AC Milan",
+            "odd": 2.08,
+            "win_rate": 88,
             "type": "Vencer"
         },
-        "result": "LOSS"
+        "result": "WIN"
     }
 ]
