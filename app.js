@@ -499,6 +499,46 @@ function renderFeed(filterSport) {
                 return;
             }
 
+            // --- OVERALL STATS SUMMARY BANNER ---
+            const totalWins = filteredHistory.filter(g => g.result === 'WIN').length;
+            const totalGames = filteredHistory.length;
+            const overallRate = totalGames > 0 ? Math.round((totalWins / totalGames) * 100) : 0;
+
+            // Calculate current win streak
+            let streak = 0;
+            const sortedHistory = [...filteredHistory].sort((a, b) => new Date(b.date) - new Date(a.date));
+            for (const g of sortedHistory) {
+                if (g.result === 'WIN') streak++;
+                else break;
+            }
+
+            const summaryBanner = document.createElement('div');
+            summaryBanner.style.cssText = `
+                background: linear-gradient(135deg, #002b5c 0%, #004085 100%);
+                color: white; border-radius: 10px; padding: 15px;
+                margin-bottom: 15px; display: flex; justify-content: space-around;
+                text-align: center; box-shadow: 0 3px 10px rgba(0,43,92,0.2);
+            `;
+            summaryBanner.innerHTML = `
+                <div>
+                    <div style="font-size:0.6rem; opacity:0.7; text-transform:uppercase;">Greens</div>
+                    <div style="font-size:1.3rem; font-weight:900; color:#2ecc71;">${totalWins}</div>
+                </div>
+                <div>
+                    <div style="font-size:0.6rem; opacity:0.7; text-transform:uppercase;">Win Rate</div>
+                    <div style="font-size:1.3rem; font-weight:900; color:#ff5e00;">${overallRate}%</div>
+                </div>
+                <div>
+                    <div style="font-size:0.6rem; opacity:0.7; text-transform:uppercase;">Sequência</div>
+                    <div style="font-size:1.3rem; font-weight:900; color:#f1c40f;">${streak > 0 ? '🔥' + streak : '-'}</div>
+                </div>
+                <div>
+                    <div style="font-size:0.6rem; opacity:0.7; text-transform:uppercase;">Total</div>
+                    <div style="font-size:1.3rem; font-weight:900;">${totalGames}</div>
+                </div>
+            `;
+            container.appendChild(summaryBanner);
+
             // Render Groups
             dates.forEach(dateKey => {
                 const dayGames = grouped[dateKey];
@@ -524,7 +564,7 @@ function renderFeed(filterSport) {
                 groupHeader.style.cssText = `
                     background: #f1f3f5; color: #555; font-weight: 800; font-size: 0.85rem;
                     padding: 8px 15px; border-radius: 6px; margin: 15px 0 10px 0;
-                    display: flex; justify-content: space-between;
+                    display: flex; justify-content: space-between; align-items: center;
                 `;
 
                 // Calculate Win Rate for this day
@@ -532,9 +572,18 @@ function renderFeed(filterSport) {
                 const total = dayGames.length;
                 const dailyRate = total > 0 ? Math.round((wins / total) * 100) : 0;
 
+                // Visual performance bar
+                const barWidth = dailyRate;
+                const barColor = dailyRate >= 80 ? '#2ecc71' : dailyRate >= 60 ? '#f39c12' : '#e74c3c';
+
                 groupHeader.innerHTML = `
                     <span>📅 ${label}</span>
-                    <span style="color:${dailyRate >= 80 ? '#2ecc71' : '#666'}">${wins}/${total} Greens</span>
+                    <div style="display:flex; align-items:center; gap:8px;">
+                        <div style="width:40px; height:4px; background:#e0e0e0; border-radius:2px; overflow:hidden;">
+                            <div style="width:${barWidth}%; height:100%; background:${barColor}; border-radius:2px;"></div>
+                        </div>
+                        <span style="color:${dailyRate >= 80 ? '#2ecc71' : '#666'}; font-size:0.8rem;">${wins}/${total}</span>
+                    </div>
                 `;
 
                 container.appendChild(groupHeader);
@@ -780,14 +829,45 @@ function createHistoryRow(match) {
         dateStr = `${d.getDate()}/${d.getMonth() + 1}`;
     } catch (e) { }
 
+    // Market type badge com cores distintas
+    let marketIcon = '🎯';
+    let marketColor = '#333';
+    const market = (match.tip.market || '').toLowerCase();
+    const tipType = match.tip.type || 'Vencer';
+
+    if (market.includes('gol') || market.includes('mais de') || market.includes('menos de') || market.includes('pontos')) {
+        marketIcon = '⚽'; marketColor = '#2980b9';
+    } else if (market.includes('ambos marcam') || market.includes('btts')) {
+        marketIcon = '🔥'; marketColor = '#8e44ad';
+    } else if (market.includes('dupla chance')) {
+        marketIcon = '🛡️'; marketColor = '#27ae60';
+    } else if (market.includes('handicap')) {
+        marketIcon = '📊'; marketColor = '#d35400';
+    } else if (market.includes('escanteio') || market.includes('canto')) {
+        marketIcon = '⛳'; marketColor = '#8e44ad';
+    } else if (market.includes('chute')) {
+        marketIcon = '👟'; marketColor = '#d35400';
+    }
+
+    // Formata mercado para exibição curta
+    let displayMarket = match.tip.market;
+    displayMarket = displayMarket
+        .replace('Total de Gols: ', '')
+        .replace('Total de Pontos: ', 'Pts ')
+        .replace('Vencer: ', '')
+        .replace('Ambos Marcam: ', 'BTTS ');
+
     el.innerHTML = `
-        <div style="display:flex; flex-direction:column; gap:4px;">
+        <div style="display:flex; flex-direction:column; gap:4px; flex:1;">
              <div style="font-size:0.75rem; color:#999;">${dateStr} • ${match.league}</div>
              <div style="font-size:0.9rem; font-weight:700; color:#333;">${teamA} vs ${teamB}</div>
-             <div style="font-size:0.8rem; color:#555;">Tip: <strong>${match.tip.market}</strong></div>
+             <div style="font-size:0.8rem; color:${marketColor}; display:flex; align-items:center; gap:4px;">
+                <span>${marketIcon}</span>
+                <strong>${displayMarket}</strong>
+             </div>
         </div>
         
-        <div style="display:flex; flex-direction:column; align-items:flex-end; gap:5px;">
+        <div style="display:flex; flex-direction:column; align-items:flex-end; gap:5px; min-width:75px;">
             <div style="background:${bgBadge}; color:${resultColor}; font-weight:900; font-size:0.7rem; padding:4px 8px; border-radius:4px; letter-spacing:0.5px;">
                 ${resultIcon}
             </div>
@@ -812,17 +892,48 @@ function createMatchRow(match) {
     const iconA = match.teamA.logo || 'https://via.placeholder.com/30';
     const iconB = match.teamB.logo || 'https://via.placeholder.com/30';
 
+    // --- CONFIDENCE TIER BADGE ---
+    const tier = match.tip.tier || 'PADRÃO';
+    let tierBadge = '';
+    const tierConfig = {
+        'SEGURO': { icon: '🔒', color: '#27ae60', bg: '#eafaf1', label: 'SEGURO' },
+        'VALOR': { icon: '⚡', color: '#f39c12', bg: '#fef9e7', label: 'VALOR' },
+        'PREMIUM': { icon: '💎', color: '#8e44ad', bg: '#f5eef8', label: 'PREMIUM' },
+        'PADRÃO': { icon: '🎯', color: '#3498db', bg: '#ebf5fb', label: 'PADRÃO' }
+    };
+    const tc = tierConfig[tier] || tierConfig['PADRÃO'];
+    tierBadge = `<span style="background:${tc.bg}; color:${tc.color}; font-size:0.6rem; font-weight:900; padding:2px 6px; border-radius:4px; letter-spacing:0.5px;">${tc.icon} ${tc.label}</span>`;
+
+    // --- VALUE INDICATOR (+EV) ---
+    let valueBadge = '';
+    if (match.tip.is_value) {
+        valueBadge = `<span style="background:#fff3cd; color:#856404; font-size:0.55rem; font-weight:800; padding:2px 5px; border-radius:3px; margin-left:4px;">+EV</span>`;
+    }
+
+    // --- CASHOUT SIGNAL ---
+    let cashoutBadge = '';
+    if (match.tip.cashout_friendly) {
+        cashoutBadge = `<span style="background:#d4edda; color:#155724; font-size:0.55rem; font-weight:800; padding:2px 5px; border-radius:3px; margin-left:4px;">💰 CASHOUT</span>`;
+    }
+
     // Smart Analysis Logic
     let analysisHtml = '';
     if (match.tip.analysis) {
+        // Split analysis by " | DNA " to separate main text from DNA insight
+        const parts = match.tip.analysis.split(' | DNA ');
+        const mainAnalysis = parts[0] || match.tip.analysis;
+        const dnaInsight = parts[1] || '';
+
         analysisHtml = `
             <div style="background: #f8f9fa; border-left: 3px solid #ff5e00; padding: 8px 12px; margin-top: 12px; border-radius: 0 4px 4px 0;">
                 <div style="display:flex; align-items:center; gap:6px; margin-bottom:4px;">
-                    <span style="font-size:0.75rem; font-weight:800; color:#333; text-transform:uppercase;">💡 Análise IA</span>
+                    <span style="font-size:0.75rem; font-weight:800; color:#333; text-transform:uppercase;">🧠 Análise IA</span>
+                    ${tierBadge} ${valueBadge} ${cashoutBadge}
                 </div>
                 <p style="font-size:0.75rem; color:#555; margin:0; line-height:1.4;">
-                    "${match.tip.analysis}"
+                    "${mainAnalysis}"
                 </p>
+                ${dnaInsight ? `<p style="font-size:0.65rem; color:#999; margin:4px 0 0 0; font-style:italic;">📊 ${dnaInsight}</p>` : ''}
             </div>
         `;
     }
@@ -830,15 +941,30 @@ function createMatchRow(match) {
     // Market Icon/Badge based on type
     let marketBadgeColor = '#e90029';
     let marketIcon = '🎯';
-    if (match.tip.type === 'Gols') { marketBadgeColor = '#2980b9'; marketIcon = '⚽'; }
+    const mkt = (match.tip.market || '').toLowerCase();
+    if (match.tip.type === 'Gols' || mkt.includes('gol') || mkt.includes('ponto')) { marketBadgeColor = '#2980b9'; marketIcon = '⚽'; }
     if (match.tip.type === 'Escanteios') { marketBadgeColor = '#8e44ad'; marketIcon = '⛳'; }
     if (match.tip.type === 'Chutes') { marketBadgeColor = '#d35400'; marketIcon = '👟'; }
+    if (mkt.includes('dupla chance')) { marketBadgeColor = '#27ae60'; marketIcon = '🛡️'; }
+    if (mkt.includes('handicap')) { marketBadgeColor = '#d35400'; marketIcon = '📊'; }
+    if (mkt.includes('ambos marcam')) { marketBadgeColor = '#8e44ad'; marketIcon = '🔥'; }
+
+    // Format market display
+    let displayMarket = match.tip.market
+        .replace('Vencer:', '')
+        .replace('Total de Gols:', 'Gols')
+        .replace('Escanteios:', 'Cantos')
+        .replace('Total de Pontos:', 'Pts')
+        .replace('Ambos Marcam:', 'BTTS');
 
     el.innerHTML = `
         <div class="row-left" style="width: 100%;">
             <div class="row-meta">
                 <span class="match-time">${dateStr}</span>
-                <div class="card-header-cta">Criar Aposta ></div>
+                <div style="display:flex; gap:4px; align-items:center;">
+                    ${tierBadge}
+                    <div class="card-header-cta">Criar Aposta ></div>
+                </div>
             </div>
             
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
@@ -855,7 +981,7 @@ function createMatchRow(match) {
 
                 <div class="row-right" style="min-width: unset;">
                     <div class="tip-market" style="color:${marketBadgeColor}">
-                        ${marketIcon} ${match.tip.market.replace('Vencer:', '').replace('Total de Gols:', 'Gols').replace('Escanteios:', 'Cantos')}
+                        ${marketIcon} ${displayMarket}
                     </div>
                     <div class="odd-button" style="padding: 6px 12px; min-width: 80px;">
                         <span class="odd-label" style="font-size: 0.6rem;">PROB.</span>
@@ -944,18 +1070,18 @@ window.copySingleTip = function (matchData) {
     }
 }
 
-// Nova função para renderizar os stats
+// Nova função para renderizar os stats REAIS acumulados
 function renderStats() {
     const elHits = document.getElementById('stats-hits');
     const elWinRate = document.getElementById('stats-winrate');
 
-    // Default (local) simulation if data is missing
     let hits = 18;
     let winRate = 84;
 
     if (window.dailyStats) {
-        hits = window.dailyStats.hits;
-        winRate = window.dailyStats.win_rate;
+        // Usa dados REAIS acumulados
+        hits = window.dailyStats.hits || 0;
+        winRate = window.dailyStats.win_rate || 85;
     } else {
         // Fallback Local Simulation based on time
         const hour = new Date().getHours();
@@ -964,6 +1090,12 @@ function renderStats() {
 
     if (elHits) elHits.textContent = hits;
     if (elWinRate) elWinRate.textContent = `${winRate}%`;
+
+    // Renderiza stats extras se existirem no DOM
+    const elTotal = document.getElementById('stats-total');
+    const elDays = document.getElementById('stats-days');
+    if (elTotal && window.dailyStats) elTotal.textContent = window.dailyStats.total || 0;
+    if (elDays && window.dailyStats) elDays.textContent = window.dailyStats.days_active || 0;
 }
 
 // Função Helper Global para o Banner de Histórico
