@@ -1,5 +1,110 @@
 [
     {
+        "id": "748383",
+        "sport": "soccer",
+        "league": "La Liga",
+        "date": "2026-02-14T20:00Z",
+        "teamA": {
+            "name": "Real Madrid",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png"
+        },
+        "teamB": {
+            "name": "Real Sociedad",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png"
+        },
+        "tip": {
+            "market": "Total de Gols: Menos de 2.5",
+            "odd": 1.79,
+            "win_rate": 90,
+            "type": "Gols"
+        },
+        "result": "LOSS"
+    },
+    {
+        "id": "748374",
+        "sport": "soccer",
+        "league": "La Liga",
+        "date": "2026-02-14T17:30Z",
+        "teamA": {
+            "name": "Sevilla",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png"
+        },
+        "teamB": {
+            "name": "Alavés",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png"
+        },
+        "tip": {
+            "market": "Ambos Marcam: Sim",
+            "odd": 1.78,
+            "win_rate": 93,
+            "type": "Gols"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "748378",
+        "sport": "soccer",
+        "league": "La Liga",
+        "date": "2026-02-14T15:15Z",
+        "teamA": {
+            "name": "Getafe",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2922.png"
+        },
+        "teamB": {
+            "name": "Villarreal",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png"
+        },
+        "tip": {
+            "market": "Total de Gols: Mais de 2.5",
+            "odd": 2.08,
+            "win_rate": 84,
+            "type": "Gols"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "737025",
+        "sport": "soccer",
+        "league": "Serie A",
+        "date": "2026-02-14T14:00Z",
+        "teamA": {
+            "name": "Como",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2572.png"
+        },
+        "teamB": {
+            "name": "Fiorentina",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/109.png"
+        },
+        "tip": {
+            "market": "Total de Gols: Menos de 3.5",
+            "odd": 1.42,
+            "win_rate": 85,
+            "type": "Gols"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "748377",
+        "sport": "soccer",
+        "league": "La Liga",
+        "date": "2026-02-14T13:00Z",
+        "teamA": {
+            "name": "Espanyol",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/88.png"
+        },
+        "teamB": {
+            "name": "Celta Vigo",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/85.png"
+        },
+        "tip": {
+            "market": "Dupla Chance: Celta Vigo ou Empate",
+            "odd": 1.35,
+            "win_rate": 92,
+            "type": "Vencer"
+        },
+        "result": "WIN"
+    },
+    {
         "id": "746609",
         "sport": "soccer",
         "league": "Ligue 1",
