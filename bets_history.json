@@ -1,5 +1,131 @@
 [
     {
+        "id": "748379",
+        "sport": "soccer",
+        "league": "La Liga",
+        "date": "2026-02-15T20:00Z",
+        "teamA": {
+            "name": "Mallorca",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/84.png"
+        },
+        "teamB": {
+            "name": "Real Betis",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png"
+        },
+        "tip": {
+            "market": "Total de Gols: Menos de 2.5",
+            "odd": 1.89,
+            "win_rate": 93,
+            "type": "Gols"
+        },
+        "result": "LOSS"
+    },
+    {
+        "id": "748380",
+        "sport": "soccer",
+        "league": "La Liga",
+        "date": "2026-02-15T17:30Z",
+        "teamA": {
+            "name": "Levante",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png"
+        },
+        "teamB": {
+            "name": "Valencia",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png"
+        },
+        "tip": {
+            "market": "Vencer: Valencia",
+            "odd": 1.97,
+            "win_rate": 94,
+            "type": "Vencer"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "748382",
+        "sport": "soccer",
+        "league": "La Liga",
+        "date": "2026-02-15T15:15Z",
+        "teamA": {
+            "name": "Rayo Vallecano",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png"
+        },
+        "teamB": {
+            "name": "Atlético Madrid",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
+        },
+        "tip": {
+            "market": "Total de Gols: Menos de 3.5",
+            "odd": 1.46,
+            "win_rate": 92,
+            "type": "Gols"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "748375",
+        "sport": "soccer",
+        "league": "La Liga",
+        "date": "2026-02-15T13:00Z",
+        "teamA": {
+            "name": "Real Oviedo",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/92.png"
+        },
+        "teamB": {
+            "name": "Athletic Club",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/93.png"
+        },
+        "tip": {
+            "market": "Ambos Marcam: Sim",
+            "odd": 1.96,
+            "win_rate": 94,
+            "type": "Gols"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "737026",
+        "sport": "soccer",
+        "league": "Serie A",
+        "date": "2026-02-15T11:30Z",
+        "teamA": {
+            "name": "Udinese",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/118.png"
+        },
+        "teamB": {
+            "name": "Sassuolo",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3997.png"
+        },
+        "tip": {
+            "market": "Total de Gols: Mais de 1.5",
+            "odd": 1.48,
+            "win_rate": 82,
+            "type": "Gols"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "746602",
+        "sport": "soccer",
+        "league": "Ligue 1",
+        "date": "2026-02-14T20:05Z",
+        "teamA": {
+            "name": "Paris FC",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6851.png"
+        },
+        "teamB": {
+            "name": "Lens",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/175.png"
+        },
+        "tip": {
+            "market": "Dupla Chance: Lens ou Empate",
+            "odd": 1.35,
+            "win_rate": 85,
+            "type": "Vencer"
+        },
+        "result": "WIN"
+    },
+    {
         "id": "748383",
         "sport": "soccer",
         "league": "La Liga",
@@ -42,6 +168,27 @@
         "result": "WIN"
     },
     {
+        "id": "746604",
+        "sport": "soccer",
+        "league": "Ligue 1",
+        "date": "2026-02-14T18:00Z",
+        "teamA": {
+            "name": "Lille",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/166.png"
+        },
+        "teamB": {
+            "name": "Brest",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6997.png"
+        },
+        "tip": {
+            "market": "Total de Gols: Mais de 1.5",
+            "odd": 1.52,
+            "win_rate": 93,
+            "type": "Gols"
+        },
+        "result": "WIN"
+    },
+    {
         "id": "748374",
         "sport": "soccer",
         "league": "La Liga",
@@ -59,6 +206,27 @@
             "odd": 1.78,
             "win_rate": 93,
             "type": "Gols"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "746915",
+        "sport": "soccer",
+        "league": "Bundesliga",
+        "date": "2026-02-14T17:30Z",
+        "teamA": {
+            "name": "VfB Stuttgart",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/134.png"
+        },
+        "teamB": {
+            "name": "FC Cologne",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/122.png"
+        },
+        "tip": {
+            "market": "Vencer: VfB Stuttgart",
+            "odd": 1.72,
+            "win_rate": 80,
+            "type": "Vencer"
         },
         "result": "WIN"
     },
@@ -166,6 +334,48 @@
             "type": "Gols"
         },
         "result": "WIN"
+    },
+    {
+        "id": "746911",
+        "sport": "soccer",
+        "league": "Bundesliga",
+        "date": "2026-02-14T14:30Z",
+        "teamA": {
+            "name": "Hamburg SV",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/127.png"
+        },
+        "teamB": {
+            "name": "1. FC Union Berlin",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/598.png"
+        },
+        "tip": {
+            "market": "Total de Gols: Mais de 1.5",
+            "odd": 1.47,
+            "win_rate": 89,
+            "type": "Gols"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "746909",
+        "sport": "soccer",
+        "league": "Bundesliga",
+        "date": "2026-02-14T14:30Z",
+        "teamA": {
+            "name": "Eintracht Frankfurt",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/125.png"
+        },
+        "teamB": {
+            "name": "Borussia Mönchengladbach",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/268.png"
+        },
+        "tip": {
+            "market": "Total de Gols: Menos de 2.5",
+            "odd": 1.98,
+            "win_rate": 92,
+            "type": "Gols"
+        },
+        "result": "LOSS"
     },
     {
         "id": "737025",
