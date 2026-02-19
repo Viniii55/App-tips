@@ -1,5 +1,68 @@
 [
     {
+        "id": "740901",
+        "sport": "soccer",
+        "league": "Premier League",
+        "date": "2026-02-18T20:00Z",
+        "teamA": {
+            "name": "Wolverhampton Wanderers",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/380.png"
+        },
+        "teamB": {
+            "name": "Arsenal",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/359.png"
+        },
+        "tip": {
+            "market": "Ambos Marcam: Sim",
+            "odd": 1.72,
+            "win_rate": 86,
+            "type": "Gols"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "737015",
+        "sport": "soccer",
+        "league": "Serie A",
+        "date": "2026-02-18T19:45Z",
+        "teamA": {
+            "name": "AC Milan",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/103.png"
+        },
+        "teamB": {
+            "name": "Como",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2572.png"
+        },
+        "tip": {
+            "market": "Dupla Chance: AC Milan ou Empate",
+            "odd": 1.2,
+            "win_rate": 80,
+            "type": "Vencer"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "748302",
+        "sport": "soccer",
+        "league": "La Liga",
+        "date": "2026-02-18T19:00Z",
+        "teamA": {
+            "name": "Levante",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png"
+        },
+        "teamB": {
+            "name": "Villarreal",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png"
+        },
+        "tip": {
+            "market": "Dupla Chance: Villarreal ou Empate",
+            "odd": 1.4,
+            "win_rate": 80,
+            "type": "Vencer"
+        },
+        "result": "WIN"
+    },
+    {
         "id": "748381",
         "sport": "soccer",
         "league": "La Liga",
