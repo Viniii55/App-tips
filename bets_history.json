@@ -1,5 +1,110 @@
 [
     {
+        "id": "401810663",
+        "sport": "basketball",
+        "league": "NBA",
+        "date": "2026-02-21T01:00Z",
+        "teamA": {
+            "name": "Oklahoma City Thunder",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png"
+        },
+        "teamB": {
+            "name": "Brooklyn Nets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png"
+        },
+        "tip": {
+            "market": "Handicap: Oklahoma City Thunder -14.5",
+            "odd": 1.86,
+            "win_rate": 85,
+            "type": "Vencer"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "748388",
+        "sport": "soccer",
+        "league": "La Liga",
+        "date": "2026-02-20T20:00Z",
+        "teamA": {
+            "name": "Athletic Club",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/93.png"
+        },
+        "teamB": {
+            "name": "Elche",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png"
+        },
+        "tip": {
+            "market": "Total de Gols: Mais de 1.5",
+            "odd": 1.41,
+            "win_rate": 94,
+            "type": "Gols"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "737038",
+        "sport": "soccer",
+        "league": "Serie A",
+        "date": "2026-02-20T19:45Z",
+        "teamA": {
+            "name": "Sassuolo",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3997.png"
+        },
+        "teamB": {
+            "name": "Hellas Verona",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/119.png"
+        },
+        "tip": {
+            "market": "Total de Gols: Mais de 2.5",
+            "odd": 1.86,
+            "win_rate": 89,
+            "type": "Gols"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "746613",
+        "sport": "soccer",
+        "league": "Ligue 1",
+        "date": "2026-02-20T19:45Z",
+        "teamA": {
+            "name": "Brest",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6997.png"
+        },
+        "teamB": {
+            "name": "Marseille",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/176.png"
+        },
+        "tip": {
+            "market": "Vencer: Marseille",
+            "odd": 3.26,
+            "win_rate": 81,
+            "type": "Vencer"
+        },
+        "result": "LOSS"
+    },
+    {
+        "id": "746919",
+        "sport": "soccer",
+        "league": "Bundesliga",
+        "date": "2026-02-20T19:40Z",
+        "teamA": {
+            "name": "Mainz",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2950.png"
+        },
+        "teamB": {
+            "name": "Hamburg SV",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/127.png"
+        },
+        "tip": {
+            "market": "Total de Gols: Menos de 3.5",
+            "odd": 1.44,
+            "win_rate": 81,
+            "type": "Gols"
+        },
+        "result": "WIN"
+    },
+    {
         "id": "401810656",
         "sport": "basketball",
         "league": "NBA",
@@ -38,6 +143,27 @@
             "odd": 1.86,
             "win_rate": 92,
             "type": "Vencer"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "401810654",
+        "sport": "basketball",
+        "league": "NBA",
+        "date": "2026-02-20T03:00Z",
+        "teamA": {
+            "name": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png"
+        },
+        "teamB": {
+            "name": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png"
+        },
+        "tip": {
+            "market": "Total de Pontos: Mais de 210.5",
+            "odd": 1.84,
+            "win_rate": 80,
+            "type": "Gols"
         },
         "result": "WIN"
     },
