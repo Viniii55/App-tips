@@ -1,5 +1,110 @@
 [
     {
+        "id": "740857",
+        "sport": "soccer",
+        "league": "Premier League",
+        "date": "2026-02-21T20:00Z",
+        "teamA": {
+            "name": "Manchester City",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png"
+        },
+        "teamB": {
+            "name": "Newcastle United",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/361.png"
+        },
+        "tip": {
+            "market": "Total de Gols: Mais de 1.5",
+            "odd": 1.45,
+            "win_rate": 85,
+            "type": "Gols"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "740861",
+        "sport": "soccer",
+        "league": "Premier League",
+        "date": "2026-02-21T17:30Z",
+        "teamA": {
+            "name": "West Ham United",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/371.png"
+        },
+        "teamB": {
+            "name": "AFC Bournemouth",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png"
+        },
+        "tip": {
+            "market": "Total de Gols: Mais de 2.5",
+            "odd": 1.96,
+            "win_rate": 84,
+            "type": "Gols"
+        },
+        "result": "LOSS"
+    },
+    {
+        "id": "740858",
+        "sport": "soccer",
+        "league": "Premier League",
+        "date": "2026-02-21T15:00Z",
+        "teamA": {
+            "name": "Brentford",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/337.png"
+        },
+        "teamB": {
+            "name": "Brighton & Hove Albion",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/331.png"
+        },
+        "tip": {
+            "market": "Vencer: Brighton & Hove Albion",
+            "odd": 2.19,
+            "win_rate": 90,
+            "type": "Vencer"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "740864",
+        "sport": "soccer",
+        "league": "Premier League",
+        "date": "2026-02-21T15:00Z",
+        "teamA": {
+            "name": "Chelsea",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png"
+        },
+        "teamB": {
+            "name": "Burnley",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/379.png"
+        },
+        "tip": {
+            "market": "Total de Gols: Mais de 1.5",
+            "odd": 1.46,
+            "win_rate": 82,
+            "type": "Gols"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "740862",
+        "sport": "soccer",
+        "league": "Premier League",
+        "date": "2026-02-21T15:00Z",
+        "teamA": {
+            "name": "Aston Villa",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png"
+        },
+        "teamB": {
+            "name": "Leeds United",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/357.png"
+        },
+        "tip": {
+            "market": "Dupla Chance: Leeds United ou Empate",
+            "odd": 1.35,
+            "win_rate": 86,
+            "type": "Vencer"
+        },
+        "result": "WIN"
+    },
+    {
         "id": "401810664",
         "sport": "basketball",
         "league": "NBA",
@@ -63,6 +168,27 @@
         "result": "WIN"
     },
     {
+        "id": "401810662",
+        "sport": "basketball",
+        "league": "NBA",
+        "date": "2026-02-21T01:00Z",
+        "teamA": {
+            "name": "New Orleans Pelicans",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png"
+        },
+        "teamB": {
+            "name": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png"
+        },
+        "tip": {
+            "market": "Handicap: Milwaukee Bucks -16.5",
+            "odd": 1.98,
+            "win_rate": 85,
+            "type": "Vencer"
+        },
+        "result": "WIN"
+    },
+    {
         "id": "401810660",
         "sport": "basketball",
         "league": "NBA",
@@ -79,6 +205,27 @@
             "market": "Total de Pontos: Mais de 210.5",
             "odd": 1.83,
             "win_rate": 91,
+            "type": "Gols"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "401810661",
+        "sport": "basketball",
+        "league": "NBA",
+        "date": "2026-02-21T00:30Z",
+        "teamA": {
+            "name": "Minnesota Timberwolves",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png"
+        },
+        "teamB": {
+            "name": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png"
+        },
+        "tip": {
+            "market": "Total de Pontos: Mais de 210.5",
+            "odd": 1.76,
+            "win_rate": 90,
             "type": "Gols"
         },
         "result": "WIN"
@@ -124,6 +271,27 @@
             "type": "Vencer"
         },
         "result": "LOSS"
+    },
+    {
+        "id": "401810658",
+        "sport": "basketball",
+        "league": "NBA",
+        "date": "2026-02-21T00:00Z",
+        "teamA": {
+            "name": "Washington Wizards",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png"
+        },
+        "teamB": {
+            "name": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png"
+        },
+        "tip": {
+            "market": "Vencer: Washington Wizards",
+            "odd": 1.65,
+            "win_rate": 82,
+            "type": "Vencer"
+        },
+        "result": "WIN"
     },
     {
         "id": "748388",
