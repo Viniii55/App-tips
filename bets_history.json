@@ -21,6 +21,27 @@
         "result": "WIN"
     },
     {
+        "id": "748390",
+        "sport": "soccer",
+        "league": "La Liga",
+        "date": "2026-02-21T20:00Z",
+        "teamA": {
+            "name": "Atlético Madrid",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
+        },
+        "teamB": {
+            "name": "Espanyol",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/88.png"
+        },
+        "tip": {
+            "market": "Dupla Chance: Atlético Madrid ou Empate",
+            "odd": 1.42,
+            "win_rate": 88,
+            "type": "Vencer"
+        },
+        "result": "WIN"
+    },
+    {
         "id": "740861",
         "sport": "soccer",
         "league": "Premier League",
@@ -40,6 +61,69 @@
             "type": "Gols"
         },
         "result": "LOSS"
+    },
+    {
+        "id": "748387",
+        "sport": "soccer",
+        "league": "La Liga",
+        "date": "2026-02-21T17:30Z",
+        "teamA": {
+            "name": "Osasuna",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/97.png"
+        },
+        "teamB": {
+            "name": "Real Madrid",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png"
+        },
+        "tip": {
+            "market": "Vencer: Osasuna",
+            "odd": 1.46,
+            "win_rate": 80,
+            "type": "Vencer"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "737037",
+        "sport": "soccer",
+        "league": "Serie A",
+        "date": "2026-02-21T17:00Z",
+        "teamA": {
+            "name": "Lecce",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/113.png"
+        },
+        "teamB": {
+            "name": "Internazionale",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/110.png"
+        },
+        "tip": {
+            "market": "Total de Gols: Menos de 3.5",
+            "odd": 1.48,
+            "win_rate": 94,
+            "type": "Gols"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "748386",
+        "sport": "soccer",
+        "league": "La Liga",
+        "date": "2026-02-21T15:15Z",
+        "teamA": {
+            "name": "Real Betis",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png"
+        },
+        "teamB": {
+            "name": "Rayo Vallecano",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png"
+        },
+        "tip": {
+            "market": "Total de Gols: Menos de 2.5",
+            "odd": 1.93,
+            "win_rate": 82,
+            "type": "Gols"
+        },
+        "result": "WIN"
     },
     {
         "id": "740858",
@@ -103,6 +187,27 @@
             "type": "Vencer"
         },
         "result": "WIN"
+    },
+    {
+        "id": "748385",
+        "sport": "soccer",
+        "league": "La Liga",
+        "date": "2026-02-21T13:00Z",
+        "teamA": {
+            "name": "Real Sociedad",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png"
+        },
+        "teamB": {
+            "name": "Real Oviedo",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/92.png"
+        },
+        "tip": {
+            "market": "Total de Gols: Menos de 2.5",
+            "odd": 1.84,
+            "win_rate": 90,
+            "type": "Gols"
+        },
+        "result": "LOSS"
     },
     {
         "id": "401810664",
