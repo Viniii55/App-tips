@@ -1,5 +1,47 @@
 [
     {
+        "id": "401810685",
+        "sport": "basketball",
+        "league": "NBA",
+        "date": "2026-02-24T02:30Z",
+        "teamA": {
+            "name": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png"
+        },
+        "teamB": {
+            "name": "Utah Jazz",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png"
+        },
+        "tip": {
+            "market": "Vencer: Houston Rockets",
+            "odd": 1.54,
+            "win_rate": 86,
+            "type": "Vencer"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "401810684",
+        "sport": "basketball",
+        "league": "NBA",
+        "date": "2026-02-24T01:00Z",
+        "teamA": {
+            "name": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png"
+        },
+        "teamB": {
+            "name": "Sacramento Kings",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png"
+        },
+        "tip": {
+            "market": "Total de Pontos: Mais de 210.5",
+            "odd": 1.89,
+            "win_rate": 81,
+            "type": "Gols"
+        },
+        "result": "WIN"
+    },
+    {
         "id": "401810683",
         "sport": "basketball",
         "league": "NBA",
@@ -147,6 +189,27 @@
         "result": "WIN"
     },
     {
+        "id": "746618",
+        "sport": "soccer",
+        "league": "Ligue 1",
+        "date": "2026-02-22T19:45Z",
+        "teamA": {
+            "name": "Strasbourg",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/180.png"
+        },
+        "teamB": {
+            "name": "Lyon",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/167.png"
+        },
+        "tip": {
+            "market": "Ambos Marcam: Sim",
+            "odd": 1.77,
+            "win_rate": 87,
+            "type": "Gols"
+        },
+        "result": "WIN"
+    },
+    {
         "id": "746916",
         "sport": "soccer",
         "league": "Bundesliga",
@@ -247,6 +310,69 @@
             "market": "Total de Gols: Mais de 2.5",
             "odd": 1.82,
             "win_rate": 94,
+            "type": "Gols"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "746611",
+        "sport": "soccer",
+        "league": "Ligue 1",
+        "date": "2026-02-22T16:15Z",
+        "teamA": {
+            "name": "Angers",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7868.png"
+        },
+        "teamB": {
+            "name": "Lille",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/166.png"
+        },
+        "tip": {
+            "market": "Vencer: Lille",
+            "odd": 1.87,
+            "win_rate": 95,
+            "type": "Vencer"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "746616",
+        "sport": "soccer",
+        "league": "Ligue 1",
+        "date": "2026-02-22T16:15Z",
+        "teamA": {
+            "name": "Nice",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2502.png"
+        },
+        "teamB": {
+            "name": "Lorient",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/273.png"
+        },
+        "tip": {
+            "market": "Ambos Marcam: Sim",
+            "odd": 1.93,
+            "win_rate": 93,
+            "type": "Gols"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "746615",
+        "sport": "soccer",
+        "league": "Ligue 1",
+        "date": "2026-02-22T16:15Z",
+        "teamA": {
+            "name": "Nantes",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/165.png"
+        },
+        "teamB": {
+            "name": "Le Havre AC",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3236.png"
+        },
+        "tip": {
+            "market": "Ambos Marcam: Não",
+            "odd": 1.75,
+            "win_rate": 92,
             "type": "Gols"
         },
         "result": "WIN"
@@ -378,6 +504,27 @@
         "result": "WIN"
     },
     {
+        "id": "746612",
+        "sport": "soccer",
+        "league": "Ligue 1",
+        "date": "2026-02-22T14:00Z",
+        "teamA": {
+            "name": "AJ Auxerre",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/172.png"
+        },
+        "teamB": {
+            "name": "Stade Rennais",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/169.png"
+        },
+        "tip": {
+            "market": "Total de Gols: Mais de 1.5",
+            "odd": 1.43,
+            "win_rate": 82,
+            "type": "Gols"
+        },
+        "result": "WIN"
+    },
+    {
         "id": "748384",
         "sport": "soccer",
         "league": "La Liga",
@@ -477,6 +624,27 @@
         "tip": {
             "market": "Vencer: Detroit Pistons",
             "odd": 1.79,
+            "win_rate": 88,
+            "type": "Vencer"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "401810670",
+        "sport": "basketball",
+        "league": "NBA",
+        "date": "2026-02-22T01:00Z",
+        "teamA": {
+            "name": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png"
+        },
+        "teamB": {
+            "name": "Sacramento Kings",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png"
+        },
+        "tip": {
+            "market": "Vencer: Sacramento Kings",
+            "odd": 2.57,
             "win_rate": 88,
             "type": "Vencer"
         },
