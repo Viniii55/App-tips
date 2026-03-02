@@ -1,5 +1,110 @@
 [
     {
+        "id": "748400",
+        "sport": "soccer",
+        "league": "La Liga",
+        "date": "2026-03-01T20:00Z",
+        "teamA": {
+            "name": "Girona",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9812.png"
+        },
+        "teamB": {
+            "name": "Celta Vigo",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/85.png"
+        },
+        "tip": {
+            "market": "Total de Gols: Mais de 1.5",
+            "odd": 1.53,
+            "win_rate": 87,
+            "type": "Gols"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "740871",
+        "sport": "soccer",
+        "league": "Premier League",
+        "date": "2026-03-01T16:30Z",
+        "teamA": {
+            "name": "Arsenal",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/359.png"
+        },
+        "teamB": {
+            "name": "Chelsea",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png"
+        },
+        "tip": {
+            "market": "Ambos Marcam: Sim",
+            "odd": 1.71,
+            "win_rate": 90,
+            "type": "Gols"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "740870",
+        "sport": "soccer",
+        "league": "Premier League",
+        "date": "2026-03-01T14:00Z",
+        "teamA": {
+            "name": "Fulham",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/370.png"
+        },
+        "teamB": {
+            "name": "Tottenham Hotspur",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/367.png"
+        },
+        "tip": {
+            "market": "Dupla Chance: Fulham ou Empate",
+            "odd": 1.32,
+            "win_rate": 89,
+            "type": "Vencer"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "740866",
+        "sport": "soccer",
+        "league": "Premier League",
+        "date": "2026-03-01T14:00Z",
+        "teamA": {
+            "name": "Brighton & Hove Albion",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/331.png"
+        },
+        "teamB": {
+            "name": "Nottingham Forest",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/393.png"
+        },
+        "tip": {
+            "market": "Vencer: Brighton & Hove Albion",
+            "odd": 1.83,
+            "win_rate": 83,
+            "type": "Vencer"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "740875",
+        "sport": "soccer",
+        "league": "Premier League",
+        "date": "2026-03-01T14:00Z",
+        "teamA": {
+            "name": "Manchester United",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png"
+        },
+        "teamB": {
+            "name": "Crystal Palace",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png"
+        },
+        "tip": {
+            "market": "Total de Gols: Menos de 2.5",
+            "odd": 1.8,
+            "win_rate": 86,
+            "type": "Gols"
+        },
+        "result": "LOSS"
+    },
+    {
         "id": "748394",
         "sport": "soccer",
         "league": "La Liga",
@@ -84,6 +189,48 @@
         "result": "WIN"
     },
     {
+        "id": "746926",
+        "sport": "soccer",
+        "league": "Bundesliga",
+        "date": "2026-02-28T17:30Z",
+        "teamA": {
+            "name": "Borussia Dortmund",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/124.png"
+        },
+        "teamB": {
+            "name": "Bayern Munich",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/132.png"
+        },
+        "tip": {
+            "market": "Dupla Chance: Bayern Munich ou Empate",
+            "odd": 1.29,
+            "win_rate": 83,
+            "type": "Vencer"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "737050",
+        "sport": "soccer",
+        "league": "Serie A",
+        "date": "2026-02-28T17:00Z",
+        "teamA": {
+            "name": "Hellas Verona",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/119.png"
+        },
+        "teamB": {
+            "name": "Napoli",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/114.png"
+        },
+        "tip": {
+            "market": "Total de Gols: Menos de 3.5",
+            "odd": 1.39,
+            "win_rate": 93,
+            "type": "Gols"
+        },
+        "result": "WIN"
+    },
+    {
         "id": "748402",
         "sport": "soccer",
         "league": "La Liga",
@@ -163,6 +310,69 @@
             "market": "Total de Gols: Mais de 1.5",
             "odd": 1.5,
             "win_rate": 90,
+            "type": "Gols"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "746925",
+        "sport": "soccer",
+        "league": "Bundesliga",
+        "date": "2026-02-28T14:30Z",
+        "teamA": {
+            "name": "Bayer Leverkusen",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/131.png"
+        },
+        "teamB": {
+            "name": "Mainz",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2950.png"
+        },
+        "tip": {
+            "market": "Ambos Marcam: Sim",
+            "odd": 1.71,
+            "win_rate": 95,
+            "type": "Gols"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "746932",
+        "sport": "soccer",
+        "league": "Bundesliga",
+        "date": "2026-02-28T14:30Z",
+        "teamA": {
+            "name": "TSG Hoffenheim",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7911.png"
+        },
+        "teamB": {
+            "name": "St. Pauli",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/270.png"
+        },
+        "tip": {
+            "market": "Vencer: TSG Hoffenheim",
+            "odd": 1.8,
+            "win_rate": 93,
+            "type": "Vencer"
+        },
+        "result": "LOSS"
+    },
+    {
+        "id": "737052",
+        "sport": "soccer",
+        "league": "Serie A",
+        "date": "2026-02-28T14:00Z",
+        "teamA": {
+            "name": "Como",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2572.png"
+        },
+        "teamB": {
+            "name": "Lecce",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/113.png"
+        },
+        "tip": {
+            "market": "Ambos Marcam: Sim",
+            "odd": 1.97,
+            "win_rate": 87,
             "type": "Gols"
         },
         "result": "WIN"
