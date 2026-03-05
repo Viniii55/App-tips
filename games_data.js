@@ -14,12 +14,12 @@ window.gamesData = [
         },
         "tip": {
             "market": "Total de Gols: Mais de 2.5",
-            "odd": 1.89,
+            "odd": 1.7,
             "type": "Gols",
             "team": "Tottenham Hotspur",
             "loser": "Crystal Palace",
-            "win_rate": 58,
-            "tier": "VALOR",
+            "win_rate": 64,
+            "tier": "PADRÃO",
             "is_value": false,
             "cashout_friendly": false,
             "priority": 11,
@@ -52,7 +52,7 @@ window.gamesData = [
             "is_value": true,
             "cashout_friendly": false,
             "priority": 10,
-            "analysis": "Padrão tático identificado: Real Madrid explora espaços que o Celta Vigo deixa na defesa. | DNA La Liga: Liga técnica. Domínio de posse e jogadas ensaiadas."
+            "analysis": "O Celta Vigo sofre contra times que jogam com intensidade. O Real Madrid vai explorar isso. | DNA La Liga: Liga técnica. Domínio de posse e jogadas ensaiadas."
         },
         "result": null
     },
@@ -81,7 +81,7 @@ window.gamesData = [
             "is_value": false,
             "cashout_friendly": true,
             "priority": 12,
-            "analysis": "Análise tática: O Mirassol é superior em todos os fundamentos contra o Santos. | DNA Brasileirão: Liga imprevisível. Fator casa é forte e zebras são comuns."
+            "analysis": "O algoritmo detectou valor no Mirassol. A odd está desajustada pelo mercado. | DNA Brasileirão: Liga imprevisível. Fator casa é forte e zebras são comuns."
         },
         "result": null
     },
@@ -100,14 +100,14 @@ window.gamesData = [
         },
         "tip": {
             "market": "Total de Gols: Menos de 2.5",
-            "odd": 1.64,
+            "odd": 1.86,
             "type": "Gols",
             "team": "Napoli",
             "loser": "Torino",
-            "win_rate": 67,
-            "tier": "PADRÃO",
+            "win_rate": 60,
+            "tier": "VALOR",
             "is_value": false,
-            "cashout_friendly": true,
+            "cashout_friendly": false,
             "priority": 11,
             "analysis": "Na Serie A, esse mercado tem valor porque as casas não ajustam a linha corretamente. | DNA Serie A: Liga mais tática da Europa. Defesas sólidas e jogos controlados."
         },
@@ -128,12 +128,12 @@ window.gamesData = [
         },
         "tip": {
             "market": "Total de Gols: Mais de 2.5",
-            "odd": 1.9,
+            "odd": 2.02,
             "type": "Gols",
             "team": "Bayern Munich",
             "loser": "Borussia Mönchengladbach",
-            "win_rate": 57,
-            "tier": "VALOR",
+            "win_rate": 54,
+            "tier": "PADRÃO",
             "is_value": true,
             "cashout_friendly": false,
             "priority": 11,
@@ -166,7 +166,119 @@ window.gamesData = [
             "is_value": false,
             "cashout_friendly": true,
             "priority": 10,
-            "analysis": "Consistência fala mais alto. O Paris Saint-Germain não perde nesse tipo de confronto. | DNA Ligue 1: Liga física com talento individual. Contra-ataques letais."
+            "analysis": "Análise tática: O Paris Saint-Germain é superior em todos os fundamentos contra o AS Monaco. | DNA Ligue 1: Liga física com talento individual. Contra-ataques letais."
+        },
+        "result": null
+    },
+    {
+        "id": "401862667",
+        "sport": "soccer",
+        "league": "Champions League",
+        "date": "2026-03-10T17:45Z",
+        "teamA": {
+            "name": "Galatasaray",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/432.png"
+        },
+        "teamB": {
+            "name": "Liverpool",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png"
+        },
+        "tip": {
+            "market": "Total de Gols: Mais de 2.5",
+            "odd": 1.7,
+            "type": "Gols",
+            "team": "Galatasaray",
+            "loser": "Liverpool",
+            "win_rate": 62,
+            "tier": "PADRÃO",
+            "is_value": false,
+            "cashout_friendly": false,
+            "priority": 11,
+            "analysis": "O sistema prevê alta intensidade ofensiva. Ambos os times precisam do resultado. | DNA Champions League: Maior competição do mundo. Jogos abertos e emocionantes."
+        },
+        "result": null
+    },
+    {
+        "id": "401862641",
+        "sport": "soccer",
+        "league": "Champions League",
+        "date": "2026-03-10T20:00Z",
+        "teamA": {
+            "name": "Atalanta",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/105.png"
+        },
+        "teamB": {
+            "name": "Bayern Munich",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/132.png"
+        },
+        "tip": {
+            "market": "Total de Gols: Mais de 2.5",
+            "odd": 1.95,
+            "type": "Gols",
+            "team": "Atalanta",
+            "loser": "Bayern Munich",
+            "win_rate": 55,
+            "tier": "VALOR",
+            "is_value": true,
+            "cashout_friendly": false,
+            "priority": 11,
+            "analysis": "O sistema prevê alta intensidade ofensiva. Ambos os times precisam do resultado. | DNA Champions League: Maior competição do mundo. Jogos abertos e emocionantes."
+        },
+        "result": null
+    },
+    {
+        "id": "401862579",
+        "sport": "soccer",
+        "league": "Champions League",
+        "date": "2026-03-10T20:00Z",
+        "teamA": {
+            "name": "Atlético Madrid",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
+        },
+        "teamB": {
+            "name": "Tottenham Hotspur",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/367.png"
+        },
+        "tip": {
+            "market": "Total de Gols: Mais de 2.5",
+            "odd": 2.01,
+            "type": "Gols",
+            "team": "Atlético Madrid",
+            "loser": "Tottenham Hotspur",
+            "win_rate": 53,
+            "tier": "PADRÃO",
+            "is_value": true,
+            "cashout_friendly": false,
+            "priority": 11,
+            "analysis": "O sistema prevê alta intensidade ofensiva. Ambos os times precisam do resultado. | DNA Champions League: Maior competição do mundo. Jogos abertos e emocionantes."
+        },
+        "result": null
+    },
+    {
+        "id": "401862577",
+        "sport": "soccer",
+        "league": "Champions League",
+        "date": "2026-03-10T20:00Z",
+        "teamA": {
+            "name": "Newcastle United",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/361.png"
+        },
+        "teamB": {
+            "name": "Barcelona",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png"
+        },
+        "tip": {
+            "market": "Total de Gols: Mais de 2.5",
+            "odd": 2.0,
+            "type": "Gols",
+            "team": "Newcastle United",
+            "loser": "Barcelona",
+            "win_rate": 54,
+            "tier": "PADRÃO",
+            "is_value": true,
+            "cashout_friendly": false,
+            "priority": 11,
+            "analysis": "A estatística é cirúrgica: esse mercado tem taxa de acerto de 78% nesse tipo de confronto. | DNA Champions League: Maior competição do mundo. Jogos abertos e emocionantes."
         },
         "result": null
     },
@@ -185,12 +297,12 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Orlando Magic",
-            "odd": 1.2777777777777777,
+            "odd": 1.3076923076923077,
             "type": "Vencer",
             "winner": "Orlando Magic",
             "loser": "Dallas Mavericks",
             "team": "Orlando Magic",
-            "win_rate": 81,
+            "win_rate": 79,
             "tier": "SEGURO",
             "is_value": false,
             "cashout_friendly": true,
@@ -214,17 +326,17 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Washington Wizards",
-            "odd": 1.8,
+            "odd": 1.5714285714285714,
             "type": "Vencer",
             "winner": "Washington Wizards",
             "loser": "Utah Jazz",
             "team": "Washington Wizards",
-            "win_rate": 58,
-            "tier": "VALOR",
+            "win_rate": 66,
+            "tier": "PADRÃO",
             "is_value": false,
-            "cashout_friendly": false,
+            "cashout_friendly": true,
             "priority": 10,
-            "analysis": "Matchup favorável: O elenco do Washington Wizards domina o do Utah Jazz em todas as posições. | DNA NBA: Liga mais pontuada do mundo. Ritmo acelerado e 3 pointers."
+            "analysis": "O Washington Wizards está em sequência positiva e o momentum na NBA é tudo. | DNA NBA: Liga mais pontuada do mundo. Ritmo acelerado e 3 pointers."
         },
         "result": null
     },
@@ -243,12 +355,12 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Miami Heat",
-            "odd": 1.125,
+            "odd": 1.1111111111111112,
             "type": "Vencer",
             "winner": "Miami Heat",
             "loser": "Brooklyn Nets",
             "team": "Miami Heat",
-            "win_rate": 91,
+            "win_rate": 92,
             "tier": "SEGURO",
             "is_value": false,
             "cashout_friendly": true,
@@ -272,17 +384,17 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Houston Rockets",
-            "odd": 1.263157894736842,
+            "odd": 1.289855072463768,
             "type": "Vencer",
             "winner": "Houston Rockets",
             "loser": "Golden State Warriors",
             "team": "Houston Rockets",
-            "win_rate": 82,
+            "win_rate": 80,
             "tier": "SEGURO",
             "is_value": false,
             "cashout_friendly": true,
             "priority": 10,
-            "analysis": "Back-to-back game para o Golden State Warriors. Na NBA, fadiga = derrota. | DNA NBA: Liga mais pontuada do mundo. Ritmo acelerado e 3 pointers."
+            "analysis": "O Houston Rockets está em sequência positiva e o momentum na NBA é tudo. | DNA NBA: Liga mais pontuada do mundo. Ritmo acelerado e 3 pointers."
         },
         "result": null
     },
@@ -301,17 +413,17 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Minnesota Timberwolves",
-            "odd": 1.4201680672268908,
+            "odd": 1.4878048780487805,
             "type": "Vencer",
             "winner": "Minnesota Timberwolves",
             "loser": "Toronto Raptors",
             "team": "Minnesota Timberwolves",
-            "win_rate": 73,
+            "win_rate": 70,
             "tier": "SEGURO",
             "is_value": false,
             "cashout_friendly": true,
             "priority": 10,
-            "analysis": "Back-to-back game para o Toronto Raptors. Na NBA, fadiga = derrota. | DNA NBA: Liga mais pontuada do mundo. Ritmo acelerado e 3 pointers."
+            "analysis": "O Minnesota Timberwolves está em sequência positiva e o momentum na NBA é tudo. | DNA NBA: Liga mais pontuada do mundo. Ritmo acelerado e 3 pointers."
         },
         "result": null
     },
@@ -340,7 +452,7 @@ window.gamesData = [
             "is_value": false,
             "cashout_friendly": false,
             "priority": 10,
-            "analysis": "Matchup favorável: O elenco do San Antonio Spurs domina o do Detroit Pistons em todas as posições. | DNA NBA: Liga mais pontuada do mundo. Ritmo acelerado e 3 pointers."
+            "analysis": "Back-to-back game para o Detroit Pistons. Na NBA, fadiga = derrota. | DNA NBA: Liga mais pontuada do mundo. Ritmo acelerado e 3 pointers."
         },
         "result": null
     },
@@ -398,7 +510,7 @@ window.gamesData = [
             "is_value": false,
             "cashout_friendly": true,
             "priority": 10,
-            "analysis": "Matchup favorável: O elenco do Denver Nuggets domina o do Los Angeles Lakers em todas as posições. | DNA NBA: Liga mais pontuada do mundo. Ritmo acelerado e 3 pointers."
+            "analysis": "Back-to-back game para o Los Angeles Lakers. Na NBA, fadiga = derrota. | DNA NBA: Liga mais pontuada do mundo. Ritmo acelerado e 3 pointers."
         },
         "result": null
     },
@@ -417,13 +529,13 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: New Orleans Pelicans",
-            "odd": 1.5405405405405406,
+            "odd": 1.4444444444444444,
             "type": "Vencer",
             "winner": "New Orleans Pelicans",
             "loser": "Sacramento Kings",
             "team": "New Orleans Pelicans",
-            "win_rate": 67,
-            "tier": "PADRÃO",
+            "win_rate": 72,
+            "tier": "SEGURO",
             "is_value": false,
             "cashout_friendly": true,
             "priority": 10,
@@ -446,129 +558,17 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Liverpool",
-            "odd": 1.4651162790697674,
+            "odd": 1.4878048780487805,
             "type": "Vencer",
             "winner": "Liverpool",
             "loser": "Wolverhampton Wanderers",
             "team": "Liverpool",
-            "win_rate": 68,
+            "win_rate": 67,
             "tier": "PADRÃO",
             "is_value": false,
             "cashout_friendly": true,
             "priority": 10,
-            "analysis": "Análise tática: O Liverpool é superior em todos os fundamentos contra o Wolverhampton Wanderers. | DNA FA Cup: Análise padrão baseada em médias globais."
-        },
-        "result": null
-    },
-    {
-        "id": "401862667",
-        "sport": "soccer",
-        "league": "Champions League",
-        "date": "2026-03-10T17:45Z",
-        "teamA": {
-            "name": "Galatasaray",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/432.png"
-        },
-        "teamB": {
-            "name": "Liverpool",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png"
-        },
-        "tip": {
-            "market": "Total de Gols: Mais de 2.5",
-            "odd": 1.93,
-            "type": "Gols",
-            "team": "Galatasaray",
-            "loser": "Liverpool",
-            "win_rate": 55,
-            "tier": "VALOR",
-            "is_value": true,
-            "cashout_friendly": false,
-            "priority": 11,
-            "analysis": "O sistema prevê alta intensidade ofensiva. Ambos os times precisam do resultado. | DNA Champions League: Maior competição do mundo. Jogos abertos e emocionantes."
-        },
-        "result": null
-    },
-    {
-        "id": "401862641",
-        "sport": "soccer",
-        "league": "Champions League",
-        "date": "2026-03-10T20:00Z",
-        "teamA": {
-            "name": "Atalanta",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/105.png"
-        },
-        "teamB": {
-            "name": "Bayern Munich",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/132.png"
-        },
-        "tip": {
-            "market": "Total de Gols: Mais de 2.5",
-            "odd": 1.75,
-            "type": "Gols",
-            "team": "Atalanta",
-            "loser": "Bayern Munich",
-            "win_rate": 61,
-            "tier": "PADRÃO",
-            "is_value": false,
-            "cashout_friendly": false,
-            "priority": 11,
-            "analysis": "O sistema prevê alta intensidade ofensiva. Ambos os times precisam do resultado. | DNA Champions League: Maior competição do mundo. Jogos abertos e emocionantes."
-        },
-        "result": null
-    },
-    {
-        "id": "401862579",
-        "sport": "soccer",
-        "league": "Champions League",
-        "date": "2026-03-10T20:00Z",
-        "teamA": {
-            "name": "Atlético Madrid",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
-        },
-        "teamB": {
-            "name": "Tottenham Hotspur",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/367.png"
-        },
-        "tip": {
-            "market": "Total de Gols: Mais de 2.5",
-            "odd": 1.75,
-            "type": "Gols",
-            "team": "Atlético Madrid",
-            "loser": "Tottenham Hotspur",
-            "win_rate": 61,
-            "tier": "PADRÃO",
-            "is_value": false,
-            "cashout_friendly": false,
-            "priority": 11,
-            "analysis": "O sistema prevê alta intensidade ofensiva. Ambos os times precisam do resultado. | DNA Champions League: Maior competição do mundo. Jogos abertos e emocionantes."
-        },
-        "result": null
-    },
-    {
-        "id": "401862577",
-        "sport": "soccer",
-        "league": "Champions League",
-        "date": "2026-03-10T20:00Z",
-        "teamA": {
-            "name": "Newcastle United",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/361.png"
-        },
-        "teamB": {
-            "name": "Barcelona",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png"
-        },
-        "tip": {
-            "market": "Total de Gols: Mais de 2.5",
-            "odd": 1.91,
-            "type": "Gols",
-            "team": "Newcastle United",
-            "loser": "Barcelona",
-            "win_rate": 56,
-            "tier": "VALOR",
-            "is_value": true,
-            "cashout_friendly": false,
-            "priority": 11,
-            "analysis": "O sistema prevê alta intensidade ofensiva. Ambos os times precisam do resultado. | DNA Champions League: Maior competição do mundo. Jogos abertos e emocionantes."
+            "analysis": "O algoritmo detectou valor no Liverpool. A odd está desajustada pelo mercado. | DNA FA Cup: Análise padrão baseada em médias globais."
         },
         "result": null
     },
@@ -586,14 +586,18 @@ window.gamesData = [
             "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sea.png"
         },
         "tip": {
-            "market": "Vencer: Seattle Seahawks",
-            "odd": 1.9,
+            "market": "Vencer: New England Patriots",
+            "odd": 1.63,
             "type": "Vencer",
-            "win_rate": 85,
+            "winner": "New England Patriots",
+            "loser": "Seattle Seahawks",
+            "team": "New England Patriots",
+            "win_rate": 61,
             "tier": "PADRÃO",
             "is_value": false,
             "cashout_friendly": false,
-            "analysis": "Análise de emergência: O algoritmo aponta vitória baseada no retrospecto."
+            "priority": 10,
+            "analysis": "Análise tática: O New England Patriots é superior em todos os fundamentos contra o Seattle Seahawks. | DNA NFL: Cada jogada conta. Estratégia militar aplicada ao esporte."
         },
         "result": null
     },
@@ -612,12 +616,12 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: New York Rangers",
-            "odd": 1.8695652173913042,
+            "odd": 1.7407407407407407,
             "type": "Vencer",
             "winner": "New York Rangers",
             "loser": "Toronto Maple Leafs",
             "team": "New York Rangers",
-            "win_rate": 53,
+            "win_rate": 57,
             "tier": "PADRÃO",
             "is_value": false,
             "cashout_friendly": false,
@@ -641,13 +645,13 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Utah Mammoth",
-            "odd": 1.8,
+            "odd": 1.7692307692307692,
             "type": "Vencer",
             "winner": "Utah Mammoth",
             "loser": "Philadelphia Flyers",
             "team": "Utah Mammoth",
-            "win_rate": 55,
-            "tier": "VALOR",
+            "win_rate": 56,
+            "tier": "PADRÃO",
             "is_value": false,
             "cashout_friendly": false,
             "priority": 10,
@@ -680,7 +684,7 @@ window.gamesData = [
             "is_value": false,
             "cashout_friendly": false,
             "priority": 10,
-            "analysis": "Análise tática: O Buffalo Sabres é superior em todos os fundamentos contra o Pittsburgh Penguins. | DNA NHL: Análise padrão baseada em médias globais."
+            "analysis": "O algoritmo detectou valor no Buffalo Sabres. A odd está desajustada pelo mercado. | DNA NHL: Análise padrão baseada em médias globais."
         },
         "result": null
     },
@@ -709,7 +713,7 @@ window.gamesData = [
             "is_value": false,
             "cashout_friendly": false,
             "priority": 10,
-            "analysis": "O algoritmo detectou valor no Columbus Blue Jackets. A odd está desajustada pelo mercado. | DNA NHL: Análise padrão baseada em médias globais."
+            "analysis": "Análise tática: O Columbus Blue Jackets é superior em todos os fundamentos contra o Florida Panthers. | DNA NHL: Análise padrão baseada em médias globais."
         },
         "result": null
     },
@@ -757,17 +761,17 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Tampa Bay Lightning",
-            "odd": 1.5405405405405406,
+            "odd": 1.5208333333333335,
             "type": "Vencer",
             "winner": "Tampa Bay Lightning",
             "loser": "Winnipeg Jets",
             "team": "Tampa Bay Lightning",
-            "win_rate": 64,
+            "win_rate": 65,
             "tier": "PADRÃO",
             "is_value": false,
-            "cashout_friendly": false,
+            "cashout_friendly": true,
             "priority": 10,
-            "analysis": "Análise tática: O Tampa Bay Lightning é superior em todos os fundamentos contra o Winnipeg Jets. | DNA NHL: Análise padrão baseada em médias globais."
+            "analysis": "O algoritmo detectou valor no Tampa Bay Lightning. A odd está desajustada pelo mercado. | DNA NHL: Análise padrão baseada em médias globais."
         },
         "result": null
     },
@@ -786,17 +790,17 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Ottawa Senators",
-            "odd": 1.617283950617284,
+            "odd": 1.5882352941176472,
             "type": "Vencer",
             "winner": "Ottawa Senators",
             "loser": "Calgary Flames",
             "team": "Ottawa Senators",
-            "win_rate": 61,
+            "win_rate": 62,
             "tier": "PADRÃO",
             "is_value": false,
             "cashout_friendly": false,
             "priority": 10,
-            "analysis": "Consistência fala mais alto. O Ottawa Senators não perde nesse tipo de confronto. | DNA NHL: Análise padrão baseada em médias globais."
+            "analysis": "O algoritmo detectou valor no Ottawa Senators. A odd está desajustada pelo mercado. | DNA NHL: Análise padrão baseada em médias globais."
         },
         "result": null
     },
@@ -815,22 +819,106 @@ window.gamesData = [
         },
         "tip": {
             "market": "Vencer: Los Angeles Kings",
-            "odd": 1.7692307692307692,
+            "odd": 1.7407407407407407,
             "type": "Vencer",
             "winner": "Los Angeles Kings",
             "loser": "New York Islanders",
             "team": "Los Angeles Kings",
-            "win_rate": 56,
+            "win_rate": 57,
             "tier": "PADRÃO",
             "is_value": false,
             "cashout_friendly": false,
             "priority": 10,
-            "analysis": "Consistência fala mais alto. O Los Angeles Kings não perde nesse tipo de confronto. | DNA NHL: Análise padrão baseada em médias globais."
+            "analysis": "O algoritmo detectou valor no Los Angeles Kings. A odd está desajustada pelo mercado. | DNA NHL: Análise padrão baseada em médias globais."
         },
         "result": null
     }
 ];
 window.historyTips = [
+    {
+        "id": "401810753",
+        "sport": "basketball",
+        "league": "NBA",
+        "date": "2026-03-05T03:30Z",
+        "teamA": {
+            "name": "LA Clippers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png"
+        },
+        "teamB": {
+            "name": "Indiana Pacers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png"
+        },
+        "tip": {
+            "market": "Vencer: Indiana Pacers",
+            "odd": 3.22,
+            "win_rate": 95,
+            "type": "Vencer"
+        },
+        "result": "LOSS"
+    },
+    {
+        "id": "401810752",
+        "sport": "basketball",
+        "league": "NBA",
+        "date": "2026-03-05T02:30Z",
+        "teamA": {
+            "name": "Milwaukee Bucks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png"
+        },
+        "teamB": {
+            "name": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png"
+        },
+        "tip": {
+            "market": "Vencer: Milwaukee Bucks",
+            "odd": 1.9,
+            "win_rate": 89,
+            "type": "Vencer"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "401810751",
+        "sport": "basketball",
+        "league": "NBA",
+        "date": "2026-03-05T01:00Z",
+        "teamA": {
+            "name": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png"
+        },
+        "teamB": {
+            "name": "Portland Trail Blazers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png"
+        },
+        "tip": {
+            "market": "Vencer: Memphis Grizzlies",
+            "odd": 2.06,
+            "win_rate": 88,
+            "type": "Vencer"
+        },
+        "result": "LOSS"
+    },
+    {
+        "id": "401810749",
+        "sport": "basketball",
+        "league": "NBA",
+        "date": "2026-03-05T00:30Z",
+        "teamA": {
+            "name": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png"
+        },
+        "teamB": {
+            "name": "Charlotte Hornets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png"
+        },
+        "tip": {
+            "market": "Handicap: Charlotte Hornets -24.5",
+            "odd": 2.04,
+            "win_rate": 87,
+            "type": "Vencer"
+        },
+        "result": "WIN"
+    },
     {
         "id": "740883",
         "sport": "soccer",
@@ -932,6 +1020,27 @@ window.historyTips = [
             "market": "Total de Gols: Menos de 3.5",
             "odd": 1.36,
             "win_rate": 92,
+            "type": "Gols"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "746866",
+        "sport": "soccer",
+        "league": "Bundesliga",
+        "date": "2026-03-04T19:30Z",
+        "teamA": {
+            "name": "Hamburg SV",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/127.png"
+        },
+        "teamB": {
+            "name": "Bayer Leverkusen",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/131.png"
+        },
+        "tip": {
+            "market": "Total de Gols: Menos de 2.5",
+            "odd": 1.91,
+            "win_rate": 91,
             "type": "Gols"
         },
         "result": "WIN"
@@ -10052,40 +10161,41 @@ window.historyTips = [
     }
 ];
 window.highlightMatch = {
-    "id": "740884",
-    "sport": "soccer",
-    "league": "Premier League",
-    "date": "2026-03-05T20:00Z",
+    "id": "401810756",
+    "sport": "basketball",
+    "league": "NBA",
+    "date": "2026-03-06T00:30Z",
     "teamA": {
-        "name": "Tottenham Hotspur",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/367.png"
+        "name": "Miami Heat",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png"
     },
     "teamB": {
-        "name": "Crystal Palace",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png"
+        "name": "Brooklyn Nets",
+        "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png"
     },
     "tip": {
-        "market": "Total de Gols: Mais de 2.5",
-        "odd": 1.89,
-        "type": "Gols",
-        "team": "Tottenham Hotspur",
-        "loser": "Crystal Palace",
-        "win_rate": 58,
-        "tier": "VALOR",
+        "market": "Vencer: Miami Heat",
+        "odd": 1.1111111111111112,
+        "type": "Vencer",
+        "winner": "Miami Heat",
+        "loser": "Brooklyn Nets",
+        "team": "Miami Heat",
+        "win_rate": 92,
+        "tier": "SEGURO",
         "is_value": false,
-        "cashout_friendly": false,
-        "priority": 11,
-        "analysis": "O pressing alto da PL deixa espaços enormes. Transições vão gerar gols. | DNA Premier League: Liga mais intensa do mundo. Ritmo altíssimo e defesas expostas."
+        "cashout_friendly": true,
+        "priority": 10,
+        "analysis": "Matchup favorável: O elenco do Miami Heat domina o do Brooklyn Nets em todas as posições. | DNA NBA: Liga mais pontuada do mundo. Ritmo acelerado e 3 pointers."
     },
     "result": null
 };
 window.dailyStats = {
-    "hits": 361,
-    "total": 439,
-    "losses": 78,
+    "hits": 364,
+    "total": 444,
+    "losses": 80,
     "win_rate": 82,
-    "recent_hits": 83,
-    "recent_total": 103,
-    "recent_win_rate": 81,
-    "days_active": 35
+    "recent_hits": 86,
+    "recent_total": 108,
+    "recent_win_rate": 80,
+    "days_active": 36
 };
