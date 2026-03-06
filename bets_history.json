@@ -21,6 +21,27 @@
         "result": "LOSS"
     },
     {
+        "id": "401810761",
+        "sport": "basketball",
+        "league": "NBA",
+        "date": "2026-03-06T03:00Z",
+        "teamA": {
+            "name": "Denver Nuggets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png"
+        },
+        "teamB": {
+            "name": "Los Angeles Lakers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png"
+        },
+        "tip": {
+            "market": "Handicap: Denver Nuggets -2.5",
+            "odd": 1.89,
+            "win_rate": 90,
+            "type": "Vencer"
+        },
+        "result": "WIN"
+    },
+    {
         "id": "401810760",
         "sport": "basketball",
         "league": "NBA",
@@ -63,6 +84,27 @@
         "result": "WIN"
     },
     {
+        "id": "401810759",
+        "sport": "basketball",
+        "league": "NBA",
+        "date": "2026-03-06T01:00Z",
+        "teamA": {
+            "name": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png"
+        },
+        "teamB": {
+            "name": "Detroit Pistons",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png"
+        },
+        "tip": {
+            "market": "Total de Pontos: Mais de 214.5",
+            "odd": 1.78,
+            "win_rate": 87,
+            "type": "Gols"
+        },
+        "result": "WIN"
+    },
+    {
         "id": "401810757",
         "sport": "basketball",
         "league": "NBA",
@@ -80,6 +122,69 @@
             "odd": 1.87,
             "win_rate": 94,
             "type": "Gols"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "401810756",
+        "sport": "basketball",
+        "league": "NBA",
+        "date": "2026-03-06T00:30Z",
+        "teamA": {
+            "name": "Miami Heat",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png"
+        },
+        "teamB": {
+            "name": "Brooklyn Nets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png"
+        },
+        "tip": {
+            "market": "Vencer: Brooklyn Nets",
+            "odd": 3.42,
+            "win_rate": 81,
+            "type": "Vencer"
+        },
+        "result": "LOSS"
+    },
+    {
+        "id": "401810755",
+        "sport": "basketball",
+        "league": "NBA",
+        "date": "2026-03-06T00:00Z",
+        "teamA": {
+            "name": "Washington Wizards",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png"
+        },
+        "teamB": {
+            "name": "Utah Jazz",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png"
+        },
+        "tip": {
+            "market": "Vencer: Utah Jazz",
+            "odd": 1.6,
+            "win_rate": 87,
+            "type": "Vencer"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "401810754",
+        "sport": "basketball",
+        "league": "NBA",
+        "date": "2026-03-06T00:00Z",
+        "teamA": {
+            "name": "Orlando Magic",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png"
+        },
+        "teamB": {
+            "name": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png"
+        },
+        "tip": {
+            "market": "Vencer: Orlando Magic",
+            "odd": 1.9,
+            "win_rate": 87,
+            "type": "Vencer"
         },
         "result": "WIN"
     },
