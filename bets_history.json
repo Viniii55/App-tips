@@ -21,6 +21,27 @@
         "result": "LOSS"
     },
     {
+        "id": "401810789",
+        "sport": "basketball",
+        "league": "NBA",
+        "date": "2026-03-10T01:00Z",
+        "teamA": {
+            "name": "Utah Jazz",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png"
+        },
+        "teamB": {
+            "name": "Golden State Warriors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png"
+        },
+        "tip": {
+            "market": "Total de Pontos: Mais de 210.5",
+            "odd": 1.96,
+            "win_rate": 93,
+            "type": "Gols"
+        },
+        "result": "WIN"
+    },
+    {
         "id": "401810788",
         "sport": "basketball",
         "league": "NBA",
@@ -37,6 +58,27 @@
             "market": "Vencer: Oklahoma City Thunder",
             "odd": 1.79,
             "win_rate": 95,
+            "type": "Vencer"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "401810787",
+        "sport": "basketball",
+        "league": "NBA",
+        "date": "2026-03-09T23:30Z",
+        "teamA": {
+            "name": "Brooklyn Nets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png"
+        },
+        "teamB": {
+            "name": "Memphis Grizzlies",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png"
+        },
+        "tip": {
+            "market": "Vencer: Brooklyn Nets",
+            "odd": 1.89,
+            "win_rate": 91,
             "type": "Vencer"
         },
         "result": "WIN"
@@ -101,6 +143,69 @@
             "odd": 1.23,
             "win_rate": 95,
             "type": "Vencer"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "401810783",
+        "sport": "basketball",
+        "league": "NBA",
+        "date": "2026-03-09T02:00Z",
+        "teamA": {
+            "name": "Phoenix Suns",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png"
+        },
+        "teamB": {
+            "name": "Charlotte Hornets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png"
+        },
+        "tip": {
+            "market": "Handicap: Phoenix Suns -7.5",
+            "odd": 1.96,
+            "win_rate": 86,
+            "type": "Vencer"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "401810782",
+        "sport": "basketball",
+        "league": "NBA",
+        "date": "2026-03-09T00:00Z",
+        "teamA": {
+            "name": "San Antonio Spurs",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png"
+        },
+        "teamB": {
+            "name": "Houston Rockets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png"
+        },
+        "tip": {
+            "market": "Total de Pontos: Mais de 214.5",
+            "odd": 1.93,
+            "win_rate": 90,
+            "type": "Gols"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "401810779",
+        "sport": "basketball",
+        "league": "NBA",
+        "date": "2026-03-08T22:00Z",
+        "teamA": {
+            "name": "Toronto Raptors",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png"
+        },
+        "teamB": {
+            "name": "Dallas Mavericks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png"
+        },
+        "tip": {
+            "market": "Total de Pontos: Mais de 212.5",
+            "odd": 1.95,
+            "win_rate": 80,
+            "type": "Gols"
         },
         "result": "WIN"
     },
@@ -210,6 +315,27 @@
         "result": "WIN"
     },
     {
+        "id": "401810776",
+        "sport": "basketball",
+        "league": "NBA",
+        "date": "2026-03-08T17:00Z",
+        "teamA": {
+            "name": "Cleveland Cavaliers",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png"
+        },
+        "teamB": {
+            "name": "Boston Celtics",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png"
+        },
+        "tip": {
+            "market": "Vencer: Cleveland Cavaliers",
+            "odd": 1.93,
+            "win_rate": 86,
+            "type": "Vencer"
+        },
+        "result": "LOSS"
+    },
+    {
         "id": "746937",
         "sport": "soccer",
         "league": "Bundesliga",
@@ -271,6 +397,27 @@
             "type": "Gols"
         },
         "result": "LOSS"
+    },
+    {
+        "id": "746631",
+        "sport": "soccer",
+        "league": "Ligue 1",
+        "date": "2026-03-08T16:15Z",
+        "teamA": {
+            "name": "Lille",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/166.png"
+        },
+        "teamB": {
+            "name": "Lorient",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/273.png"
+        },
+        "tip": {
+            "market": "Dupla Chance: Lorient ou Empate",
+            "odd": 1.4,
+            "win_rate": 95,
+            "type": "Vencer"
+        },
+        "result": "WIN"
     },
     {
         "id": "748413",
