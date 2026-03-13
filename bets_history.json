@@ -1,5 +1,110 @@
 [
     {
+        "id": "401841011",
+        "sport": "soccer",
+        "league": "Brasileirão",
+        "date": "2026-03-13T00:30Z",
+        "teamA": {
+            "name": "Grêmio",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6273.png"
+        },
+        "teamB": {
+            "name": "Red Bull Bragantino",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6079.png"
+        },
+        "tip": {
+            "market": "Ambos Marcam: Sim",
+            "odd": 1.94,
+            "win_rate": 90,
+            "type": "Gols"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "401810811",
+        "sport": "basketball",
+        "league": "NBA",
+        "date": "2026-03-12T23:30Z",
+        "teamA": {
+            "name": "Atlanta Hawks",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png"
+        },
+        "teamB": {
+            "name": "Brooklyn Nets",
+            "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png"
+        },
+        "tip": {
+            "market": "Vencer: Atlanta Hawks",
+            "odd": 1.64,
+            "win_rate": 87,
+            "type": "Vencer"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "401841008",
+        "sport": "soccer",
+        "league": "Brasileirão",
+        "date": "2026-03-12T23:00Z",
+        "teamA": {
+            "name": "São Paulo",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2026.png"
+        },
+        "teamB": {
+            "name": "Chapecoense",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9318.png"
+        },
+        "tip": {
+            "market": "Dupla Chance: São Paulo ou Empate",
+            "odd": 1.23,
+            "win_rate": 87,
+            "type": "Vencer"
+        },
+        "result": "WIN"
+    },
+    {
+        "id": "401841012",
+        "sport": "soccer",
+        "league": "Brasileirão",
+        "date": "2026-03-12T22:30Z",
+        "teamA": {
+            "name": "Vasco da Gama",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3454.png"
+        },
+        "teamB": {
+            "name": "Palmeiras",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2029.png"
+        },
+        "tip": {
+            "market": "Vencer: Palmeiras",
+            "odd": 3.14,
+            "win_rate": 82,
+            "type": "Vencer"
+        },
+        "result": "LOSS"
+    },
+    {
+        "id": "401841009",
+        "sport": "soccer",
+        "league": "Brasileirão",
+        "date": "2026-03-12T22:00Z",
+        "teamA": {
+            "name": "Remo",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4936.png"
+        },
+        "teamB": {
+            "name": "Fluminense",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3445.png"
+        },
+        "tip": {
+            "market": "Ambos Marcam: Não",
+            "odd": 1.84,
+            "win_rate": 94,
+            "type": "Gols"
+        },
+        "result": "WIN"
+    },
+    {
         "id": "401810807",
         "sport": "basketball",
         "league": "NBA",
